@@ -2,6 +2,7 @@
 from enum import Enum
 from pydantic import BaseModel, Field, HttpUrl
 from typing import Optional, List
+from datetime import date
 
 class LawCategory(Enum):
     """Law category enum"""
@@ -20,12 +21,14 @@ class LawArticle(BaseModel):
         description="Unique ID (Graph Node Key), e.g. 'LSA-24' for Labor Standard Act Article 24",
         examples=["LSA-24", "ENF_RULE-10"]
     )
-    chapter_no: int = Field(
-        description="Law chapter number, e.g. 2 for '第二章 勞動契約'",
+    chapter_no: int | None = Field(
+        default=None,
+        description="Law chapter number, e.g. 2 for '第二章 勞動契約'. Null if law has no chapters.",
         examples=[2, 11]
     )
-    chapter_name: str = Field(
-        description="Law chapter name, e.g. '勞動契約' for '第二章 勞動契約', '職業災害補償' for '第七章 職業災害補償'", 
+    chapter_name: str | None = Field(
+        default=None,
+        description="Law chapter name, e.g. '勞動契約'. Null if law has no chapters.", 
         examples=["勞動契約", "職業災害補償"]
     )
     article_no: str = Field(
@@ -51,12 +54,10 @@ class LawArticle(BaseModel):
     )
 
 class LawData(BaseModel):
-    category: LawCategory = Field(
-        description="Law category, e.g. 母法 for '勞動基準法', 細則 for '勞動基準法施行細則'", 
-        examples=["母法", "細則", "函釋", "判例"]
+    category: LawCategory = Field(description="The category of the law (Mother Law or Subsidiary Law)")
+    title: str = Field(description="The title of the law")
+    last_modified_date: date = Field(
+        description="Last modified date of the law",
+        examples=["2024-03-27"]
     )
-    title: str = Field(
-        description="Law title, e.g. '勞動基準法', '勞動基準法施行細則'", 
-        examples=["勞動基準法", "勞動基準法施行細則"]
-    )
-    articles: List[LawArticle]
+    articles: List[LawArticle] = Field(description="List of articles in the law")
