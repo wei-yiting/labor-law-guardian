@@ -1,0 +1,458 @@
+
+[
+  {
+    "question": "雇主與勞工約定離職後競業禁止之期間，最長不得逾幾年？",
+    "ground_truth": "最長不得逾二年。逾二年者，縮短為二年。",
+    "reference_articles_id": [
+      "LSA-9-1"
+    ],
+    "supporting_context": "離職後競業禁止之期間，最長不得逾二年。逾二年者，縮短為二年。",
+    "tags": {
+      "chapter": "勞動契約",
+      "type": "Numerical"
+    },
+    "reasoning": "此題測試具體的時間限制數字，關鍵字「競業禁止」、「最長」具有高度辨識度，適合測試 Retriever 的精確度。"
+  },
+  {
+    "question": "勞工繼續工作一年以上三年未滿者，雇主依第十一條終止勞動契約時，應於幾日前預告之？",
+    "ground_truth": "於二十日前預告之。",
+    "reference_articles_id": [
+      "LSA-16"
+    ],
+    "supporting_context": "二、繼續工作一年以上三年未滿者，於二十日前預告之。",
+    "tags": {
+      "chapter": "勞動契約",
+      "type": "Numerical"
+    },
+    "reasoning": "此題測試特定條件（年資區間）下的數值檢索，系統需能區分不同年資對應的預告天數。"
+  },
+  {
+    "question": "雇主依勞基法第十六條終止勞動契約者，其資遣費應於終止勞動契約後幾日內發給？",
+    "ground_truth": "應於終止勞動契約三十日內發給。",
+    "reference_articles_id": [
+      "LSA-17"
+    ],
+    "supporting_context": "前項所定資遣費，雇主應於終止勞動契約三十日內發給。",
+    "tags": {
+      "chapter": "勞動契約",
+      "type": "Numerical"
+    },
+    "reasoning": "測試核心關鍵字「資遣費」與時效性數字「三十日」的單跳檢索能力。"
+  },
+  {
+    "question": "雇主延長勞工工作時間，在兩小時以內者，工資應如何計算？",
+    "ground_truth": "按平日每小時工資額加給三分之一以上。",
+    "reference_articles_id": [
+      "LSA-24"
+    ],
+    "supporting_context": "一、延長工作時間在二小時以內者，按平日每小時工資額加給三分之一以上。",
+    "tags": {
+      "chapter": "工資",
+      "type": "Specific Entity"
+    },
+    "reasoning": "加班費率是極高頻查詢，測試系統能否精準提取「三分之一」這個具體倍率，而非模糊回答。"
+  },
+  {
+    "question": "雇主應置備勞工工資清冊，該清冊應保存幾年？",
+    "ground_truth": "工資清冊應保存五年。",
+    "reference_articles_id": [
+      "LSA-23"
+    ],
+    "supporting_context": "雇主應置備勞工工資清冊，將發放工資、工資各項目計算方式明細、工資總額等事項記入。工資清冊應保存五年。",
+    "tags": {
+      "chapter": "工資",
+      "type": "Numerical"
+    },
+    "reasoning": "行政義務類題目，測試系統對於文件保存年限的法規檢索。"
+  },
+  {
+    "question": "積欠工資墊償基金之費率，由中央主管機關於多少範圍內擬訂？",
+    "ground_truth": "由中央主管機關於萬分之十五範圍內擬訂。",
+    "reference_articles_id": [
+      "LSA-28"
+    ],
+    "supporting_context": "第二項費率，由中央主管機關於萬分之十五範圍內擬訂，報請行政院核定之。",
+    "tags": {
+      "chapter": "工資",
+      "type": "Numerical"
+    },
+    "reasoning": "測試系統對於較冷僻的數值（萬分之十五）的精準匹配能力。"
+  },
+  {
+    "question": "勞工正常工作時間，每日及每週之最高限度分別為何？",
+    "ground_truth": "每日不得超過八小時，每週不得超過四十小時。",
+    "reference_articles_id": [
+      "LSA-30"
+    ],
+    "supporting_context": "勞工正常工作時間，每日不得超過八小時，每週不得超過四十小時。",
+    "tags": {
+      "chapter": "工作時間、休息、休假",
+      "type": "Numerical"
+    },
+    "reasoning": "勞基法最核心條文，答案必須完全精確，適合做為基準測試（Baseline）。"
+  },
+  {
+    "question": "勞工繼續工作四小時，至少應有多少時間之休息？",
+    "ground_truth": "至少應有三十分鐘之休息。",
+    "reference_articles_id": [
+      "LSA-35"
+    ],
+    "supporting_context": "勞工繼續工作四小時，至少應有三十分鐘之休息。",
+    "tags": {
+      "chapter": "工作時間、休息、休假",
+      "type": "Numerical"
+    },
+    "reasoning": "測試條件式檢索：條件（工作四小時）與結果（休息三十分鐘）的對應。"
+  },
+  {
+    "question": "勞工在同一雇主繼續工作滿六個月以上一年未滿者，應給予多少天之特別休假？",
+    "ground_truth": "三日。",
+    "reference_articles_id": [
+      "LSA-38"
+    ],
+    "supporting_context": "一、六個月以上一年未滿者，三日。",
+    "tags": {
+      "chapter": "工作時間、休息、休假",
+      "type": "Numerical"
+    },
+    "reasoning": "特休天數是極常見查詢，測試系統能否區分多個類似條列項中的特定區間。"
+  },
+  {
+    "question": "因天災、事變或突發事件，雇主延長工作時間後，應於延長開始後幾小時內通知工會或報請備查？",
+    "ground_truth": "應於延長開始後二十四小時內通知工會；無工會組織者，應報當地主管機關備查。",
+    "reference_articles_id": [
+      "LSA-32"
+    ],
+    "supporting_context": "但應於延長開始後二十四小時內通知工會；無工會組織者，應報當地主管機關備查。",
+    "tags": {
+      "chapter": "工作時間、休息、休假",
+      "type": "Numerical"
+    },
+    "reasoning": "測試緊急狀況下的程序性規定，關鍵字明確（天災、二十四小時）。"
+  },
+  {
+    "question": "勞基法所稱之「童工」定義為何？",
+    "ground_truth": "十五歲以上未滿十六歲之受僱從事工作者。",
+    "reference_articles_id": [
+      "LSA-44"
+    ],
+    "supporting_context": "十五歲以上未滿十六歲之受僱從事工作者，為童工。",
+    "tags": {
+      "chapter": "童工、女工",
+      "type": "Specific Entity"
+    },
+    "reasoning": "定義型問題，測試系統提取法律名詞定義的準確性。"
+  },
+  {
+    "question": "女工分娩前後，應停止工作並給予產假幾星期？",
+    "ground_truth": "八星期。",
+    "reference_articles_id": [
+      "LSA-50"
+    ],
+    "supporting_context": "女工分娩前後，應停止工作，給予產假八星期",
+    "tags": {
+      "chapter": "童工、女工",
+      "type": "Numerical"
+    },
+    "reasoning": "母性保護核心條文，答案單一且明確，適合測試。"
+  },
+  {
+    "question": "勞工工作滿多少年以上，且年滿五十五歲者，得自請退休？",
+    "ground_truth": "十五年以上。",
+    "reference_articles_id": [
+      "LSA-53"
+    ],
+    "supporting_context": "一、工作十五年以上年滿五十五歲者。",
+    "tags": {
+      "chapter": "退休",
+      "type": "Condition"
+    },
+    "reasoning": "多條件檢索（年資+年齡），測試系統能否正確鎖定第53條第1款。"
+  },
+  {
+    "question": "雇主強制勞工退休之年齡上限一般為幾歲？",
+    "ground_truth": "年滿六十五歲。",
+    "reference_articles_id": [
+      "LSA-54"
+    ],
+    "supporting_context": "一、年滿六十五歲者。",
+    "tags": {
+      "chapter": "退休",
+      "type": "Numerical"
+    },
+    "reasoning": "強制退休年齡為社會關注焦點，測試檢索結果的即時性與準確度。"
+  },
+  {
+    "question": "退休金給與標準中，超過十五年之工作年資，每滿一年給與幾個基數，最高總數以多少個基數為限？",
+    "ground_truth": "每滿一年給與一個基數，最高總數以四十五個基數為限。",
+    "reference_articles_id": [
+      "LSA-55"
+    ],
+    "supporting_context": "但超過十五年之工作年資，每滿一年給與一個基數，最高總數以四十五個基數為限。",
+    "tags": {
+      "chapter": "退休",
+      "type": "Numerical"
+    },
+    "reasoning": "複合數值測試（基數計算方式與總上限），需從同一段落提取兩個事實。"
+  },
+  {
+    "question": "勞工遭遇職業傷害而死亡時，雇主應給與多少個月平均工資之死亡補償？",
+    "ground_truth": "四十個月平均工資。",
+    "reference_articles_id": [
+      "LSA-59"
+    ],
+    "supporting_context": "並應一次給與其遺屬四十個月平均工資之死亡補償。",
+    "tags": {
+      "chapter": "職業災害補償",
+      "type": "Numerical"
+    },
+    "reasoning": "職災補償金額是硬性規定，測試系統能否精準定位第59條第4款。"
+  },
+  {
+    "question": "勞工遭遇職業災害之受領補償權，自得受領之日起，因幾年間不行使而消滅？",
+    "ground_truth": "二年間。",
+    "reference_articles_id": [
+      "LSA-59”, ”LSA-61"
+    ],
+    "supporting_context": "第五十九條之受領補償權，自得受領之日起，因二年間不行使而消滅。",
+    "tags": {
+      "chapter": "職業災害補償",
+      "type": "Numerical"
+    },
+    "reasoning": "時效性法律概念測試，確保系統能區分不同的請求權時效（如工資 vs 補償）。"
+  },
+  {
+    "question": "事業單位招收之技術生人數，不得超過勞工人數之多少比例？",
+    "ground_truth": "不得超過勞工人數四分之一。",
+    "reference_articles_id": [
+      "LSA-68"
+    ],
+    "supporting_context": "技術生人數，不得超過勞工人數四分之一。",
+    "tags": {
+      "chapter": "技術生",
+      "type": "Numerical"
+    },
+    "reasoning": "冷門法規（Cold Spot）測試，評估系統對非核心章節的覆蓋率。"
+  },
+  {
+    "question": "雇主僱用勞工人數達幾人以上者，應訂立工作規則並報請主管機關核備？",
+    "ground_truth": "三十人以上。",
+    "reference_articles_id": [
+      "LSA-70"
+    ],
+    "supporting_context": "雇主僱用勞工人數在三十人以上者，應依其事業性質，就左列事項訂立工作規則",
+    "tags": {
+      "chapter": "工作規則",
+      "type": "Numerical"
+    },
+    "reasoning": "門檻值測試，這是企業合規常見問題，測試系統數值界定能力。"
+  },
+  {
+    "question": "事業單位拒絕、規避或阻撓勞工檢查員依法執行職務者，處多少罰鍰？",
+    "ground_truth": "處新臺幣三萬元以上十五萬元以下罰鍰。",
+    "reference_articles_id": [
+      "LSA-80"
+    ],
+    "supporting_context": "拒絕、規避或阻撓勞工檢查員依法執行職務者，處新臺幣三萬元以上十五萬元以下罰鍰。",
+    "tags": {
+      "chapter": "監督與檢查",
+      "type": "Specific Entity"
+    },
+    "reasoning": "罰則類測試，確保系統能針對特定違規行為（妨礙檢查）找到對應的罰金區間。"
+  },
+  {
+    "question": "勞工結婚者，應給予婚假幾日？",
+    "ground_truth": "八日",
+    "reference_articles_id": [
+      "LEAVE_RULE-2"
+    ],
+    "supporting_context": "勞工結婚者給予婚假八日，工資照給。",
+    "tags": {
+      "chapter": "假別與日數",
+      "type": "Numerical"
+    },
+    "reasoning": "此題包含明確實體「婚假」，且答案為單一數值，能精準測試 Retriever 針對特定假別的召回能力 (Recall) 與 Generator 的精確度。"
+  },
+  {
+    "question": "勞工未住院者，一年內普通傷病假合計不得超過幾日？",
+    "ground_truth": "三十日",
+    "reference_articles_id": [
+      "LEAVE_RULE-4"
+    ],
+    "supporting_context": "勞工因普通傷害、疾病或生理原因必須治療或休養者，得在左列規定範圍內請普通傷病假：一、未住院者，一年內合計不得超過三十日。",
+    "tags": {
+      "chapter": "假別與日數",
+      "type": "Numerical"
+    },
+    "reasoning": "此題設有「未住院」之條件限制，測試 RAG 系統能否精準區分法條中不同情境（住院 vs 未住院）的細節，是高品質的 Level 1 測試題。"
+  },
+  {
+    "question": "勞工因有事故必須親自處理得請事假，一年內合計不得超過幾日？",
+    "ground_truth": "十四日",
+    "reference_articles_id": [
+      "LEAVE_RULE-7"
+    ],
+    "supporting_context": "勞工因有事故必須親自處理，得請事假，一年內合計不得超過十四日。",
+    "tags": {
+      "chapter": "假別與日數",
+      "type": "Numerical"
+    },
+    "reasoning": "選用「事假」作為測試點，確保測試集覆蓋不同法條來源 (Source Diversity)，避免過度集中於同一條文，有效評估 Retriever 的廣度。"
+  },
+  {
+    "question": "勞工請婚假、喪假、公傷病假及公假，雇主得否視為缺勤而影響其全勤獎金？",
+    "ground_truth": "不得視為缺勤而影響其全勤獎金",
+    "reference_articles_id": [
+      "LEAVE_RULE-9"
+    ],
+    "supporting_context": "勞工有下列情形，雇主不得視為缺勤而影響其全勤獎金...一、勞工請婚假、喪假、公傷病假及公假。",
+    "tags": {
+      "chapter": "工資與權益",
+      "type": "Boolean/Constraint"
+    },
+    "reasoning": "此題測試法規中的「禁止條款」與權益保障，關鍵字「全勤獎金」具高辨識度，且答案句型結構完整，適合評估生成內容的正確性 (Faithfulness)。"
+  },
+  {
+    "question": "勞工遇有急病或緊急事故，無法親自辦理請假手續時，得如何處理？",
+    "ground_truth": "得委託他人代辦請假手續",
+    "reference_articles_id": [
+      "LEAVE_RULE-10"
+    ],
+    "supporting_context": "但遇有急病或緊急事故，得委託他人代辦請假手續。",
+    "tags": {
+      "chapter": "請假流程",
+      "type": "Procedure"
+    },
+    "reasoning": "此題屬於「程序性」問題，不同於單純的數值提取，測試 RAG 系統能否正確檢索並回答特定狀況下的處置流程。"
+  },
+  {
+    "question": "勞動契約中的「臨時性工作」是如何定義的？其工作期間上限為多久？",
+    "ground_truth": "係指無法預期之非繼續性工作，其工作期間在六個月以內者。",
+    "reference_articles_id": [
+      "ENF_RULE-6"
+    ],
+    "supporting_context": "臨時性工作：係指無法預期之非繼續性工作，其工作期間在六個月以內者。",
+    "tags": {
+      "chapter": "勞動契約",
+      "type": "Definition"
+    },
+    "reasoning": "包含具體定義與時間限制（六個月），適合測試模型對專有名詞定義的精準提取能力。"
+  },
+  {
+    "question": "雇主依法終止勞動契約時，應於何時結清工資給付勞工？",
+    "ground_truth": "應即結清（即時）。",
+    "reference_articles_id": [
+      "ENF_RULE-9"
+    ],
+    "supporting_context": "依本法終止勞動契約時，雇主應即結清工資給付勞工。",
+    "tags": {
+      "chapter": "勞動契約",
+      "type": "Specific Entity"
+    },
+    "reasoning": "測試模型對於時間副詞「即」或「即時」的理解與提取。"
+  },
+  {
+    "question": "雇主提供之工資計算明細（薪資單），必須包含哪些具體事項？",
+    "ground_truth": "一、勞雇雙方議定之工資總額。二、工資各項目之給付金額。三、依法令或約定得扣除之金額。四、實際發給金額。",
+    "reference_articles_id": [
+      "ENF_RULE-14-1"
+    ],
+    "supporting_context": "本法第二十三條所定工資各項目計算方式明細，應包括下列事項...",
+    "tags": {
+      "chapter": "工資",
+      "type": "List Extraction"
+    },
+    "reasoning": "法律明確規範的四個項目，答案具有唯一性，適合自動化評測。"
+  },
+  {
+    "question": "勞基法第 28 條規定積欠之工資，墊償範圍以雇主於何時起算前幾個月內所積欠者為限？",
+    "ground_truth": "以雇主於歇業、清算或宣告破產前六個月內所積欠者為限。",
+    "reference_articles_id": [
+      "ENF_RULE-15"
+    ],
+    "supporting_context": "本法第二十八條第一項第一款所定積欠之工資，以雇主於歇業、清算或宣告破產前六個月內所積欠者為限。",
+    "tags": {
+      "chapter": "工資",
+      "type": "Numerical"
+    },
+    "reasoning": "結合了特定情境（歇業/破產）與具體數字（六個月），是高品質的 Level 1 測試題。"
+  },
+  {
+    "question": "勞工因出差在事業場所外工作，若不易計算工作時間，其工時應如何認定？",
+    "ground_truth": "以平時之工作時間為其工作時間。但其實際工作時間經證明者，不在此限。",
+    "reference_articles_id": [
+      "ENF_RULE-18"
+    ],
+    "supporting_context": "勞工因出差或其他原因於事業場所外從事工作致不易計算工作時間者，以平時之工作時間為其工作時間...",
+    "tags": {
+      "chapter": "工作時間",
+      "type": "Conditional"
+    },
+    "reasoning": "測試模型處理「原則」與「例外」邏輯的能力。"
+  },
+  {
+    "question": "雇主在何種特定情形下，得報經主管機關核定分期給付勞工退休金？",
+    "ground_truth": "一、依法提撥之退休準備金不敷支付。二、事業之經營或財務確有困難。",
+    "reference_articles_id": [
+      "ENF_RULE-29"
+    ],
+    "supporting_context": "本法第五十五條第三項所定雇主得報經主管機關核定分期給付勞工退休金之情形如下：一、依法提撥之退休準備金不敷支付。二、事業之經營或財務確有困難。",
+    "tags": {
+      "chapter": "退休",
+      "type": "Condition"
+    },
+    "reasoning": "測試模型對於「例外許可條件」的檢索能力。"
+  },
+  {
+    "question": "職業災害補償中，所謂「原領工資」在計月的情況下應如何計算一日工資？",
+    "ground_truth": "以遭遇職業災害前最近一個月正常工作時間所得之工資除以三十所得之金額。",
+    "reference_articles_id": [
+      "ENF_RULE-31"
+    ],
+    "supporting_context": "其為計月者，以遭遇職業災害前最近一個月正常工作時間所得之工資除以三十所得之金額，為其一日之工資。",
+    "tags": {
+      "chapter": "職災補償",
+      "type": "Definition"
+    },
+    "reasoning": "包含具體算式描述（除以三十），能精確評估 Faithfulness。"
+  },
+  {
+    "question": "技術生是否可以從事事業場所內的清潔整頓工作？",
+    "ground_truth": "可以。雖然不得從事雜役，但從事事業場所內之清潔整頓，器具工具及機械之清理者不在此限。",
+    "reference_articles_id": [
+      "ENF_RULE-35"
+    ],
+    "supporting_context": "雇主不得使技術生從事家事、雜役...但從事事業場所內之清潔整頓，器具工具及機械之清理者不在此限。",
+    "tags": {
+      "chapter": "技術生",
+      "type": "Boolean"
+    },
+    "reasoning": "測試模型對於「禁止事項的例外」（但書）的理解能力。"
+  },
+  {
+    "question": "檢查機構在發布勞工檢查方針後，應於幾日內報請中央主管機關核定檢查計畫？",
+    "ground_truth": "應於檢查方針發布之日起五十日內報請中央主管機關核定。",
+    "reference_articles_id": [
+      "ENF_RULE-41"
+    ],
+    "supporting_context": "並於檢查方針發布之日起五十日內報請中央主管機關核定後，依該檢查計畫實施檢查。",
+    "tags": {
+      "chapter": "監督與檢查",
+      "type": "Numerical"
+    },
+    "reasoning": "冷門法條，適合測試 Retriever 對於長尾知識的覆蓋率。"
+  },
+  {
+    "question": "事業單位對於勞工檢查機構之檢查結果有異議時，應於收到通知後幾日內提出書面異議？",
+    "ground_truth": "應於通知送達後十日內向檢查機構以書面提出。",
+    "reference_articles_id": [
+      "ENF_RULE-45"
+    ],
+    "supporting_context": "事業單位對檢查結果有異議時，應於通知送達後十日內向檢查機構以書面提出。",
+    "tags": {
+      "chapter": "監督與檢查",
+      "type": "Numerical"
+    },
+    "reasoning": "明確的行政程序與期限（10日），答案無歧義。"
+  }
+]
