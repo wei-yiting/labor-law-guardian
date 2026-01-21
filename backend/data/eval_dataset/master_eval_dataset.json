@@ -246,7 +246,8 @@
     "question": "勞工遭遇職業災害之受領補償權，自得受領之日起，因幾年間不行使而消滅？",
     "ground_truth": "二年間。",
     "reference_articles_id": [
-      "LSA-59”, ”LSA-61"
+      "LSA-59",
+      "LSA-61"
     ],
     "supporting_context": "第五十九條之受領補償權，自得受領之日起，因二年間不行使而消滅。",
     "tags": [
