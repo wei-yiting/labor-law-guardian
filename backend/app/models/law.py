@@ -1,4 +1,4 @@
-"""Future purpose: define LawArticle (and related) Pydantic models as the project-wide data contract."""
+"""Future purpose: define RawLawArticle (and related) Pydantic models as the project-wide data contract."""
 from enum import Enum
 from pydantic import BaseModel, Field, HttpUrl
 from typing import Optional, List
@@ -11,7 +11,7 @@ class LawCategory(Enum):
     INTERPRETATION = "函釋"
     CASE = "判例"
 
-class LawArticle(BaseModel):
+class RawLawArticle(BaseModel):
     """
     Data structure of a law article (Data Transfer Object)
     Schema of Scraper outputs.
@@ -60,4 +60,4 @@ class LawData(BaseModel):
         description="Last modified date of the law",
         examples=["2024-03-27"]
     )
-    articles: List[LawArticle] = Field(description="List of articles in the law")
+    articles: List[RawLawArticle] = Field(description="List of articles in the law")
