@@ -1,0 +1,3352 @@
+{
+  "LSA-1": {
+    "id": "LSA-1",
+    "chapter_no": 1,
+    "chapter_name": "總則",
+    "article_no": "1",
+    "summary": null,
+    "content": "(1)為規定勞動條件最低標準，保障勞工權益，加強勞雇關係，促進社會與經濟發展，特制定本法；本法未規定者，適用其他法律之規定。\n(2)雇主與勞工所訂勞動條件，不得低於本法所定之最低標準。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=1",
+    "related_concepts": []
+  },
+  "LSA-2": {
+    "id": "LSA-2",
+    "chapter_no": 1,
+    "chapter_name": "總則",
+    "article_no": "2",
+    "summary": null,
+    "content": "本法用詞，定義如下：\n一、勞工：指受雇主僱用從事工作獲致工資者。\n二、雇主：指僱用勞工之事業主、事業經營之負責人或代表事業主處理有關勞工事務之人。\n三、工資：指勞工因工作而獲得之報酬；包括工資、薪金及按計時、計日、計月、計件以現金或實物等方式給付之獎金、津貼及其他任何名義之經常性給與均屬之。\n四、平均工資：指計算事由發生之當日前六個月內所得工資總額除以該期間之總日數所得之金額。工作未滿六個月者，指工作期間所得工資總額除以工作期間之總日數所得之金額。工資按工作日數、時數或論件計算者，其依上述方式計算之平均工資，如少於該期內工資總額除以實際工作日數所得金額百分之六十者，以百分之六十計。\n五、事業單位：指適用本法各業僱用勞工從事工作之機構。\n六、勞動契約：指約定勞雇關係而具有從屬性之契約。\n七、派遣事業單位：指從事勞動派遣業務之事業單位。\n八、要派單位：指依據要派契約，實際指揮監督管理派遣勞工從事工作者。\n九、派遣勞工：指受派遣事業單位僱用，並向要派單位提供勞務者。\n十、要派契約：指要派單位與派遣事業單位就勞動派遣事項所訂立之契約。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=2",
+    "related_concepts": []
+  },
+  "LSA-3": {
+    "id": "LSA-3",
+    "chapter_no": 1,
+    "chapter_name": "總則",
+    "article_no": "3",
+    "summary": null,
+    "content": "(1)本法於左列各業適用之：\n一、農、林、漁、牧業。\n二、礦業及土石採取業。\n三、製造業。\n四、營造業。\n五、水電、煤氣業。\n六、運輸、倉儲及通信業。\n七、大眾傳播業。\n八、其他經中央主管機關指定之事業。\n(2)依前項第八款指定時，得就事業之部分工作場所或工作者指定適用。\n(3)本法適用於一切勞雇關係。但因經營型態、管理制度及工作特性等因素適用本法確有窒礙難行者，並經中央主管機關指定公告之行業或工作者，不適用之。\n(4)前項因窒礙難行而不適用本法者，不得逾第一項第一款至第七款以外勞工總數五分之一。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=3",
+    "related_concepts": []
+  },
+  "LSA-4": {
+    "id": "LSA-4",
+    "chapter_no": 1,
+    "chapter_name": "總則",
+    "article_no": "4",
+    "summary": null,
+    "content": "本法所稱主管機關：在中央為勞動部；在直轄市為直轄市政府；在縣（市）為縣（市）政府。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=4",
+    "related_concepts": []
+  },
+  "LSA-5": {
+    "id": "LSA-5",
+    "chapter_no": 1,
+    "chapter_name": "總則",
+    "article_no": "5",
+    "summary": null,
+    "content": "雇主不得以強暴、脅迫、拘禁或其他非法之方法，強制勞工從事勞動。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=5",
+    "related_concepts": []
+  },
+  "LSA-6": {
+    "id": "LSA-6",
+    "chapter_no": 1,
+    "chapter_name": "總則",
+    "article_no": "6",
+    "summary": null,
+    "content": "任何人不得介入他人之勞動契約，抽取不法利益。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=6",
+    "related_concepts": []
+  },
+  "LSA-7": {
+    "id": "LSA-7",
+    "chapter_no": 1,
+    "chapter_name": "總則",
+    "article_no": "7",
+    "summary": null,
+    "content": "(1)雇主應置備勞工名卡，登記勞工之姓名、性別、出生年月日、本籍、教育程度、住址、身分證統一號碼、到職年月日、工資、勞工保險投保日期、獎懲、傷病及其他必要事項。\n(2)前項勞工名卡，應保管至勞工離職後五年。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=7",
+    "related_concepts": []
+  },
+  "LSA-8": {
+    "id": "LSA-8",
+    "chapter_no": 1,
+    "chapter_name": "總則",
+    "article_no": "8",
+    "summary": null,
+    "content": "雇主對於僱用之勞工，應預防職業上災害，建立適當之工作環境及福利設施。其有關安全衛生及福利事項，依有關法律之規定。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=8",
+    "related_concepts": []
+  },
+  "LSA-9": {
+    "id": "LSA-9",
+    "chapter_no": 2,
+    "chapter_name": "勞動契約",
+    "article_no": "9",
+    "summary": null,
+    "content": "(1)勞動契約，分為定期契約及不定期契約。臨時性、短期性、季節性及特定性工作得為定期契約；有繼續性工作應為不定期契約。派遣事業單位與派遣勞工訂定之勞動契約，應為不定期契約。\n(2)定期契約屆滿後，有下列情形之一，視為不定期契約：\n一、勞工繼續工作而雇主不即表示反對意思者。\n二、雖經另訂新約，惟其前後勞動契約之工作期間超過九十日，前後契約間斷期間未超過三十日者。\n(3)前項規定於特定性或季節性之定期工作不適用之。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=9",
+    "related_concepts": []
+  },
+  "LSA-9-1": {
+    "id": "LSA-9-1",
+    "chapter_no": 2,
+    "chapter_name": "勞動契約",
+    "article_no": "9-1",
+    "summary": null,
+    "content": "(1)未符合下列規定者，雇主不得與勞工為離職後競業禁止之約定：\n一、雇主有應受保護之正當營業利益。\n二、勞工擔任之職位或職務，能接觸或使用雇主之營業秘密。\n三、競業禁止之期間、區域、職業活動之範圍及就業對象，未逾合理範疇。\n四、雇主對勞工因不從事競業行為所受損失有合理補償。\n(2)前項第四款所定合理補償，不包括勞工於工作期間所受領之給付。\n(3)違反第一項各款規定之一者，其約定無效。\n(4)離職後競業禁止之期間，最長不得逾二年。逾二年者，縮短為二年。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=9-1",
+    "related_concepts": []
+  },
+  "LSA-10": {
+    "id": "LSA-10",
+    "chapter_no": 2,
+    "chapter_name": "勞動契約",
+    "article_no": "10",
+    "summary": null,
+    "content": "定期契約屆滿後或不定期契約因故停止履行後，未滿三個月而訂定新約或繼續履行原約時，勞工前後工作年資，應合併計算。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=10",
+    "related_concepts": []
+  },
+  "LSA-10-1": {
+    "id": "LSA-10-1",
+    "chapter_no": 2,
+    "chapter_name": "勞動契約",
+    "article_no": "10-1",
+    "summary": null,
+    "content": "雇主調動勞工工作，不得違反勞動契約之約定，並應符合下列原則：\n一、基於企業經營上所必須，且不得有不當動機及目的。但法律另有規定者，從其規定。\n二、對勞工之工資及其他勞動條件，未作不利之變更。\n三、調動後工作為勞工體能及技術可勝任。\n四、調動工作地點過遠，雇主應予以必要之協助。\n五、考量勞工及其家庭之生活利益。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=10-1",
+    "related_concepts": []
+  },
+  "LSA-11": {
+    "id": "LSA-11",
+    "chapter_no": 2,
+    "chapter_name": "勞動契約",
+    "article_no": "11",
+    "summary": null,
+    "content": "非有左列情事之一者，雇主不得預告勞工終止勞動契約：\n一、歇業或轉讓時。\n二、虧損或業務緊縮時。\n三、不可抗力暫停工作在一個月以上時。\n四、業務性質變更，有減少勞工之必要，又無適當工作可供安置時。\n五、勞工對於所擔任之工作確不能勝任時。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=11",
+    "related_concepts": []
+  },
+  "LSA-12": {
+    "id": "LSA-12",
+    "chapter_no": 2,
+    "chapter_name": "勞動契約",
+    "article_no": "12",
+    "summary": null,
+    "content": "(1)勞工有左列情形之一者，雇主得不經預告終止契約：\n一、於訂立勞動契約時為虛偽意思表示，使雇主誤信而有受損害之虞者。\n二、對於雇主、雇主家屬、雇主代理人或其他共同工作之勞工，實施暴行或有重大侮辱之行為者。\n三、受有期徒刑以上刑之宣告確定，而未諭知緩刑或未准易科罰金者。\n四、違反勞動契約或工作規則，情節重大者。\n五、故意損耗機器、工具、原料、產品，或其他雇主所有物品，或故意洩漏雇主技術上、營業上之秘密，致雇主受有損害者。\n六、無正當理由繼續曠工三日，或一個月內曠工達六日者。\n(2)雇主依前項第一款、第二款及第四款至第六款規定終止契約者，應自知悉其情形之日起，三十日內為之。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=12",
+    "related_concepts": []
+  },
+  "LSA-13": {
+    "id": "LSA-13",
+    "chapter_no": 2,
+    "chapter_name": "勞動契約",
+    "article_no": "13",
+    "summary": null,
+    "content": "勞工在第五十條規定之停止工作期間或第五十九條規定之醫療期間，雇主不得終止契約。但雇主因天災、事變或其他不可抗力致事業不能繼續，經報主管機關核定者，不在此限。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=13",
+    "related_concepts": []
+  },
+  "LSA-14": {
+    "id": "LSA-14",
+    "chapter_no": 2,
+    "chapter_name": "勞動契約",
+    "article_no": "14",
+    "summary": null,
+    "content": "(1)有下列情形之一者，勞工得不經預告終止契約：\n一、雇主於訂立勞動契約時為虛偽之意思表示，使勞工誤信而有受損害之虞者。\n二、雇主、雇主家屬、雇主代理人對於勞工，實施暴行或有重大侮辱之行為者。\n三、契約所訂之工作，對於勞工健康有危害之虞，經通知雇主改善而無效果者。\n四、雇主、雇主代理人或其他勞工患有法定傳染病，對共同工作之勞工有傳染之虞，且重大危害其健康者。\n五、雇主不依勞動契約給付工作報酬，或對於按件計酬之勞工不供給充分之工作者。\n六、雇主違反勞動契約或勞工法令，致有損害勞工權益之虞者。\n(2)勞工依前項第一款、第六款規定終止契約者，應自知悉其情形之日起，三十日內為之。但雇主有前項第六款所定情形者，勞工得於知悉損害結果之日起，三十日內為之。\n(3)有第一項第二款或第四款情形，雇主已將該代理人間之契約終止，或患有法定傳染病者依衛生法規已接受治療時，勞工不得終止契約。\n(4)第十七條規定於本條終止契約準用之。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=14",
+    "related_concepts": []
+  },
+  "LSA-15": {
+    "id": "LSA-15",
+    "chapter_no": 2,
+    "chapter_name": "勞動契約",
+    "article_no": "15",
+    "summary": null,
+    "content": "(1)特定性定期契約期限逾三年者，於屆滿三年後，勞工得終止契約。但應於三十日前預告雇主。\n(2)不定期契約，勞工終止契約時，應準用第十六條第一項規定期間預告雇主。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=15",
+    "related_concepts": []
+  },
+  "LSA-15-1": {
+    "id": "LSA-15-1",
+    "chapter_no": 2,
+    "chapter_name": "勞動契約",
+    "article_no": "15-1",
+    "summary": null,
+    "content": "(1)未符合下列規定之一，雇主不得與勞工為最低服務年限之約定：\n一、雇主為勞工進行專業技術培訓，並提供該項培訓費用者。\n二、雇主為使勞工遵守最低服務年限之約定，提供其合理補償者。\n(2)前項最低服務年限之約定，應就下列事項綜合考量，不得逾合理範圍：\n一、雇主為勞工進行專業技術培訓之期間及成本。\n二、從事相同或類似職務之勞工，其人力替補可能性。\n三、雇主提供勞工補償之額度及範圍。\n四、其他影響最低服務年限合理性之事項。\n(3)違反前二項規定者，其約定無效。\n(4)勞動契約因不可歸責於勞工之事由而於最低服務年限屆滿前終止者，勞工不負違反最低服務年限約定或返還訓練費用之責任。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=15-1",
+    "related_concepts": []
+  },
+  "LSA-16": {
+    "id": "LSA-16",
+    "chapter_no": 2,
+    "chapter_name": "勞動契約",
+    "article_no": "16",
+    "summary": null,
+    "content": "(1)雇主依第十一條或第十三條但書規定終止勞動契約者，其預告期間依左列各款之規定：\n一、繼續工作三個月以上一年未滿者，於十日前預告之。\n二、繼續工作一年以上三年未滿者，於二十日前預告之。\n三、繼續工作三年以上者，於三十日前預告之。\n(2)勞工於接到前項預告後，為另謀工作得於工作時間請假外出。其請假時數，每星期不得超過二日之工作時間，請假期間之工資照給。\n(3)雇主未依第一項規定期間預告而終止契約者，應給付預告期間之工資。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=16",
+    "related_concepts": []
+  },
+  "LSA-17": {
+    "id": "LSA-17",
+    "chapter_no": 2,
+    "chapter_name": "勞動契約",
+    "article_no": "17",
+    "summary": null,
+    "content": "(1)雇主依前條終止勞動契約者，應依下列規定發給勞工資遣費：\n一、在同一雇主之事業單位繼續工作，每滿一年發給相當於一個月平均工資之資遣費。\n二、依前款計算之剩餘月數，或工作未滿一年者，以比例計給之。未滿一個月者以一個月計。\n(2)前項所定資遣費，雇主應於終止勞動契約三十日內發給。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=17",
+    "related_concepts": []
+  },
+  "LSA-17-1": {
+    "id": "LSA-17-1",
+    "chapter_no": 2,
+    "chapter_name": "勞動契約",
+    "article_no": "17-1",
+    "summary": null,
+    "content": "(1)要派單位不得於派遣事業單位與派遣勞工簽訂勞動契約前，有面試該派遣勞工或其他指定特定派遣勞工之行為。\n(2)要派單位違反前項規定，且已受領派遣勞工勞務者，派遣勞工得於要派單位提供勞務之日起九十日內，以書面向要派單位提出訂定勞動契約之意思表示。\n(3)要派單位應自前項派遣勞工意思表示到達之日起十日內，與其協商訂定勞動契約。逾期未協商或協商不成立者，視為雙方自期滿翌日成立勞動契約，並以派遣勞工於要派單位工作期間之勞動條件為勞動契約內容。\n(4)派遣事業單位及要派單位不得因派遣勞工提出第二項意思表示，而予以解僱、降調、減薪、損害其依法令、契約或習慣上所應享有之權益，或其他不利之處分。\n(5)派遣事業單位及要派單位為前項行為之一者，無效。\n(6)派遣勞工因第二項及第三項規定與要派單位成立勞動契約者，其與派遣事業單位之勞動契約視為終止，且不負違反最低服務年限約定或返還訓練費用之責任。\n(7)前項派遣事業單位應依本法或勞工退休金條例規定之給付標準及期限，發給派遣勞工退休金或資遣費。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=17-1",
+    "related_concepts": []
+  },
+  "LSA-18": {
+    "id": "LSA-18",
+    "chapter_no": 2,
+    "chapter_name": "勞動契約",
+    "article_no": "18",
+    "summary": null,
+    "content": "有左列情形之一者，勞工不得向雇主請求加發預告期間工資及資遣費：\n一、依第十二條或第十五條規定終止勞動契約者。\n二、定期勞動契約期滿離職者。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=18",
+    "related_concepts": []
+  },
+  "LSA-19": {
+    "id": "LSA-19",
+    "chapter_no": 2,
+    "chapter_name": "勞動契約",
+    "article_no": "19",
+    "summary": null,
+    "content": "勞動契約終止時，勞工如請求發給服務證明書，雇主或其代理人不得拒絕。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=19",
+    "related_concepts": []
+  },
+  "LSA-20": {
+    "id": "LSA-20",
+    "chapter_no": 2,
+    "chapter_name": "勞動契約",
+    "article_no": "20",
+    "summary": null,
+    "content": "事業單位改組或轉讓時，除新舊雇主商定留用之勞工外，其餘勞工應依第十六條規定期間預告終止契約，並應依第十七條規定發給勞工資遣費。其留用勞工之工作年資，應由新雇主繼續予以承認。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=20",
+    "related_concepts": []
+  },
+  "LSA-21": {
+    "id": "LSA-21",
+    "chapter_no": 3,
+    "chapter_name": "工資",
+    "article_no": "21",
+    "summary": null,
+    "content": "(1)工資由勞雇雙方議定之。但不得低於基本工資。\n(2)前項基本工資，由中央主管機關設基本工資審議委員會擬訂後，報請行政院核定之。\n(3)前項基本工資審議委員會之組織及其審議程序等事項，由中央主管機關另以辦法定之。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=21",
+    "related_concepts": []
+  },
+  "LSA-22": {
+    "id": "LSA-22",
+    "chapter_no": 3,
+    "chapter_name": "工資",
+    "article_no": "22",
+    "summary": null,
+    "content": "(1)工資之給付，應以法定通用貨幣為之。但基於習慣或業務性質，得於勞動契約內訂明一部以實物給付之。工資之一部以實物給付時，其實物之作價應公平合理，並適合勞工及其家屬之需要。\n(2)工資應全額直接給付勞工。但法令另有規定或勞雇雙方另有約定者，不在此限。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=22",
+    "related_concepts": []
+  },
+  "LSA-22-1": {
+    "id": "LSA-22-1",
+    "chapter_no": 3,
+    "chapter_name": "工資",
+    "article_no": "22-1",
+    "summary": null,
+    "content": "(1)派遣事業單位積欠派遣勞工工資，經主管機關處罰或依第二十七條規定限期令其給付而屆期未給付者，派遣勞工得請求要派單位給付。要派單位應自派遣勞工請求之日起三十日內給付之。\n(2)要派單位依前項規定給付者，得向派遣事業單位求償或扣抵要派契約之應付費用。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=22-1",
+    "related_concepts": []
+  },
+  "LSA-23": {
+    "id": "LSA-23",
+    "chapter_no": 3,
+    "chapter_name": "工資",
+    "article_no": "23",
+    "summary": null,
+    "content": "(1)工資之給付，除當事人有特別約定或按月預付者外，每月至少定期發給二次，並應提供工資各項目計算方式明細；按件計酬者亦同。\n(2)雇主應置備勞工工資清冊，將發放工資、工資各項目計算方式明細、工資總額等事項記入。工資清冊應保存五年。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=23",
+    "related_concepts": []
+  },
+  "LSA-24": {
+    "id": "LSA-24",
+    "chapter_no": 3,
+    "chapter_name": "工資",
+    "article_no": "24",
+    "summary": null,
+    "content": "(1)雇主延長勞工工作時間者，其延長工作時間之工資，依下列標準加給：\n一、延長工作時間在二小時以內者，按平日每小時工資額加給三分之一以上。\n二、再延長工作時間在二小時以內者，按平日每小時工資額加給三分之二以上。\n三、依第三十二條第四項規定，延長工作時間者，按平日每小時工資額加倍發給。\n(2)雇主使勞工於第三十六條所定休息日工作，工作時間在二小時以內者，其工資按平日每小時工資額另再加給一又三分之一以上；工作二小時後再繼續工作者，按平日每小時工資額另再加給一又三分之二以上。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=24",
+    "related_concepts": []
+  },
+  "LSA-25": {
+    "id": "LSA-25",
+    "chapter_no": 3,
+    "chapter_name": "工資",
+    "article_no": "25",
+    "summary": null,
+    "content": "雇主對勞工不得因性別而有差別之待遇。工作相同、效率相同者，給付同等之工資。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=25",
+    "related_concepts": []
+  },
+  "LSA-26": {
+    "id": "LSA-26",
+    "chapter_no": 3,
+    "chapter_name": "工資",
+    "article_no": "26",
+    "summary": null,
+    "content": "雇主不得預扣勞工工資作為違約金或賠償費用。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=26",
+    "related_concepts": []
+  },
+  "LSA-27": {
+    "id": "LSA-27",
+    "chapter_no": 3,
+    "chapter_name": "工資",
+    "article_no": "27",
+    "summary": null,
+    "content": "雇主不按期給付工資者，主管機關得限期令其給付。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=27",
+    "related_concepts": []
+  },
+  "LSA-28": {
+    "id": "LSA-28",
+    "chapter_no": 3,
+    "chapter_name": "工資",
+    "article_no": "28",
+    "summary": null,
+    "content": "(1)雇主有歇業、清算或宣告破產之情事時，勞工之下列債權受償順序與第一順位抵押權、質權或留置權所擔保之債權相同，按其債權比例受清償；未獲清償部分，有最優先受清償之權：\n一、本於勞動契約所積欠之工資未滿六個月部分。\n二、雇主未依本法給付之退休金。\n三、雇主未依本法或勞工退休金條例給付之資遣費。\n(2)雇主應按其當月僱用勞工投保薪資總額及規定之費率，繳納一定數額之積欠工資墊償基金，作為墊償下列各款之用：\n一、前項第一款積欠之工資數額。\n二、前項第二款與第三款積欠之退休金及資遣費，其合計數額以六個月平均工資為限。\n(3)積欠工資墊償基金，累積至一定金額後，應降低費率或暫停收繳。\n(4)第二項費率，由中央主管機關於萬分之十五範圍內擬訂，報請行政院核定之。\n(5)雇主積欠之工資、退休金及資遣費，經勞工請求未獲清償者，由積欠工資墊償基金依第二項規定墊償之；雇主應於規定期限內，將墊款償還積欠工資墊償基金。\n(6)積欠工資墊償基金，由中央主管機關設管理委員會管理之。基金之收繳有關業務，得由中央主管機關，委託勞工保險機構辦理之。基金墊償程序、收繳與管理辦法、第三項之一定金額及管理委員會組織規程，由中央主管機關定之。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=28",
+    "related_concepts": []
+  },
+  "LSA-29": {
+    "id": "LSA-29",
+    "chapter_no": 3,
+    "chapter_name": "工資",
+    "article_no": "29",
+    "summary": null,
+    "content": "事業單位於營業年度終了結算，如有盈餘，除繳納稅捐、彌補虧損及提列股息、公積金外，對於全年工作並無過失之勞工，應給與獎金或分配紅利。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=29",
+    "related_concepts": []
+  },
+  "LSA-30": {
+    "id": "LSA-30",
+    "chapter_no": 4,
+    "chapter_name": "工作時間、休息、休假",
+    "article_no": "30",
+    "summary": null,
+    "content": "(1)勞工正常工作時間，每日不得超過八小時，每週不得超過四十小時。\n(2)前項正常工作時間，雇主經工會同意，如事業單位無工會者，經勞資會議同意後，得將其二週內二日之正常工作時數，分配於其他工作日。其分配於其他工作日之時數，每日不得超過二小時。但每週工作總時數不得超過四十八小時。\n(3)第一項正常工作時間，雇主經工會同意，如事業單位無工會者，經勞資會議同意後，得將八週內之正常工作時數加以分配。但每日正常工作時間不得超過八小時，每週工作總時數不得超過四十八小時。\n(4)前二項規定，僅適用於經中央主管機關指定之行業。\n(5)雇主應置備勞工出勤紀錄，並保存五年。\n(6)前項出勤紀錄，應逐日記載勞工出勤情形至分鐘為止。勞工向雇主申請其出勤紀錄副本或影本時，雇主不得拒絕。\n(7)雇主不得以第一項正常工作時間之修正，作為減少勞工工資之事由。\n(8)第一項至第三項及第三十條之一之正常工作時間，雇主得視勞工照顧家庭成員需要，允許勞工於不變更每日正常工作時數下，在一小時範圍內，彈性調整工作開始及終止之時間。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=30",
+    "related_concepts": []
+  },
+  "LSA-30-1": {
+    "id": "LSA-30-1",
+    "chapter_no": 4,
+    "chapter_name": "工作時間、休息、休假",
+    "article_no": "30-1",
+    "summary": null,
+    "content": "(1)中央主管機關指定之行業，雇主經工會同意，如事業單位無工會者，經勞資會議同意後，其工作時間得依下列原則變更：\n一、四週內正常工作時數分配於其他工作日之時數，每日不得超過二小時，不受前條第二項至第四項規定之限制。\n二、當日正常工作時間達十小時者，其延長之工作時間不得超過二小時。\n三、女性勞工，除妊娠或哺乳期間者外，於夜間工作，不受第四十九條第一項之限制。但雇主應提供必要之安全衛生設施。\n(2)依中華民國八十五年十二月二十七日修正施行前第三條規定適用本法之行業，除第一項第一款之農、林、漁、牧業外，均不適用前項規定。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=30-1",
+    "related_concepts": []
+  },
+  "LSA-31": {
+    "id": "LSA-31",
+    "chapter_no": 4,
+    "chapter_name": "工作時間、休息、休假",
+    "article_no": "31",
+    "summary": null,
+    "content": "在坑道或隧道內工作之勞工，以入坑口時起至出坑口時止為工作時間。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=31",
+    "related_concepts": []
+  },
+  "LSA-32": {
+    "id": "LSA-32",
+    "chapter_no": 4,
+    "chapter_name": "工作時間、休息、休假",
+    "article_no": "32",
+    "summary": null,
+    "content": "(1)雇主有使勞工在正常工作時間以外工作之必要者，雇主經工會同意，如事業單位無工會者，經勞資會議同意後，得將工作時間延長之。\n(2)前項雇主延長勞工之工作時間連同正常工作時間，一日不得超過十二小時；延長之工作時間，一個月不得超過四十六小時，但雇主經工會同意，如事業單位無工會者，經勞資會議同意後，延長之工作時間，一個月不得超過五十四小時，每三個月不得超過一百三十八小時。\n(3)雇主僱用勞工人數在三十人以上，依前項但書規定延長勞工工作時間者，應報當地主管機關備查。\n(4)因天災、事變或突發事件，雇主有使勞工在正常工作時間以外工作之必要者，得將工作時間延長之。但應於延長開始後二十四小時內通知工會；無工會組織者，應報當地主管機關備查。延長之工作時間，雇主應於事後補給勞工以適當之休息。\n(5)在坑內工作之勞工，其工作時間不得延長。但以監視為主之工作，或有前項所定之情形者，不在此限。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=32",
+    "related_concepts": []
+  },
+  "LSA-32-1": {
+    "id": "LSA-32-1",
+    "chapter_no": 4,
+    "chapter_name": "工作時間、休息、休假",
+    "article_no": "32-1",
+    "summary": null,
+    "content": "(1)雇主依第三十二條第一項及第二項規定使勞工延長工作時間，或使勞工於第三十六條所定休息日工作後，依勞工意願選擇補休並經雇主同意者，應依勞工工作之時數計算補休時數。\n(2)前項之補休，其補休期限由勞雇雙方協商；補休期限屆期或契約終止未補休之時數，應依延長工作時間或休息日工作當日之工資計算標準發給工資；未發給工資者，依違反第二十四條規定論處。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=32-1",
+    "related_concepts": []
+  },
+  "LSA-33": {
+    "id": "LSA-33",
+    "chapter_no": 4,
+    "chapter_name": "工作時間、休息、休假",
+    "article_no": "33",
+    "summary": null,
+    "content": "第三條所列事業，除製造業及礦業外，因公眾之生活便利或其他特殊原因，有調整第三十條、第三十二條所定之正常工作時間及延長工作時間之必要者，得由當地主管機關會商目的事業主管機關及工會，就必要之限度內以命令調整之。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=33",
+    "related_concepts": []
+  },
+  "LSA-34": {
+    "id": "LSA-34",
+    "chapter_no": 4,
+    "chapter_name": "工作時間、休息、休假",
+    "article_no": "34",
+    "summary": null,
+    "content": "(1)勞工工作採輪班制者，其工作班次，每週更換一次。但經勞工同意者不在此限。\n(2)依前項更換班次時，至少應有連續十一小時之休息時間。但因工作特性或特殊原因，經中央目的事業主管機關商請中央主管機關公告者，得變更休息時間不少於連續八小時。\n(3)雇主依前項但書規定變更休息時間者，應經工會同意，如事業單位無工會者，經勞資會議同意後，始得為之。雇主僱用勞工人數在三十人以上者，應報當地主管機關備查。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=34",
+    "related_concepts": []
+  },
+  "LSA-35": {
+    "id": "LSA-35",
+    "chapter_no": 4,
+    "chapter_name": "工作時間、休息、休假",
+    "article_no": "35",
+    "summary": null,
+    "content": "勞工繼續工作四小時，至少應有三十分鐘之休息。但實行輪班制或其工作有連續性或緊急性者，雇主得在工作時間內，另行調配其休息時間。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=35",
+    "related_concepts": []
+  },
+  "LSA-36": {
+    "id": "LSA-36",
+    "chapter_no": 4,
+    "chapter_name": "工作時間、休息、休假",
+    "article_no": "36",
+    "summary": null,
+    "content": "(1)勞工每七日中應有二日之休息，其中一日為例假，一日為休息日。\n(2)雇主有下列情形之一，不受前項規定之限制：\n一、依第三十條第二項規定變更正常工作時間者，勞工每七日中至少應有一日之例假，每二週內之例假及休息日至少應有四日。\n二、依第三十條第三項規定變更正常工作時間者，勞工每七日中至少應有一日之例假，每八週內之例假及休息日至少應有十六日。\n三、依第三十條之一規定變更正常工作時間者，勞工每二週內至少應有二日之例假，每四週內之例假及休息日至少應有八日。\n(3)雇主使勞工於休息日工作之時間，計入第三十二條第二項所定延長工作時間總數。但因天災、事變或突發事件，雇主有使勞工於休息日工作之必要者，其工作時數不受第三十二條第二項規定之限制。\n(4)經中央目的事業主管機關同意，且經中央主管機關指定之行業，雇主得將第一項、第二項第一款及第二款所定之例假，於每七日之週期內調整之。\n(5)前項所定例假之調整，應經工會同意，如事業單位無工會者，經勞資會議同意後，始得為之。雇主僱用勞工人數在三十人以上者，應報當地主管機關備查。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=36",
+    "related_concepts": []
+  },
+  "LSA-37": {
+    "id": "LSA-37",
+    "chapter_no": 4,
+    "chapter_name": "工作時間、休息、休假",
+    "article_no": "37",
+    "summary": null,
+    "content": "(1)內政部所定應放假之紀念日、節日、勞動節及其他中央主管機關指定應放假日，均應休假。\n(2)中華民國一百零五年十二月六日修正之前項規定，自一百零六年一月一日施行。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=37",
+    "related_concepts": []
+  },
+  "LSA-38": {
+    "id": "LSA-38",
+    "chapter_no": 4,
+    "chapter_name": "工作時間、休息、休假",
+    "article_no": "38",
+    "summary": null,
+    "content": "(1)勞工在同一雇主或事業單位，繼續工作滿一定期間者，應依下列規定給予特別休假：\n一、六個月以上一年未滿者，三日。\n二、一年以上二年未滿者，七日。\n三、二年以上三年未滿者，十日。\n四、三年以上五年未滿者，每年十四日。\n五、五年以上十年未滿者，每年十五日。\n六、十年以上者，每一年加給一日，加至三十日為止。\n(2)前項之特別休假期日，由勞工排定之。但雇主基於企業經營上之急迫需求或勞工因個人因素，得與他方協商調整。\n(3)雇主應於勞工符合第一項所定之特別休假條件時，告知勞工依前二項規定排定特別休假。\n(4)勞工之特別休假，因年度終結或契約終止而未休之日數，雇主應發給工資。但年度終結未休之日數，經勞雇雙方協商遞延至次一年度實施者，於次一年度終結或契約終止仍未休之日數，雇主應發給工資。\n(5)雇主應將勞工每年特別休假之期日及未休之日數所發給之工資數額，記載於第二十三條所定之勞工工資清冊，並每年定期將其內容以書面通知勞工。\n(6)勞工依本條主張權利時，雇主如認為其權利不存在，應負舉證責任。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=38",
+    "related_concepts": []
+  },
+  "LSA-39": {
+    "id": "LSA-39",
+    "chapter_no": 4,
+    "chapter_name": "工作時間、休息、休假",
+    "article_no": "39",
+    "summary": null,
+    "content": "第三十六條所定之例假、休息日、第三十七條所定之休假及第三十八條所定之特別休假，工資應由雇主照給。雇主經徵得勞工同意於休假日工作者，工資應加倍發給。因季節性關係有趕工必要，經勞工或工會同意照常工作者，亦同。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=39",
+    "related_concepts": []
+  },
+  "LSA-40": {
+    "id": "LSA-40",
+    "chapter_no": 4,
+    "chapter_name": "工作時間、休息、休假",
+    "article_no": "40",
+    "summary": null,
+    "content": "(1)因天災、事變或突發事件，雇主認有繼續工作之必要時，得停止第三十六條至第三十八條所定勞工之假期。但停止假期之工資，應加倍發給，並應於事後補假休息。\n(2)前項停止勞工假期，應於事後二十四小時內，詳述理由，報請當地主管機關核備。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=40",
+    "related_concepts": []
+  },
+  "LSA-41": {
+    "id": "LSA-41",
+    "chapter_no": 4,
+    "chapter_name": "工作時間、休息、休假",
+    "article_no": "41",
+    "summary": null,
+    "content": "公用事業之勞工，當地主管機關認有必要時，得停止第三十八條所定之特別休假。假期內之工資應由雇主加倍發給。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=41",
+    "related_concepts": []
+  },
+  "LSA-42": {
+    "id": "LSA-42",
+    "chapter_no": 4,
+    "chapter_name": "工作時間、休息、休假",
+    "article_no": "42",
+    "summary": null,
+    "content": "勞工因健康或其他正當理由，不能接受正常工作時間以外之工作者，雇主不得強制其工作。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=42",
+    "related_concepts": []
+  },
+  "LSA-43": {
+    "id": "LSA-43",
+    "chapter_no": 4,
+    "chapter_name": "工作時間、休息、休假",
+    "article_no": "43",
+    "summary": null,
+    "content": "勞工因婚、喪、疾病或其他正當事由得請假；請假應給之假期及事假以外期間內工資給付之最低標準，由中央主管機關定之。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=43",
+    "related_concepts": []
+  },
+  "LSA-44": {
+    "id": "LSA-44",
+    "chapter_no": 5,
+    "chapter_name": "童工、女工",
+    "article_no": "44",
+    "summary": null,
+    "content": "(1)十五歲以上未滿十六歲之受僱從事工作者，為童工。\n(2)童工及十六歲以上未滿十八歲之人，不得從事危險性或有害性之工作。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=44",
+    "related_concepts": []
+  },
+  "LSA-45": {
+    "id": "LSA-45",
+    "chapter_no": 5,
+    "chapter_name": "童工、女工",
+    "article_no": "45",
+    "summary": null,
+    "content": "(1)雇主不得僱用未滿十五歲之人從事工作。但國民中學畢業或經主管機關認定其工作性質及環境無礙其身心健康而許可者，不在此限。\n(2)前項受僱之人，準用童工保護之規定。\n(3)第一項工作性質及環境無礙其身心健康之認定基準、審查程序及其他應遵行事項之辦法，由中央主管機關依勞工年齡、工作性質及受國民義務教育之時間等因素定之。\n(4)未滿十五歲之人透過他人取得工作為第三人提供勞務，或直接為他人提供勞務取得報酬未具勞僱關係者，準用前項及童工保護之規定。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=45",
+    "related_concepts": []
+  },
+  "LSA-46": {
+    "id": "LSA-46",
+    "chapter_no": 5,
+    "chapter_name": "童工、女工",
+    "article_no": "46",
+    "summary": null,
+    "content": "未滿十八歲之人受僱從事工作者，雇主應置備其法定代理人同意書及其年齡證明文件。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=46",
+    "related_concepts": []
+  },
+  "LSA-47": {
+    "id": "LSA-47",
+    "chapter_no": 5,
+    "chapter_name": "童工、女工",
+    "article_no": "47",
+    "summary": null,
+    "content": "童工每日之工作時間不得超過八小時，每週之工作時間不得超過四十小時，例假日不得工作。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=47",
+    "related_concepts": []
+  },
+  "LSA-48": {
+    "id": "LSA-48",
+    "chapter_no": 5,
+    "chapter_name": "童工、女工",
+    "article_no": "48",
+    "summary": null,
+    "content": "童工不得於午後八時至翌晨六時之時間內工作。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=48",
+    "related_concepts": []
+  },
+  "LSA-49": {
+    "id": "LSA-49",
+    "chapter_no": 5,
+    "chapter_name": "童工、女工",
+    "article_no": "49",
+    "summary": null,
+    "content": "(1)雇主不得使女工於午後十時至翌晨六時之時間內工作。但雇主經工會同意，如事業單位無工會者，經勞資會議同意後，且符合下列各款規定者，不在此限：\n一、提供必要之安全衛生設施。\n二、無大眾運輸工具可資運用時，提供交通工具或安排女工宿舍。\n(2)前項第一款所稱必要之安全衛生設施，其標準由中央主管機關定之。但雇主與勞工約定之安全衛生設施優於本法者，從其約定。\n(3)女工因健康或其他正當理由，不能於午後十時至翌晨六時之時間內工作者，雇主不得強制其工作。\n(4)第一項規定，於因天災、事變或突發事件，雇主必須使女工於午後十時至翌晨六時之時間內工作時，不適用之。\n(5)第一項但書及前項規定，於妊娠或哺乳期間之女工，不適用之。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=49",
+    "related_concepts": []
+  },
+  "LSA-50": {
+    "id": "LSA-50",
+    "chapter_no": 5,
+    "chapter_name": "童工、女工",
+    "article_no": "50",
+    "summary": null,
+    "content": "(1)女工分娩前後，應停止工作，給予產假八星期；妊娠三個月以上流產者，應停止工作，給予產假四星期。\n(2)前項女工受僱工作在六個月以上者，停止工作期間工資照給；未滿六個月者減半發給。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=50",
+    "related_concepts": []
+  },
+  "LSA-51": {
+    "id": "LSA-51",
+    "chapter_no": 5,
+    "chapter_name": "童工、女工",
+    "article_no": "51",
+    "summary": null,
+    "content": "女工在妊娠期間，如有較為輕易之工作，得申請改調，雇主不得拒絕，並不得減少其工資。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=51",
+    "related_concepts": []
+  },
+  "LSA-52": {
+    "id": "LSA-52",
+    "chapter_no": 5,
+    "chapter_name": "童工、女工",
+    "article_no": "52",
+    "summary": null,
+    "content": "(1)子女未滿一歲須女工親自哺乳者，於第三十五條規定之休息時間外，雇主應每日另給哺乳時間二次，每次以三十分鐘為度。\n(2)前項哺乳時間，視為工作時間。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=52",
+    "related_concepts": []
+  },
+  "LSA-53": {
+    "id": "LSA-53",
+    "chapter_no": 6,
+    "chapter_name": "退休",
+    "article_no": "53",
+    "summary": null,
+    "content": "勞工有下列情形之一，得自請退休：\n一、工作十五年以上年滿五十五歲者。\n二、工作二十五年以上者。\n三、工作十年以上年滿六十歲者。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=53",
+    "related_concepts": []
+  },
+  "LSA-54": {
+    "id": "LSA-54",
+    "chapter_no": 6,
+    "chapter_name": "退休",
+    "article_no": "54",
+    "summary": null,
+    "content": "(1)勞工非有下列情形之一，雇主不得強制其退休：\n一、年滿六十五歲者。\n二、身心障礙不堪勝任工作者。\n(2)前項第一款所規定之年齡，得由勞雇雙方協商延後之；對於擔任具有危險、堅強體力等特殊性質之工作者，得由事業單位報請中央主管機關予以調整，但不得少於五十五歲。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=54",
+    "related_concepts": []
+  },
+  "LSA-55": {
+    "id": "LSA-55",
+    "chapter_no": 6,
+    "chapter_name": "退休",
+    "article_no": "55",
+    "summary": null,
+    "content": "(1)勞工退休金之給與標準如下：\n一、按其工作年資，每滿一年給與兩個基數。但超過十五年之工作年資，每滿一年給與一個基數，最高總數以四十五個基數為限。未滿半年者以半年計；滿半年者以一年計。\n二、依第五十四條第一項第二款規定，強制退休之勞工，其身心障礙係因執行職務所致者，依前款規定加給百分之二十。\n(2)前項第一款退休金基數之標準，係指核准退休時一個月平均工資。\n(3)第一項所定退休金，雇主應於勞工退休之日起三十日內給付，如無法一次發給時，得報經主管機關核定後，分期給付。本法施行前，事業單位原定退休標準優於本法者，從其規定。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=55",
+    "related_concepts": []
+  },
+  "LSA-56": {
+    "id": "LSA-56",
+    "chapter_no": 6,
+    "chapter_name": "退休",
+    "article_no": "56",
+    "summary": null,
+    "content": "(1)雇主應依勞工每月薪資總額百分之二至百分之十五範圍內，按月提撥勞工退休準備金，專戶存儲，並不得作為讓與、扣押、抵銷或擔保之標的；其提撥之比率、程序及管理等事項之辦法，由中央主管機關擬訂，報請行政院核定之。\n(2)雇主應於每年年度終了前，估算前項勞工退休準備金專戶餘額，該餘額不足給付次一年度內預估成就第五十三條或第五十四條第一項第一款退休條件之勞工，依前條計算之退休金數額者，雇主應於次年度三月底前一次提撥其差額，並送事業單位勞工退休準備金監督委員會審議。\n(3)第一項雇主按月提撥之勞工退休準備金匯集為勞工退休基金，由中央主管機關設勞工退休基金監理委員會管理之；其組織、會議及其他相關事項，由中央主管機關定之。\n(4)前項基金之收支、保管及運用，由中央主管機關會同財政部委託金融機構辦理。最低收益不得低於當地銀行二年定期存款利率之收益；如有虧損，由國庫補足之。基金之收支、保管及運用辦法，由中央主管機關擬訂，報請行政院核定之。\n(5)雇主所提撥勞工退休準備金，應由勞工與雇主共同組織勞工退休準備金監督委員會監督之。委員會中勞工代表人數不得少於三分之二；其組織準則，由中央主管機關定之。\n(6)雇主按月提撥之勞工退休準備金比率之擬訂或調整，應經事業單位勞工退休準備金監督委員會審議通過，並報請當地主管機關核定。\n(7)金融機構辦理核貸業務，需查核該事業單位勞工退休準備金提撥狀況之必要資料時，得請當地主管機關提供。\n(8)金融機構依前項取得之資料，應負保密義務，並確實辦理資料安全稽核作業。\n(9)前二項有關勞工退休準備金必要資料之內容、範圍、申請程序及其他應遵行事項之辦法，由中央主管機關會商金融監督管理委員會定之。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=56",
+    "related_concepts": []
+  },
+  "LSA-57": {
+    "id": "LSA-57",
+    "chapter_no": 6,
+    "chapter_name": "退休",
+    "article_no": "57",
+    "summary": null,
+    "content": "勞工工作年資以服務同一事業者為限。但受同一雇主調動之工作年資，及依第二十條規定應由新雇主繼續予以承認之年資，應予併計。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=57",
+    "related_concepts": []
+  },
+  "LSA-58": {
+    "id": "LSA-58",
+    "chapter_no": 6,
+    "chapter_name": "退休",
+    "article_no": "58",
+    "summary": null,
+    "content": "(1)勞工請領退休金之權利，自退休之次月起，因五年間不行使而消滅。\n(2)勞工請領退休金之權利，不得讓與、抵銷、扣押或供擔保。\n(3)勞工依本法規定請領勞工退休金者，得檢具證明文件，於金融機構開立專戶，專供存入勞工退休金之用。\n(4)前項專戶內之存款，不得作為抵銷、扣押、供擔保或強制執行之標的。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=58",
+    "related_concepts": []
+  },
+  "LSA-59": {
+    "id": "LSA-59",
+    "chapter_no": 7,
+    "chapter_name": "職業災害補償",
+    "article_no": "59",
+    "summary": null,
+    "content": "勞工因遭遇職業災害而致死亡、失能、傷害或疾病時，雇主應依下列規定予以補償。但如同一事故，依勞工保險條例或其他法令規定，已由雇主支付費用補償者，雇主得予以抵充之：\n一、勞工受傷或罹患職業病時，雇主應補償其必需之醫療費用。職業病之種類及其醫療範圍，依勞工保險條例有關之規定。\n二、勞工在醫療中不能工作時，雇主應按其原領工資數額予以補償。但醫療期間屆滿二年仍未能痊癒，經指定之醫院診斷，審定為喪失原有工作能力，且不合第三款之失能給付標準者，雇主得一次給付四十個月之平均工資後，免除此項工資補償責任。\n三、勞工經治療終止後，經指定之醫院診斷，審定其遺存障害者，雇主應按其平均工資及其失能程度，一次給予失能補償。失能補償標準，依勞工保險條例有關之規定。\n四、勞工遭遇職業傷害或罹患職業病而死亡時，雇主除給與五個月平均工資之喪葬費外，並應一次給與其遺屬四十個月平均工資之死亡補償。其遺屬受領死亡補償之順位如下：\n（一）配偶及子女。\n（二）父母。\n（三）祖父母。\n（四）孫子女。\n（五）兄弟姐妹。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=59",
+    "related_concepts": []
+  },
+  "LSA-60": {
+    "id": "LSA-60",
+    "chapter_no": 7,
+    "chapter_name": "職業災害補償",
+    "article_no": "60",
+    "summary": null,
+    "content": "雇主依前條規定給付之補償金額，得抵充就同一事故所生損害之賠償金額。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=60",
+    "related_concepts": []
+  },
+  "LSA-61": {
+    "id": "LSA-61",
+    "chapter_no": 7,
+    "chapter_name": "職業災害補償",
+    "article_no": "61",
+    "summary": null,
+    "content": "(1)第五十九條之受領補償權，自得受領之日起，因二年間不行使而消滅。\n(2)受領補償之權利，不因勞工之離職而受影響，且不得讓與、抵銷、扣押或供擔保。\n(3)勞工或其遺屬依本法規定受領職業災害補償金者，得檢具證明文件，於金融機構開立專戶，專供存入職業災害補償金之用。\n(4)前項專戶內之存款，不得作為抵銷、扣押、供擔保或強制執行之標的。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=61",
+    "related_concepts": []
+  },
+  "LSA-62": {
+    "id": "LSA-62",
+    "chapter_no": 7,
+    "chapter_name": "職業災害補償",
+    "article_no": "62",
+    "summary": null,
+    "content": "(1)事業單位以其事業招人承攬，如有再承攬時，承攬人或中間承攬人，就各該承攬部分所使用之勞工，均應與最後承攬人，連帶負本章所定雇主應負職業災害補償之責任。\n(2)事業單位或承攬人或中間承攬人，為前項之災害補償時，就其所補償之部分，得向最後承攬人求償。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=62",
+    "related_concepts": []
+  },
+  "LSA-63": {
+    "id": "LSA-63",
+    "chapter_no": 7,
+    "chapter_name": "職業災害補償",
+    "article_no": "63",
+    "summary": null,
+    "content": "(1)承攬人或再承攬人工作場所，在原事業單位工作場所範圍內，或為原事業單位提供者，原事業單位應督促承攬人或再承攬人，對其所僱用勞工之勞動條件應符合有關法令之規定。\n(2)事業單位違背職業安全衛生法有關對於承攬人、再承攬人應負責任之規定，致承攬人或再承攬人所僱用之勞工發生職業災害時，應與該承攬人、再承攬人負連帶補償責任。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=63",
+    "related_concepts": []
+  },
+  "LSA-63-1": {
+    "id": "LSA-63-1",
+    "chapter_no": 7,
+    "chapter_name": "職業災害補償",
+    "article_no": "63-1",
+    "summary": null,
+    "content": "(1)要派單位使用派遣勞工發生職業災害時，要派單位應與派遣事業單位連帶負本章所定雇主應負職業災害補償之責任。\n(2)前項之職業災害依勞工保險條例或其他法令規定，已由要派單位或派遣事業單位支付費用補償者，得主張抵充。\n(3)要派單位及派遣事業單位因違反本法或有關安全衛生規定，致派遣勞工發生職業災害時，應連帶負損害賠償之責任。\n(4)要派單位或派遣事業單位依本法規定給付之補償金額，得抵充就同一事故所生損害之賠償金額。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=63-1",
+    "related_concepts": []
+  },
+  "LSA-64": {
+    "id": "LSA-64",
+    "chapter_no": 8,
+    "chapter_name": "技術生",
+    "article_no": "64",
+    "summary": null,
+    "content": "(1)雇主不得招收未滿十五歲之人為技術生。但國民中學畢業者，不在此限。\n(2)稱技術生者，指依中央主管機關規定之技術生訓練職類中以學習技能為目的，依本章之規定而接受雇主訓練之人。\n(3)本章規定，於事業單位之養成工、見習生、建教合作班之學生及其他與技術生性質相類之人，準用之。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=64",
+    "related_concepts": []
+  },
+  "LSA-65": {
+    "id": "LSA-65",
+    "chapter_no": 8,
+    "chapter_name": "技術生",
+    "article_no": "65",
+    "summary": null,
+    "content": "(1)雇主招收技術生時，須與技術生簽訂書面訓練契約一式三份，訂明訓練項目、訓練期限、膳宿負擔、生活津貼、相關教學、勞工保險、結業證明、契約生效與解除之條件及其他有關雙方權利、義務事項，由當事人分執，並送主管機關備案。\n(2)前項技術生如為未成年人，其訓練契約，應得法定代理人之允許。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=65",
+    "related_concepts": []
+  },
+  "LSA-66": {
+    "id": "LSA-66",
+    "chapter_no": 8,
+    "chapter_name": "技術生",
+    "article_no": "66",
+    "summary": null,
+    "content": "雇主不得向技術生收取有關訓練費用。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=66",
+    "related_concepts": []
+  },
+  "LSA-67": {
+    "id": "LSA-67",
+    "chapter_no": 8,
+    "chapter_name": "技術生",
+    "article_no": "67",
+    "summary": null,
+    "content": "技術生訓練期滿，雇主得留用之，並應與同等工作之勞工享受同等之待遇。雇主如於技術生訓練契約內訂明留用期間，應不得超過其訓練期間。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=67",
+    "related_concepts": []
+  },
+  "LSA-68": {
+    "id": "LSA-68",
+    "chapter_no": 8,
+    "chapter_name": "技術生",
+    "article_no": "68",
+    "summary": null,
+    "content": "技術生人數，不得超過勞工人數四分之一。勞工人數不滿四人者，以四人計。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=68",
+    "related_concepts": []
+  },
+  "LSA-69": {
+    "id": "LSA-69",
+    "chapter_no": 8,
+    "chapter_name": "技術生",
+    "article_no": "69",
+    "summary": null,
+    "content": "(1)本法第四章工作時間、休息、休假，第五章童工、女工，第七章災害補償及其他勞工保險等有關規定，於技術生準用之。\n(2)技術生災害補償所採薪資計算之標準，不得低於基本工資。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=69",
+    "related_concepts": []
+  },
+  "LSA-70": {
+    "id": "LSA-70",
+    "chapter_no": 9,
+    "chapter_name": "工作規則",
+    "article_no": "70",
+    "summary": null,
+    "content": "雇主僱用勞工人數在三十人以上者，應依其事業性質，就左列事項訂立工作規則，報請主管機關核備後並公開揭示之：\n一、工作時間、休息、休假、國定紀念日、特別休假及繼續性工作之輪班方法。\n二、工資之標準、計算方法及發放日期。\n三、延長工作時間。\n四、津貼及獎金。\n五、應遵守之紀律。\n六、考勤、請假、獎懲及升遷。\n七、受僱、解僱、資遣、離職及退休。\n八、災害傷病補償及撫卹。\n九、福利措施。\n十、勞雇雙方應遵守勞工安全衛生規定。\n十一、勞雇雙方溝通意見加強合作之方法。\n十二、其他。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=70",
+    "related_concepts": []
+  },
+  "LSA-71": {
+    "id": "LSA-71",
+    "chapter_no": 9,
+    "chapter_name": "工作規則",
+    "article_no": "71",
+    "summary": null,
+    "content": "工作規則，違反法令之強制或禁止規定或其他有關該事業適用之團體協約規定者，無效。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=71",
+    "related_concepts": []
+  },
+  "LSA-72": {
+    "id": "LSA-72",
+    "chapter_no": 10,
+    "chapter_name": "監督與檢查",
+    "article_no": "72",
+    "summary": null,
+    "content": "(1)中央主管機關，為貫徹本法及其他勞工法令之執行，設勞工檢查機構或授權直轄市主管機關專設檢查機構辦理之；直轄市、縣（市）主管機關於必要時，亦得派員實施檢查。\n(2)前項勞工檢查機構之組織，由中央主管機關定之。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=72",
+    "related_concepts": []
+  },
+  "LSA-73": {
+    "id": "LSA-73",
+    "chapter_no": 10,
+    "chapter_name": "監督與檢查",
+    "article_no": "73",
+    "summary": null,
+    "content": "(1)檢查員執行職務，應出示檢查證，各事業單位不得拒絕。事業單位拒絕檢查時，檢查員得會同當地主管機關或警察機關強制檢查之。\n(2)檢查員執行職務，得就本法規定事項，要求事業單位提出必要之報告、紀錄、帳冊及有關文件或書面說明。如需抽取物料、樣品或資料時，應事先通知雇主或其代理人並掣給收據。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=73",
+    "related_concepts": []
+  },
+  "LSA-74": {
+    "id": "LSA-74",
+    "chapter_no": 10,
+    "chapter_name": "監督與檢查",
+    "article_no": "74",
+    "summary": null,
+    "content": "(1)勞工發現事業單位違反本法及其他勞工法令規定時，得向雇主、主管機關或檢查機構申訴。\n(2)雇主不得因勞工為前項申訴，而予以解僱、降調、減薪、損害其依法令、契約或習慣上所應享有之權益，或其他不利之處分。\n(3)雇主為前項行為之一者，無效。\n(4)主管機關或檢查機構於接獲第一項申訴後，應為必要之調查，並於六十日內將處理情形，以書面通知勞工。\n(5)主管機關或檢查機構應對申訴人身分資料嚴守秘密，不得洩漏足以識別其身分之資訊。\n(6)違反前項規定者，除公務員應依法追究刑事與行政責任外，對因此受有損害之勞工，應負損害賠償責任。\n(7)主管機關受理檢舉案件之保密及其他應遵行事項之辦法，由中央主管機關定之。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=74",
+    "related_concepts": []
+  },
+  "LSA-75": {
+    "id": "LSA-75",
+    "chapter_no": 11,
+    "chapter_name": "罰則",
+    "article_no": "75",
+    "summary": null,
+    "content": "違反第五條規定者，處五年以下有期徒刑、拘役或科或併科新臺幣七十五萬元以下罰金。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=75",
+    "related_concepts": []
+  },
+  "LSA-76": {
+    "id": "LSA-76",
+    "chapter_no": 11,
+    "chapter_name": "罰則",
+    "article_no": "76",
+    "summary": null,
+    "content": "違反第六條規定者，處三年以下有期徒刑、拘役或科或併科新臺幣四十五萬元以下罰金。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=76",
+    "related_concepts": []
+  },
+  "LSA-77": {
+    "id": "LSA-77",
+    "chapter_no": 11,
+    "chapter_name": "罰則",
+    "article_no": "77",
+    "summary": null,
+    "content": "違反第四十二條、第四十四條第二項、第四十五條第一項、第四十七條、第四十八條、第四十九條第三項或第六十四條第一項規定者，處六個月以下有期徒刑、拘役或科或併科新臺幣三十萬元以下罰金。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=77",
+    "related_concepts": []
+  },
+  "LSA-78": {
+    "id": "LSA-78",
+    "chapter_no": 11,
+    "chapter_name": "罰則",
+    "article_no": "78",
+    "summary": null,
+    "content": "(1)未依第十七條、第十七條之一第七項、第五十五條規定之標準或期限給付者，處新臺幣三十萬元以上一百五十萬元以下罰鍰，並限期令其給付，屆期未給付者，應按次處罰。\n(2)違反第十三條、第十七條之一第一項、第四項、第二十六條、第五十條、第五十一條或第五十六條第二項規定者，處新臺幣九萬元以上四十五萬元以下罰鍰。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=78",
+    "related_concepts": []
+  },
+  "LSA-79": {
+    "id": "LSA-79",
+    "chapter_no": 11,
+    "chapter_name": "罰則",
+    "article_no": "79",
+    "summary": null,
+    "content": "(1)有下列各款規定行為之一者，處新臺幣二萬元以上一百萬元以下罰鍰：\n一、違反第二十一條第一項、第二十二條至第二十五條、第三十條第一項至第三項、第六項、第七項、第三十二條、第三十四條至第四十一條、第四十九條第一項或第五十九條規定。\n二、違反主管機關依第二十七條限期給付工資或第三十三條調整工作時間之命令。\n三、違反中央主管機關依第四十三條所定假期或事假以外期間內工資給付之最低標準。\n(2)違反第三十條第五項或第四十九條第五項規定者，處新臺幣九萬元以上四十五萬元以下罰鍰。\n(3)違反第七條、第九條第一項、第十六條、第十九條、第二十八條第二項、第四十六條、第五十六條第一項、第六十五條第一項、第六十六條至第六十八條、第七十條或第七十四條第二項規定者，處新臺幣二萬元以上三十萬元以下罰鍰。\n(4)有前三項規定行為之一者，主管機關得依事業規模、違反人數或違反情節，加重其罰鍰至法定罰鍰最高額二分之一。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=79",
+    "related_concepts": []
+  },
+  "LSA-79-1": {
+    "id": "LSA-79-1",
+    "chapter_no": 11,
+    "chapter_name": "罰則",
+    "article_no": "79-1",
+    "summary": null,
+    "content": "違反第四十五條第二項、第四項、第六十四條第三項及第六十九條第一項準用規定之處罰，適用本法罰則章規定。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=79-1",
+    "related_concepts": []
+  },
+  "LSA-80": {
+    "id": "LSA-80",
+    "chapter_no": 11,
+    "chapter_name": "罰則",
+    "article_no": "80",
+    "summary": null,
+    "content": "拒絕、規避或阻撓勞工檢查員依法執行職務者，處新臺幣三萬元以上十五萬元以下罰鍰。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=80",
+    "related_concepts": []
+  },
+  "LSA-80-1": {
+    "id": "LSA-80-1",
+    "chapter_no": 11,
+    "chapter_name": "罰則",
+    "article_no": "80-1",
+    "summary": null,
+    "content": "(1)違反本法經主管機關處以罰鍰者，主管機關應公布其事業單位或事業主之名稱、負責人姓名、處分期日、違反條文及罰鍰金額，並限期令其改善；屆期未改善者，應按次處罰。\n(2)主管機關裁處罰鍰，得審酌與違反行為有關之勞工人數、累計違法次數或未依法給付之金額，為量罰輕重之標準。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=80-1",
+    "related_concepts": []
+  },
+  "LSA-81": {
+    "id": "LSA-81",
+    "chapter_no": 11,
+    "chapter_name": "罰則",
+    "article_no": "81",
+    "summary": null,
+    "content": "(1)法人之代表人、法人或自然人之代理人、受僱人或其他從業人員，因執行業務違反本法規定，除依本章規定處罰行為人外，對該法人或自然人並應處以各該條所定之罰金或罰鍰。但法人之代表人或自然人對於違反之發生，已盡力為防止行為者，不在此限。\n(2)法人之代表人或自然人教唆或縱容為違反之行為者，以行為人論。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=81",
+    "related_concepts": []
+  },
+  "LSA-82": {
+    "id": "LSA-82",
+    "chapter_no": 11,
+    "chapter_name": "罰則",
+    "article_no": "82",
+    "summary": null,
+    "content": "本法所定之罰鍰，經主管機關催繳，仍不繳納時，得移送法院強制執行。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=82",
+    "related_concepts": []
+  },
+  "LSA-83": {
+    "id": "LSA-83",
+    "chapter_no": 12,
+    "chapter_name": "附則",
+    "article_no": "83",
+    "summary": null,
+    "content": "為協調勞資關係，促進勞資合作，提高工作效率，事業單位應舉辦勞資會議。其辦法由中央主管機關會同經濟部訂定，並報行政院核定。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=83",
+    "related_concepts": []
+  },
+  "LSA-84": {
+    "id": "LSA-84",
+    "chapter_no": 12,
+    "chapter_name": "附則",
+    "article_no": "84",
+    "summary": null,
+    "content": "公務員兼具勞工身分者，其有關任（派）免、薪資、獎懲、退休、撫卹及保險（含職業災害）等事項，應適用公務員法令之規定。但其他所定勞動條件優於本法規定者，從其規定。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=84",
+    "related_concepts": []
+  },
+  "LSA-84-1": {
+    "id": "LSA-84-1",
+    "chapter_no": 12,
+    "chapter_name": "附則",
+    "article_no": "84-1",
+    "summary": null,
+    "content": "(1)經中央主管機關核定公告之下列工作者，得由勞雇雙方另行約定，工作時間、例假、休假、女性夜間工作，並報請當地主管機關核備，不受第三十條、第三十二條、第三十六條、第三十七條、第四十九條規定之限制。\n一、監督、管理人員或責任制專業人員。\n二、監視性或間歇性之工作。\n三、其他性質特殊之工作。\n(2)前項約定應以書面為之，並應參考本法所定之基準且不得損及勞工之健康及福祉。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=84-1",
+    "related_concepts": []
+  },
+  "LSA-84-2": {
+    "id": "LSA-84-2",
+    "chapter_no": 12,
+    "chapter_name": "附則",
+    "article_no": "84-2",
+    "summary": null,
+    "content": "勞工工作年資自受僱之日起算，適用本法前之工作年資，其資遣費及退休金給與標準，依其當時應適用之法令規定計算；當時無法令可資適用者，依各該事業單位自訂之規定或勞雇雙方之協商計算之。適用本法後之工作年資，其資遣費及退休金給與標準，依第十七條及第五十五條規定計算。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=84-2",
+    "related_concepts": []
+  },
+  "LSA-85": {
+    "id": "LSA-85",
+    "chapter_no": 12,
+    "chapter_name": "附則",
+    "article_no": "85",
+    "summary": null,
+    "content": "本法施行細則，由中央主管機關擬定，報請行政院核定。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=85",
+    "related_concepts": []
+  },
+  "LSA-86": {
+    "id": "LSA-86",
+    "chapter_no": 12,
+    "chapter_name": "附則",
+    "article_no": "86",
+    "summary": null,
+    "content": "(1)本法自公布日施行。\n(2)本法中華民國八十九年六月二十八日修正公布之第三十條第一項及第二項，自九十年一月一日施行；一百零四年二月四日修正公布之第二十八條第一項，自公布後八個月施行；一百零四年六月三日修正公布之條文，自一百零五年一月一日施行；一百零五年十二月二十一日修正公布之第三十四條第二項施行日期，由行政院定之、第三十七條及第三十八條，自一百零六年一月一日施行。\n(3)本法中華民國一百零七年一月十日修正之條文，自一百零七年三月一日施行。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030001&flno=86",
+    "related_concepts": []
+  },
+  "ENF_RULE-1": {
+    "id": "ENF_RULE-1",
+    "chapter_no": 1,
+    "chapter_name": "總則",
+    "article_no": "1",
+    "summary": null,
+    "content": "本細則依勞動基準法（以下簡稱本法）第八十五條規定訂定之。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=1",
+    "related_concepts": []
+  },
+  "ENF_RULE-2": {
+    "id": "ENF_RULE-2",
+    "chapter_no": 1,
+    "chapter_name": "總則",
+    "article_no": "2",
+    "summary": null,
+    "content": "依本法第二條第四款計算平均工資時，下列各款期日或期間均不計入：\n一、發生計算事由之當日。\n二、因職業災害尚在醫療中者。\n三、依本法第五十條第二項減半發給工資者。\n四、雇主因天災、事變或其他不可抗力而不能繼續其事業，致勞工未能工作者。\n五、依勞工請假規則請普通傷病假者。\n六、依性別平等工作法請生理假、產假、家庭照顧假或安胎休養，致減少工資者。\n七、留職停薪者。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=2",
+    "related_concepts": []
+  },
+  "ENF_RULE-3": {
+    "id": "ENF_RULE-3",
+    "chapter_no": 1,
+    "chapter_name": "總則",
+    "article_no": "3",
+    "summary": null,
+    "content": "本法第三條第一項第一款至第七款所列各業，適用中華民國行業標準分類之規定。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=3",
+    "related_concepts": []
+  },
+  "ENF_RULE-4": {
+    "id": "ENF_RULE-4",
+    "chapter_no": 1,
+    "chapter_name": "總則",
+    "article_no": "4",
+    "summary": null,
+    "content": "本法第三條第一項第八款所稱中央主管機關指定之事業及第三項所稱適用本法確有窒礙難行者，係指中央主管機關依中華民國行業標準分類之規定指定者，並得僅指定各行業中之一部分。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=4",
+    "related_concepts": []
+  },
+  "ENF_RULE-4-1": {
+    "id": "ENF_RULE-4-1",
+    "chapter_no": 1,
+    "chapter_name": "總則",
+    "article_no": "4-1",
+    "summary": null,
+    "content": "（刪除）",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=4-1",
+    "related_concepts": []
+  },
+  "ENF_RULE-5": {
+    "id": "ENF_RULE-5",
+    "chapter_no": 1,
+    "chapter_name": "總則",
+    "article_no": "5",
+    "summary": null,
+    "content": "(1)勞工工作年資以服務同一事業單位為限，並自受僱當日起算。\n(2)適用本法前已在同一事業單位工作之年資合併計算。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=5",
+    "related_concepts": []
+  },
+  "ENF_RULE-6": {
+    "id": "ENF_RULE-6",
+    "chapter_no": 2,
+    "chapter_name": "勞動契約",
+    "article_no": "6",
+    "summary": null,
+    "content": "本法第九條第一項所稱臨時性、短期性、季節性及特定性工作，依左列規定認定之：\n一、臨時性工作：係指無法預期之非繼續性工作，其工作期間在六個月以內者。\n二、短期性工作：係指可預期於六個月內完成之非繼續性工作。\n三、季節性工作：係指受季節性原料、材料來源或市場銷售影響之非繼續性工作，其工作期間在九個月以內者。\n四、特定性工作：係指可在特定期間完成之非繼續性工作。其工作期間超過一年者，應報請主管機關核備。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=6",
+    "related_concepts": []
+  },
+  "ENF_RULE-7": {
+    "id": "ENF_RULE-7",
+    "chapter_no": 2,
+    "chapter_name": "勞動契約",
+    "article_no": "7",
+    "summary": null,
+    "content": "勞動契約應依本法有關規定約定下列事項：\n一、工作場所及應從事之工作。\n二、工作開始與終止之時間、休息時間、休假、例假、休息日、請假及輪班制之換班。\n三、工資之議定、調整、計算、結算與給付之日期及方法。\n四、勞動契約之訂定、終止及退休。\n五、資遣費、退休金、其他津貼及獎金。\n六、勞工應負擔之膳宿費及工作用具費。\n七、安全衛生。\n八、勞工教育及訓練。\n九、福利。\n十、災害補償及一般傷病補助。\n十一、應遵守之紀律。\n十二、獎懲。\n十三、其他勞資權利義務有關事項。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=7",
+    "related_concepts": []
+  },
+  "ENF_RULE-7-1": {
+    "id": "ENF_RULE-7-1",
+    "chapter_no": 2,
+    "chapter_name": "勞動契約",
+    "article_no": "7-1",
+    "summary": null,
+    "content": "離職後競業禁止之約定，應以書面為之，且應詳細記載本法第九條之一第一項第三款及第四款規定之內容，並由雇主與勞工簽章，各執一份。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=7-1",
+    "related_concepts": []
+  },
+  "ENF_RULE-7-2": {
+    "id": "ENF_RULE-7-2",
+    "chapter_no": 2,
+    "chapter_name": "勞動契約",
+    "article_no": "7-2",
+    "summary": null,
+    "content": "本法第九條之一第一項第三款所為之約定未逾合理範疇，應符合下列規定：\n一、競業禁止之期間，不得逾越雇主欲保護之營業秘密或技術資訊之生命週期，且最長不得逾二年。\n二、競業禁止之區域，應以原雇主實際營業活動之範圍為限。\n三、競業禁止之職業活動範圍，應具體明確，且與勞工原職業活動範圍相同或類似。\n四、競業禁止之就業對象，應具體明確，並以與原雇主之營業活動相同或類似，且有競爭關係者為限。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=7-2",
+    "related_concepts": []
+  },
+  "ENF_RULE-7-3": {
+    "id": "ENF_RULE-7-3",
+    "chapter_no": 2,
+    "chapter_name": "勞動契約",
+    "article_no": "7-3",
+    "summary": null,
+    "content": "(1)本法第九條之一第一項第四款所定之合理補償，應就下列事項綜合考量：\n一、每月補償金額不低於勞工離職時一個月平均工資百分之五十。\n二、補償金額足以維持勞工離職後競業禁止期間之生活所需。\n三、補償金額與勞工遵守競業禁止之期間、區域、職業活動範圍及就業對象之範疇所受損失相當。\n四、其他與判斷補償基準合理性有關之事項。\n(2)前項合理補償，應約定離職後一次預為給付或按月給付。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=7-3",
+    "related_concepts": []
+  },
+  "ENF_RULE-8": {
+    "id": "ENF_RULE-8",
+    "chapter_no": 2,
+    "chapter_name": "勞動契約",
+    "article_no": "8",
+    "summary": null,
+    "content": "（刪除）",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=8",
+    "related_concepts": []
+  },
+  "ENF_RULE-9": {
+    "id": "ENF_RULE-9",
+    "chapter_no": 2,
+    "chapter_name": "勞動契約",
+    "article_no": "9",
+    "summary": null,
+    "content": "依本法終止勞動契約時，雇主應即結清工資給付勞工。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=9",
+    "related_concepts": []
+  },
+  "ENF_RULE-10": {
+    "id": "ENF_RULE-10",
+    "chapter_no": 3,
+    "chapter_name": "工資",
+    "article_no": "10",
+    "summary": null,
+    "content": "本法第二條第三款所稱之其他任何名義之經常性給與係指左列各款以外之給與。\n一、紅利。\n二、獎金：指年終獎金、競賽獎金、研究發明獎金、特殊功績獎金、久任獎金、節約燃料物料獎金及其他非經常性獎金。\n三、春節、端午節、中秋節給與之節金。\n四、醫療補助費、勞工及其子女教育補助費。\n五、勞工直接受自顧客之服務費。\n六、婚喪喜慶由雇主致送之賀禮、慰問金或奠儀等。\n七、職業災害補償費。\n八、勞工保險及雇主以勞工為被保險人加入商業保險支付之保險費。\n九、差旅費、差旅津貼及交際費。\n十、工作服、作業用品及其代金。\n十一、其他經中央主管機關會同中央目的事業主管機關指定者。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=10",
+    "related_concepts": []
+  },
+  "ENF_RULE-11": {
+    "id": "ENF_RULE-11",
+    "chapter_no": 3,
+    "chapter_name": "工資",
+    "article_no": "11",
+    "summary": null,
+    "content": "本法第二十一條所稱基本工資，指勞工在正常工作時間內所得之報酬。不包括延長工作時間之工資與休息日、休假日及例假工作加給之工資。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=11",
+    "related_concepts": []
+  },
+  "ENF_RULE-12": {
+    "id": "ENF_RULE-12",
+    "chapter_no": 3,
+    "chapter_name": "工資",
+    "article_no": "12",
+    "summary": null,
+    "content": "採計件工資之勞工所得基本工資，以每日工作八小時之生產額或工作量換算之。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=12",
+    "related_concepts": []
+  },
+  "ENF_RULE-13": {
+    "id": "ENF_RULE-13",
+    "chapter_no": 3,
+    "chapter_name": "工資",
+    "article_no": "13",
+    "summary": null,
+    "content": "勞工工作時間每日少於八小時者，除工作規則、勞動契約另有約定或另有法令規定者外，其基本工資得按工作時間比例計算之。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=13",
+    "related_concepts": []
+  },
+  "ENF_RULE-14": {
+    "id": "ENF_RULE-14",
+    "chapter_no": 3,
+    "chapter_name": "工資",
+    "article_no": "14",
+    "summary": null,
+    "content": "（刪除）",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=14",
+    "related_concepts": []
+  },
+  "ENF_RULE-14-1": {
+    "id": "ENF_RULE-14-1",
+    "chapter_no": 3,
+    "chapter_name": "工資",
+    "article_no": "14-1",
+    "summary": null,
+    "content": "(1)本法第二十三條所定工資各項目計算方式明細，應包括下列事項：\n一、勞雇雙方議定之工資總額。\n二、工資各項目之給付金額。\n三、依法令規定或勞雇雙方約定，得扣除項目之金額。\n四、實際發給之金額。\n(2)雇主提供之前項明細，得以紙本、電子資料傳輸方式或其他勞工可隨時取得及得列印之資料為之。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=14-1",
+    "related_concepts": []
+  },
+  "ENF_RULE-15": {
+    "id": "ENF_RULE-15",
+    "chapter_no": 3,
+    "chapter_name": "工資",
+    "article_no": "15",
+    "summary": null,
+    "content": "本法第二十八條第一項第一款所定積欠之工資，以雇主於歇業、清算或宣告破產前六個月內所積欠者為限。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=15",
+    "related_concepts": []
+  },
+  "ENF_RULE-16": {
+    "id": "ENF_RULE-16",
+    "chapter_no": 3,
+    "chapter_name": "工資",
+    "article_no": "16",
+    "summary": null,
+    "content": "(1)勞工死亡時，雇主應即結清其工資給付其遺屬。\n(2)前項受領工資之順位準用本法第五十九條第四款之規定。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=16",
+    "related_concepts": []
+  },
+  "ENF_RULE-17": {
+    "id": "ENF_RULE-17",
+    "chapter_no": 4,
+    "chapter_name": "工作時間、休息、休假",
+    "article_no": "17",
+    "summary": null,
+    "content": "本法第三十條所稱正常工作時間跨越二曆日者，其工作時間應合併計算。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=17",
+    "related_concepts": []
+  },
+  "ENF_RULE-18": {
+    "id": "ENF_RULE-18",
+    "chapter_no": 4,
+    "chapter_name": "工作時間、休息、休假",
+    "article_no": "18",
+    "summary": null,
+    "content": "勞工因出差或其他原因於事業場所外從事工作致不易計算工作時間者，以平時之工作時間為其工作時間。但其實際工作時間經證明者，不在此限。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=18",
+    "related_concepts": []
+  },
+  "ENF_RULE-19": {
+    "id": "ENF_RULE-19",
+    "chapter_no": 4,
+    "chapter_name": "工作時間、休息、休假",
+    "article_no": "19",
+    "summary": null,
+    "content": "勞工於同一事業單位或同一雇主所屬不同事業場所工作時，應將在各該場所之工作時間合併計算，並加計往來於事業場所間所必要之交通時間。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=19",
+    "related_concepts": []
+  },
+  "ENF_RULE-20": {
+    "id": "ENF_RULE-20",
+    "chapter_no": 4,
+    "chapter_name": "工作時間、休息、休假",
+    "article_no": "20",
+    "summary": null,
+    "content": "雇主有下列情形之一者，應即公告周知：\n一、依本法第三十條第二項、第三項或第三十條之一第一項第一款規定變更勞工正常工作時間。\n二、依本法第三十條之一第一項第二款或第三十二條第一項、第二項、第四項規定延長勞工工作時間。\n三、依本法第三十四條第二項但書規定變更勞工更換班次時之休息時間。\n四、依本法第三十六條第二項或第四項規定調整勞工例假或休息日。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=20",
+    "related_concepts": []
+  },
+  "ENF_RULE-20-1": {
+    "id": "ENF_RULE-20-1",
+    "chapter_no": 4,
+    "chapter_name": "工作時間、休息、休假",
+    "article_no": "20-1",
+    "summary": null,
+    "content": "本法所定雇主延長勞工工作之時間如下：\n一、每日工作時間超過八小時或每週工作總時數超過四十小時之部分。但依本法第三十條第二項、第三項或第三十條之一第一項第一款變更工作時間者，為超過變更後工作時間之部分。\n二、勞工於本法第三十六條所定休息日工作之時間。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=20-1",
+    "related_concepts": []
+  },
+  "ENF_RULE-21": {
+    "id": "ENF_RULE-21",
+    "chapter_no": 4,
+    "chapter_name": "工作時間、休息、休假",
+    "article_no": "21",
+    "summary": null,
+    "content": "(1)本法第三十條第五項所定出勤紀錄，包括以簽到簿、出勤卡、刷卡機、門禁卡、生物特徵辨識系統、電腦出勤紀錄系統或其他可資覈實記載出勤時間工具所為之紀錄。\n(2)前項出勤紀錄，雇主因勞動檢查之需要或勞工向其申請時，應以書面方式提出。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=21",
+    "related_concepts": []
+  },
+  "ENF_RULE-22": {
+    "id": "ENF_RULE-22",
+    "chapter_no": 4,
+    "chapter_name": "工作時間、休息、休假",
+    "article_no": "22",
+    "summary": null,
+    "content": "(1)本法第三十二條第二項但書所定每三個月，以每連續三個月為一週期，依曆計算，以勞雇雙方約定之起迄日期認定之。\n(2)本法第三十二條第五項但書所定坑內監視為主之工作範圍如下：\n一、從事排水機之監視工作。\n二、從事壓風機或冷卻設備之監視工作。\n三、從事安全警報裝置之監視工作。\n四、從事生產或營建施工之紀錄及監視工作。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=22",
+    "related_concepts": []
+  },
+  "ENF_RULE-22-1": {
+    "id": "ENF_RULE-22-1",
+    "chapter_no": 4,
+    "chapter_name": "工作時間、休息、休假",
+    "article_no": "22-1",
+    "summary": null,
+    "content": "(1)本法第三十二條第三項、第三十四條第三項及第三十六條第五項所定雇主僱用勞工人數，以同一雇主僱用適用本法之勞工人數計算，包括分支機構之僱用人數。\n(2)本法第三十二條第三項、第三十四條第三項及第三十六條第五項所定當地主管機關，為雇主之主事務所、主營業所或公務所所在地之直轄市政府或縣（市）政府。\n(3)本法第三十二條第三項、第三十四條第三項及第三十六條第五項所定應報備查，雇主至遲應於開始實施延長工作時間、變更休息時間或調整例假之前一日為之。但因天災、事變或突發事件不及報備查者，應於原因消滅後二十四小時內敘明理由為之。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=22-1",
+    "related_concepts": []
+  },
+  "ENF_RULE-22-2": {
+    "id": "ENF_RULE-22-2",
+    "chapter_no": 4,
+    "chapter_name": "工作時間、休息、休假",
+    "article_no": "22-2",
+    "summary": null,
+    "content": "(1)本法第三十二條之一所定補休，應依勞工延長工作時間或休息日工作事實發生時間先後順序補休。補休之期限逾依第二十四條第二項所約定年度之末日者，以該日為期限之末日。\n(2)前項補休期限屆期或契約終止時，發給工資之期限如下：\n一、補休期限屆期：於契約約定之工資給付日發給或於補休期限屆期後三十日內發給。\n二、契約終止：依第九條規定發給。\n(3)勞工依本法第三十二條之一主張權利時，雇主如認為其權利不存在，應負舉證責任。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=22-2",
+    "related_concepts": []
+  },
+  "ENF_RULE-22-3": {
+    "id": "ENF_RULE-22-3",
+    "chapter_no": 4,
+    "chapter_name": "工作時間、休息、休假",
+    "article_no": "22-3",
+    "summary": null,
+    "content": "本法第三十六條第一項、第二項第一款及第二款所定之例假，以每七日為一週期，依曆計算。雇主除依同條第四項及第五項規定調整者外，不得使勞工連續工作逾六日。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=22-3",
+    "related_concepts": []
+  },
+  "ENF_RULE-23": {
+    "id": "ENF_RULE-23",
+    "chapter_no": 4,
+    "chapter_name": "工作時間、休息、休假",
+    "article_no": "23",
+    "summary": null,
+    "content": "（刪除）",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=23",
+    "related_concepts": []
+  },
+  "ENF_RULE-23-1": {
+    "id": "ENF_RULE-23-1",
+    "chapter_no": 4,
+    "chapter_name": "工作時間、休息、休假",
+    "article_no": "23-1",
+    "summary": null,
+    "content": "(1)本法第三十七條所定休假遇本法第三十六條所定例假及休息日者，應予補假。但不包括本法第三十七條指定應放假之日。\n(2)前項補假期日，由勞雇雙方協商排定之。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=23-1",
+    "related_concepts": []
+  },
+  "ENF_RULE-24": {
+    "id": "ENF_RULE-24",
+    "chapter_no": 4,
+    "chapter_name": "工作時間、休息、休假",
+    "article_no": "24",
+    "summary": null,
+    "content": "(1)勞工於符合本法第三十八條第一項所定之特別休假條件時，取得特別休假之權利；其計算特別休假之工作年資，應依第五條之規定。\n(2)依本法第三十八條第一項規定給予之特別休假日數，勞工得於勞雇雙方協商之下列期間內，行使特別休假權利：\n一、以勞工受僱當日起算，每一週年之期間。但其工作六個月以上一年未滿者，為取得特別休假權利後六個月之期間。\n二、每年一月一日至十二月三十一日之期間。\n三、教育單位之學年度、事業單位之會計年度或勞雇雙方約定年度之期間。\n(3)雇主依本法第三十八條第三項規定告知勞工排定特別休假，應於勞工符合特別休假條件之日起三十日內為之。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=24",
+    "related_concepts": []
+  },
+  "ENF_RULE-24-1": {
+    "id": "ENF_RULE-24-1",
+    "chapter_no": 4,
+    "chapter_name": "工作時間、休息、休假",
+    "article_no": "24-1",
+    "summary": null,
+    "content": "(1)本法第三十八條第四項所定年度終結，為前條第二項期間屆滿之日。\n(2)本法第三十八條第四項所定雇主應發給工資，依下列規定辦理：\n一、發給工資之基準：\n（一）按勞工未休畢之特別休假日數，乘以其一日工資計發。\n（二）前目所定一日工資，為勞工之特別休假於年度終結或契約終止前一日之正常工作時間所得之工資。其為計月者，為年度終結或契約終止前最近一個月正常工作時間所得之工資除以三十所得之金額。\n（三）勞雇雙方依本法第三十八條第四項但書規定協商遞延至次一年度實施者，按原特別休假年度終結時應發給工資之基準計發。\n二、發給工資之期限：\n（一）年度終結：於契約約定之工資給付日發給或於年度終結後三十日內發給。\n（二）契約終止：依第九條規定發給。\n(3)勞雇雙方依本法第三十八條第四項但書規定協商遞延至次一年度實施者，其遞延之日數，於次一年度請休特別休假時，優先扣除。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=24-1",
+    "related_concepts": []
+  },
+  "ENF_RULE-24-2": {
+    "id": "ENF_RULE-24-2",
+    "chapter_no": 4,
+    "chapter_name": "工作時間、休息、休假",
+    "article_no": "24-2",
+    "summary": null,
+    "content": "本法第三十八條第五項所定每年定期發給之書面通知，依下列規定辦理：\n一、雇主應於前條第二項第二款所定發給工資之期限前發給。\n二、書面通知，得以紙本、電子資料傳輸方式或其他勞工可隨時取得及得列印之資料為之。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=24-2",
+    "related_concepts": []
+  },
+  "ENF_RULE-24-3": {
+    "id": "ENF_RULE-24-3",
+    "chapter_no": 4,
+    "chapter_name": "工作時間、休息、休假",
+    "article_no": "24-3",
+    "summary": null,
+    "content": "本法第三十九條所定休假日，為本法第三十七條所定休假及第三十八條所定特別休假。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=24-3",
+    "related_concepts": []
+  },
+  "ENF_RULE-25": {
+    "id": "ENF_RULE-25",
+    "chapter_no": 5,
+    "chapter_name": "童工、女工",
+    "article_no": "25",
+    "summary": null,
+    "content": "本法第四十四條第二項所定危險性或有害性之工作，依職業安全衛生有關法令之規定。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=25",
+    "related_concepts": []
+  },
+  "ENF_RULE-26": {
+    "id": "ENF_RULE-26",
+    "chapter_no": 5,
+    "chapter_name": "童工、女工",
+    "article_no": "26",
+    "summary": null,
+    "content": "雇主對依本法第五十條第一項請產假之女工，得要求其提出證明文件。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=26",
+    "related_concepts": []
+  },
+  "ENF_RULE-27": {
+    "id": "ENF_RULE-27",
+    "chapter_no": 6,
+    "chapter_name": "退休",
+    "article_no": "27",
+    "summary": null,
+    "content": "本法第五十三條第一款、第五十四條第一項第一款及同條第二項但書規定之年齡，應以戶籍記載為準。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=27",
+    "related_concepts": []
+  },
+  "ENF_RULE-28": {
+    "id": "ENF_RULE-28",
+    "chapter_no": 6,
+    "chapter_name": "退休",
+    "article_no": "28",
+    "summary": null,
+    "content": "（刪除）",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=28",
+    "related_concepts": []
+  },
+  "ENF_RULE-29": {
+    "id": "ENF_RULE-29",
+    "chapter_no": 6,
+    "chapter_name": "退休",
+    "article_no": "29",
+    "summary": null,
+    "content": "本法第五十五條第三項所定雇主得報經主管機關核定分期給付勞工退休金之情形如下：\n一、依法提撥之退休準備金不敷支付。\n二、事業之經營或財務確有困難。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=29",
+    "related_concepts": []
+  },
+  "ENF_RULE-29-1": {
+    "id": "ENF_RULE-29-1",
+    "chapter_no": 6,
+    "chapter_name": "退休",
+    "article_no": "29-1",
+    "summary": null,
+    "content": "(1)本法第五十六條第二項規定之退休金數額，按本法第五十五條第一項之給與標準，依下列規定估算：\n一、勞工人數：為估算當年度終了時適用本法或勞工退休金條例第十一條第一項保留本法工作年資之在職勞工，且預估於次一年度內成就本法第五十三條或第五十四條第一項第一款退休條件者。\n二、工作年資：自適用本法之日起算至估算當年度之次一年度終了或選擇適用勞工退休金條例前一日止。\n三、平均工資：為估算當年度終了之一個月平均工資。\n(2)前項數額以元為單位，角以下四捨五入。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=29-1",
+    "related_concepts": []
+  },
+  "ENF_RULE-30": {
+    "id": "ENF_RULE-30",
+    "chapter_no": 7,
+    "chapter_name": "職業災害補償",
+    "article_no": "30",
+    "summary": null,
+    "content": "雇主依本法第五十九條第二款補償勞工之工資，應於發給工資之日給與。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=30",
+    "related_concepts": []
+  },
+  "ENF_RULE-31": {
+    "id": "ENF_RULE-31",
+    "chapter_no": 7,
+    "chapter_name": "職業災害補償",
+    "article_no": "31",
+    "summary": null,
+    "content": "(1)本法第五十九條第二款所稱原領工資，係指該勞工遭遇職業災害前一日正常工作時間所得之工資。其為計月者，以遭遇職業災害前最近一個月正常工作時間所得之工資除以三十所得之金額，為其一日之工資。\n(2)罹患職業病者依前項規定計算所得金額低於平均工資者，以平均工資為準。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=31",
+    "related_concepts": []
+  },
+  "ENF_RULE-32": {
+    "id": "ENF_RULE-32",
+    "chapter_no": 7,
+    "chapter_name": "職業災害補償",
+    "article_no": "32",
+    "summary": null,
+    "content": "依本法第五十九條第二款但書規定給付之補償，雇主應於決定後十五日內給與。在未給與前雇主仍應繼續為同款前段規定之補償。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=32",
+    "related_concepts": []
+  },
+  "ENF_RULE-33": {
+    "id": "ENF_RULE-33",
+    "chapter_no": 7,
+    "chapter_name": "職業災害補償",
+    "article_no": "33",
+    "summary": null,
+    "content": "雇主依本法第五十九條第四款給與勞工之喪葬費應於死亡後三日內，死亡補償應於死亡後十五日內給付。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=33",
+    "related_concepts": []
+  },
+  "ENF_RULE-34": {
+    "id": "ENF_RULE-34",
+    "chapter_no": 7,
+    "chapter_name": "職業災害補償",
+    "article_no": "34",
+    "summary": null,
+    "content": "本法第五十九條所定同一事故，依勞工保險條例或其他法令規定，已由雇主支付費用補償者，雇主得予以抵充之。但支付之費用如由勞工與雇主共同負擔者，其補償之抵充按雇主負擔之比例計算。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=34",
+    "related_concepts": []
+  },
+  "ENF_RULE-34-1": {
+    "id": "ENF_RULE-34-1",
+    "chapter_no": 7,
+    "chapter_name": "職業災害補償",
+    "article_no": "34-1",
+    "summary": null,
+    "content": "勞工因遭遇職業災害而致死亡或失能時，雇主已依勞工保險條例規定為其投保，並經保險人核定為職業災害保險事故者，雇主依本法第五十九條規定給予之補償，以勞工之平均工資與平均投保薪資之差額，依本法第五十九條第三款及第四款規定標準計算之。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=34-1",
+    "related_concepts": []
+  },
+  "ENF_RULE-35": {
+    "id": "ENF_RULE-35",
+    "chapter_no": 8,
+    "chapter_name": "技術生",
+    "article_no": "35",
+    "summary": null,
+    "content": "雇主不得使技術生從事家事、雜役及其他非學習技能為目的之工作。但從事事業場所內之清潔整頓，器具工具及機械之清理者不在此限。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=35",
+    "related_concepts": []
+  },
+  "ENF_RULE-36": {
+    "id": "ENF_RULE-36",
+    "chapter_no": 8,
+    "chapter_name": "技術生",
+    "article_no": "36",
+    "summary": null,
+    "content": "技術生之工作時間應包括學科時間。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=36",
+    "related_concepts": []
+  },
+  "ENF_RULE-37": {
+    "id": "ENF_RULE-37",
+    "chapter_no": 9,
+    "chapter_name": "工作規則",
+    "article_no": "37",
+    "summary": null,
+    "content": "(1)雇主於僱用勞工人數滿三十人時應即訂立工作規則，並於三十日內報請當地主管機關核備。\n(2)本法第七十條所定雇主僱用勞工人數，依第二十二條之一第一項規定計算。\n(3)工作規則應依據法令、勞資協議或管理制度變更情形適時修正，修正後並依第一項程序報請核備。\n(4)主管機關認為有必要時，得通知雇主修訂前項工作規則。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=37",
+    "related_concepts": []
+  },
+  "ENF_RULE-38": {
+    "id": "ENF_RULE-38",
+    "chapter_no": 9,
+    "chapter_name": "工作規則",
+    "article_no": "38",
+    "summary": null,
+    "content": "工作規則經主管機關核備後，雇主應即於事業場所內公告並印發各勞工。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=38",
+    "related_concepts": []
+  },
+  "ENF_RULE-39": {
+    "id": "ENF_RULE-39",
+    "chapter_no": 9,
+    "chapter_name": "工作規則",
+    "article_no": "39",
+    "summary": null,
+    "content": "雇主認有必要時，得分別就本法第七十條各款另訂單項工作規則。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=39",
+    "related_concepts": []
+  },
+  "ENF_RULE-40": {
+    "id": "ENF_RULE-40",
+    "chapter_no": 9,
+    "chapter_name": "工作規則",
+    "article_no": "40",
+    "summary": null,
+    "content": "事業單位之事業場所分散各地者，雇主得訂立適用於其事業單位全部勞工之工作規則或適用於該事業場所之工作規則。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=40",
+    "related_concepts": []
+  },
+  "ENF_RULE-41": {
+    "id": "ENF_RULE-41",
+    "chapter_no": 10,
+    "chapter_name": "監督及檢查",
+    "article_no": "41",
+    "summary": null,
+    "content": "(1)中央主管機關應每年定期發布次年度勞工檢查方針。\n(2)檢查機構應依前項檢查方針分別擬定各該機構之勞工檢查計畫，並於檢查方針發布之日起五十日內報請中央主管機關核定後，依該檢查計畫實施檢查。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=41",
+    "related_concepts": []
+  },
+  "ENF_RULE-42": {
+    "id": "ENF_RULE-42",
+    "chapter_no": 10,
+    "chapter_name": "監督及檢查",
+    "article_no": "42",
+    "summary": null,
+    "content": "勞工檢查機構檢查員之任用、訓練、服務，除適用公務員法令之規定外，由中央主管機關定之。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=42",
+    "related_concepts": []
+  },
+  "ENF_RULE-43": {
+    "id": "ENF_RULE-43",
+    "chapter_no": 10,
+    "chapter_name": "監督及檢查",
+    "article_no": "43",
+    "summary": null,
+    "content": "檢查員對事業單位實施檢查時，得通知事業單位之雇主、雇主代理人、勞工或有關人員提供必要文件或作必要之說明。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=43",
+    "related_concepts": []
+  },
+  "ENF_RULE-44": {
+    "id": "ENF_RULE-44",
+    "chapter_no": 10,
+    "chapter_name": "監督及檢查",
+    "article_no": "44",
+    "summary": null,
+    "content": "(1)檢查員檢查後，應將檢查結果向事業單位作必要之說明，並報告檢查機構。\n(2)檢查機構認為事業單位有違反法令規定時，應依法處理。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=44",
+    "related_concepts": []
+  },
+  "ENF_RULE-45": {
+    "id": "ENF_RULE-45",
+    "chapter_no": 10,
+    "chapter_name": "監督及檢查",
+    "article_no": "45",
+    "summary": null,
+    "content": "事業單位對檢查結果有異議時，應於通知送達後十日內向檢查機構以書面提出。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=45",
+    "related_concepts": []
+  },
+  "ENF_RULE-46": {
+    "id": "ENF_RULE-46",
+    "chapter_no": 10,
+    "chapter_name": "監督及檢查",
+    "article_no": "46",
+    "summary": null,
+    "content": "本法第七十四條第一項規定之申訴得以口頭或書面為之。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=46",
+    "related_concepts": []
+  },
+  "ENF_RULE-47": {
+    "id": "ENF_RULE-47",
+    "chapter_no": 10,
+    "chapter_name": "監督及檢查",
+    "article_no": "47",
+    "summary": null,
+    "content": "雇主對前條之申訴事項，應即查明，如有違反法令規定情事應即改正，並將結果通知申訴人。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=47",
+    "related_concepts": []
+  },
+  "ENF_RULE-48": {
+    "id": "ENF_RULE-48",
+    "chapter_no": 10,
+    "chapter_name": "監督及檢查",
+    "article_no": "48",
+    "summary": null,
+    "content": "（刪除）",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=48",
+    "related_concepts": []
+  },
+  "ENF_RULE-49": {
+    "id": "ENF_RULE-49",
+    "chapter_no": 10,
+    "chapter_name": "監督及檢查",
+    "article_no": "49",
+    "summary": null,
+    "content": "（刪除）",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=49",
+    "related_concepts": []
+  },
+  "ENF_RULE-50": {
+    "id": "ENF_RULE-50",
+    "chapter_no": 11,
+    "chapter_name": "附則",
+    "article_no": "50",
+    "summary": null,
+    "content": "本法第八十四條所稱公務員兼具勞工身分者，係指依各項公務員人事法令任用、派用、聘用、遴用而於本法第三條所定各業從事工作獲致薪資之人員。所稱其他所定勞動條件，係指工作時間、休息、休假、安全衛生、福利、加班費等而言。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=50",
+    "related_concepts": []
+  },
+  "ENF_RULE-50-1": {
+    "id": "ENF_RULE-50-1",
+    "chapter_no": 11,
+    "chapter_name": "附則",
+    "article_no": "50-1",
+    "summary": null,
+    "content": "本法第八十四條之一第一項第一款、第二款所稱監督、管理人員、責任制專業人員、監視性或間歇性工作，依左列規定：\n一、監督、管理人員：係指受雇主僱用，負責事業之經營及管理工作，並對一般勞工之受僱、解僱或勞動條件具有決定權力之主管級人員。\n二、責任制專業人員：係指以專門知識或技術完成一定任務並負責其成敗之工作者。\n三、監視性工作：係指於一定場所以監視為主之工作。\n四、間歇性工作：係指工作本身以間歇性之方式進行者。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=50-1",
+    "related_concepts": []
+  },
+  "ENF_RULE-50-2": {
+    "id": "ENF_RULE-50-2",
+    "chapter_no": 11,
+    "chapter_name": "附則",
+    "article_no": "50-2",
+    "summary": null,
+    "content": "雇主依本法第八十四條之一規定將其與勞工之書面約定報請當地主管機關核備時，其內容應包括職稱、工作項目、工作權責或工作性質、工作時間、例假、休假、女性夜間工作等有關事項。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=50-2",
+    "related_concepts": []
+  },
+  "ENF_RULE-50-3": {
+    "id": "ENF_RULE-50-3",
+    "chapter_no": 11,
+    "chapter_name": "附則",
+    "article_no": "50-3",
+    "summary": null,
+    "content": "(1)勞工因終止勞動契約或發生職業災害所生爭議，提起給付工資、資遣費、退休金、職業災害補償或確認僱傭關係存在之訴訟，得向中央主管機關申請扶助。\n(2)前項扶助業務，中央主管機關得委託民間團體辦理。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=50-3",
+    "related_concepts": []
+  },
+  "ENF_RULE-50-4": {
+    "id": "ENF_RULE-50-4",
+    "chapter_no": 11,
+    "chapter_name": "附則",
+    "article_no": "50-4",
+    "summary": null,
+    "content": "本法第二十八條第二項中華民國一百零四年二月六日修正生效前，雇主有清算或宣告破產之情事，於修正生效後，尚未清算完結或破產終結者，勞工對於該雇主所積欠之退休金及資遣費，得於同條第二項第二款規定之數額內，依同條第五項規定申請墊償。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=50-4",
+    "related_concepts": []
+  },
+  "ENF_RULE-51": {
+    "id": "ENF_RULE-51",
+    "chapter_no": 11,
+    "chapter_name": "附則",
+    "article_no": "51",
+    "summary": null,
+    "content": "本細則自發布日施行。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=51",
+    "related_concepts": []
+  },
+  "WAGE_ARREARS_FUND_COMM_ORG-1": {
+    "id": "WAGE_ARREARS_FUND_COMM_ORG-1",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "1",
+    "summary": null,
+    "content": "本規程依勞動基準法第二十八條第六項規定訂定之。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0000010&flno=1",
+    "related_concepts": []
+  },
+  "WAGE_ARREARS_FUND_COMM_ORG-2": {
+    "id": "WAGE_ARREARS_FUND_COMM_ORG-2",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "2",
+    "summary": null,
+    "content": "(1)勞動部積欠工資墊償基金（以下簡稱本基金）管理委員會（以下簡稱本會），置委員十三人至十五人，其中一人為主任委員，由勞動部次長一人兼任之；其餘委員，由勞動部就下列人員派（聘）兼之：\n一、勞動部代表一人。\n二、經濟部代表一人。\n三、財政部代表一人。\n四、直轄市或縣（市）政府代表二人。\n五、勞方代表二人。\n六、資方代表二人。\n七、專家學者三人至五人。\n(2)本會之委員，任一性別比例不得少於三分之一。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0000010&flno=2",
+    "related_concepts": []
+  },
+  "WAGE_ARREARS_FUND_COMM_ORG-3": {
+    "id": "WAGE_ARREARS_FUND_COMM_ORG-3",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "3",
+    "summary": null,
+    "content": "本會委員任期二年，期滿得續聘之。但代表機關或團體出任者，應隨其本職進退。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0000010&flno=3",
+    "related_concepts": []
+  },
+  "WAGE_ARREARS_FUND_COMM_ORG-4": {
+    "id": "WAGE_ARREARS_FUND_COMM_ORG-4",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "4",
+    "summary": null,
+    "content": "(1)本會之任務如下：\n一、本基金年度計畫及業務報告之審議事項。\n二、本基金業務之檢討改進事項。\n三、本基金年度預算、決算之審議事項。\n四、本基金收支之審核事項。\n五、其他事項。\n(2)本會不對外行文，其決議事項應報請勞動部核定後分別辦理。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0000010&flno=4",
+    "related_concepts": []
+  },
+  "WAGE_ARREARS_FUND_COMM_ORG-5": {
+    "id": "WAGE_ARREARS_FUND_COMM_ORG-5",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "5",
+    "summary": null,
+    "content": "本會置執行秘書一人，由勞動部勞動條件及就業平等司司長兼任；置辦事人員若干人，由勞動部派兼之。本會行政管理事項，由勞動部統籌，涉及人事、預決算、財產管理之監督等業務，由各權責單位辦理。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0000010&flno=5",
+    "related_concepts": []
+  },
+  "WAGE_ARREARS_FUND_COMM_ORG-6": {
+    "id": "WAGE_ARREARS_FUND_COMM_ORG-6",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "6",
+    "summary": null,
+    "content": "(1)本會以每六個月開會一次為原則，必要時得舉行臨時會議，均由主任委員召集之。\n(2)委員應親自出席會議，不得委託他人代理出席。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0000010&flno=6",
+    "related_concepts": []
+  },
+  "WAGE_ARREARS_FUND_COMM_ORG-7": {
+    "id": "WAGE_ARREARS_FUND_COMM_ORG-7",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "7",
+    "summary": null,
+    "content": "本會開會應有二分之一以上委員出席，其決議事項應經出席委員三分之二以上同意行之。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0000010&flno=7",
+    "related_concepts": []
+  },
+  "WAGE_ARREARS_FUND_COMM_ORG-8": {
+    "id": "WAGE_ARREARS_FUND_COMM_ORG-8",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "8",
+    "summary": null,
+    "content": "本會開會時，得邀請勞動部勞工保險局及有關單位人員列席。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0000010&flno=8",
+    "related_concepts": []
+  },
+  "WAGE_ARREARS_FUND_COMM_ORG-9": {
+    "id": "WAGE_ARREARS_FUND_COMM_ORG-9",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "9",
+    "summary": null,
+    "content": "本會委員為無給職。但非屬勞動部人員之委員，得依規定支給兼職費及交通費。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0000010&flno=9",
+    "related_concepts": []
+  },
+  "WAGE_ARREARS_FUND_COMM_ORG-10": {
+    "id": "WAGE_ARREARS_FUND_COMM_ORG-10",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "10",
+    "summary": null,
+    "content": "本規程自發布日施行。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0000010&flno=10",
+    "related_concepts": []
+  },
+  "WAGE_ARREARS_FUND_PAY_REG-1": {
+    "id": "WAGE_ARREARS_FUND_PAY_REG-1",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "1",
+    "summary": null,
+    "content": "本辦法依勞動基準法（以下簡稱本法）第二十八條規定訂定之。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030005&flno=1",
+    "related_concepts": []
+  },
+  "WAGE_ARREARS_FUND_PAY_REG-2": {
+    "id": "WAGE_ARREARS_FUND_PAY_REG-2",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "2",
+    "summary": null,
+    "content": "(1)積欠工資墊償基金（以下簡稱本基金）由中央主管機關設積欠工資墊償基金管理委員會（以下簡稱管理委員會）管理之。\n(2)本基金之收繳及墊償等業務，委任勞動部勞工保險局（以下簡稱勞保局）辦理；運用業務由勞動部勞動基金運用局（以下簡稱基金運用局）辦理，必要時，並得將其運用，委託金融機構辦理。\n(3)勞保局為辦理本基金之收繳及保管事宜，應訂定相關作業規範，提經管理委員會通過，並報請中央主管機關核定。\n(4)本基金運用之監理，由中央主管機關行之。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030005&flno=2",
+    "related_concepts": []
+  },
+  "WAGE_ARREARS_FUND_PAY_REG-3": {
+    "id": "WAGE_ARREARS_FUND_PAY_REG-3",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "3",
+    "summary": null,
+    "content": "本基金由雇主依勞工保險投保薪資總額萬分之二．五按月提繳。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030005&flno=3",
+    "related_concepts": []
+  },
+  "WAGE_ARREARS_FUND_PAY_REG-4": {
+    "id": "WAGE_ARREARS_FUND_PAY_REG-4",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "4",
+    "summary": null,
+    "content": "(1)勞保局每月計算各雇主應提繳本基金之數額繕具提繳單，於次月底前寄送雇主，於繳納同月份勞工保險費時，一併繳納。\n(2)前項提繳單，雇主於次月底前未收到時，應按上月份提繳數額暫繳，並於次月份提繳時，一併沖轉結算。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030005&flno=4",
+    "related_concepts": []
+  },
+  "WAGE_ARREARS_FUND_PAY_REG-5": {
+    "id": "WAGE_ARREARS_FUND_PAY_REG-5",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "5",
+    "summary": null,
+    "content": "雇主對於提繳單所載金額如有異議，應先照額繳納後，再向勞保局申述理由，經勞保局查明確有錯誤者，於計算次月份提繳金額時沖轉結算。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030005&flno=5",
+    "related_concepts": []
+  },
+  "WAGE_ARREARS_FUND_PAY_REG-6": {
+    "id": "WAGE_ARREARS_FUND_PAY_REG-6",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "6",
+    "summary": null,
+    "content": "雇主提繳本基金，得依法列支為當年度費用。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030005&flno=6",
+    "related_concepts": []
+  },
+  "WAGE_ARREARS_FUND_PAY_REG-7": {
+    "id": "WAGE_ARREARS_FUND_PAY_REG-7",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "7",
+    "summary": null,
+    "content": "(1)本基金墊償範圍，以申請墊償勞工之雇主已提繳本基金者為限。\n(2)雇主欠繳本基金，嗣後已補提繳者，勞工亦得申請墊償。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030005&flno=7",
+    "related_concepts": []
+  },
+  "WAGE_ARREARS_FUND_PAY_REG-8": {
+    "id": "WAGE_ARREARS_FUND_PAY_REG-8",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "8",
+    "summary": null,
+    "content": "(1)雇主有歇業之情事，積欠勞工之工資、本法之退休金、資遣費或勞工退休金條例之資遣費（以下簡稱工資、退休金或資遣費），勞工已向雇主請求而未獲清償，請求墊償時，應檢附當地主管機關開具已註銷、撤銷或廢止工廠、商業或營利事業登記，或確已終止生產、營業、倒閉、解散經認定符合歇業事實之證明文件。\n(2)事業單位之分支機構發生註銷、撤銷或廢止工廠登記，或確已終止生產、營業經當地主管機關認定符合歇業事實者，亦得請求墊償。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030005&flno=8",
+    "related_concepts": []
+  },
+  "WAGE_ARREARS_FUND_PAY_REG-9": {
+    "id": "WAGE_ARREARS_FUND_PAY_REG-9",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "9",
+    "summary": null,
+    "content": "(1)雇主有歇業、清算或宣告破產之情事，勞工請求墊償時，應檢附雇主積欠工資、退休金或資遣費之債權證明文件；雇主清算或宣告破產者，並應檢附向清算人或破產管理人申報債權之證明文件。\n(2)勞保局於勞工依前項規定請求墊償時，經查證仍未能確定積欠工資、退休金或資遣費金額及工作年資者，得依其勞工保險或就業保險投保薪資及投保年資認定後，予以墊償。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030005&flno=9",
+    "related_concepts": []
+  },
+  "WAGE_ARREARS_FUND_PAY_REG-10": {
+    "id": "WAGE_ARREARS_FUND_PAY_REG-10",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "10",
+    "summary": null,
+    "content": "(1)同一雇主之勞工請求墊償時，應備申請書及下列文件向勞保局申請之：\n一、請求墊償項目、金額及勞工名冊。\n二、第八條或前條所定證明文件。\n三、墊償收據。\n(2)前項之申請應一次共同為之。但情況特殊者，不在此限。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030005&flno=10",
+    "related_concepts": []
+  },
+  "WAGE_ARREARS_FUND_PAY_REG-11": {
+    "id": "WAGE_ARREARS_FUND_PAY_REG-11",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "11",
+    "summary": null,
+    "content": "勞工故意隱匿事實或拒絕、妨礙查詢，或為不實之舉證或證明文件者，不予墊償。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030005&flno=11",
+    "related_concepts": []
+  },
+  "WAGE_ARREARS_FUND_PAY_REG-12": {
+    "id": "WAGE_ARREARS_FUND_PAY_REG-12",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "12",
+    "summary": null,
+    "content": "勞工請求墊償，勞保局應自收件日起三十日內核定。如需會同當地主管機關或勞動檢查機構調查該事業單位有關簿冊、憑證、勞工退休準備金專戶及其他相關文件後核辦者，得延長二十日。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030005&flno=12",
+    "related_concepts": []
+  },
+  "WAGE_ARREARS_FUND_PAY_REG-13": {
+    "id": "WAGE_ARREARS_FUND_PAY_REG-13",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "13",
+    "summary": null,
+    "content": "勞工對勞保局之核定事項有異議時，得於接到核定通知之日起三十天內，繕具訴願書，經由勞保局向中央主管機關提起訴願。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030005&flno=13",
+    "related_concepts": []
+  },
+  "WAGE_ARREARS_FUND_PAY_REG-14": {
+    "id": "WAGE_ARREARS_FUND_PAY_REG-14",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "14",
+    "summary": null,
+    "content": "(1)勞保局依本法第二十八條規定墊償勞工工資、退休金或資遣費後，在墊償金額範圍內，承受勞工對雇主之債權，並得向雇主、清算人或破產管理人請求於一定期間內償還墊款；逾期償還者，自逾期之日起，依基金所存金融機構當期一年定期存款利率計收利息。\n(2)雇主欠繳基金者，除追繳及依本法第七十九條規定處罰鍰外，並自墊付日起計收利息。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030005&flno=14",
+    "related_concepts": []
+  },
+  "WAGE_ARREARS_FUND_PAY_REG-15": {
+    "id": "WAGE_ARREARS_FUND_PAY_REG-15",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "15",
+    "summary": null,
+    "content": "(1)本基金之墊款，應直接發給勞工；勞工死亡時，依本法第五十九條第四款順位交其遺屬領取，無遺屬者，撤銷其墊償。\n(2)前項墊款由遺屬請領者，應檢附下列文件：\n一、載有勞工本人死亡日期之戶口名簿影本。\n二、請領人之戶口名簿影本。\n三、請領人及勞工非同一戶籍者，其證明身分關係之相關戶口名簿影本或其他相當證明文件。\n(3)同一順位之遺屬有二人以上者，應委任一名遺屬代表請領全部墊款，並負責分配之。\n(4)第一項之墊款，匯入勞工本人或其遺屬指定之國外金融機構帳戶者，相關國外匯款手續費，由本基金編列之行政事務費項下支應。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030005&flno=15",
+    "related_concepts": []
+  },
+  "WAGE_ARREARS_FUND_PAY_REG-16": {
+    "id": "WAGE_ARREARS_FUND_PAY_REG-16",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "16",
+    "summary": null,
+    "content": "勞保局或雇主為勞工辦理墊償手續，不得收取任何費用。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030005&flno=16",
+    "related_concepts": []
+  },
+  "WAGE_ARREARS_FUND_PAY_REG-17": {
+    "id": "WAGE_ARREARS_FUND_PAY_REG-17",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "17",
+    "summary": null,
+    "content": "(1)本基金孳息收入，依所得稅法有關規定免徵所得稅。\n(2)勞保局及基金運用局辦理本基金有關業務，依有關稅法規定免繳稅捐。\n(3)勞工請領墊款之收據，依印花稅法有關規定免徵印花稅。\n(4)勞保局於墊償時，應依法代為扣繳墊款之所得稅；雇主或清算人或破產管理人償還墊款時，不再重複扣繳。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030005&flno=17",
+    "related_concepts": []
+  },
+  "WAGE_ARREARS_FUND_PAY_REG-18": {
+    "id": "WAGE_ARREARS_FUND_PAY_REG-18",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "18",
+    "summary": null,
+    "content": "勞保局及基金運用局辦理本基金業務，其每年所需行政經費，應編列預算，經管理委員會審議通過，並報請中央主管機關核定，由本基金孳息支應。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030005&flno=18",
+    "related_concepts": []
+  },
+  "WAGE_ARREARS_FUND_PAY_REG-19": {
+    "id": "WAGE_ARREARS_FUND_PAY_REG-19",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "19",
+    "summary": null,
+    "content": "(1)本基金之運用範圍如下：\n一、存放於金融機構。\n二、以貸款方式供各級政府辦理有償性或可分年編列預算償還之經濟建設或投資支出之用。\n三、購買上市公司股票、國內基金管理機構所發行或經理之證券投資信託基金之受益憑證、國內資產證券化商品。\n四、購買調節本基金經常收支所需票券或債券。\n(2)前項第三款運用金額，不得超過本基金淨額之百分之三十。\n(3)管理委員會得請基金運用局就年度基金運用情形列席報告。\n(4)本基金之收益，除前條規定支應行政經費外，應併入本基金運用。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030005&flno=19",
+    "related_concepts": []
+  },
+  "WAGE_ARREARS_FUND_PAY_REG-20": {
+    "id": "WAGE_ARREARS_FUND_PAY_REG-20",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "20",
+    "summary": null,
+    "content": "勞保局應於每年度結束後編具業務報告，並分別按月將下列各報表請管理委員會轉報中央主管機關備查：\n一、提繳事業單位及勞工人數統計表。\n二、本基金收繳及墊償會計報表。\n三、本基金概況表。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030005&flno=20",
+    "related_concepts": []
+  },
+  "WAGE_ARREARS_FUND_PAY_REG-21": {
+    "id": "WAGE_ARREARS_FUND_PAY_REG-21",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "21",
+    "summary": null,
+    "content": "勞保局取得工資、退休金或資遣費債權後，有下列情形之一，其債權之全部或一部，得經管理委員會審議通過，報請中央主管機關准予呆帳損失列支：\n一、債務人因逃匿或行蹤不明，無從追償者。\n二、取得債務人確已無力清償墊款之證明文件或法院債權憑證者。\n三、與債務人達成和解而未獲清償之墊款，並取得和解證明者。\n四、可償還之金額不敷追償費用者。\n五、依有關法令規定雇主可免除其清償債務責任。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030005&flno=21",
+    "related_concepts": []
+  },
+  "WAGE_ARREARS_FUND_PAY_REG-22": {
+    "id": "WAGE_ARREARS_FUND_PAY_REG-22",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "22",
+    "summary": null,
+    "content": "本辦法所規定之各種書表格式，由勞保局及基金運用局分別定之。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030005&flno=22",
+    "related_concepts": []
+  },
+  "WAGE_ARREARS_FUND_PAY_REG-23": {
+    "id": "WAGE_ARREARS_FUND_PAY_REG-23",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "23",
+    "summary": null,
+    "content": "本基金開始提繳及墊償日期，由中央主管機關以命令定之。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030005&flno=23",
+    "related_concepts": []
+  },
+  "WAGE_ARREARS_FUND_PAY_REG-24": {
+    "id": "WAGE_ARREARS_FUND_PAY_REG-24",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "24",
+    "summary": null,
+    "content": "本辦法自發布日施行。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030005&flno=24",
+    "related_concepts": []
+  },
+  "LEAVE_RULE-1": {
+    "id": "LEAVE_RULE-1",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "1",
+    "summary": null,
+    "content": "本規則依勞動基準法（以下簡稱本法）第四十三條規定訂定之。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030006&flno=1",
+    "related_concepts": []
+  },
+  "LEAVE_RULE-2": {
+    "id": "LEAVE_RULE-2",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "2",
+    "summary": null,
+    "content": "勞工結婚者給予婚假八日，工資照給。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030006&flno=2",
+    "related_concepts": []
+  },
+  "LEAVE_RULE-3": {
+    "id": "LEAVE_RULE-3",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "3",
+    "summary": null,
+    "content": "勞工喪假依左列規定：\n一、父母、養父母、繼父母、配偶喪亡者，給予喪假八日，工資照給。\n二、祖父母、子女、配偶之父母、配偶之養父母或繼父母喪亡者，給予喪假六日，工資照給。\n三、曾祖父母、兄弟姊妹、配偶之祖父母喪亡者，給予喪假三日，工資照給。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030006&flno=3",
+    "related_concepts": []
+  },
+  "LEAVE_RULE-4": {
+    "id": "LEAVE_RULE-4",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "4",
+    "summary": null,
+    "content": "(1)勞工因普通傷害、疾病或生理原因必須治療或休養者，得在左列規定範圍內請普通傷病假：\n一、未住院者，一年內合計不得超過三十日。\n二、住院者，二年內合計不得超過一年。\n三、未住院傷病假與住院傷病假二年內合計不得超過一年。\n(2)經醫師診斷，罹患癌症（含原位癌）採門診方式治療或懷孕期間需安胎休養者，其治療或休養期間，併入住院傷病假計算。\n(3)普通傷病假一年內未超過三十日部分，工資折半發給，其領有勞工保險普通傷病給付未達工資半數者，由雇主補足之。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030006&flno=4",
+    "related_concepts": []
+  },
+  "LEAVE_RULE-5": {
+    "id": "LEAVE_RULE-5",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "5",
+    "summary": null,
+    "content": "勞工普通傷病假超過前條第一項規定之期限，經以事假或特別休假抵充後仍未痊癒者，得予留職停薪。但留職停薪期間以一年為限。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030006&flno=5",
+    "related_concepts": []
+  },
+  "LEAVE_RULE-6": {
+    "id": "LEAVE_RULE-6",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "6",
+    "summary": null,
+    "content": "勞工因職業災害而致失能、傷害或疾病者，其治療、休養期間，給予公傷病假。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030006&flno=6",
+    "related_concepts": []
+  },
+  "LEAVE_RULE-7": {
+    "id": "LEAVE_RULE-7",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "7",
+    "summary": null,
+    "content": "(1)勞工因有事故必須親自處理，得請事假，一年內合計不得超過十四日。事假期間不給工資。\n(2)勞工為親自照顧家庭成員，除本法或其他法律另有規定者外，得依前項規定請事假，並得擇定以小時為請假單位。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030006&flno=7",
+    "related_concepts": []
+  },
+  "LEAVE_RULE-8": {
+    "id": "LEAVE_RULE-8",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "8",
+    "summary": null,
+    "content": "勞工依法令規定應給予公假者，工資照給，其假期視實際需要定之。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030006&flno=8",
+    "related_concepts": []
+  },
+  "LEAVE_RULE-9": {
+    "id": "LEAVE_RULE-9",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "9",
+    "summary": null,
+    "content": "(1)勞工有下列情形，雇主不得視為缺勤而影響其全勤獎金；其他法律另有規定者，從其規定：\n一、勞工請婚假、喪假、公傷病假及公假。\n二、勞工因妊娠未滿三個月流產未請產假，而請普通傷病假。\n三、勞工因親自照顧家庭成員，依第七條規定請事假。\n(2)勞工請前項第二款以外之普通傷病假，其全勤獎金之扣發，應按請普通傷病假日數依比例計算。但勞雇雙方另有優於法令之約定者，從其約定。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030006&flno=9",
+    "related_concepts": []
+  },
+  "LEAVE_RULE-9-1": {
+    "id": "LEAVE_RULE-9-1",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "9-1",
+    "summary": null,
+    "content": "(1)勞工一年內請普通傷病假日數未超過十日者，除本規則或其他法律另有規定，從其規定者外，雇主不得因勞工請普通傷病假而為不利之處分。\n(2)勞工因請普通傷病假而受有不利處分者，雇主對於該不利處分與其請普通傷病假行為無關之事實，負舉證責任。\n(3)勞工請普通傷病假超過第一項規定日數者，雇主為相關人事考核時，仍應以其工作能力、工作態度及實際績效等綜合考量，不得僅以請普通傷病假日數作為考量因素。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030006&flno=9-1",
+    "related_concepts": []
+  },
+  "LEAVE_RULE-10": {
+    "id": "LEAVE_RULE-10",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "10",
+    "summary": null,
+    "content": "勞工請假時，應於事前親自以口頭或書面敘明請假理由及日數。但遇有急病或緊急事故，得委託他人代辦請假手續。辦理請假手續時，雇主得要求勞工提出有關證明文件。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030006&flno=10",
+    "related_concepts": []
+  },
+  "LEAVE_RULE-11": {
+    "id": "LEAVE_RULE-11",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "11",
+    "summary": null,
+    "content": "雇主或勞工違反本規則之規定時，主管機關得依本法有關規定辦理。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030006&flno=11",
+    "related_concepts": []
+  },
+  "LEAVE_RULE-12": {
+    "id": "LEAVE_RULE-12",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "12",
+    "summary": null,
+    "content": "(1)本規則自發布日施行。\n(2)本規則中華民國一百十四年十二月九日修正發布之條文，自一百十五年一月一日施行。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030006&flno=12",
+    "related_concepts": []
+  },
+  "LSA_HEALTH_DETERMINATION-1": {
+    "id": "LSA_HEALTH_DETERMINATION-1",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "1",
+    "summary": null,
+    "content": "本辦法依勞動基準法（以下簡稱本法）第四十五條第三項規定訂定之。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030025&flno=1",
+    "related_concepts": []
+  },
+  "LSA_HEALTH_DETERMINATION-2": {
+    "id": "LSA_HEALTH_DETERMINATION-2",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "2",
+    "summary": null,
+    "content": "雇主或受領勞務者使下列人員從事勞動（以下簡稱工作者），應依本辦法申請許可：\n一、國民中學未畢業，且未滿十五歲受僱從事工作者。\n二、未滿十五歲透過他人取得工作為第三人提供勞務，或直接為他人提供勞務取得報酬，且未具勞僱關係之工作者。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030025&flno=2",
+    "related_concepts": []
+  },
+  "LSA_HEALTH_DETERMINATION-3": {
+    "id": "LSA_HEALTH_DETERMINATION-3",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "3",
+    "summary": null,
+    "content": "有下列情形之一者，工作者不得從事：\n一、坑內及局限空間作業。\n二、吊掛、空中及高架作業。\n三、水中作業、水面作業及無安全防護措施之岸邊作業。\n四、光線及噪音影響身心健康之作業環境。\n五、農藥之噴灑及家禽、家畜及水產養殖之投藥及消毒工作。\n六、違反公共秩序及善良風俗。\n七、經醫師評估超出生理或心理負擔能力。\n八、職業安全衛生法、兒童及少年福利與權益保障法及其他法令所禁止從事之工作。\n九、其他經主管機關認定有礙身心健康之工作。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030025&flno=3",
+    "related_concepts": []
+  },
+  "LSA_HEALTH_DETERMINATION-4": {
+    "id": "LSA_HEALTH_DETERMINATION-4",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "4",
+    "summary": null,
+    "content": "(1)工作者之工作時間，應符合下列規定：\n一、年齡未滿六歲者，每日不得超過二小時。\n二、年齡六歲以上未滿十二歲者，每日不得超過三小時。\n三、年齡十二歲以上未滿十五歲者，每日不得超過四小時。\n(2)前項第一款未滿六個月之工作者，每次工作時間不得超過三十分鐘。\n(3)各學期間假期之工作日數，不得超過該假期總日數之三分之二，工作時間適用本法第四十七條及第四十八條規定。開學前七日內不得工作。\n(4)非於本國境內學校就學之工作者，不適用前項之規定。\n(5)未滿十二歲之工作者從事廣播、電視及電影事業之節目演出、舞台及馬戲團演出、有聲媒體錄製、廣告之拍攝錄製、模特兒展演、才藝及民俗技藝表演之工作時，工作場所應有法定代理人陪同。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030025&flno=4",
+    "related_concepts": []
+  },
+  "LSA_HEALTH_DETERMINATION-5": {
+    "id": "LSA_HEALTH_DETERMINATION-5",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "5",
+    "summary": null,
+    "content": "(1)工作者之待命及準備時間，應計入工作時間。繼續工作二小時，至少應有十五分鐘之休息。\n(2)工作者應於每週星期六或星期日擇一日全日休息，作為例假。\n(3)雇主或受領勞務者應置備簽到簿或出勤卡，逐次記載工作者之工作時間及休息時間。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030025&flno=5",
+    "related_concepts": []
+  },
+  "LSA_HEALTH_DETERMINATION-6": {
+    "id": "LSA_HEALTH_DETERMINATION-6",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "6",
+    "summary": null,
+    "content": "(1)雇主或受領勞務者，應對符合勞工保險條例、勞工職業災害保險及保護法、全民健康保險法所定應參加保險為保險對象之工作者，辦理參加保險。\n(2)非屬勞工職業災害保險及保護法所定應參加保險為保險對象之工作者，雇主或受領勞務者應為其投保商業保險，或依勞工職業災害保險及保護法第十條規定辦理參加保險。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030025&flno=6",
+    "related_concepts": []
+  },
+  "LSA_HEALTH_DETERMINATION-7": {
+    "id": "LSA_HEALTH_DETERMINATION-7",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "7",
+    "summary": null,
+    "content": "(1)雇主或受領勞務者，應於工作者勞務提供起始日起前九十日至二十日之期間，檢具下列文件向勞務提供地之直轄市、縣（市）政府（以下簡稱地方主管機關）申請許可：\n一、申請書。\n二、雇主或受領勞務者之身分證明文件、公司登記或商業登記證明、工廠登記證明及特許事業許可證等文件之影本。\n三、工作者之戶口名簿影本或護照影本。\n四、勞工保險、勞工職業災害保險或商業保險投保計畫書及全民健康保險卡之影本。\n五、學籍所在地或就讀學校之學校同意書。\n六、法定代理人之同意書。\n七、其他中央主管機關規定之文件。\n(2)依前項規定取得許可之雇主或受領勞務者，應自工作者提供勞務起始日起十日內，檢具相關投保證明文件向地方主管機關備查。\n(3)第一項許可期間，每次最長為一年。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030025&flno=7",
+    "related_concepts": []
+  },
+  "LSA_HEALTH_DETERMINATION-8": {
+    "id": "LSA_HEALTH_DETERMINATION-8",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "8",
+    "summary": null,
+    "content": "(1)前條申請案件涉及數個勞務提供地者，雇主或受領勞務者得向其中任一勞務提供地之地方主管機關提出申請。\n(2)前項地方主管機關許可後，應副知各勞務提供地之地方主管機關。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030025&flno=8",
+    "related_concepts": []
+  },
+  "LSA_HEALTH_DETERMINATION-9": {
+    "id": "LSA_HEALTH_DETERMINATION-9",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "9",
+    "summary": null,
+    "content": "地方主管機關許可後，原依第七條第一項規定檢具之文件有變更時，雇主或受領勞務者應將變更後必要文件併同原許可文件，依第七條規定申請變更許可，其許可期間至原許可期間屆滿時止。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030025&flno=9",
+    "related_concepts": []
+  },
+  "LSA_HEALTH_DETERMINATION-10": {
+    "id": "LSA_HEALTH_DETERMINATION-10",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "10",
+    "summary": null,
+    "content": "雇主或受領勞務者提出申請時，有下列情形之一者，地方主管機關應不予受理：\n一、不符第七條第一項規定之申請期間。\n二、檢具之文件不齊全，經通知限期補正，屆期未補正。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030025&flno=10",
+    "related_concepts": []
+  },
+  "LSA_HEALTH_DETERMINATION-11": {
+    "id": "LSA_HEALTH_DETERMINATION-11",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "11",
+    "summary": null,
+    "content": "雇主或受領勞務者申請許可時，有下列情形之一者，地方主管機關應不予許可；已許可者，得撤銷或廢止其許可：\n一、申請文件有虛偽或不實記載。\n二、違反第三條至第七條規定。\n三、實際從事工作與原許可之工作不符。\n四、妨礙工作者受國民義務教育之權利。\n五、未依第七條第二項規定提供相關投保證明文件。\n六、其他違反本法或本辦法之規定。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030025&flno=11",
+    "related_concepts": []
+  },
+  "LSA_HEALTH_DETERMINATION-12": {
+    "id": "LSA_HEALTH_DETERMINATION-12",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "12",
+    "summary": null,
+    "content": "主管機關應將第七條第一項所列各款資料登錄於中央主管機關指定之資訊系統。所登錄之資料主管機關得作為研究及統計之用。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030025&flno=12",
+    "related_concepts": []
+  },
+  "LSA_HEALTH_DETERMINATION-13": {
+    "id": "LSA_HEALTH_DETERMINATION-13",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "13",
+    "summary": null,
+    "content": "為工作者之權益及健康福祉，主管機關得定期、不定期實施勞動檢查；教育主管機關得就從事勞務有無影響工作者受國民義務教育之權利進行評估並追蹤輔導；社政主管機關得就工作者從事勞務有無違反兒童及少年福利與權益保障法規，進行輔導諮詢。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030025&flno=13",
+    "related_concepts": []
+  },
+  "LSA_HEALTH_DETERMINATION-14": {
+    "id": "LSA_HEALTH_DETERMINATION-14",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "14",
+    "summary": null,
+    "content": "本辦法之書表格式，由中央主管機關定之。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030025&flno=14",
+    "related_concepts": []
+  },
+  "LSA_HEALTH_DETERMINATION-15": {
+    "id": "LSA_HEALTH_DETERMINATION-15",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "15",
+    "summary": null,
+    "content": "本辦法施行前已依本法第四十五條規定取得認定者，應自本辦法施行之日起一年內，向地方主管機關申請許可。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030025&flno=15",
+    "related_concepts": []
+  },
+  "LSA_HEALTH_DETERMINATION-16": {
+    "id": "LSA_HEALTH_DETERMINATION-16",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "16",
+    "summary": null,
+    "content": "(1)本辦法自發布日施行。\n(2)本辦法修正條文自中華民國一百十一年五月一日施行。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030025&flno=16",
+    "related_concepts": []
+  },
+  "FEMALE_NIGHT_SAFETY_STD-1": {
+    "id": "FEMALE_NIGHT_SAFETY_STD-1",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "1",
+    "summary": null,
+    "content": "本標準依勞動基準法第四十九條第二項規定訂定之。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030011&flno=1",
+    "related_concepts": []
+  },
+  "FEMALE_NIGHT_SAFETY_STD-2": {
+    "id": "FEMALE_NIGHT_SAFETY_STD-2",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "2",
+    "summary": null,
+    "content": "雇主對於工作場所之通道、地板、階梯等，應保持不致使勞工跌倒、滑倒、踩傷等之安全狀態，或採取必要之預防措施。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030011&flno=2",
+    "related_concepts": []
+  },
+  "FEMALE_NIGHT_SAFETY_STD-3": {
+    "id": "FEMALE_NIGHT_SAFETY_STD-3",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "3",
+    "summary": null,
+    "content": "雇主於工作場所設置之安全門及安全梯，夜間工作時間內不得上鎖，其通道不得堆置物品。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030011&flno=3",
+    "related_concepts": []
+  },
+  "FEMALE_NIGHT_SAFETY_STD-4": {
+    "id": "FEMALE_NIGHT_SAFETY_STD-4",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "4",
+    "summary": null,
+    "content": "雇主對於工作場所之出入口、樓梯、通道、安全門、安全梯、廁所及停車場等夜間工作可能前往之場所，應有適當之照明。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030011&flno=4",
+    "related_concepts": []
+  },
+  "FEMALE_NIGHT_SAFETY_STD-5": {
+    "id": "FEMALE_NIGHT_SAFETY_STD-5",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "5",
+    "summary": null,
+    "content": "雇主應於工作場所設置停電或平常照明系統失效時使用之緊急照明系統。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030011&flno=5",
+    "related_concepts": []
+  },
+  "FEMALE_NIGHT_SAFETY_STD-6": {
+    "id": "FEMALE_NIGHT_SAFETY_STD-6",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "6",
+    "summary": null,
+    "content": "雇主對於工作場所主要人行道及有關安全門、安全梯，應有夜間足以辨識之明顯標示。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030011&flno=6",
+    "related_concepts": []
+  },
+  "FEMALE_NIGHT_SAFETY_STD-7": {
+    "id": "FEMALE_NIGHT_SAFETY_STD-7",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "7",
+    "summary": null,
+    "content": "雇主對於工作場所應使空氣充分流通，必要時，應以機械通風設備換氣。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030011&flno=7",
+    "related_concepts": []
+  },
+  "FEMALE_NIGHT_SAFETY_STD-8": {
+    "id": "FEMALE_NIGHT_SAFETY_STD-8",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "8",
+    "summary": null,
+    "content": "雇主應於工作場所提供保全、守衛或電子監視裝備等必要之安全措施及設備。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030011&flno=8",
+    "related_concepts": []
+  },
+  "FEMALE_NIGHT_SAFETY_STD-9": {
+    "id": "FEMALE_NIGHT_SAFETY_STD-9",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "9",
+    "summary": null,
+    "content": "勞工非於雇主所能支配、管理之工作場所工作者，雇主應事前執行危害辨識、告知勞工工作環境危害因素及制定防護措施，並對勞工施以安全衛生教育及訓練。必要時，應提供個人防護設施。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030011&flno=9",
+    "related_concepts": []
+  },
+  "FEMALE_NIGHT_SAFETY_STD-10": {
+    "id": "FEMALE_NIGHT_SAFETY_STD-10",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "10",
+    "summary": null,
+    "content": "本標準自發布日施行。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030011&flno=10",
+    "related_concepts": []
+  },
+  "RET_RESERVE_SUP_COMM_ORG-1": {
+    "id": "RET_RESERVE_SUP_COMM_ORG-1",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "1",
+    "summary": null,
+    "content": "本準則依勞動基準法第五十六條第五項規定訂定之。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030024&flno=1",
+    "related_concepts": []
+  },
+  "RET_RESERVE_SUP_COMM_ORG-2": {
+    "id": "RET_RESERVE_SUP_COMM_ORG-2",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "2",
+    "summary": null,
+    "content": "事業單位勞工退休準備金監督委員會（以下簡稱監督委員會）之任務如左：\n一、關於勞工退休準備金暫停提撥之審議事項。\n二、關於勞工退休準備金提撥數額之查核事項。\n三、關於勞工退休準備金存儲及支用之查核事項。\n四、關於勞工退休金給付數額之查核事項。\n五、其他有關勞工退休準備金之監督事項。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030024&flno=2",
+    "related_concepts": []
+  },
+  "RET_RESERVE_SUP_COMM_ORG-3": {
+    "id": "RET_RESERVE_SUP_COMM_ORG-3",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "3",
+    "summary": null,
+    "content": "(1)監督委員會由勞工與雇主分別選派代表共同組成。置委員三人至十五人，其中一人為主任委員，一人為副主任委員，委員中勞工代表人數不得少於三分之二。但僱用勞工人數二人以下者，委員中勞工代表人數不得少於二分之一。\n(2)事業單位僱用勞工在一百人以上者其委員人數不得少於九人。\n(3)事業單位設有分支機構者，得分別或合併組織監督委員會。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030024&flno=3",
+    "related_concepts": []
+  },
+  "RET_RESERVE_SUP_COMM_ORG-4": {
+    "id": "RET_RESERVE_SUP_COMM_ORG-4",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "4",
+    "summary": null,
+    "content": "監督委員會勞工代表由工會推選，未成立工會者由勞工直接選舉之，並得推選候補委員。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030024&flno=4",
+    "related_concepts": []
+  },
+  "RET_RESERVE_SUP_COMM_ORG-5": {
+    "id": "RET_RESERVE_SUP_COMM_ORG-5",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "5",
+    "summary": null,
+    "content": "(1)監督委員會委員之任期，每一任不得超過四年。\n(2)監督委員會之勞工代表，其連任規定如下：\n一、勞工直接選舉者：連選得連任。\n二、工會推選者：連選得連任，連任人數不得超過二分之一。但有特殊情形者，不在此限。\n(3)監督委員會之雇主代表，其連派得連任，並得依職務變動隨時改派。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030024&flno=5",
+    "related_concepts": []
+  },
+  "RET_RESERVE_SUP_COMM_ORG-6": {
+    "id": "RET_RESERVE_SUP_COMM_ORG-6",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "6",
+    "summary": null,
+    "content": "監督委員會主任委員由雇主就雇主代表中指派，綜理會務；副主任委員由勞工代表互選之，襄助主任委員處理會務。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030024&flno=6",
+    "related_concepts": []
+  },
+  "RET_RESERVE_SUP_COMM_ORG-7": {
+    "id": "RET_RESERVE_SUP_COMM_ORG-7",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "7",
+    "summary": null,
+    "content": "監督委員會得視實際需要置職員若干人，由事業單位派員兼任。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030024&flno=7",
+    "related_concepts": []
+  },
+  "RET_RESERVE_SUP_COMM_ORG-8": {
+    "id": "RET_RESERVE_SUP_COMM_ORG-8",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "8",
+    "summary": null,
+    "content": "事業單位成立監督委員會，應將成立日期、會址、委員、職員名冊及印鑑卡等，報請當地主管機關核定。會址、委員、職員及印鑑等有異動時亦同。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030024&flno=8",
+    "related_concepts": []
+  },
+  "RET_RESERVE_SUP_COMM_ORG-9": {
+    "id": "RET_RESERVE_SUP_COMM_ORG-9",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "9",
+    "summary": null,
+    "content": "監督委員會每三個月舉行會議一次，必要時得召開臨時會議。會議主席由主任委員擔任之。主任委員因故不能出席時由副主任委員代理之。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030024&flno=9",
+    "related_concepts": []
+  },
+  "RET_RESERVE_SUP_COMM_ORG-10": {
+    "id": "RET_RESERVE_SUP_COMM_ORG-10",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "10",
+    "summary": null,
+    "content": "(1)事業單位勞工查詢勞工退休準備金專戶餘額時，監督委員會應予提供。\n(2)監督委員會未盡監督責任或處理失當時，當地主管機關得通知其改善或改組。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030024&flno=10",
+    "related_concepts": []
+  },
+  "RET_RESERVE_SUP_COMM_ORG-11": {
+    "id": "RET_RESERVE_SUP_COMM_ORG-11",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "11",
+    "summary": null,
+    "content": "本準則自發布日施行。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030024&flno=11",
+    "related_concepts": []
+  },
+  "RET_FUND_MGMT_REG-1": {
+    "id": "RET_FUND_MGMT_REG-1",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "1",
+    "summary": null,
+    "content": "本辦法依勞動基準法第五十六條第四項規定訂定之。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030009&flno=1",
+    "related_concepts": []
+  },
+  "RET_FUND_MGMT_REG-2": {
+    "id": "RET_FUND_MGMT_REG-2",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "2",
+    "summary": null,
+    "content": "本基金之主管機關為勞動部。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030009&flno=2",
+    "related_concepts": []
+  },
+  "RET_FUND_MGMT_REG-3": {
+    "id": "RET_FUND_MGMT_REG-3",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "3",
+    "summary": null,
+    "content": "(1)本基金之收支、保管及運用，由主管機關會同財政部委託臺灣銀行股份有限公司（以下簡稱臺灣銀行）辦理，其中保管、運用，並得委託其他金融機構辦理。\n(2)臺灣銀行為辦理本基金之收支、保管，得委託其他金融機構代辦；其委託契約應送請主管機關備查。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030009&flno=3",
+    "related_concepts": []
+  },
+  "RET_FUND_MGMT_REG-4": {
+    "id": "RET_FUND_MGMT_REG-4",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "4",
+    "summary": null,
+    "content": "本基金之來源如下：\n一、依勞動基準法第五十六條第一項規定由各事業單位所提撥之勞工退休準備金。\n二、依勞工退休金條例第五十條第一項所收繳之罰鍰。\n三、本基金孳息及運用之收益。\n四、其他經政府核定撥交之款項。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030009&flno=4",
+    "related_concepts": []
+  },
+  "RET_FUND_MGMT_REG-5": {
+    "id": "RET_FUND_MGMT_REG-5",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "5",
+    "summary": null,
+    "content": "本基金之支出範圍，限為支付勞工退休金及依勞工退休準備金提撥及管理辦法第十條規定作為事業單位歇業時之資遣費。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030009&flno=5",
+    "related_concepts": []
+  },
+  "RET_FUND_MGMT_REG-6": {
+    "id": "RET_FUND_MGMT_REG-6",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "6",
+    "summary": null,
+    "content": "(1)本基金之運用範圍如下：\n一、存放國內外之金融機構。\n二、以貸款方式供各級政府或公營事業機構辦理有償性或可分年編列預算償還之經濟建設或投資支出之用。\n三、投資國內外上市、上櫃或私募之權益證券。\n四、投資國內外債務證券。\n五、投資國內公開募集或私募之證券投資信託基金、期貨信託基金之受益憑證、共同信託基金受益證券或集合信託商品。\n六、投資外國基金管理機構所發行或經理之受益憑證、基金股份或投資單位。\n七、投資國內外不動產及其證券化商品。\n八、投資國內外商品現貨。\n九、從事國內外衍生性金融商品交易。\n十、從事有價證券出借交易。\n十一、其他經主管機關核准有利於本基金收益之項目。\n(2)前項運用範圍涉及存放外匯存款及國外投資者，其比率合計不得超過本基金淨額百分之六十。\n(3)第一項運用範圍涉及大陸地區或香港、澳門者，應符合金融主管機關或其他有關機關所定相關法令之規定。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030009&flno=6",
+    "related_concepts": []
+  },
+  "RET_FUND_MGMT_REG-7": {
+    "id": "RET_FUND_MGMT_REG-7",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "7",
+    "summary": null,
+    "content": "本基金投資外幣存款，應依下列規定辦理：\n一、存放於中華民國境內之銀行或本國銀行海外分支機構。\n二、存放於全世界銀行資產或資本排名居前三百名以內或經國際知名或金融主管機關認可之信用評等事業機構評等達一定等級以上之銀行。\n三、存放國內外同一金融機構之外幣存款，不得超過本基金淨值百分之一。但存放於本基金委託保管銀行之活期性存款，以及國外委託經營部分不列入該金額計算。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030009&flno=7",
+    "related_concepts": []
+  },
+  "RET_FUND_MGMT_REG-8": {
+    "id": "RET_FUND_MGMT_REG-8",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "8",
+    "summary": null,
+    "content": "本基金投資國外有價證券應遵守下列投資比率限制：\n一、購入單一國外股票、債券、交易所買賣基金或境外基金之總成本，不得超過投資當時本基金淨額之百分之一。\n二、投資於任一國外股票、債券之總額，不得超過各該發行總額之百分之十。\n三、投資於任一交易所買賣基金或境外基金，不得超過該基金已發行受益憑證百分之十。\n四、投資存託憑證應與所持有該存託憑證發行公司發行之股票，合併計算總金額或總數額；其存託憑證之數額，以該存託憑證表彰股票之股份數額計算之，合併計算投資之比率上限，依第一款及第二款規定辦理。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030009&flno=8",
+    "related_concepts": []
+  },
+  "RET_FUND_MGMT_REG-9": {
+    "id": "RET_FUND_MGMT_REG-9",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "9",
+    "summary": null,
+    "content": "(1)本基金從事衍生性金融商品交易，應透過各國金融、證券、期貨主管機關核准之金融機構為之，並依下列規定辦理：\n一、除保本型商品外，以不增加本基金財務槓桿為原則。\n二、配合國外投資之新臺幣與外幣間匯率避險需要，得於中央銀行所定相關規定之限額及工具範圍內從事外匯衍生性金融商品交易。\n三、從事非外匯衍生性金融商品交易，以經各國主管機關、交易所或店頭市場核准、公告或掛牌之交易契約為範圍。\n(2)本基金從事衍生性金融商品交易之限額、對象及風險管理措施，由勞動部勞動基金運用局擬訂，報請主管機關核定。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030009&flno=9",
+    "related_concepts": []
+  },
+  "RET_FUND_MGMT_REG-10": {
+    "id": "RET_FUND_MGMT_REG-10",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "10",
+    "summary": null,
+    "content": "(1)本基金之運用，其每年決算分配之最低收益，不得低於依當地銀行二年定期存款利率計算之收益。\n(2)本基金運用所得於減除期末投資運用評價未實現利益，並補足前二年度累積短絀後，有超過當地銀行二年定期存款利率計算之收益時，應以其超過部分之半數，於每年度決算後三個月內完成分配，但以分配時基金專戶未結清者為限。運用所得分配後賸餘全數提列作為累積賸餘。\n(3)提列累積賸餘中已實現利益之總額，有超過當年十二月底基金淨額之百分之六者，應併同於每年度決算後三個月內完成分配。\n(4)第二項運用所得，應將股票及受益憑證等投資運用期末評價之未實現跌價損失予以排除後，再計算基金運用最低收益。上開最低收益如未達當地銀行二年定期存款利率計算之收益時，不足部分應先以累積賸餘補足之；如有不足，得留待翌年之累積賸餘補足之，並以二年為限。如仍無法補足時，應經主管機關核准由國庫補足其差額。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030009&flno=10",
+    "related_concepts": []
+  },
+  "RET_FUND_MGMT_REG-11": {
+    "id": "RET_FUND_MGMT_REG-11",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "11",
+    "summary": null,
+    "content": "臺灣銀行應依規定程序辦理基金收支之業務，並應按月將基金之收支運用概況報請主管機關審議。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030009&flno=11",
+    "related_concepts": []
+  },
+  "RET_FUND_MGMT_REG-12": {
+    "id": "RET_FUND_MGMT_REG-12",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "12",
+    "summary": null,
+    "content": "(1)本基金收支之預算及決算，應依有關法令規定辦理。\n(2)本基金會計事務之處理，應訂定會計制度。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030009&flno=12",
+    "related_concepts": []
+  },
+  "RET_FUND_MGMT_REG-13": {
+    "id": "RET_FUND_MGMT_REG-13",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "13",
+    "summary": null,
+    "content": "本辦法自發布日施行。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030009&flno=13",
+    "related_concepts": []
+  },
+  "RET_RESERVE_ALLOC_REG-1": {
+    "id": "RET_RESERVE_ALLOC_REG-1",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "1",
+    "summary": null,
+    "content": "本辦法依勞動基準法（以下簡稱本法）第五十六條第一項規定訂定之。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030004&flno=1",
+    "related_concepts": []
+  },
+  "RET_RESERVE_ALLOC_REG-2": {
+    "id": "RET_RESERVE_ALLOC_REG-2",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "2",
+    "summary": null,
+    "content": "各事業單位之提撥率，由雇主在本法第五十六條第一項規定範圍內，依據下列因素擬定之：\n一、勞工工作年資。\n二、薪資結構。\n三、最近五年勞工流動率。\n四、今後五年退休勞工人數。\n五、適用本法前，依營利事業設置職工退休基金保管運用及分配辦法規定提撥之退休基金。\n六、適用本法前，投保有關人身保險，但以其保險給付確能作為勞工退休準備金者為限。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030004&flno=2",
+    "related_concepts": []
+  },
+  "RET_RESERVE_ALLOC_REG-3": {
+    "id": "RET_RESERVE_ALLOC_REG-3",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "3",
+    "summary": null,
+    "content": "各事業單位提撥勞工退休準備金累積至足以支應勞工退休金時，得提經各該事業單位勞工退休準備金監督委員會審議通過後，報請當地主管機關核准暫停提撥。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030004&flno=3",
+    "related_concepts": []
+  },
+  "RET_RESERVE_ALLOC_REG-4": {
+    "id": "RET_RESERVE_ALLOC_REG-4",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "4",
+    "summary": null,
+    "content": "勞工退休準備金，應以各該事業單位勞工退休準備金監督委員會名義專戶存儲於指定之金融機構；支用時，應經勞工退休準備金監督委員會查核後，由雇主會同該委員會之主任委員及副主任委員簽署為之。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030004&flno=4",
+    "related_concepts": []
+  },
+  "RET_RESERVE_ALLOC_REG-5": {
+    "id": "RET_RESERVE_ALLOC_REG-5",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "5",
+    "summary": null,
+    "content": "(1)事業單位歇業，雇主、勞工退休準備金監督委員會主任委員或副主任委員行蹤不明或其他原因未能簽署時，經當地主管機關查明屬實，由勞工退休準備金監督委員會三分之二委員簽署支用，其簽署應於歇業後六個月內為之。\n(2)事業單位歇業，其勞工退休準備金未能依前項程序支用時，由勞工持憑執行名義請求當地主管機關召開退休金或資遣費請求人會議；當地主管機關並應依該會議決議，函請指定之金融機構支付。\n(3)勞動部勞工保險局（以下簡稱勞保局）依積欠工資墊償基金提繳及墊償管理辦法第十四條第一項規定墊償勞工退休金或資遣費後，在墊償金額範圍內，得持憑勞工對雇主之執行名義，請當地主管機關依前項規定辦理。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030004&flno=5",
+    "related_concepts": []
+  },
+  "RET_RESERVE_ALLOC_REG-6": {
+    "id": "RET_RESERVE_ALLOC_REG-6",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "6",
+    "summary": null,
+    "content": "前條第二項會議由當地主管機關為召集之公告或通知，並應列席監督，該會議應確定請求人名冊、決定函請指定之金融機構支付之期日及作成其勞工退休準備金之給付清冊等相關事宜。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030004&flno=6",
+    "related_concepts": []
+  },
+  "RET_RESERVE_ALLOC_REG-7": {
+    "id": "RET_RESERVE_ALLOC_REG-7",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "7",
+    "summary": null,
+    "content": "各事業單位提撥之勞工退休準備金不足支應其勞工退休金時，應由各事業單位補足之。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030004&flno=7",
+    "related_concepts": []
+  },
+  "RET_RESERVE_ALLOC_REG-8": {
+    "id": "RET_RESERVE_ALLOC_REG-8",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "8",
+    "summary": null,
+    "content": "(1)企業併購法第十五條第二項所定讓與公司或被分割公司辦理勞工退休準備金移轉時，應按其隨同營業或財產一併移轉勞工人數、年資及工資之比例，移轉至受讓事業單位之勞工退休準備金專戶存儲。\n(2)企業併購法第十五條第三項所定讓與公司或被分割公司辦理勞工退休準備金移轉前，其提撥之勞工退休準備金，應達到第三條規定得暫停提撥之數額。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030004&flno=8",
+    "related_concepts": []
+  },
+  "RET_RESERVE_ALLOC_REG-9": {
+    "id": "RET_RESERVE_ALLOC_REG-9",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "9",
+    "summary": null,
+    "content": "事業單位於依本法第五十五條及第八十四條之二規定之給與標準給付勞工退休金後，已無須依本法支付勞工退休金時，得報經當地主管機關核准後，領回其勞工退休準備金專戶之賸餘款；已無適用本法退休金制度之勞工者，亦同。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030004&flno=9",
+    "related_concepts": []
+  },
+  "RET_RESERVE_ALLOC_REG-10": {
+    "id": "RET_RESERVE_ALLOC_REG-10",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "10",
+    "summary": null,
+    "content": "(1)事業單位歇業時，其已提撥之勞工退休準備金，除支付勞工退休金外，得先行作為本法之勞工資遣費，再作為勞工退休金條例之勞工資遣費。有賸餘時，其所有權屬該事業單位。\n(2)前項勞工退休準備金賸餘款，事業單位勞工退休準備金監督委員會未能依第四條規定領回時，得由該事業單位向指定之金融機構申領。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030004&flno=10",
+    "related_concepts": []
+  },
+  "RET_RESERVE_ALLOC_REG-11": {
+    "id": "RET_RESERVE_ALLOC_REG-11",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "11",
+    "summary": null,
+    "content": "各事業單位適用本法前，依營利事業設置職工退休基金保管運用及分配辦法提撥之退休基金，得移入本辦法規定之該事業單位勞工退休準備金專戶內存儲，併同處理。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030004&flno=11",
+    "related_concepts": []
+  },
+  "RET_RESERVE_ALLOC_REG-12": {
+    "id": "RET_RESERVE_ALLOC_REG-12",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "12",
+    "summary": null,
+    "content": "當地主管機關或勞動檢查機構對各事業單位提撥勞工退休準備金情形得派員查核，有不合規定情事者，應依法處理。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030004&flno=12",
+    "related_concepts": []
+  },
+  "RET_RESERVE_ALLOC_REG-13": {
+    "id": "RET_RESERVE_ALLOC_REG-13",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "13",
+    "summary": null,
+    "content": "當地主管機關及勞保局得視實際需要，函請受指定保管運用勞工退休基金之金融機構提供有關資料。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030004&flno=13",
+    "related_concepts": []
+  },
+  "RET_RESERVE_ALLOC_REG-14": {
+    "id": "RET_RESERVE_ALLOC_REG-14",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "14",
+    "summary": null,
+    "content": "各事業單位應於每年年度終了後一個月內，造具勞工退休準備金提撥及支出數額清冊，送請勞工退休準備金監督委員會審核。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030004&flno=14",
+    "related_concepts": []
+  },
+  "RET_RESERVE_ALLOC_REG-15": {
+    "id": "RET_RESERVE_ALLOC_REG-15",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "15",
+    "summary": null,
+    "content": "各事業單位依本法規定提撥勞工退休準備金之開始日期，由中央主管機關以命令定之。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030004&flno=15",
+    "related_concepts": []
+  },
+  "RET_RESERVE_ALLOC_REG-16": {
+    "id": "RET_RESERVE_ALLOC_REG-16",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "16",
+    "summary": null,
+    "content": "本辦法自發布日施行。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030004&flno=16",
+    "related_concepts": []
+  },
+  "RET_RESERVE_FIN_INST_DATA-1": {
+    "id": "RET_RESERVE_FIN_INST_DATA-1",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "1",
+    "summary": null,
+    "content": "本辦法依勞動基準法（以下簡稱本法）第五十六條第九項規定訂定之。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030026&flno=1",
+    "related_concepts": []
+  },
+  "RET_RESERVE_FIN_INST_DATA-2": {
+    "id": "RET_RESERVE_FIN_INST_DATA-2",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "2",
+    "summary": null,
+    "content": "當地主管機關提供金融機構查核事業單位勞工退休準備金提撥狀況之必要資料與金融機構對該資料之申請、取得、處理及利用，應依本辦法規定辦理。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030026&flno=2",
+    "related_concepts": []
+  },
+  "RET_RESERVE_FIN_INST_DATA-3": {
+    "id": "RET_RESERVE_FIN_INST_DATA-3",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "3",
+    "summary": null,
+    "content": "本法第五十六條第七項所稱必要資料，指下列資料：\n一、事業單位勞工保險投保人數。\n二、適用勞動基準法退休金規定（以下簡稱勞退舊制）之勞工人數。\n三、適用勞工退休金條例退休金制度（以下簡稱勞退新制）之勞工人數。\n四、預估六個月工資數額。\n五、預估適用勞退舊制勞工之退休金數額。\n六、預估適用勞退新、舊制勞工之資遣費數額。\n七、勞工退休準備金專戶提撥狀況及餘額。\n八、其他經中央主管機關認定者。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030026&flno=3",
+    "related_concepts": []
+  },
+  "RET_RESERVE_FIN_INST_DATA-4": {
+    "id": "RET_RESERVE_FIN_INST_DATA-4",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "4",
+    "summary": null,
+    "content": "當地主管機關得請中央主管機關協助提供前條之必要資料。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030026&flno=4",
+    "related_concepts": []
+  },
+  "RET_RESERVE_FIN_INST_DATA-5": {
+    "id": "RET_RESERVE_FIN_INST_DATA-5",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "5",
+    "summary": null,
+    "content": "(1)金融機構辦理核貸業務，需查核必要資料時，應檢具事業單位同意書及申請書，並釋明用途，向事業單位所在地之當地主管機關申請查詢。\n(2)當地主管機關受理金融機構之申請後，應於受理當日起三日內完成提供；必要時，得予延長，並通知申請人。延長以一次為限，最長不得逾七日。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030026&flno=5",
+    "related_concepts": []
+  },
+  "RET_RESERVE_FIN_INST_DATA-6": {
+    "id": "RET_RESERVE_FIN_INST_DATA-6",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "6",
+    "summary": null,
+    "content": "(1)當地主管機關及金融機構查詢、取得、處理及利用之必要資料，僅得作為金融機構辦理核貸業務之用，不得作為其他用途。\n(2)前項金融機構查詢之必要資料於其使用目的達成後，應即銷毀。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030026&flno=6",
+    "related_concepts": []
+  },
+  "RET_RESERVE_FIN_INST_DATA-7": {
+    "id": "RET_RESERVE_FIN_INST_DATA-7",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "7",
+    "summary": null,
+    "content": "(1)第五條第一項同意書及申請書，當地主管機關應保存五年。\n(2)當地主管機關對於金融機構查詢資料之紀錄應予保存及稽核，並定期報請中央主管機關備查；必要時，中央主管機關得派員調閱相關資料進行抽查。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030026&flno=7",
+    "related_concepts": []
+  },
+  "RET_RESERVE_FIN_INST_DATA-8": {
+    "id": "RET_RESERVE_FIN_INST_DATA-8",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "8",
+    "summary": null,
+    "content": "當地主管機關及金融機構對於查詢、取得、處理及利用之必要資料，應盡善良管理人之注意義務，遵守資訊安全相關規範，並確實辦理資料安全作業，確保必要資料之安全。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030026&flno=8",
+    "related_concepts": []
+  },
+  "RET_RESERVE_FIN_INST_DATA-9": {
+    "id": "RET_RESERVE_FIN_INST_DATA-9",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "9",
+    "summary": null,
+    "content": "當地主管機關及金融機構對於查詢、取得、處理及利用之必要資料，應予保密。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030026&flno=9",
+    "related_concepts": []
+  },
+  "RET_RESERVE_FIN_INST_DATA-10": {
+    "id": "RET_RESERVE_FIN_INST_DATA-10",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "10",
+    "summary": null,
+    "content": "當地主管機關及金融機構對於必要資料之查詢、取得、處理及保管方式等，應建立內部規範，依業務性質設定各級人員之存取權限，定期檢視其妥適性，相關機制並應納入內部控制及稽核制度。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030026&flno=10",
+    "related_concepts": []
+  },
+  "RET_RESERVE_FIN_INST_DATA-11": {
+    "id": "RET_RESERVE_FIN_INST_DATA-11",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "11",
+    "summary": null,
+    "content": "(1)本辦法所定必要資料之提供，主管機關得會商金融監督管理委員會委由銀行法所定經營銀行間徵信資料處理交換服務事業（以下簡稱徵信事業）辦理之。\n(2)第八條至前條規定，於徵信事業準用之。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030026&flno=11",
+    "related_concepts": []
+  },
+  "RET_RESERVE_FIN_INST_DATA-12": {
+    "id": "RET_RESERVE_FIN_INST_DATA-12",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "12",
+    "summary": null,
+    "content": "當地主管機關、金融機構及徵信事業違反本辦法或相關法令規定，致事業單位受有損害者，應負損害賠償責任。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030026&flno=12",
+    "related_concepts": []
+  },
+  "RET_RESERVE_FIN_INST_DATA-13": {
+    "id": "RET_RESERVE_FIN_INST_DATA-13",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "13",
+    "summary": null,
+    "content": "本辦法之書表格式，由中央主管機關定之。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030026&flno=13",
+    "related_concepts": []
+  },
+  "RET_RESERVE_FIN_INST_DATA-14": {
+    "id": "RET_RESERVE_FIN_INST_DATA-14",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "14",
+    "summary": null,
+    "content": "本辦法自發布日施行。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030026&flno=14",
+    "related_concepts": []
+  },
+  "MUNI_INSPECT_INST_ORG-1": {
+    "id": "MUNI_INSPECT_INST_ORG-1",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "1",
+    "summary": null,
+    "content": "本準則依勞動基準法（以下簡稱本法）第七十二條第二項訂定之。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0000014&flno=1",
+    "related_concepts": []
+  },
+  "MUNI_INSPECT_INST_ORG-2": {
+    "id": "MUNI_INSPECT_INST_ORG-2",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "2",
+    "summary": null,
+    "content": "中央主管機關得委辦直轄市主管機關設勞動檢查機構辦理勞動檢查業務。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0000014&flno=2",
+    "related_concepts": []
+  },
+  "MUNI_INSPECT_INST_ORG-3": {
+    "id": "MUNI_INSPECT_INST_ORG-3",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "3",
+    "summary": null,
+    "content": "直轄市勞動檢查機構掌理下列事項：\n一、關於本法、職業安全衛生法及其他勞工法令規定之檢查事項。\n二、關於勞工法令宣導及安全衛生活動推行事項。\n三、關於輔導事業單位推行自動檢查事項。\n四、關於危險性機械或設備代行檢查機構之指導及監督事項。\n五、其他有關勞動檢查事項。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0000014&flno=3",
+    "related_concepts": []
+  },
+  "MUNI_INSPECT_INST_ORG-4": {
+    "id": "MUNI_INSPECT_INST_ORG-4",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "4",
+    "summary": null,
+    "content": "直轄市勞動檢查機構得視實際需要分組（科）辦事，並得分區設站。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0000014&flno=4",
+    "related_concepts": []
+  },
+  "MUNI_INSPECT_INST_ORG-5": {
+    "id": "MUNI_INSPECT_INST_ORG-5",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "5",
+    "summary": null,
+    "content": "（刪除）",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0000014&flno=5",
+    "related_concepts": []
+  },
+  "MUNI_INSPECT_INST_ORG-6": {
+    "id": "MUNI_INSPECT_INST_ORG-6",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "6",
+    "summary": null,
+    "content": "本準則自發布日施行。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0000014&flno=6",
+    "related_concepts": []
+  },
+  "LSA_REPORT_CONF_REG-1": {
+    "id": "LSA_REPORT_CONF_REG-1",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "1",
+    "summary": null,
+    "content": "本辦法依勞動基準法（以下簡稱本法）第七十四條第七項規定訂定之。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030027&flno=1",
+    "related_concepts": []
+  },
+  "LSA_REPORT_CONF_REG-2": {
+    "id": "LSA_REPORT_CONF_REG-2",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "2",
+    "summary": null,
+    "content": "本辦法所稱檢舉人如下：\n一、發現事業單位違反本法或其他勞工法令規定，而提出申訴之事業單位內部勞工。\n二、前款以外，發現事業單位違反本法或其他勞工法令規定，而提出檢舉之人。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030027&flno=2",
+    "related_concepts": []
+  },
+  "LSA_REPORT_CONF_REG-3": {
+    "id": "LSA_REPORT_CONF_REG-3",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "3",
+    "summary": null,
+    "content": "(1)檢舉人檢舉違反本法或其他勞工法令規定之案件，得以書面或言詞敘明下列事項，向主管機關或檢查機構（以下簡稱受理檢舉機關（構））提出：\n一、檢舉人姓名、聯絡方式及檢舉日期。\n二、被檢舉事業單位或事業主之名稱、負責人姓名及營業地址。\n三、涉嫌違反本法或其他勞工法令規定之具體事項及相關資料。\n(2)前項所定書面，包括電子郵件及傳真。\n(3)第一項第一款所定聯絡方式，包括電話、地址、傳真號碼或電子郵件位址等。\n(4)檢舉人以言詞檢舉者，應由受理檢舉機關（構）作成紀錄。\n(5)受理檢舉機關（構）對檢舉事項無管轄權者，於確認有管轄權之主管機關或檢查機構後，應即移送有管轄權之主管機關或檢查機構，並通知檢舉人。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030027&flno=3",
+    "related_concepts": []
+  },
+  "LSA_REPORT_CONF_REG-4": {
+    "id": "LSA_REPORT_CONF_REG-4",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "4",
+    "summary": null,
+    "content": "檢舉人檢舉違反本法或其他勞工法令規定之案件，有下列情形之一者，受理檢舉機關（構）得不予處理：\n一、未具名。\n二、未具聯絡方式。\n三、無具體內容。\n四、冒用他人身分提出檢舉。\n五、同一事由，經予適當處理，並已明確答覆者。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030027&flno=4",
+    "related_concepts": []
+  },
+  "LSA_REPORT_CONF_REG-5": {
+    "id": "LSA_REPORT_CONF_REG-5",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "5",
+    "summary": null,
+    "content": "受理檢舉機關（構）對於第三條之檢舉應迅速確實處理，並於六十日內將處理情形，以書面通知檢舉人。但無法以書面通知者，得以其他方式為之。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030027&flno=5",
+    "related_concepts": []
+  },
+  "LSA_REPORT_CONF_REG-6": {
+    "id": "LSA_REPORT_CONF_REG-6",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "6",
+    "summary": null,
+    "content": "(1)受理檢舉機關（構）對於檢舉人之姓名、聯絡方式或其他足資辨別其身分之資訊，應予保密。但有下列情事之一者，不在此限：\n一、同一檢舉事項，於依勞資爭議處理法進行之調解、仲裁、裁決或依法提起民事訴訟程序，已為被檢舉人知悉或可得知悉。\n二、經檢舉人及檢舉案件之當事人，認無保密之必要。\n(2)受理檢舉機關（構）對於前項所定保密之資訊，應以密件保存，並禁止第三人閱覽或抄錄。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030027&flno=6",
+    "related_concepts": []
+  },
+  "LSA_REPORT_CONF_REG-7": {
+    "id": "LSA_REPORT_CONF_REG-7",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "7",
+    "summary": null,
+    "content": "受理檢舉機關（構）受理檢舉案件，於辦理檢舉文書之分文、保管、封發及歸檔等事項，應指定專人或檔案管理單位主管管理。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030027&flno=7",
+    "related_concepts": []
+  },
+  "LSA_REPORT_CONF_REG-8": {
+    "id": "LSA_REPORT_CONF_REG-8",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "8",
+    "summary": null,
+    "content": "受理檢舉機關（構）所屬公務員或相關單位發現檢舉案件外洩、案卷遺失及可能洩漏檢舉人身分等情事，應立即陳報機關（構）首長或其授權人員，並通知政風單位協助研採緊急處理措施。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030027&flno=8",
+    "related_concepts": []
+  },
+  "LSA_REPORT_CONF_REG-9": {
+    "id": "LSA_REPORT_CONF_REG-9",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "9",
+    "summary": null,
+    "content": "本辦法自發布日施行。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030027&flno=9",
+    "related_concepts": []
+  },
+  "LABOR_MGMT_MEETING_IMPL-1": {
+    "id": "LABOR_MGMT_MEETING_IMPL-1",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "1",
+    "summary": null,
+    "content": "本辦法依勞動基準法第八十三條規定訂定之。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0020008&flno=1",
+    "related_concepts": []
+  },
+  "LABOR_MGMT_MEETING_IMPL-2": {
+    "id": "LABOR_MGMT_MEETING_IMPL-2",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "2",
+    "summary": null,
+    "content": "(1)事業單位應依本辦法規定舉辦勞資會議；其事業場所勞工人數在三十人以上者，亦應分別舉辦之，其運作及勞資會議代表之選舉，準用本辦法所定事業單位之相關規定。\n(2)事業單位勞工人數在三人以下者，勞雇雙方為勞資會議當然代表，不受第三條、第五條至第十一條及第十九條規定之限制。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0020008&flno=2",
+    "related_concepts": []
+  },
+  "LABOR_MGMT_MEETING_IMPL-3": {
+    "id": "LABOR_MGMT_MEETING_IMPL-3",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "3",
+    "summary": null,
+    "content": "(1)勞資會議由勞資雙方同數代表組成，其代表人數視事業單位人數多寡各為二人至十五人。但事業單位人數在一百人以上者，各不得少於五人。\n(2)勞資會議勞方代表得按事業場所、部門或勞工工作性質之人數多寡分配，並分別選舉之。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0020008&flno=3",
+    "related_concepts": []
+  },
+  "LABOR_MGMT_MEETING_IMPL-4": {
+    "id": "LABOR_MGMT_MEETING_IMPL-4",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "4",
+    "summary": null,
+    "content": "勞資會議之資方代表，由事業單位於資方代表任期屆滿前三十日就熟悉業務、勞工情形之人指派之。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0020008&flno=4",
+    "related_concepts": []
+  },
+  "LABOR_MGMT_MEETING_IMPL-5": {
+    "id": "LABOR_MGMT_MEETING_IMPL-5",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "5",
+    "summary": null,
+    "content": "(1)勞資會議之勞方代表，事業單位有結合同一事業單位勞工組織之企業工會者，於該工會會員或會員代表大會選舉之；事業場所有結合同一廠場勞工組織之企業工會者，由該工會會員或會員代表大會選舉之。\n(2)事業單位無前項工會者，得依下列方式之一辦理勞方代表選舉：\n一、事業單位自行辦理者，由全體勞工直接選舉之。\n二、事業單位自行辦理，其事業場所有勞資會議者，由事業場所勞工依分配名額就其勞方代表選舉之；其事業場所無勞資會議者，由該事業場所全體勞工依分配名額分別選舉之。\n三、勞工有組織、加入事業單位或事業場所範圍外之企業工會者，由該企業工會辦理，並由全體勞工直接選舉之。\n(3)第一項勞方代表選舉，事業單位或其事業場所應於勞方代表任期屆滿前九十日通知工會辦理選舉，工會受其通知辦理選舉之日起逾三十日內未完成選舉者，事業單位應自行辦理及完成勞方代表之選舉。\n(4)依前二項規定，由事業單位辦理勞工代表選舉者，應於勞方代表任期屆滿前三十日完成新任代表之選舉。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0020008&flno=5",
+    "related_concepts": []
+  },
+  "LABOR_MGMT_MEETING_IMPL-6": {
+    "id": "LABOR_MGMT_MEETING_IMPL-6",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "6",
+    "summary": null,
+    "content": "(1)事業單位單一性別勞工人數逾勞工人數二分之一者，其當選勞方代表名額不得少於勞方應選出代表總額三分之一。\n(2)勞資會議勞方代表之候補代表名額不得超過應選出代表總額。\n(3)勞資會議勞方代表出缺時，由候補代表遞補之；其遞補順序不受第一項規定之限制。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0020008&flno=6",
+    "related_concepts": []
+  },
+  "LABOR_MGMT_MEETING_IMPL-7": {
+    "id": "LABOR_MGMT_MEETING_IMPL-7",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "7",
+    "summary": null,
+    "content": "勞工年滿十五歲，有選舉及被選舉為勞資會議勞方代表之權。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0020008&flno=7",
+    "related_concepts": []
+  },
+  "LABOR_MGMT_MEETING_IMPL-8": {
+    "id": "LABOR_MGMT_MEETING_IMPL-8",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "8",
+    "summary": null,
+    "content": "代表雇主行使管理權之一級業務行政主管人員，不得為勞方代表。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0020008&flno=8",
+    "related_concepts": []
+  },
+  "LABOR_MGMT_MEETING_IMPL-9": {
+    "id": "LABOR_MGMT_MEETING_IMPL-9",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "9",
+    "summary": null,
+    "content": "依第五條辦理選舉者，應於選舉前十日公告投票日期、時間、地點及方式等選舉相關事項。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0020008&flno=9",
+    "related_concepts": []
+  },
+  "LABOR_MGMT_MEETING_IMPL-10": {
+    "id": "LABOR_MGMT_MEETING_IMPL-10",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "10",
+    "summary": null,
+    "content": "(1)勞資會議代表之任期為四年，勞方代表連選得連任，資方代表連派得連任。\n(2)勞資會議代表之任期，自上屆代表任期屆滿之翌日起算。但首屆代表或未於上屆代表任期屆滿前選出之次屆代表，自選出之翌日起算。\n(3)資方代表得因職務變動或出缺隨時改派之。勞方代表出缺或因故無法行使職權時，由勞方候補代表依序遞補之。\n(4)前項勞方候補代表不足遞補時，應補選之。但資方代表人數調減至與勞方代表人數同額者，不在此限。\n(5)勞方候補代表之遞補順序，應依下列規定辦理：\n一、事業單位依第三條第二項辦理勞資會議勞方代表分別選舉者，以該分別選舉所產生遞補名單之遞補代表遞補之。\n二、未辦理分別選舉者，遞補名單應依選舉所得票數排定之遞補順序遞補之。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0020008&flno=10",
+    "related_concepts": []
+  },
+  "LABOR_MGMT_MEETING_IMPL-11": {
+    "id": "LABOR_MGMT_MEETING_IMPL-11",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "11",
+    "summary": null,
+    "content": "勞資會議代表選派完成後，事業單位應將勞資會議代表及勞方代表候補名單於十五日內報請當地主管機關備查；遞補、補選、改派或調減時，亦同。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0020008&flno=11",
+    "related_concepts": []
+  },
+  "LABOR_MGMT_MEETING_IMPL-12": {
+    "id": "LABOR_MGMT_MEETING_IMPL-12",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "12",
+    "summary": null,
+    "content": "(1)勞資會議代表在會議中應克盡協調合作之精神，以加強勞雇關係，並保障勞工權益。\n(2)勞資會議代表應本誠實信用原則，共同促進勞資會議之順利進行，對於會議所必要之資料，應予提供。\n(3)勞資會議代表依本辦法出席勞資會議，雇主應給予公假。\n(4)雇主或代表雇主行使管理權之人，不得對於勞資會議代表因行使職權而有解僱、調職、減薪或其他不利之待遇。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0020008&flno=12",
+    "related_concepts": []
+  },
+  "LABOR_MGMT_MEETING_IMPL-13": {
+    "id": "LABOR_MGMT_MEETING_IMPL-13",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "13",
+    "summary": null,
+    "content": "(1)勞資會議之議事範圍如下：\n一、報告事項\n（一）關於上次會議決議事項辦理情形。\n（二）關於勞工人數、勞工異動情形、離職率等勞工動態。\n（三）關於事業之生產計畫、業務概況及市場狀況等生產資訊。\n（四）關於勞工活動、福利項目及工作環境改善等事項。\n（五）其他報告事項。\n二、討論事項\n（一）關於協調勞資關係、促進勞資合作事項。\n（二）關於勞動條件事項。\n（三）關於勞工福利籌劃事項。\n（四）關於提高工作效率事項。\n（五）勞資會議代表選派及解任方式等相關事項。\n（六）勞資會議運作事項。\n（七）其他討論事項。\n三、建議事項\n(2)工作規則之訂定及修正等事項，得列為前項議事範圍。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0020008&flno=13",
+    "related_concepts": []
+  },
+  "LABOR_MGMT_MEETING_IMPL-14": {
+    "id": "LABOR_MGMT_MEETING_IMPL-14",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "14",
+    "summary": null,
+    "content": "勞資會議得議決邀請與議案有關人員列席說明或解答有關問題。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0020008&flno=14",
+    "related_concepts": []
+  },
+  "LABOR_MGMT_MEETING_IMPL-15": {
+    "id": "LABOR_MGMT_MEETING_IMPL-15",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "15",
+    "summary": null,
+    "content": "勞資會議得設專案小組處理有關議案、重要問題及辦理選舉工作。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0020008&flno=15",
+    "related_concepts": []
+  },
+  "LABOR_MGMT_MEETING_IMPL-16": {
+    "id": "LABOR_MGMT_MEETING_IMPL-16",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "16",
+    "summary": null,
+    "content": "勞資會議之主席，由勞資雙方代表各推派一人輪流擔任之。但必要時，得共同擔任之。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0020008&flno=16",
+    "related_concepts": []
+  },
+  "LABOR_MGMT_MEETING_IMPL-17": {
+    "id": "LABOR_MGMT_MEETING_IMPL-17",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "17",
+    "summary": null,
+    "content": "勞資會議議事事務，由事業單位指定人員辦理之。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0020008&flno=17",
+    "related_concepts": []
+  },
+  "LABOR_MGMT_MEETING_IMPL-18": {
+    "id": "LABOR_MGMT_MEETING_IMPL-18",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "18",
+    "summary": null,
+    "content": "勞資會議至少每三個月舉辦一次，必要時得召開臨時會議。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0020008&flno=18",
+    "related_concepts": []
+  },
+  "LABOR_MGMT_MEETING_IMPL-19": {
+    "id": "LABOR_MGMT_MEETING_IMPL-19",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "19",
+    "summary": null,
+    "content": "(1)勞資會議應有勞資雙方代表各過半數之出席，協商達成共識後應做成決議；無法達成共識者，其決議應有出席代表四分之三以上之同意。\n(2)勞資會議代表因故無法出席時，得提出書面意見。\n(3)前項勞資會議未出席代表，不列入第一項出席及決議代表人數之計算。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0020008&flno=19",
+    "related_concepts": []
+  },
+  "LABOR_MGMT_MEETING_IMPL-20": {
+    "id": "LABOR_MGMT_MEETING_IMPL-20",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "20",
+    "summary": null,
+    "content": "勞資會議開會通知，事業單位應於會議七日前發出，會議之提案應於會議三日前分送各代表。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0020008&flno=20",
+    "related_concepts": []
+  },
+  "LABOR_MGMT_MEETING_IMPL-21": {
+    "id": "LABOR_MGMT_MEETING_IMPL-21",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "21",
+    "summary": null,
+    "content": "(1)勞資會議紀錄應記載下列事項，並由主席及記錄人員分別簽署：\n一、會議屆、次數。\n二、會議時間。\n三、會議地點。\n四、出席、列席人員姓名。\n五、報告事項。\n六、討論事項及決議。\n七、臨時動議及決議。\n(2)前項會議紀錄，應發給出席及列席人員。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0020008&flno=21",
+    "related_concepts": []
+  },
+  "LABOR_MGMT_MEETING_IMPL-22": {
+    "id": "LABOR_MGMT_MEETING_IMPL-22",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "22",
+    "summary": null,
+    "content": "(1)勞資會議之決議，應由事業單位分送工會及有關部門辦理。\n(2)勞資雙方應本於誠實信用原則履行前項決議，有情事變更或窒礙難行時，得提交下次會議復議。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0020008&flno=22",
+    "related_concepts": []
+  },
+  "LABOR_MGMT_MEETING_IMPL-23": {
+    "id": "LABOR_MGMT_MEETING_IMPL-23",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "23",
+    "summary": null,
+    "content": "勞資會議之運作及代表選舉費用，應由事業單位負擔。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0020008&flno=23",
+    "related_concepts": []
+  },
+  "LABOR_MGMT_MEETING_IMPL-24": {
+    "id": "LABOR_MGMT_MEETING_IMPL-24",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "24",
+    "summary": null,
+    "content": "本辦法未規定者，依會議規範之規定。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0020008&flno=24",
+    "related_concepts": []
+  },
+  "LABOR_MGMT_MEETING_IMPL-25": {
+    "id": "LABOR_MGMT_MEETING_IMPL-25",
+    "chapter_no": null,
+    "chapter_name": null,
+    "article_no": "25",
+    "summary": null,
+    "content": "本辦法自發布日施行。",
+    "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0020008&flno=25",
+    "related_concepts": []
+  }
+}
