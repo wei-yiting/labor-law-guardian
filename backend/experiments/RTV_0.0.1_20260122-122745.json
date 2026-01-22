@@ -4,15 +4,15 @@
     "timestamp": "2026-01-22T12:27:45.000606",
     "agent_version": "0.0.1",
     "configuration": {
-      "strategy": "",
+      "strategy": "naive retrieval, raw data with LlamaIndex implicit chunking, semantic search only",
       "tokenizer": "gpt-4o",
       "embedding": "text-embedding-3-small",
       "chunk_size": 1024,
       "top_k": 2
     },
     "data": {
-      "eval_datasets": [],
-      "source_documents": []
+      "eval_datasets": ["level_1_dataset.json"],
+      "source_documents": ["勞動基準法", "勞動基準法施行細則", "勞工請假規則"]
     },
     "overall_score": {
       "average_recall": 0.9429,
@@ -39,8 +39,22 @@
           "content": "法規名稱：勞動基準法\n章節：總則\n條號：第 7 條\n條文內容：(1)雇主應置備勞工名卡，登記勞工之姓名、性別、出生年月日、本籍、教育程度、住址、身分證統一號碼、到職年月日、工資、勞工保險投保日期、獎懲、傷病及其他必要事項。\n(2)前項勞工名卡，應保管至勞工離職後五年。"
         }
       ],
-      "judge_feedback": [],
-      "possible_resolution": []
+      "judge_feedback": [
+        {
+          "為什麼 Retrieve 到 LSA-28（長文）": "向量重心偏移 (Embedding Dilution) LSA-28 是一條非常長的法規，包含了「歇業」、「清算」、「工資」、「退休金」、「資遣費」、「墊償基金」等多個高權重概念。在 Dense Vector Space 中，長文的向量通常會變成所有概念的「平均值」。 LSA-28 中反覆出現「工資」與「雇主」這兩個強詞，這與 Query 中的「雇主」、「工資」高度重疊。雖然它沒有「清冊」的概念，但因為它在「工資法規」這個語意簇（Cluster）中的權重太重（可能因為文本長度或關鍵字頻率），導致模型誤以為它是關於工資管理的核心法條。"
+        },
+        {
+          "為什麼 Retrieve 到 LSA-7 (勞工名卡)": "結構性語意誤判 (Semantic Structure Matching) 這是一個典型的語意誤判。Query 的結構是 [雇主義務] + [某種文件] + [保存年限]。 LSA-7 的內容結構完全一致：(1)雇主應置備[勞工名卡]... (2)...應保存[五年]。 LSA-23 的內容結構也是：(2)雇主應置備[工資清冊]... 工資清冊應保存[五年]。 對於 Embedding 模型來說，如果它對「工資清冊」與「勞工名卡」這兩個專有名詞的區分度不夠高（Embedding 不夠 Sharp），它會認為 LSA-7 與 Query 在敘述邏輯上高度相似（都是關於文件保存五年的義務）。這證明了模型讀懂了「保存年限」的意圖，但搞錯了「對象」。"
+        },
+        {
+          "為什麼沒抓到 LSA-23 (Exact Match)": "在 Vector 的世界裡，並不存在「文字匹配」。模型看到的是語意。 如果你的 Embedding 模型（可能是通用的中文模型）沒有針對台灣勞基法做過 Fine-tuning，它可能認為「工資清冊」這個詞的語意向量，距離「工資」或「文件記錄」很近，但並沒有近到能壓過 LSA-28 的強訊號或 LSA-7 的結構相似性。 結論： 在純向量檢索中，字面完全匹配並不保證高分，特別是當專有名詞（Entity）權重被模型低估時。"
+        }
+      ],
+      "possible_resolution": [
+        {
+          "Keyword Search": "「工資清冊」是一個非常精確的 Keyword。LSA-23: 包含「工資清冊」。LSA-7: 包含「勞工名卡」，不含「工資清冊」。LSA-28: 不含「工資清冊」。這是一個典型的 BM25 (Sparse Retrieval) 會完勝 Dense Retrieval 的場景。"
+        }
+      ]
     },
     {
       "test_case_id": "L1-RETIRE-004",
@@ -61,8 +75,19 @@
           "content": "(6)雇主按月提撥之勞工退休準備金比率之擬訂或調整，應經事業單位勞工退休準備金監督委員會審議通過，並報請當地主管機關核定。\n(7)金融機構辦理核貸業務，需查核該事業單位勞工退休準備金提撥狀況之必要資料時，得請當地主管機關提供。\n(8)金融機構依前項取得之資料，應負保密義務，並確實辦理資料安全稽核作業。\n(9)前二項有關勞工退休準備金必要資料之內容、範圍、申請程序及其他應遵行事項之辦法，由中央主管機關會商金融監督管理委員會定之。"
         }
       ],
-      "judge_feedback": [],
-      "possible_resolution": []
+      "judge_feedback": [
+        {
+          "為什麼 Retrieve 到 LSA-56": "主題吞噬 (Topic Dominance) 與 長文雜訊 LSA-56 是勞基法中關於「退休準備金」最核心、篇幅最長的法條（9項）。它包含了「雇主」、「退休金」、「主管機關」、「核定」、「提撥」等所有 Query 相關的詞彙。 在語意空間中，LSA-56 就像一個巨大的黑洞，吸住了所有關於「退休金制度」的查詢。 即便 Query 問的是非常具體的「分期給付」（Installment），但如果 Embedding 模型對「分期」這個概念的敏感度，低於它對「退休金大主題」的敏感度，檢索器就會傾向回傳內容最豐富的 LSA-56。"
+        },
+        {
+          "為什麼沒抓到 ENF_RULE-29 (Exact Match)": "法條層級與稀疏性 ENF_RULE-29（施行細則）是對應母法 LSA-55 的補充，內容很短，專門講「分期給付的情形」。 比起 LSA-56 的豐富語意，ENF_RULE-29 的向量可能相對「貧乏」或位於角落。如果模型沒有精確捕捉到「分期」這個差異點（Discriminator），它會被 LSA-56 的強語意蓋過。"
+        }
+      ],
+      "possible_resolution": [
+        {
+          "優化 Chunking 策略": "根據法條結構進行切分。LSA-56 應該切分為 LSA-56-1 (提撥範圍), LSA-56-2 (餘額估算)... 等。這樣 Query 撞擊到的會是單一、語意純淨的 Chunk，而不是混雜的長文。這能大幅提升 Vector 的銳利度（Sharpness）。"
+        }
+      ]
     }
   ]
 }
