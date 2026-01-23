@@ -17,14 +17,18 @@ from backend.app.rag.config import (
     RETRIEVER_TOP_K, 
     OPENAI_MODEL_NAME, 
     EMBEDDING_MODEL_NAME, 
-    CHUNK_SIZE
+    CHUNK_SIZE,
+    RAG_VERSIONS,
+    LATEST_RAG_VERSION
 )
 from backend.app.rag.evals.law_lookup import LawLookup
 
 class RetrieverEvaluator:
-    def __init__(self, use_json_logging: bool = False):
-        print("Initializing Retriever...")
-        self.retriever = get_retriever(similarity_top_k=RETRIEVER_TOP_K)
+    def __init__(self, use_json_logging: bool = False, rag_version: str = LATEST_RAG_VERSION):
+        print(f"Initializing Retriever (Version: {rag_version})...")
+        self.rag_version = rag_version
+        self.strategy = RAG_VERSIONS.get(rag_version, "UNKNOWN")
+        self.retriever = get_retriever(similarity_top_k=RETRIEVER_TOP_K, rag_version=rag_version)
         self.use_json_logging = use_json_logging
         self.law_lookup = LawLookup(PROJECT_ROOT) if use_json_logging else None
 
@@ -35,18 +39,41 @@ class RetrieverEvaluator:
         retrieved_ids = [node.metadata.get("article_id") for node in retrieved_nodes]
         
         # Recall: intersection / len(ground_truth)
-        hits = set(retrieved_ids) & set(ground_truth_ids)
+        # Recall: intersection / len(ground_truth)
+        
+        if "PARENT_CHILD" in self.strategy:
+            # Parent-Child Strategy: Check if Parent ID matches GT Article ID
+            unique_retrieved_parent_ids = set()
+            
+            for node in retrieved_nodes:
+                # In Manual Lookup mode, we receive Chunks (Child Nodes)
+                # We need to extract the parent_id to check against Ground Truth (which are Article IDs)
+                pid = node.metadata.get("parent_id") or node.metadata.get("article_id")
+                
+                if pid:
+                    unique_retrieved_parent_ids.add(pid)
+            
+            # Hits = Intersection of Unique Retrieved Parents AND Ground Truth
+            hits_set = unique_retrieved_parent_ids & set(ground_truth_ids)
+            hits = len(hits_set)
+            
+            retrieved_ids = list(unique_retrieved_parent_ids) # For reporting purposes
+            
+        else:
+            # Naive / Atomic Strategy
+            hits_set = set(retrieved_ids) & set(ground_truth_ids)
+            hits = len(hits_set)
         
         if not ground_truth_ids:
             recall = 0.0
         else:
-            recall = len(hits) / len(ground_truth_ids)
+            recall = hits / len(ground_truth_ids)
         
         # Precision: relevant_retrieved / total_retrieved
         if not retrieved_ids:
             precision = 0.0
         else:
-            precision = len(hits) / len(retrieved_ids)
+            precision = hits / len(retrieved_ids)
             
         return recall, precision, retrieved_ids
 
@@ -58,7 +85,7 @@ class RetrieverEvaluator:
             aid = node.metadata.get("article_id", "N/A")
             score = node.score if hasattr(node, "score") else "N/A"
             print(f"[{i}] ID: {aid} | Score: {score}")
-            print(f"    Content: {node.text}" if node.text else "    Content: N/A")
+            print(f"    Content: {node.get_content()}" if node.get_content() else "    Content: N/A")
             print("-" * 40)
 
     def run_smoke_test(self, dataset: List[Dict[str, Any]]) -> bool:
@@ -80,13 +107,14 @@ class RetrieverEvaluator:
             qid = item["id"]
             gt_ids = item["reference_articles_id"]
             
+            print(f"Processing QID: {qid}...", end="", flush=True)
             nodes = self.run_retrieval(query)
             recall, _, retrieved_ids = self.calculate_metrics(nodes, gt_ids)
             
             total_smoke_recall += recall
             
             status = "PASS" if recall == 1.0 else ("PARTIAL" if recall > 0 else "FAIL")
-            print(f"[{status}] {qid}: {query[:30]}... | GT: {gt_ids} | Retrieved: {retrieved_ids} | Recall: {recall:.2f}")
+            print(f"\r[{status}] {qid}: {query[:30]}... | GT: {gt_ids} | Retrieved: {retrieved_ids} | Recall: {recall:.2f}")
             
             if recall < 1.0:
                 smoke_failed_cases.append({
@@ -169,12 +197,47 @@ class RetrieverEvaluator:
                     # 2. Build Retrieval Nodes
                     retrieved_nodes_data = []
                     for node in nodes:
-                        node_aid = node.metadata.get("article_id", "Unknown")
-                        node_content = node.text or "" 
-                        retrieved_nodes_data.append({
-                            "article_id": node_aid,
-                            "content": node_content
-                        })
+                        # Fetch Metadata
+                        meta = node.metadata
+                        
+                        # Determine Content & ID
+                        if "PARENT_CHILD" in self.strategy:
+                            
+                            # Manual Parent Lookup Logic
+                            chunk_id = meta.get("chunk_id", node.id_)
+                            pid = meta.get("parent_id") or meta.get("article_id")
+                            
+                            chunk_text = node.get_content()
+                            parent_content = ""
+                            
+                            # Lookup Parent Content
+                            if self.law_lookup and pid:
+                                p_art = self.law_lookup.get_article(pid)
+                                if p_art:
+                                    # Reconstruct the formatted parent content similar to how loader did it
+                                    # Or just provide the raw content. The user wants to see "document".
+                                    # Let's provide the raw 'content' field from article map.
+                                    raw_content = p_art.get("content", "")
+                                    # Maybe include title for context if available
+                                    # But typically 'content' is what they want.
+                                    parent_content = raw_content
+                                else:
+                                    parent_content = "Parent Article Not Found in Map"
+                            
+                            retrieved_nodes_data.append({
+                                "parent_id": pid,
+                                "retrieved_parent_content": parent_content,
+                                "retrieved_chunk_id": chunk_id,
+                                "retrieved_chunk_text": chunk_text
+                            })
+                        else:
+                            # Default / Naive
+                            node_aid = meta.get("article_id", "Unknown")
+                            node_content = node.get_content()
+                            retrieved_nodes_data.append({
+                                "article_id": node_aid,
+                                "content": node_content
+                            })
 
                     case_data = {
                         "test_case_id": qid,
@@ -228,7 +291,7 @@ def load_eval_dataset(path: Path) -> List[Dict[str, Any]]:
     with open(path, "r", encoding="utf-8") as f:
         return json.load(f)
 
-def save_json_log(results: Dict[str, Any], log_prefix: str, version: str):
+def save_json_log(results: Dict[str, Any], log_prefix: str, version: str, description: str = ""):
     now = datetime.datetime.now()
     timestamp_str = now.isoformat()
     # Format: 20260121-155020
@@ -242,9 +305,11 @@ def save_json_log(results: Dict[str, Any], log_prefix: str, version: str):
         "meta": {
             "run_id": run_id,
             "timestamp": timestamp_str,
+            "description": description,
             "agent_version": version,
             "configuration": {
-                "strategy": "",
+                "rag_version": version,
+                "strategy": RAG_VERSIONS.get(version, "UNKNOWN"),
                 "tokenizer": OPENAI_MODEL_NAME,
                 "embedding": EMBEDDING_MODEL_NAME,
                 "chunk_size": CHUNK_SIZE,
@@ -302,25 +367,44 @@ def main():
     parser.add_argument("--json", action="store_true", help="Generate JSON log file in backend/experiments")
     parser.add_argument("--report", action="store_true", help="Generate text report file in backend/app/rag/evals/reports")
     parser.add_argument("--query", type=str, help="Run a single query check and exit")
+    parser.add_argument("--rag-version", type=str, help=f"Choose RAG Version. Options: {list(RAG_VERSIONS.keys())}")
     args = parser.parse_args()
     
     # Interactive Input for JSON Log Naming
     log_prefix = "RTV"
     version = "0.0.1"
+    description = ""
     
     # Interactive Input for Text Report Naming
     report_name = "default"
 
+    # CLI Argument: --rag-version
+    if args.rag_version:
+        version = args.rag_version
+        if version not in RAG_VERSIONS:
+             print(f"Error: Invalid Version '{version}'. Available: {list(RAG_VERSIONS.keys())}")
+             sys.exit(1)
+        print(f"Using RAG Version: {version} ({RAG_VERSIONS[version]})")
+    else:
+        # Default to Latest if not specified
+        version = LATEST_RAG_VERSION
+        print(f"No version specified. Defaulting to Latest: {version} ({RAG_VERSIONS[version]})")
+        
     if args.json:
         try:
             print("\n--- JSON Log Settings ---")
-            user_prefix = input("Enter log prefix (default: RTV): ").strip()
+            default_prefix = "RTV"
+            user_prefix = input(f"Enter log prefix (default: {default_prefix}): ").strip()
             if user_prefix:
                 log_prefix = user_prefix
             
-            user_version = input("Enter version (default: 0.0.1): ").strip()
-            if user_version:
-                version = user_version
+            # Additional User Input: Description for the experiment
+            description = input("Enter experiment description (optional): ").strip()
+
+            # Version is already determined by arg or default, but allow override if user REALLY wants to name the file differently?
+            # User requirement: "--json 就不用再要 user 給 version"
+            # So we use the 'version' variable determined above for the filename and metadata.
+            pass 
         except KeyboardInterrupt:
             print("\nOperation cancelled by user.")
             sys.exit(1)
@@ -336,7 +420,7 @@ def main():
             sys.exit(1)
     
     # Setup Evaluator
-    evaluator = RetrieverEvaluator(use_json_logging=args.json)
+    evaluator = RetrieverEvaluator(use_json_logging=args.json, rag_version=version)
 
     # 1. Single Query Mode
     if args.query:
@@ -363,7 +447,7 @@ def main():
 
     # 5. JSON Logging
     if args.json:
-        save_json_log(results, log_prefix, version)
+        save_json_log(results, log_prefix, version, description)
         
     # 6. Text Report Generation
     if args.report:

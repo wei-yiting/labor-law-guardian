@@ -12,7 +12,7 @@ import random
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 try:
-    from backend.app.schemas.law import LawData, LawArticle, LawCategory
+    from backend.app.rag.models.ingestion_models import RawLawData as LawData, RawLawArticle as LawArticle, LawCategory
     from scripts.law_scrape_utils import HEADERS, scrape_law_by_pcode
 except ImportError as e:
     print(f"Could not import schemas or utils: {e}")

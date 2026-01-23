@@ -1,10 +1,10 @@
 import unittest
-from app.models.law import RawLawArticle
+from app.rag.models.ingestion_models import RawLawArticle
 # Note: These modules are not yet implemented, but required for the test.
 # We expect ImportError until implemented, verifying "Red" state of TDD.
 try:
-    from app.ingestion.law_article_chunker import LawArticleChunker
-    from app.models.chunk import SplitStrategyEnum
+    from app.rag.ingestion.law_article_chunker import LawArticleChunker
+    from app.rag.models.ingestion_models import SplitStrategyEnum
 except ImportError:
     pass
 

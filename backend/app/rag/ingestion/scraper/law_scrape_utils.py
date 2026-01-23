@@ -9,13 +9,9 @@ import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 try:
-    from backend.app.schemas.law import LawData, LawArticle, LawCategory
-except ImportError:
-    pass 
-    try:
-        from backend.app.schemas.law import LawData, LawArticle, LawCategory
-    except ImportError as e:
-        print(f"Could not import schemas in law_utils: {e}")
+    from backend.app.rag.models.ingestion_models import RawLawData as LawData, RawLawArticle as LawArticle, LawCategory
+except ImportError as e:
+    print(f"Could not import schemas in law_utils: {e}")
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",

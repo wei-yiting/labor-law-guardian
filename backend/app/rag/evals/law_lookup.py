@@ -11,7 +11,7 @@ class LawLookup:
         self._load_data()
 
     def _load_data(self):
-        map_path = self.law_data_dir / "articles_map.json"
+        map_path = self.law_data_dir / "raw_law_data/articles_map.json"
         
         if not map_path.exists():
             print(f"Warning: Articles map not found at {map_path}")

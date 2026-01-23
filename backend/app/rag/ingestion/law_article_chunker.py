@@ -1,12 +1,24 @@
 import re
 import json
-from typing import List, Optional, Dict
+from typing import List, Optional, Dict, Tuple, Union
 from pydantic import HttpUrl
 
-from app.models.law import RawLawArticle
-from app.models.chunk import LawChunk, ChunkMetadata, Hierarchy, SplitStrategyEnum
+from app.rag.models.ingestion_models import (
+    RawLawArticle,
+    LawChunk,
+    LawChunkFine,
+    LawChunkCoarse,
+    ChunkMetadataFine,
+    ChunkMetadataCoarse,
+    HierarchyFine,
+    HierarchyCoarse,
+    SplitStrategyEnum
+)
 
 class LawArticleChunker:
+    def __init__(self, strategy: str = "PARENT_CHILD_FINE"):
+        self.strategy = strategy
+
     def process_files(self, file_paths: List[str]) -> List[LawChunk]:
         all_chunks = []
         for file_path in file_paths:
@@ -22,7 +34,6 @@ class LawArticleChunker:
                         chunks = self.parse_article(article)
                         all_chunks.extend(chunks)
                 else:
-                    # Handle raw list case if necessary, or just skip
                     pass
         return all_chunks
 
@@ -30,179 +41,44 @@ class LawArticleChunker:
         """
         Entry point for parsing a single article.
         """
-        hierarchy = Hierarchy(article=article.article_no)
-        metadata = ChunkMetadata(
-            url=article.url,
-            split_strategy=SplitStrategyEnum.atomic, # Initial value; refined in recursion
-            is_expanded=False,
-            citation_title="", # Initial value; populated based on final hierarchy
-            hierarchy=hierarchy,
-            chapter_no=article.chapter_no,
-            chapter_title=article.chapter_name,
-            article_no=article.article_no
-        )
-        
-        return self._split_recursive(article.content, article.id, article.article_no, metadata)
+        if self.strategy == "PARENT_CHILD_COARSE":
+            return self._split_coarse(article)
+        else:
+            return self._split_fine(article)
 
-    def _split_recursive(self, text: str, parent_id: str, article_no: str, base_metadata: ChunkMetadata) -> List[LawChunk]:
+    # --- Shared Helpers ---
+    
+    def _split_by_paragraph(self, text: str) -> List[Tuple[int, str, int, int]]:
         """
-        Recursive splitting logic.
+        Helper to identify numeric paragraphs (e.g., "(1)")
+        Returns list of (para_num, full_text_of_para, start_idx, end_idx)
         """
-        # Step 1: Check for Numeric Paragraphs (e.g., "(1)")
-        # Identify numeric patterns ((1), (2), etc.) at the start of lines
         numeric_pattern = re.compile(r'(?:^|\n)\s*\((\d+)\)')
-        
-        # Determine if we have numeric paragraphs
         matches = list(numeric_pattern.finditer(text))
         
+        results = []
         if matches:
-            chunks = []
-            # Iterate through all numeric matches to slice the text accordingly
-            
             for i, match in enumerate(matches):
-                start = match.start()
-                # The regex `(?:^|\n)\s*\((\d+)\)` matches the newline before the number as well
-                
-                para_num = int(match.group(1))
-                
-                # The content of this paragraph starts after the full match
-                content_start = match.end()
-                
                 # The content ends at the start of the next match, or end of text
                 if i < len(matches) - 1:
                     content_end = matches[i+1].start()
                 else:
                     content_end = len(text)
                 
-                # Reconstruct full text e.g. (1) content ...
-                para_text = f"({para_num})" + text[content_start:content_end]
-                # Strip leading/trailing whitespace from the extracted text section
+                para_num = int(match.group(1))
+                # match.start() includes the newline before the paragraph, usually we want the block
+                start_idx = match.start()
+                
+                # Reconstruct full text logic from original:
+                # The regex captures the number. 
+                # Original logic: `para_text = f"({para_num})" + text[content_start:content_end]`
+                # But actually `text[match.start():content_end]` usually covers the whole thing including `(1)`.
+                # Let's use the stripped version as per original:
                 extracted_full_text = text[match.start():content_end].strip()
                 
-                # Recursively process this paragraph (check for Contextual Split)
-                
-                # Create base metadata for this paragraph
-                para_hierarchy = Hierarchy(
-                    article=article_no,
-                    paragraph=para_num,
-                    subparagraph=None
-                )
-                
-                # Check for subparagraphs in this paragraph
-                sub_chunks = self._process_subparagraphs(extracted_full_text, parent_id, article_no, base_metadata, para_num)
-                chunks.extend(sub_chunks)
-                
-            return chunks
-
-        # Step 2: Check for Subparagraphs (e.g., "一、")
-        else:
-            return self._process_subparagraphs(text, parent_id, article_no, base_metadata, None)
-
-    def _process_subparagraphs(self, text: str, parent_id: str, article_no: str, base_metadata: ChunkMetadata, para_num: Optional[int]) -> List[LawChunk]:
-        """
-        Step 2 logic extracted to be reusable by Step 1.
-        Checks for "一、", "二、"...
-        """
-        # Pattern for "One、" at start of line
-        # Chinese numbers regex is tricky. [一二三...]+、
-        sub_pattern = re.compile(r'(?:^|\n)\s*([一二三四五六七八九十百]+)、')
+                results.append((para_num, extracted_full_text, start_idx, content_end))
         
-        matches = list(sub_pattern.finditer(text))
-        
-        if matches:
-            chunks = []
-            # Contextual Split
-            # 1. Extract Preamble: text before the first match
-            first_match_start = matches[0].start()
-            preamble = text[:first_match_start].strip()
-            
-            for i, match in enumerate(matches):
-                # Calculate subarray index (1-based index)
-                # Assumption: Subparagraphs are ordered sequentially in the source text (一、, 二、, ...)
-                current_sub_id = i + 1
-                
-                content_start = match.end()
-                if i < len(matches) - 1:
-                    content_end = matches[i+1].start()
-                else:
-                    content_end = len(text)
-                
-                item_text = text[match.start():content_end].strip() # Includes "一、..."
-                
-                # Combine Preamble + Item
-                full_text = f"{preamble}{item_text}"
-                
-                # Construct Chunk
-                
-                # ID Construction
-                if para_num:
-                    chunk_id = f"{parent_id}_P{para_num}_S{current_sub_id}"
-                    strategy = SplitStrategyEnum.numeric_contextual
-                else:
-                    chunk_id = f"{parent_id}_S{current_sub_id}"
-                    strategy = SplitStrategyEnum.contextual
-                
-                new_hierarchy = Hierarchy(
-                    article=article_no,
-                    paragraph=para_num,
-                    subparagraph=current_sub_id
-                )
-                
-                citation = self._format_citation_title(new_hierarchy)
-                
-                new_meta = base_metadata.model_copy()
-                new_meta.split_strategy = strategy
-                new_meta.is_expanded = True
-                new_meta.hierarchy = new_hierarchy
-                new_meta.citation_title = citation
-                
-                chunk = LawChunk(
-                    chunk_id=chunk_id,
-                    parent_id=parent_id,
-                    text=full_text,
-                    metadata=new_meta
-                )
-                chunks.append(chunk)
-            
-            return chunks
-        
-        else:
-            # Step 3: Atomic (Fallback)
-            # If we are inside a paragraph (para_num is set), this is a "Numeric" chunk (Paragraph only)
-            # If we are at top level (para_num None), this is "Atomic" chunk (Article only)
-            
-            if para_num:
-                chunk_id = f"{parent_id}_P{para_num}"
-                strategy = SplitStrategyEnum.numeric
-                new_hierarchy = Hierarchy(
-                    article=article_no,
-                    paragraph=para_num,
-                    subparagraph=None
-                )
-            else:
-                chunk_id = parent_id # LSA-5
-                strategy = SplitStrategyEnum.atomic
-                new_hierarchy = Hierarchy(
-                    article=article_no,
-                    paragraph=None,
-                    subparagraph=None
-                )
-
-            citation = self._format_citation_title(new_hierarchy)
-            
-            new_meta = base_metadata.model_copy()
-            new_meta.split_strategy = strategy
-            new_meta.is_expanded = False
-            new_meta.hierarchy = new_hierarchy
-            new_meta.citation_title = citation
-            
-            chunk = LawChunk(
-                chunk_id=chunk_id,
-                parent_id=parent_id,
-                text=text.strip(),
-                metadata=new_meta
-            )
-            return [chunk]
+        return results
 
     def _convert_to_chinese_numeral(self, n: int) -> str:
         """
@@ -215,15 +91,12 @@ class LawArticleChunker:
             
         s = ""
         n_str = str(n)
-        length = len(n_str)
         
-        # Special case for 10-19: "十", "十一" (not "一十", "一十一")
         if 10 <= n < 20:
              if n == 10: return "十"
              s = "十" + digits[int(n_str[1])]
              return s
 
-        # Logic for other numbers (1-9, >=20)
         res = ""
         h = n // 100
         t = (n % 100) // 10
@@ -236,7 +109,7 @@ class LawArticleChunker:
             if h > 0 and u > 0:
                 res += "零"
         else:
-            if t == 1 and h == 0: # 10-19, but 10-19 is handled above, so this branch might be unreachable or implicit
+            if t == 1 and h == 0: # 10-19 handled above
                 res += "十"
             else:
                 res += digits[t] + "十"
@@ -246,14 +119,78 @@ class LawArticleChunker:
         
         return res
 
+    # --- Coarse Strategy (v0.0.3) ---
 
+    def _split_coarse(self, article: RawLawArticle) -> List[LawChunkCoarse]:
+        chunks = []
+        
+        # Base metadata info
+        base_kwargs = {
+            "url": article.url,
+            "chapter_no": article.chapter_no,
+            "chapter_title": article.chapter_name,
+            "article_no": article.article_no
+        }
 
-    def _format_citation_title(self, hierarchy: Hierarchy) -> str:
-        """
-        Logic: 勞動基準法 + 第{art}條 + (If P exists)第{P}項 + (If S exists)第{S}款
-        Special Handling for "84-2": Must convert to 第八十四條之二
-        """
-        # Article Part
+        # 1. Try splitting by Paragraph
+        paragraphs = self._split_by_paragraph(article.content)
+        
+        if paragraphs:
+            for para_num, para_text, _, _ in paragraphs:
+                chunk_id = f"{article.id}_P{para_num}"
+                
+                hierarchy = HierarchyCoarse(
+                    article=article.article_no,
+                    paragraph=para_num
+                )
+                
+                # Format citation (No Subparagraph)
+                citation = self._format_citation_coarse(hierarchy)
+                
+                metadata = ChunkMetadataCoarse(
+                    **base_kwargs,
+                    split_strategy=SplitStrategyEnum.numeric,
+                    is_expanded=False, # Coarse chunks are not "expanded" lists, they are blocks
+                    citation_title=citation,
+                    hierarchy=hierarchy
+                )
+                
+                chunk = LawChunkCoarse(
+                    chunk_id=chunk_id,
+                    parent_id=article.id,
+                    text=para_text,
+                    metadata=metadata
+                )
+                chunks.append(chunk)
+        else:
+            # Atomic (Article Level)
+            chunk_id = article.id
+            hierarchy = HierarchyCoarse(
+                article=article.article_no,
+                paragraph=None
+            )
+            citation = self._format_citation_coarse(hierarchy)
+            
+            metadata = ChunkMetadataCoarse(
+                **base_kwargs,
+                split_strategy=SplitStrategyEnum.atomic,
+                is_expanded=False,
+                citation_title=citation,
+                hierarchy=hierarchy
+            )
+            
+            chunk = LawChunkCoarse(
+                chunk_id=chunk_id,
+                parent_id=article.id,
+                text=article.content.strip(),
+                metadata=metadata
+            )
+            chunks.append(chunk)
+            
+        return chunks
+
+    def _format_citation_coarse(self, hierarchy: HierarchyCoarse) -> str:
+        # Same logic as fine but without subparagraph check
         art_str = hierarchy.article
         
         if "-" in art_str:
@@ -266,7 +203,161 @@ class LawArticleChunker:
                 art_cn = self._convert_to_chinese_numeral(int(art_str))
                 art_text = f"第{art_cn}條"
             else:
-                art_text = f"第{art_str}條" # Fallback
+                art_text = f"第{art_str}條"
+                
+        title = f"勞動基準法{art_text}"
+        
+        if hierarchy.paragraph:
+            para_cn = self._convert_to_chinese_numeral(hierarchy.paragraph)
+            title += f"第{para_cn}項"
+            
+        return title
+
+    # --- Fine Strategy (v0.0.2) ---
+
+    def _split_fine(self, article: RawLawArticle) -> List[LawChunkFine]:
+        hierarchy = HierarchyFine(article=article.article_no)
+        metadata = ChunkMetadataFine(
+            url=article.url,
+            split_strategy=SplitStrategyEnum.atomic, 
+            is_expanded=False,
+            citation_title="", 
+            hierarchy=hierarchy,
+            chapter_no=article.chapter_no,
+            chapter_title=article.chapter_name,
+            article_no=article.article_no
+        )
+        return self._split_recursive_fine(article.content, article.id, article.article_no, metadata)
+
+    def _split_recursive_fine(self, text: str, parent_id: str, article_no: str, base_metadata: ChunkMetadataFine) -> List[LawChunkFine]:
+        
+        # Step 1: Check for Numeric Paragraphs
+        paragraphs = self._split_by_paragraph(text)
+        
+        if paragraphs:
+            chunks = []
+            for para_num, para_text, _, _ in paragraphs:
+                # Recursively process this paragraph (check for Contextual Split)
+                
+                # Base metadata for this paragraph context
+                # Note: We need a temporary hierarchy to pass down, or just pass para_num
+                
+                sub_chunks = self._process_subparagraphs_fine(para_text, parent_id, article_no, base_metadata, para_num)
+                chunks.extend(sub_chunks)
+            return chunks
+
+        # Step 2: Check for Subparagraphs (e.g., "一、")
+        else:
+            return self._process_subparagraphs_fine(text, parent_id, article_no, base_metadata, None)
+
+    def _process_subparagraphs_fine(self, text: str, parent_id: str, article_no: str, base_metadata: ChunkMetadataFine, para_num: Optional[int]) -> List[LawChunkFine]:
+        """
+        Step 2 logic: Checks for "一、", "二、"...
+        """
+        sub_pattern = re.compile(r'(?:^|\n)\s*([一二三四五六七八九十百]+)、')
+        matches = list(sub_pattern.finditer(text))
+        
+        if matches:
+            chunks = []
+            # Contextual Split
+            first_match_start = matches[0].start()
+            preamble = text[:first_match_start].strip()
+            
+            for i, match in enumerate(matches):
+                if i < len(matches) - 1:
+                    content_end = matches[i+1].start()
+                else:
+                    content_end = len(text)
+                
+                item_text = text[match.start():content_end].strip()
+                full_text = f"{preamble}{item_text}"
+                
+                # Calc Sub ID
+                current_sub_id = i + 1
+                
+                if para_num:
+                    chunk_id = f"{parent_id}_P{para_num}_S{current_sub_id}"
+                    strategy = SplitStrategyEnum.numeric_contextual
+                else:
+                    chunk_id = f"{parent_id}_S{current_sub_id}"
+                    strategy = SplitStrategyEnum.contextual
+                
+                new_hierarchy = HierarchyFine(
+                    article=article_no,
+                    paragraph=para_num,
+                    subparagraph=current_sub_id
+                )
+                
+                citation = self._format_citation_fine(new_hierarchy)
+                
+                new_meta = base_metadata.model_copy()
+                new_meta.split_strategy = strategy
+                new_meta.is_expanded = True
+                new_meta.hierarchy = new_hierarchy
+                new_meta.citation_title = citation
+                
+                chunk = LawChunkFine(
+                    chunk_id=chunk_id,
+                    parent_id=parent_id,
+                    text=full_text,
+                    metadata=new_meta
+                )
+                chunks.append(chunk)
+            
+            return chunks
+        
+        else:
+            # Step 3: Atomic (Fallback)
+            if para_num:
+                chunk_id = f"{parent_id}_P{para_num}"
+                strategy = SplitStrategyEnum.numeric
+                new_hierarchy = HierarchyFine(
+                    article=article_no,
+                    paragraph=para_num,
+                    subparagraph=None
+                )
+            else:
+                chunk_id = parent_id 
+                strategy = SplitStrategyEnum.atomic
+                new_hierarchy = HierarchyFine(
+                    article=article_no,
+                    paragraph=None,
+                    subparagraph=None
+                )
+
+            citation = self._format_citation_fine(new_hierarchy)
+            
+            new_meta = base_metadata.model_copy()
+            new_meta.split_strategy = strategy
+            new_meta.is_expanded = False
+            new_meta.hierarchy = new_hierarchy
+            new_meta.citation_title = citation
+            
+            chunk = LawChunkFine(
+                chunk_id=chunk_id,
+                parent_id=parent_id,
+                text=text.strip(),
+                metadata=new_meta
+            )
+            return [chunk]
+
+    def _format_citation_fine(self, hierarchy: HierarchyFine) -> str:
+        # Reusing the Coarse logic for the first part
+        # Construct Dummy Coarse Hierarchy to reuse logic? Or just duplicate simple logic.
+        # Let's duplicate to ensure independence.
+        
+        art_str = hierarchy.article
+        if "-" in art_str:
+            main_num, sub_num = art_str.split("-")
+            main_cn = self._convert_to_chinese_numeral(int(main_num))
+            sub_cn = self._convert_to_chinese_numeral(int(sub_num))
+            art_text = f"第{main_cn}條之{sub_cn}"
+        else:
+            if art_str.isdigit():
+                art_cn = self._convert_to_chinese_numeral(int(art_str))
+                art_text = f"第{art_cn}條"
+            else:
+                art_text = f"第{art_str}條" 
                 
         title = f"勞動基準法{art_text}"
         

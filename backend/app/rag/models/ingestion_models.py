@@ -1,8 +1,10 @@
 """Future purpose: define RawLawArticle (and related) Pydantic models as the project-wide data contract."""
 from enum import Enum
-from pydantic import BaseModel, Field, HttpUrl
 from typing import Optional, List
 from datetime import date
+from pydantic import BaseModel, Field, HttpUrl
+
+# --- From law.py ---
 
 class LawCategory(Enum):
     """Law category enum"""
@@ -61,3 +63,66 @@ class RawLawData(BaseModel):
         examples=["2024-03-27"]
     )
     articles: List[RawLawArticle] = Field(description="List of articles in the law")
+
+# --- From chunk.py ---
+
+class SplitStrategyEnum(str, Enum):
+    atomic = "atomic"
+    numeric = "numeric"
+    contextual = "contextual"
+    numeric_contextual = "numeric_contextual"
+    parent_child_coarse = "parent_child_coarse"
+
+
+# --- Fine-Grained Models (v0.0.2) ---
+
+class HierarchyFine(BaseModel):
+    article: str
+    paragraph: int | None = None
+    subparagraph: int | None = None
+
+class ChunkMetadataFine(BaseModel):
+    url: HttpUrl
+    split_strategy: SplitStrategyEnum
+    is_expanded: bool
+    citation_title: str
+    hierarchy: HierarchyFine
+    chapter_no: int | None = None
+    chapter_title: str | None = None
+    article_no: str
+
+class LawChunkFine(BaseModel):
+    chunk_id: str
+    parent_id: str
+    text: str
+    metadata: ChunkMetadataFine
+
+
+# --- Coarse-Grained Models (v0.0.3) ---
+
+class HierarchyCoarse(BaseModel):
+    article: str
+    paragraph: int | None = None
+    # No subparagraph field for coarse chunks
+
+class ChunkMetadataCoarse(BaseModel):
+    url: HttpUrl
+    split_strategy: SplitStrategyEnum
+    is_expanded: bool
+    citation_title: str
+    hierarchy: HierarchyCoarse
+    chapter_no: int | None = None
+    chapter_title: str | None = None
+    article_no: str
+
+class LawChunkCoarse(BaseModel):
+    chunk_id: str
+    parent_id: str
+    text: str
+    metadata: ChunkMetadataCoarse
+
+
+# --- Union Type ---
+# This allows the chunker to return a mixed list or specific list depending on strategy,
+# and the loader to handle both.
+LawChunk = LawChunkFine | LawChunkCoarse

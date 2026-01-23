@@ -51,7 +51,6 @@ def generate_tags(level, topic_code, type_str, question_text):
     # Smoke Test Tag
     if question_text in SMOKE_TEST_QUESTIONS:
         tags.append("smoke_test")
-        
     return tags
 
 def load_json(path):
@@ -209,7 +208,7 @@ def main():
         # Check Ground Truth
         # Note: Depending on requirement, we might allow ground truth updates? 
         # But per instruction "reference_articles_id 與 ground_truth 都有正確對應沒有錯置", strict equality is requested.
-        if final_item['ground_truth'] != source_vals['ref_ids']:
+        if final_item['ground_truth'] != source_vals['ground_truth']:
              # Wait, logic error in my thought process? 
              # No, verify they match input. If existing item had different GT, the script SKIPPED it, so it naturally keeps OLD GT.
              # If the Requirement is "Input Subset is Truth", then we should have updated it.
