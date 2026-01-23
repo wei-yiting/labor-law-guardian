@@ -53,7 +53,7 @@ class RawLawArticle(BaseModel):
         description="Related concept keywords (reserved)"
     )
 
-class LawData(BaseModel):
+class RawLawData(BaseModel):
     category: LawCategory = Field(description="The category of the law (Mother Law or Subsidiary Law)")
     title: str = Field(description="The title of the law")
     last_modified_date: date = Field(
