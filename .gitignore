@@ -27,7 +27,4 @@ node_modules/
 # Secrets
 .env
 
-# Agent
-.agent/
-
 

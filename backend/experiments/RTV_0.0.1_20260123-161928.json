@@ -2,6 +2,7 @@
   "meta": {
     "run_id": "RTV_0.0.1_20260123-161928",
     "timestamp": "2026-01-23T16:19:28.809122",
+    "description": "The most naive retrieval with document chunked to node by implicit by LlamaIndex",
     "agent_version": "0.0.1",
     "configuration": {
       "strategy": "",

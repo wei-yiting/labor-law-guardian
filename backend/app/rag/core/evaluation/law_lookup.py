@@ -4,8 +4,8 @@ from pathlib import Path
 from typing import Dict, Any, Optional
 
 class LawLookup:
-    def __init__(self, project_root: Path):
-        self.project_root = project_root
+    def __init__(self, project_root: Any):
+        self.project_root = Path(project_root)
         self.articles_map: Dict[str, Dict[str, Any]] = {}
         self.law_data_dir = self.project_root / "backend/data/law_data"
         self._load_data()
