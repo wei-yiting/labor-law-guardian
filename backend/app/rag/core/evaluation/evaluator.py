@@ -43,13 +43,82 @@ class RetrieverEvaluator:
             
         return recall, precision, retrieved_ids_list
 
+    def _get_unique_ordered_ids(self, nodes: List[Any]) -> List[str]:
+        """
+        Extracts ordered unique article IDs from retrieved nodes.
+        Maintains the original retrieval order which is crucial for ranking metrics.
+        """
+        seen = set()
+        ordered_ids = []
+        for node in nodes:
+            retrieved_id = self.strategy.get_retrieved_article_id(node)
+            if retrieved_id and retrieved_id not in seen:
+                seen.add(retrieved_id)
+                ordered_ids.append(retrieved_id)
+        return ordered_ids
+
+    def _calculate_APk(self, retrieved_ids: List[str], ground_truth_ids: List[str], k: int) -> float:
+        """
+        Calculates Average Precision at k (AP@k) for a single query.
+        
+        Formula: AP@k = (1 / R) * sum(P@i * rel(i)) for i=1 to k
+        Where:
+            R = Total number of relevant items (len(ground_truth_ids))
+            P@i = Precision at rank i
+            rel(i) = 1 if item at rank i is relevant, 0 otherwise
+        """
+        if not ground_truth_ids:
+            return 0.0
+            
+        relevant_set = set(ground_truth_ids)
+        R = len(relevant_set)
+        
+        # Only consider top k retrieved items (though typically retrieved_ids is already length k)
+        retrieved_at_k = retrieved_ids[:k]
+        
+        score = 0.0
+        num_hits = 0.0
+        
+        for i, doc_id in enumerate(retrieved_at_k):
+            if doc_id in relevant_set:
+                num_hits += 1.0
+                precision_at_i = num_hits / (i + 1.0)
+                score += precision_at_i
+                
+        # AP@k is the sum of precisions for relevant items divided by total relevant items
+        return score / R
+
+    def _calculate_RRk(self, retrieved_ids: List[str], ground_truth_ids: List[str], k: int) -> float:
+        """
+        Calculates Reciprocal Rank at k (RR@k) for a single query.
+        
+        Formula: 1 / rank_of_first_relevant_item
+        """
+        if not ground_truth_ids:
+            return 0.0
+            
+        relevant_set = set(ground_truth_ids)
+        retrieved_at_k = retrieved_ids[:k]
+        
+        for i, doc_id in enumerate(retrieved_at_k):
+            if doc_id in relevant_set:
+                return 1.0 / (i + 1.0)
+                
+        return 0.0
+
     def evaluate_dataset(self, dataset: List[Dict[str, Any]], verbose: bool = True) -> Dict[str, Any]:
         """
         Runs full evaluation on a dataset.
         Returns a dictionary containing metrics and failure cases.
         """
+        from backend.app.rag.config import RETRIEVER_TOP_K
+        k = RETRIEVER_TOP_K
+
         total_recall = 0.0
         total_precision = 0.0
+        total_AP = 0.0
+        total_RR = 0.0
+        
         full_failed_cases = [] 
         fail_cases_data = []  
         
@@ -65,6 +134,13 @@ class RetrieverEvaluator:
             nodes = self.run_retrieval(query)
             recall, precision, retrieved_ids = self.calculate_metrics(nodes, gt_ids)
             
+            # Calculate AP@k using ordered unique IDs
+            ordered_retrieved_ids = self._get_unique_ordered_ids(nodes)
+            ap = self._calculate_APk(ordered_retrieved_ids, gt_ids, k)
+            rr = self._calculate_RRk(ordered_retrieved_ids, gt_ids, k)
+            total_AP += ap
+            total_RR += rr
+
             total_recall += recall
             total_precision += precision
             
@@ -90,14 +166,20 @@ class RetrieverEvaluator:
 
         avg_recall = total_recall / total_items if total_items > 0 else 0
         avg_precision = total_precision / total_items if total_items > 0 else 0
+        MAP_score = total_AP / total_items if total_items > 0 else 0
+        MRR_score = total_RR / total_items if total_items > 0 else 0
         
         results = {
             "total_items": total_items,
-            "avg_recall": avg_recall,
-            "avg_precision": avg_precision,
+            f"avg_recall@{k}": avg_recall,
+            f"avg_precision@{k}": avg_precision,
+            f"MAP@{k}": MAP_score,
+            f"MRR@{k}": MRR_score,
             "full_failed_cases": full_failed_cases,
             "fail_cases_data": fail_cases_data
         }
+
+
         return results
 
     def _build_failure_case_data(self, qid, query, gt_ids, nodes):

@@ -1,5 +1,6 @@
 import json
 import datetime
+import re
 from pathlib import Path
 from typing import Dict, Any, List
 from backend.app.rag.config import (
@@ -13,6 +14,12 @@ def save_json_log(results: Dict[str, Any], log_prefix: str, version: str, descri
     
     run_id = f"{log_prefix}_{version}_{date_seq}"
     
+    # Dynamically extract scores
+    score_metrics = {
+        k: round(v, 4) for k, v in results.items() 
+        if k.startswith(("avg_recall@", "avg_precision@", "MAP@", "MRR@"))
+    }
+
     output_data = {
         "meta": {
             "run_id": run_id,
@@ -29,12 +36,10 @@ def save_json_log(results: Dict[str, Any], log_prefix: str, version: str, descri
             },
             "data": {
                 "eval_datasets": [],
-                "source_documents": []
+                "source_documents": [],
+                "total_queries": results["total_items"]
             },
-            "overall_score": {
-                "average_recall": round(results['avg_recall'], 4),
-                "average_precision": round(results['avg_precision'], 4)
-            }
+            "overall_score": score_metrics
         },
         "fail_cases": results.get('fail_cases_data', [])
     }
@@ -50,30 +55,91 @@ def save_json_log(results: Dict[str, Any], log_prefix: str, version: str, descri
     print(f"\nJSON log saved to: {output_file}")
 
 
-def save_text_report(results: Dict[str, Any], report_name: str, project_root: str):
-    base_name = f"{report_name}_eval_report.txt"
+def save_text_report(results: Dict[str, Any], version: str, description: str, project_root: str):
     project_root_path = Path(project_root)
-    output_dir = project_root_path / "backend/app/rag/evals/reports"
+    output_dir = project_root_path / "backend/experiments"
     output_dir.mkdir(parents=True, exist_ok=True)
-    report_path = output_dir / base_name
+    report_path = output_dir / "consolidated_eval_report.md"
     
-    avg_recall = results['avg_recall']
-    avg_precision = results['avg_precision']
-    full_failed_cases = results.get("full_failed_cases", [])
+    # Generate the new block content
+    now = datetime.datetime.now()
+    timestamp_str = now.strftime("%Y-%m-%d %H:%M:%S")
+    
+    # Format the metrics
+    metrics_str = ""
+    metrics = [k for k in results.keys() if k.startswith(("avg_recall@", "avg_precision@", "MAP@", "MRR@"))]
+    for key in sorted(metrics):
+        metrics_str += f"- **{key}**: {results[key]:.4f}\n"
 
-    with open(report_path, "w", encoding="utf-8") as f:
-        f.write("RAG Evaluation Report\n")
-        f.write(f"Average Recall: {avg_recall:.4f}\n")
-        f.write(f"Average Precision: {avg_precision:.4f}\n")
-        f.write(f"Config: top_k={RETRIEVER_TOP_K}\n")
+    failed_cases_str = ""
+    full_failed_cases = results.get("full_failed_cases", [])
+    if full_failed_cases:
+        failed_cases_str += "\n### Failed Cases (Recall < 1.0)\n"
+        for case in full_failed_cases:
+            failed_cases_str += f"- **[{case['id']}]** {case['question']}\n"
+            failed_cases_str += f"  - Recall: {case['recall']:.2f}\n"
+
+    new_block = f"""## Version {version}
+
+### Metadata
+- **Datetime**: {timestamp_str}
+- **Description**: {description}
+
+### Metrics
+- **Total Queries**: {results['total_items']}
+{metrics_str}- **Config**: top_k={RETRIEVER_TOP_K}
+{failed_cases_str}
+### Manual Analysis
+- **Error analysis**: 
+- **Possible resolution**: 
+- **Has implemented possible resolution**: 
+- **Has failures fixed**: 
+"""
+
+    if not report_path.exists():
+        content = new_block
+    else:
+        content = report_path.read_text(encoding="utf-8")
         
-        if full_failed_cases:
-            f.write("\nFailed Cases (Recall < 1.0):\n")
-            for case in full_failed_cases:
-                f.write(f"[{case['id']}] {case['question']}\n")
-                f.write(f"  Recall: {case['recall']:.2f}\n")
-                f.write("-" * 20 + "\n")
-                
+        # Regex to find existing block for this version
+        # Header pattern: ## Version 0.0.1
+        # Lookahead: Next "## Version " or End of File
+        header_pattern = rf"## Version {re.escape(version)}"
+        next_header_lookahead = rf"(?=\n## Version |\Z)"
+        
+        # Note: We need to match newline before ## Version to correctly identify start if it's not the first line,
+        # but the first line won't have a newline before it.
+        # However, our regex search finds the first match.
+        # Safe strategy: Match literal "## Version X" at start of line (multiline).
+        # We use re.M (multiline) but re.DOTALL makes . match newlines.
+        
+        # Let's stick to constructed pattern.
+        # We want to capture the whole block.
+        # Start: "## Version {version}"
+        # End: Start of next "## Version" or EOF.
+        
+        pattern = re.compile(rf"(^## Version {re.escape(version)}.*?{next_header_lookahead})", re.DOTALL | re.MULTILINE)
+        
+        match = pattern.search(content)
+        if match:
+            # Replace existing block
+            start, end = match.span()
+            content = content[:start] + new_block.strip() + content[end:]
+        else:
+            # Append new block
+            if content and not content.endswith("\n"):
+                content += "\n"
+            
+            if not content.strip(): 
+                # If file is logically empty
+                content = new_block
+            else:
+                # Append three newlines for separation between blocks
+                content = content.rstrip() + "\n\n\n\n" + new_block
+            
+    with open(report_path, "w", encoding="utf-8") as f:
+        f.write(content)
+        
     print(f"\nText report saved to: {report_path}")
 
 def print_results(results: Dict[str, Any]):
@@ -81,8 +147,11 @@ def print_results(results: Dict[str, Any]):
     print("EVALUATION RESULTS")
     print("="*30)
     print(f"Total Queries: {results['total_items']}")
-    print(f"Average Recall: {results['avg_recall']:.4f}")
-    print(f"Average Precision: {results['avg_precision']:.4f}")
+    
+    # Dynamically print metrics
+    metrics = [k for k in results.keys() if k.startswith(("avg_recall@", "avg_precision@", "MAP@", "MRR@"))]
+    for key in sorted(metrics):
+        print(f"{key:<20}: {results[key]:.4f}")
     
     full_failed_cases = results.get("full_failed_cases", [])
     if full_failed_cases:

@@ -59,29 +59,23 @@ def main():
     is_verification = False
     
     if not args.query:
-        if args.json:
+        if args.json or args.report:
             try:
-                # Basic check if input is piped or tty, but verification script pipes input anyway.
-                print("\n--- JSON Log Settings ---")
-                user_prefix = input(f"Enter log prefix (default: {log_prefix}): ").strip()
-                if user_prefix == "VERIFY": is_verification = True
-                if user_prefix and not is_verification: log_prefix = user_prefix
+                print("\n--- Experiment Settings ---")
+                # Only ask for log prefix if JSON is enabled, or just keep it simple? 
+                # The user requirement specifically asked to ensure "Description" is available for Text Reports.
+                # JSON log prefix seems specific to JSON filenames.
+                
+                if args.json:
+                     user_prefix = input(f"Enter JSON log prefix (default: {log_prefix}): ").strip()
+                     if user_prefix == "VERIFY": is_verification = True
+                     if user_prefix and not is_verification: log_prefix = user_prefix
                 
                 description = input("Enter experiment description (optional): ").strip()
             except KeyboardInterrupt:
                 sys.exit(1)
             except EOFError:
                 pass # Piped input might end
-                
-        if args.report:
-            try:
-                print("\n--- Text Report Settings ---")
-                user_name = input("Enter report name (default: default): ").strip()
-                if user_name: report_name = user_name
-            except KeyboardInterrupt:
-                sys.exit(1)
-            except EOFError:
-                pass
 
     # 4. Execution Mode
     if args.query:
@@ -113,7 +107,7 @@ def main():
         save_json_log(results, log_prefix, version, description, str(PROJECT_ROOT))
     
     if args.report:
-        save_text_report(results, report_name, str(PROJECT_ROOT))
+        save_text_report(results, version, description, str(PROJECT_ROOT))
 
 if __name__ == "__main__":
     main()
