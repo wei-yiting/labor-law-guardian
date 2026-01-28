@@ -27,4 +27,5 @@ node_modules/
 # Secrets
 .env
 
-
+# Qdrant
+qdrant_data/

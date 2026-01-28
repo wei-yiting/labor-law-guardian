@@ -1,0 +1,28 @@
+{
+  "meta": {
+    "run_id": "RTV_0.0.2_20260128-154200",
+    "timestamp": "2026-01-28T15:42:00.911559",
+    "description": "change embedding model from open ai text-embedding-3-small to BAAI/bge-m3",
+    "agent_version": "0.0.2",
+    "configuration": {
+      "rag_version": "0.0.2",
+      "strategy": "PARENT_CHILD_FINE",
+      "tokenizer": "gpt-4o",
+      "embedding": "BAAI/bge-m3",
+      "chunk_size": 1024,
+      "top_k": 3
+    },
+    "data": {
+      "eval_datasets": [],
+      "source_documents": [],
+      "total_queries": 34
+    },
+    "overall_score": {
+      "avg_recall@3": 1.0,
+      "avg_precision@3": 0.3333,
+      "MAP@3": 0.9853,
+      "MRR@3": 0.9853
+    }
+  },
+  "fail_cases": []
+}

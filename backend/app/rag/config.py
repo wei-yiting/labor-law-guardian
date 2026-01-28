@@ -1,4 +1,3 @@
-
 import os
 from pathlib import Path
 from dotenv import load_dotenv
@@ -13,12 +12,15 @@ LAW_DATA_DIR = os.path.join(PROJECT_ROOT, "backend/data/law_data")
 LAW_FILES = [
     "raw_law_data/mother_laws/labor_standards_act.json",
     "raw_law_data/subsidiary_laws/enforcement_rules.json",
-    "raw_law_data/subsidiary_laws/labor_leave_rule.json"
+    "raw_law_data/subsidiary_laws/labor_leave_rule.json",
 ]
 
 # RAG Settings
 OPENAI_MODEL_NAME = "gpt-4o"
-EMBEDDING_MODEL_NAME = "text-embedding-3-small"
+# Embedding Settings
+# Provider options: "openai", "huggingface" (local)
+EMBEDDING_PROVIDER = "huggingface"
+EMBEDDING_MODEL_NAME = "BAAI/bge-m3"
 OPENAI_TEMPERATURE = 0
 CHUNK_SIZE = 1024
 RETRIEVER_TOP_K = 3
@@ -29,6 +31,17 @@ RETRIEVER_TOP_K = 3
 RAG_VERSIONS = {
     "0.0.1": "NAIVE",
     "0.0.2": "PARENT_CHILD_FINE",
-    "0.0.3": "PARENT_CHILD_COARSE"
+    "0.0.3": "PARENT_CHILD_COARSE",
+    "0.0.4": "BGE_M3_EMBEDDING",
 }
-LATEST_RAG_VERSION = "0.0.3"
+LATEST_RAG_VERSION = "0.0.4"
+
+# Vector Store Settings
+QDRANT_HOST = "localhost"
+QDRANT_PORT = 6333
+QDRANT_URL = f"http://{QDRANT_HOST}:{QDRANT_PORT}"
+
+# Qdrant Collection Names
+COLLECTION_NAME_NAIVE = "naive"
+COLLECTION_NAME_PC_FINE = "parent-child-fine"
+COLLECTION_NAME_PC_COARSE = "parent-child-coarse"

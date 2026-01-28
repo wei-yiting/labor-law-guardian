@@ -1,0 +1,34 @@
+# THE PRAGMATIC CODE REVIEW MANIFESTO (V2)
+
+1. NO OVER-ENGINEERING (YAGNI)
+   - Do not write code for "future extensibility" unless explicitly required.
+   - If a function does too much, split it. If a class does too little, inline it.
+   - Avoid generic "Utils" or "Helpers". Place logic where it belongs.
+
+2. READABILITY & LOGIC CLARITY
+   - Code must be "boring" and predictable.
+   - Variable names must be verbose enough to describe content (e.g., `user_list` -> `active_subscribers`).
+   - Flow must be linear. Avoid deep nesting (use Guard Clauses).
+
+3. DESCRIPTIVE COMMENTS (THE "WHY")
+   - **Complex Logic**: Any non-trivial algorithm or business logic constraint MUST have a comment explaining *WHY* it is implemented this way.
+   - **No Redundancy**: Do not comment obvious things (e.g., `i += 1 # Increment`).
+   - **Intent**: Comments should guide the reader (human or AI) on the intent of the block.
+
+4. CODE CRUFT (ZERO TOLERANCE)
+   - **Delete** commented-out code immediately.
+   - **Delete** unused files.
+   - **Delete** debug print statements.
+
+5. DOCUMENTATION ALIGNMENT (MCP VERIFIED)
+   - Adhere strictly to the *current* official documentation of frameworks/libraries.
+   - Do not reinvent the wheel. Use standard library features over custom implementations.
+
+6. ARCHITECTURAL EXPLICITNESS & AI-READINESS
+   - **Recursive Documentation**: EVERY folder must have a `README.md`.
+   - **The README Standard**:
+     1. **Scope**: What is the single responsibility of this folder?
+     2. **Map**: Explanation of key subfolders and files contained within.
+     3. **Design Pattern**: If a specific pattern is used (e.g., Repository, Factory), state it explicitly.
+     4. **Extension Algorithm**: Explicit instructions for future contributors (Human or AI).
+        - *Example*: "To add a new API endpoint: 1. Create DTO in `schemas/`. 2. Add route in `routes.py`. 3. Implement logic in `services.py` following the `Result` pattern."
