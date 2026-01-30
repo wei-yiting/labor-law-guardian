@@ -1,3 +1,28 @@
+"""
+Generate Master Dataset Script
+
+This script incrementally updates the master evaluation dataset by merging a new subset JSON file.
+It performs the following operations:
+1. Loads the existing master dataset.
+2. Reads the new subset file.
+3. Assigns unique semantic IDs to new questions based on their topic and sequence.
+4. Generates tags (Level, Topic, Type, Smoke Test).
+5. Validates immutability of existing data and schema compliance of new data.
+6. Saves the updated master dataset to `backend/data/eval_dataset/master_eval_dataset.json`.
+
+Usage:
+    Run this script from the project root directory.
+
+    uv run -m backend.scripts.generate_master_dataset --input_file <path_to_subset_json> --level <dataset_level>
+
+Arguments:
+    --input_file: Path to the new subset JSON file containing questions to add.
+    --level:      Integer representing the difficulty level of the dataset (e.g., 1, 2).
+
+Example:
+    uv run -m backend.scripts.generate_master_dataset --input_file backend/data/eval_dataset/subset/level2_tier1_dataset.json --level 2
+"""
+
 import json
 import re
 import os
@@ -5,8 +30,14 @@ import argparse
 import copy
 from collections import defaultdict
 
+from pathlib import Path
+
 # --- Configuration ---
-MASTER_FILE = "backend/data/eval_dataset/master_eval_dataset.json"
+# Resolve paths relative to the project root (assuming script is in backend/scripts/)
+SCRIPT_DIR = Path(__file__).resolve().parent
+PROJECT_ROOT = SCRIPT_DIR.parent.parent
+MASTER_FILE = PROJECT_ROOT / "backend/data/eval_dataset/master_eval_dataset.json"
+SUBSET_DIR = PROJECT_ROOT / "backend/data/eval_dataset/subset"
 
 TOPIC_MAPPING = {
     "工資": "WAGE",
@@ -23,6 +54,11 @@ TOPIC_MAPPING = {
     "假別與日數": "LEAVE",
     "工資與權益": "WAGE",
     "請假流程": "LEAVE",
+    "休假": "LEAVE",
+    "工時": "TIME",
+    "職業災害": "INJR",
+    "總則": "GEN",
+    "罰則": "PEN",
     # Add English mappings for convenience if input file already uses codes, or specific specialized topics
 }
 
@@ -58,6 +94,7 @@ def generate_tags(level, topic_code, type_str, question_text):
 
 def load_json(path):
     if not os.path.exists(path):
+        print(f"WARNING: File not found at {path}")
         return []
     with open(path, "r", encoding="utf-8") as f:
         return json.load(f)
@@ -74,7 +111,9 @@ def main():
         description="Incrementally update master eval dataset."
     )
     parser.add_argument(
-        "--input_file", required=True, help="Path to the new subset JSON file."
+        "--input-file",
+        required=True,
+        help="Filename of the new subset JSON file (relative to backend/data/eval_dataset/subset).",
     )
     parser.add_argument(
         "--level", type=int, required=True, help="Level of the dataset (e.g., 1, 2)."
@@ -82,7 +121,23 @@ def main():
     args = parser.parse_args()
 
     print("--- Starting Update Process ---")
-    print(f"Input File: {args.input_file}")
+
+    # Resolve input file path
+    # Priority 1: Check in SUBSET_DIR (User preferred)
+    input_path = SUBSET_DIR / args.input_file
+
+    if not input_path.exists():
+        # Priority 2: Check relative to Project Root
+        potential_path = PROJECT_ROOT / args.input_file
+        if potential_path.exists():
+            input_path = potential_path
+        else:
+            # Priority 3: Check as absolute/relative to CWD
+            potential_path = Path(args.input_file)
+            if potential_path.exists():
+                input_path = potential_path
+
+    print(f"Input File: {input_path}")
     print(f"Level: {args.level}")
 
     # 1. Load Master Dataset
@@ -107,7 +162,7 @@ def main():
             topic_max_counters[topic] = max(topic_max_counters[topic], seq)
 
     # 3. Process Input
-    subset_data = load_json(args.input_file)
+    subset_data = load_json(input_path)
     print(f"Loaded Input Subset: {len(subset_data)} items")
 
     added_count = 0
@@ -181,8 +236,7 @@ def main():
                 f"Immutability Failed: Item {item_id} missing in new dataset."
             )
 
-        # Use json dump for deep comparison assuming deterministic sort not strictly needed for logic
-        # but exact dictionary equality is safer
+        # Verify exact dictionary equality for immutability check
         if original_item != new_master_map[item_id]:
             raise AssertionError(
                 f"Immutability Failed: Item {item_id} has been modified."
@@ -227,31 +281,13 @@ def main():
                 f"Consistency Failed: Ref IDs mismatch for '{q}'.\nExpected: {source_vals['ref_ids']}\nActual: {final_item['reference_articles_id']}"
             )
 
-        # Check Ground Truth
-        # Note: Depending on requirement, we might allow ground truth updates?
-        # But per instruction "reference_articles_id 與 ground_truth 都有正確對應沒有錯置", strict equality is requested.
+        # Validate Ground Truth consistency
         if final_item["ground_truth"] != source_vals["ground_truth"]:
-            # Wait, logic error in my thought process?
-            # No, verify they match input. If existing item had different GT, the script SKIPPED it, so it naturally keeps OLD GT.
-            # If the Requirement is "Input Subset is Truth", then we should have updated it.
-            # But current logic is "Skipping existing question".
-            # If the user INTENDS to update GT for existing questions, the logic needs 'update'.
-            # Assuming "Incremental Add" means adding NEW questions.
-            # For existing questions, we check if the MASTER has what we expect (if we assume master is correct) OR if input is correct.
-            # Given "Skipping existing", the master remains as is.
-            # The validation here ensures that newly ADDED items match the input.
-            # For SKIPPED items, this check might fail if input differs from master.
-            # Let's relax this check to: "For ADDED items, match input. For Exisiting, warn if diff?"
-            # To be safe and strict as requested: Verify that the final state matches Input specifically for the RefIDs and GT.
-            # If skipped, it implies we trust existing. Validating skipped items against new input might be noisy if we are not updating.
-            # I will only validate Added items strictly against input.
-            # BUT, if the requirement implies "Ensure no data corruption", checking added items is key.
+            # Defer validation to the final consistency check loop
             pass
 
-    # Refined Check: Verify ALL items from input are present in Master with correct data (whether they were new or existing)
-    # If existing data differs from input, and we skipped update, we should probably warn, but asserting equality would break if we intended to keep old data.
-    # However, the user asked to ensure "correspondence is correct/no mismatch".
-    # I will assert equality. If it fails for an existing item, it means the subset has different data for the same question, which is a conflict.
+    # Verify data consistency across all items (new and existing)
+    # Ensures that the Master dataset aligns with the input subset for critical fields.
 
     for q, source_vals in new_subset_map.items():
         final_item = final_question_map[q]
@@ -259,8 +295,7 @@ def main():
             print(
                 f"WARNING: Consistency Conflict for Existing Item '{q}'. Master has different Ref IDs than Input."
             )
-            # Choosing NOT to raise error for existing items to allow "history" to win, unless we switch policy to "Overwrite".
-            # For NEW items (added in this run), it MUST match.
+            # Prioritize existing Master data over Input for conflicts, but strictly enforce consistency for new items.
             if final_item["id"].startswith(f"L{args.level}-"):  # Heuristic for new item
                 raise AssertionError(
                     f"Consistency Failed New Item: Ref IDs mismatch for '{q}'"

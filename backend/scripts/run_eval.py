@@ -35,6 +35,16 @@ def main():
         type=str,
         help=f"Choose RAG Version. Options: {list(RAG_VERSIONS.keys())}",
     )
+    parser.add_argument(
+        "--incl-tag",
+        nargs="+",
+        help="Filter dataset to include only items with these tags (OR logic)",
+    )
+    parser.add_argument(
+        "--excl-tag",
+        nargs="+",
+        help="Filter dataset to exclude items with these tags (OR logic)",
+    )
 
     args = parser.parse_args()
 
@@ -109,6 +119,35 @@ def main():
     # Load Dataset
     dataset_path = PROJECT_ROOT / "backend/data/eval_dataset/master_eval_dataset.json"
     dataset = load_eval_dataset(dataset_path)
+
+    # Filter Dataset
+    if args.incl_tag or args.excl_tag:
+        original_count = len(dataset)
+        incl_tags = set(args.incl_tag) if args.incl_tag else None
+        excl_tags = set(args.excl_tag) if args.excl_tag else None
+
+        filtered_dataset = []
+        for item in dataset:
+            item_tags = set(item.get("tags", []))
+
+            # Tag filtering uses set operations:
+            # - Exclusion: Drop item if ANY of its tags match exclusion list (OR logic)
+            if excl_tags and not item_tags.isdisjoint(excl_tags):
+                continue
+
+            # - Inclusion: Keep item only if it has AT LEAST ONE tag from inclusion list
+            if incl_tags:
+                if item_tags.isdisjoint(incl_tags):
+                    continue
+
+            filtered_dataset.append(item)
+
+        dataset = filtered_dataset
+        print(f"Filtered dataset: {len(dataset)} items (Original: {original_count})")
+
+        if not dataset:
+            print("No items found after filtering.")
+            sys.exit(0)
 
     # Smoke Test
     if not evaluator.run_smoke_test(dataset):

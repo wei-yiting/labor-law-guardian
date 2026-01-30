@@ -176,6 +176,6 @@ def print_results(results: Dict[str, Any]):
             # but our Evaluator produces them.
             print(f"ID: {case.get('id')} | Recall: {case.get('recall', 0.0):.2f}")
             print(f"Q: {case.get('question')}")
-            # print(f"GT: {case['gt']} | Retrieved: {case['retrieved']}")
+            print(f"GT: {case.get('gt')} | Retrieved: {case.get('retrieved')}")
             # Context is usually too long to print everything
             print("-" * 20)

@@ -1,4 +1,4 @@
-from typing import List, Dict, Any, Tuple
+from typing import List, Dict, Any, Tuple, Union
 from backend.app.rag.interface import RetrieverStrategy
 
 # Note: Evaluation might need to access original LawLookup logic
@@ -22,8 +22,19 @@ class RetrieverEvaluator:
         return self.strategy.retrieve(query)
 
     def calculate_metrics(
-        self, retrieved_nodes, ground_truth_ids: List[str]
-    ) -> Tuple[float, float, List[str]]:
+        self, retrieved_nodes, ground_truth_groups: List[List[str]]
+    ) -> Tuple[float, float, List[str], List[str]]:
+        """
+        Calculates Strict Recall and Precision.
+
+        Args:
+            retrieved_nodes: Nodes returned by retriever.
+            ground_truth_groups: List of valid ground truth sets. e.g. [["LSA-1", "LSA-2"]] means ALL are required.
+                                 If multiple inner lists exist, they are alternatives (OR).
+
+        Returns:
+            recall, precision, retrieved_ids, best_matching_group
+        """
         # Use Strategy to get Evaluation IDs (Polymorphism)
         retrieved_article_ids = set()
 
@@ -32,22 +43,58 @@ class RetrieverEvaluator:
             if retrieved_id:
                 retrieved_article_ids.add(retrieved_id)
 
-        hits_set = retrieved_article_ids & set(ground_truth_ids)
-        hits = len(hits_set)
-
         retrieved_ids_list = list(retrieved_article_ids)
 
-        if not ground_truth_ids:
-            recall = 0.0
-        else:
-            recall = hits / len(ground_truth_ids)
+        best_recall = 0.0
+        best_precision = 0.0
+        best_group = []
 
-        if not retrieved_ids_list:
-            precision = 0.0
-        else:
-            precision = hits / len(retrieved_ids_list)
+        # If GT is empty or legacy issues? We assume migration is done so it is List[List[str]]
+        if not ground_truth_groups:
+            return 0.0, 0.0, retrieved_ids_list, []
 
-        return recall, precision, retrieved_ids_list
+        for group in ground_truth_groups:
+            required_set = set(group)
+            if not required_set:
+                continue
+
+            hits = len(retrieved_article_ids & required_set)
+
+            # --- STRICT EVALUATION LOGIC ---
+            # For Level 2 Multi-hop: must retrieve ALL required articles to count as a hit.
+            if hits == len(required_set):
+                current_recall = 1.0
+            else:
+                current_recall = 0.0
+
+            # Precision: If Strict Recall is 0, Precision is 0 (as "Hit" is binary execution success)
+            if current_recall == 0.0:
+                current_precision = 0.0
+            else:
+                if not retrieved_ids_list:
+                    current_precision = 0.0
+                else:
+                    # Hits here acts as "Valid Info Retrieved".
+                    # If we got the full set, we credit 'hits' (size of set) amount of correct info?
+                    # Or do we count each document?
+                    # Standard Precision = (Relevant Retrieved) / (Total Retrieved)
+                    # If we have 2 docs required, we got 2. Precision = 2 / N.
+                    current_precision = hits / len(retrieved_ids_list)
+
+            # Maximize score (OR logic between groups if any)
+            if current_recall > best_recall:
+                best_recall = current_recall
+                best_precision = current_precision
+                best_group = group
+            elif current_recall == best_recall and current_precision > best_precision:
+                best_precision = current_precision
+                best_group = group
+
+        # If no match found at all and best_group is empty, just pick the first one for logging purposes
+        if not best_group and ground_truth_groups:
+            best_group = ground_truth_groups[0]
+
+        return best_recall, best_precision, retrieved_ids_list, best_group
 
     def _get_unique_ordered_ids(self, nodes: List[Any]) -> List[str]:
         """
@@ -64,21 +111,16 @@ class RetrieverEvaluator:
         return ordered_ids
 
     def _calculate_APk(
-        self, retrieved_ids: List[str], ground_truth_ids: List[str], k: int
+        self, retrieved_ids: List[str], relevant_group: List[str], k: int
     ) -> float:
         """
-        Calculates Average Precision at k (AP@k) for a single query.
-
-        Formula: AP@k = (1 / R) * sum(P@i * rel(i)) for i=1 to k
-        Where:
-            R = Total number of relevant items (len(ground_truth_ids))
-            P@i = Precision at rank i
-            rel(i) = 1 if item at rank i is relevant, 0 otherwise
+        Calculates Average Precision at k (AP@k) using the best matching group.
+        Strictness is handled by caller (if recall=0, this isn't called or result ignored).
         """
-        if not ground_truth_ids:
+        if not relevant_group:
             return 0.0
 
-        relevant_set = set(ground_truth_ids)
+        relevant_set = set(relevant_group)
         R = len(relevant_set)
 
         # Only consider top k retrieved items (though typically retrieved_ids is already length k)
@@ -93,21 +135,21 @@ class RetrieverEvaluator:
                 precision_at_i = num_hits / (i + 1.0)
                 score += precision_at_i
 
-        # AP@k is the sum of precisions for relevant items divided by total relevant items
         return score / R
 
     def _calculate_RRk(
-        self, retrieved_ids: List[str], ground_truth_ids: List[str], k: int
+        self, retrieved_ids: List[str], relevant_group: List[str], k: int
     ) -> float:
         """
-        Calculates Reciprocal Rank at k (RR@k) for a single query.
-
-        Formula: 1 / rank_of_first_relevant_item
+        Calculates Reciprocal Rank at k (RR@k).
+        For multi-doc queries, RR usually refers to the *first* relevant doc found?
+        Or should it be 0 if strict criteria fails?
+        Caller handles strictness. We just calc standard RR based on the set.
         """
-        if not ground_truth_ids:
+        if not relevant_group:
             return 0.0
 
-        relevant_set = set(ground_truth_ids)
+        relevant_set = set(relevant_group)
         retrieved_at_k = retrieved_ids[:k]
 
         for i, doc_id in enumerate(retrieved_at_k):
@@ -140,17 +182,39 @@ class RetrieverEvaluator:
         for i, item in enumerate(dataset):
             query = item["question"]
             qid = item["id"]
-            gt_ids = item["reference_articles_id"]
+            # GT is now List[List[str]] thanks to migration
+            # Handle potential Type error if migration failed for some reason?
+            raw_gt = item.get("reference_articles_id", [])
+
+            # Safety Check / Normalization (if somehow we missed the migration for in-memory objects?)
+            gt_groups = []
+            if raw_gt:
+                if isinstance(raw_gt[0], str):
+                    # Fallback for unmigrated data
+                    gt_groups = [raw_gt]
+                else:
+                    gt_groups = raw_gt
+
+            ground_truth_text = item.get("ground_truth", "N/A")
             supporting_context = item.get("supporting_context", "N/A")
             reasoning = item.get("reasoning", "N/A")
+            tags = item.get("tags", [])
 
             nodes = self.run_retrieval(query)
-            recall, precision, retrieved_ids = self.calculate_metrics(nodes, gt_ids)
+            recall, precision, retrieved_ids, best_group = self.calculate_metrics(
+                nodes, gt_groups
+            )
 
-            # Calculate AP@k using ordered unique IDs
-            ordered_retrieved_ids = self._get_unique_ordered_ids(nodes)
-            ap = self._calculate_APk(ordered_retrieved_ids, gt_ids, k)
-            rr = self._calculate_RRk(ordered_retrieved_ids, gt_ids, k)
+            # Strict Logic Propagation to Ranking Metrics
+            if recall == 1.0:
+                # Only calculate ranking scores if we passed the strict gate
+                ordered_retrieved_ids = self._get_unique_ordered_ids(nodes)
+                ap = self._calculate_APk(ordered_retrieved_ids, best_group, k)
+                rr = self._calculate_RRk(ordered_retrieved_ids, best_group, k)
+            else:
+                ap = 0.0
+                rr = 0.0
+
             total_AP += ap
             total_RR += rr
 
@@ -164,7 +228,7 @@ class RetrieverEvaluator:
                         "id": qid,
                         "question": query,
                         "recall": recall,
-                        "gt": gt_ids,
+                        "gt": gt_groups,  # Show all groups
                         "retrieved": retrieved_ids,
                         "supporting_context": supporting_context,
                         "reasoning": reasoning,
@@ -173,7 +237,16 @@ class RetrieverEvaluator:
 
                 # Detailed JSON log info
                 if self.use_json_logging and self.law_lookup:
-                    case_data = self._build_failure_case_data(qid, query, gt_ids, nodes)
+                    case_data = self._build_failure_case_data(
+                        qid,
+                        query,
+                        gt_groups,
+                        nodes,
+                        ground_truth_text,
+                        supporting_context,
+                        tags,
+                        reasoning,
+                    )
                     fail_cases_data.append(case_data)
 
             if verbose and (i + 1) % 10 == 0:
@@ -196,13 +269,34 @@ class RetrieverEvaluator:
 
         return results
 
-    def _build_failure_case_data(self, qid, query, gt_ids, nodes):
+    def _build_failure_case_data(
+        self,
+        qid,
+        query,
+        gt_groups,
+        nodes,
+        ground_truth_text,
+        supporting_context,
+        tags,
+        reasoning,
+    ):
         # 1. Build Ground Truth Docs
+        # gt_groups is List[List[str]]. Flatten? or show groups?
+        # For simplicity, let's flatten distinct IDs but maybe group them in display?
+        # Or just show all distinct GTs.
+
         gt_docs = []
-        for art_id in gt_ids:
-            article = self.law_lookup.get_article(art_id)
-            content = article.get("content", "") if article else "Content not found"
-            gt_docs.append({"article_id": art_id, "content": content})
+        seen_gt = set()
+
+        for group in gt_groups:
+            for art_id in group:
+                if art_id in seen_gt:
+                    continue
+                seen_gt.add(art_id)
+
+                article = self.law_lookup.get_article(art_id)
+                content = article.get("content", "") if article else "Content not found"
+                gt_docs.append({"article_id": art_id, "content": content})
 
         # 2. Build Retrieval Nodes
         retrieved_nodes_data = []
@@ -210,16 +304,9 @@ class RetrieverEvaluator:
             meta = node.metadata
             chunk_text = node.get_content()
 
-            # Polymorphic ID extraction
-            # But specific fields (chunk_id vs parent_id) might depend on strategy type
-            # For logging purposes, we want to show 'parent_id' if it exists.
-
             pid = meta.get("parent_id")
             aid = meta.get("article_id")
             chunk_id = meta.get("chunk_id", node.id_)
-
-            # Logic: If parent_id exists (ParentChild), show it + parent content
-            # If not (Naive), show article_id + content.
 
             if pid:
                 p_art = self.law_lookup.get_article(pid)
@@ -243,7 +330,11 @@ class RetrieverEvaluator:
         return {
             "test_case_id": qid,
             "question": query,
-            "ground_truth_documents": gt_docs,
+            "ground_truth": ground_truth_text,
+            "supporting_context": supporting_context,
+            "tags": tags,
+            "reasoning": reasoning,
+            "ground_truth_documents": gt_docs,  # Just list of dicts
             "retrieval_nodes": retrieved_nodes_data,
             "judge_feedback": [],
             "possible_resolution": [],
@@ -264,16 +355,23 @@ class RetrieverEvaluator:
         for item in smoke_items:
             query = item["question"]
             qid = item["id"]
-            gt_ids = item["reference_articles_id"]
+            # Handle list of lists
+            raw_gt = item.get("reference_articles_id", [])
+            gt_groups = []
+            if raw_gt:
+                if isinstance(raw_gt[0], str):
+                    gt_groups = [raw_gt]
+                else:
+                    gt_groups = raw_gt
 
             print(f"Processing QID: {qid}...", end="", flush=True)
             nodes = self.run_retrieval(query)
-            recall, _, retrieved_ids = self.calculate_metrics(nodes, gt_ids)
+            recall, _, retrieved_ids, _ = self.calculate_metrics(nodes, gt_groups)
 
             total_smoke_recall += recall
             status = "PASS" if recall == 1.0 else ("PARTIAL" if recall > 0 else "FAIL")
             print(
-                f"\r[{status}] {qid}: {query[:30]}... | GT: {gt_ids} | Retrieved: {retrieved_ids} | Recall: {recall:.2f}"
+                f"\r[{status}] {qid}: {query[:30]}... | GT: {gt_groups} | Retrieved: {retrieved_ids} | Recall: {recall:.2f}"
             )
 
         avg = total_smoke_recall / len(smoke_items)

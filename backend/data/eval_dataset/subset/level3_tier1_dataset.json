@@ -1,589 +1,5 @@
 [
   {
-    "id": "L1-CNTR-001",
-    "question": "雇主與勞工約定離職後競業禁止之期間，最長不得逾幾年？",
-    "ground_truth": "最長不得逾二年。逾二年者，縮短為二年。",
-    "reference_articles_id": [
-      [
-        "LSA-9-1"
-      ]
-    ],
-    "supporting_context": "離職後競業禁止之期間，最長不得逾二年。逾二年者，縮短為二年。",
-    "tags": [
-      "level_1",
-      "topic_cntr",
-      "type_numerical"
-    ],
-    "reasoning": "此題測試具體的時間限制數字，關鍵字「競業禁止」、「最長」具有高度辨識度，適合測試 Retriever 的精確度。"
-  },
-  {
-    "id": "L1-CNTR-002",
-    "question": "勞工繼續工作一年以上三年未滿者，雇主依第十一條終止勞動契約時，應於幾日前預告之？",
-    "ground_truth": "於二十日前預告之。",
-    "reference_articles_id": [
-      [
-        "LSA-16"
-      ]
-    ],
-    "supporting_context": "二、繼續工作一年以上三年未滿者，於二十日前預告之。",
-    "tags": [
-      "level_1",
-      "topic_cntr",
-      "type_numerical"
-    ],
-    "reasoning": "此題測試特定條件（年資區間）下的數值檢索，系統需能區分不同年資對應的預告天數。"
-  },
-  {
-    "id": "L1-CNTR-003",
-    "question": "雇主依勞基法第十六條終止勞動契約者，其資遣費應於終止勞動契約後幾日內發給？",
-    "ground_truth": "應於終止勞動契約三十日內發給。",
-    "reference_articles_id": [
-      [
-        "LSA-17"
-      ]
-    ],
-    "supporting_context": "前項所定資遣費，雇主應於終止勞動契約三十日內發給。",
-    "tags": [
-      "level_1",
-      "topic_cntr",
-      "type_numerical"
-    ],
-    "reasoning": "測試核心關鍵字「資遣費」與時效性數字「三十日」的單跳檢索能力。"
-  },
-  {
-    "id": "L1-WAGE-001",
-    "question": "雇主延長勞工工作時間，在兩小時以內者，工資應如何計算？",
-    "ground_truth": "按平日每小時工資額加給三分之一以上。",
-    "reference_articles_id": [
-      [
-        "LSA-24"
-      ]
-    ],
-    "supporting_context": "一、延長工作時間在二小時以內者，按平日每小時工資額加給三分之一以上。",
-    "tags": [
-      "level_1",
-      "topic_wage",
-      "type_specific_entity"
-    ],
-    "reasoning": "加班費率是極高頻查詢，測試系統能否精準提取「三分之一」這個具體倍率，而非模糊回答。"
-  },
-  {
-    "id": "L1-WAGE-002",
-    "question": "雇主應置備勞工工資清冊，該清冊應保存幾年？",
-    "ground_truth": "工資清冊應保存五年。",
-    "reference_articles_id": [
-      [
-        "LSA-23"
-      ]
-    ],
-    "supporting_context": "雇主應置備勞工工資清冊，將發放工資、工資各項目計算方式明細、工資總額等事項記入。工資清冊應保存五年。",
-    "tags": [
-      "level_1",
-      "topic_wage",
-      "type_numerical"
-    ],
-    "reasoning": "行政義務類題目，測試系統對於文件保存年限的法規檢索。"
-  },
-  {
-    "id": "L1-WAGE-003",
-    "question": "積欠工資墊償基金之費率，由中央主管機關於多少範圍內擬訂？",
-    "ground_truth": "由中央主管機關於萬分之十五範圍內擬訂。",
-    "reference_articles_id": [
-      [
-        "LSA-28"
-      ]
-    ],
-    "supporting_context": "第二項費率，由中央主管機關於萬分之十五範圍內擬訂，報請行政院核定之。",
-    "tags": [
-      "level_1",
-      "topic_wage",
-      "type_numerical",
-      "smoke_test"
-    ],
-    "reasoning": "測試系統對於較冷僻的數值（萬分之十五）的精準匹配能力。"
-  },
-  {
-    "id": "L1-TIME-001",
-    "question": "勞工正常工作時間，每日及每週之最高限度分別為何？",
-    "ground_truth": "每日不得超過八小時，每週不得超過四十小時。",
-    "reference_articles_id": [
-      [
-        "LSA-30"
-      ]
-    ],
-    "supporting_context": "勞工正常工作時間，每日不得超過八小時，每週不得超過四十小時。",
-    "tags": [
-      "level_1",
-      "topic_time",
-      "type_numerical",
-      "smoke_test"
-    ],
-    "reasoning": "勞基法最核心條文，答案必須完全精確，適合做為基準測試（Baseline）。"
-  },
-  {
-    "id": "L1-TIME-002",
-    "question": "勞工繼續工作四小時，至少應有多少時間之休息？",
-    "ground_truth": "至少應有三十分鐘之休息。",
-    "reference_articles_id": [
-      [
-        "LSA-35"
-      ]
-    ],
-    "supporting_context": "勞工繼續工作四小時，至少應有三十分鐘之休息。",
-    "tags": [
-      "level_1",
-      "topic_time",
-      "type_numerical"
-    ],
-    "reasoning": "測試條件式檢索：條件（工作四小時）與結果（休息三十分鐘）的對應。"
-  },
-  {
-    "id": "L1-TIME-003",
-    "question": "勞工在同一雇主繼續工作滿六個月以上一年未滿者，應給予多少天之特別休假？",
-    "ground_truth": "三日。",
-    "reference_articles_id": [
-      [
-        "LSA-38"
-      ]
-    ],
-    "supporting_context": "一、六個月以上一年未滿者，三日。",
-    "tags": [
-      "level_1",
-      "topic_time",
-      "type_numerical"
-    ],
-    "reasoning": "特休天數是極常見查詢，測試系統能否區分多個類似條列項中的特定區間。"
-  },
-  {
-    "id": "L1-TIME-004",
-    "question": "因天災、事變或突發事件，雇主延長工作時間後，應於延長開始後幾小時內通知工會或報請備查？",
-    "ground_truth": "應於延長開始後二十四小時內通知工會；無工會組織者，應報當地主管機關備查。",
-    "reference_articles_id": [
-      [
-        "LSA-32"
-      ]
-    ],
-    "supporting_context": "但應於延長開始後二十四小時內通知工會；無工會組織者，應報當地主管機關備查。",
-    "tags": [
-      "level_1",
-      "topic_time",
-      "type_numerical"
-    ],
-    "reasoning": "測試緊急狀況下的程序性規定，關鍵字明確（天災、二十四小時）。"
-  },
-  {
-    "id": "L1-FEM-001",
-    "question": "勞基法所稱之「童工」定義為何？",
-    "ground_truth": "十五歲以上未滿十六歲之受僱從事工作者。",
-    "reference_articles_id": [
-      [
-        "LSA-44"
-      ]
-    ],
-    "supporting_context": "十五歲以上未滿十六歲之受僱從事工作者，為童工。",
-    "tags": [
-      "level_1",
-      "topic_fem",
-      "type_specific_entity"
-    ],
-    "reasoning": "定義型問題，測試系統提取法律名詞定義的準確性。"
-  },
-  {
-    "id": "L1-FEM-002",
-    "question": "女工分娩前後，應停止工作並給予產假幾星期？",
-    "ground_truth": "八星期。",
-    "reference_articles_id": [
-      [
-        "LSA-50"
-      ]
-    ],
-    "supporting_context": "女工分娩前後，應停止工作，給予產假八星期",
-    "tags": [
-      "level_1",
-      "topic_fem",
-      "type_numerical"
-    ],
-    "reasoning": "母性保護核心條文，答案單一且明確，適合測試。"
-  },
-  {
-    "id": "L1-RETIRE-001",
-    "question": "勞工工作滿多少年以上，且年滿五十五歲者，得自請退休？",
-    "ground_truth": "十五年以上。",
-    "reference_articles_id": [
-      [
-        "LSA-53"
-      ]
-    ],
-    "supporting_context": "一、工作十五年以上年滿五十五歲者。",
-    "tags": [
-      "level_1",
-      "topic_retire",
-      "type_condition"
-    ],
-    "reasoning": "多條件檢索（年資+年齡），測試系統能否正確鎖定第53條第1款。"
-  },
-  {
-    "id": "L1-RETIRE-002",
-    "question": "雇主強制勞工退休之年齡上限一般為幾歲？",
-    "ground_truth": "年滿六十五歲。",
-    "reference_articles_id": [
-      [
-        "LSA-54"
-      ]
-    ],
-    "supporting_context": "一、年滿六十五歲者。",
-    "tags": [
-      "level_1",
-      "topic_retire",
-      "type_numerical"
-    ],
-    "reasoning": "強制退休年齡為社會關注焦點，測試檢索結果的即時性與準確度。"
-  },
-  {
-    "id": "L1-RETIRE-003",
-    "question": "退休金給與標準中，超過十五年之工作年資，每滿一年給與幾個基數，最高總數以多少個基數為限？",
-    "ground_truth": "每滿一年給與一個基數，最高總數以四十五個基數為限。",
-    "reference_articles_id": [
-      [
-        "LSA-55"
-      ]
-    ],
-    "supporting_context": "但超過十五年之工作年資，每滿一年給與一個基數，最高總數以四十五個基數為限。",
-    "tags": [
-      "level_1",
-      "topic_retire",
-      "type_numerical"
-    ],
-    "reasoning": "複合數值測試（基數計算方式與總上限），需從同一段落提取兩個事實。"
-  },
-  {
-    "id": "L1-INJR-001",
-    "question": "勞工遭遇職業傷害而死亡時，雇主應給與多少個月平均工資之死亡補償？",
-    "ground_truth": "四十個月平均工資。",
-    "reference_articles_id": [
-      [
-        "LSA-59"
-      ]
-    ],
-    "supporting_context": "並應一次給與其遺屬四十個月平均工資之死亡補償。",
-    "tags": [
-      "level_1",
-      "topic_injr",
-      "type_numerical"
-    ],
-    "reasoning": "職災補償金額是硬性規定，測試系統能否精準定位第59條第4款。"
-  },
-  {
-    "id": "L1-APPR-001",
-    "question": "事業單位招收之技術生人數，不得超過勞工人數之多少比例？",
-    "ground_truth": "不得超過勞工人數四分之一。",
-    "reference_articles_id": [
-      [
-        "LSA-68"
-      ]
-    ],
-    "supporting_context": "技術生人數，不得超過勞工人數四分之一。",
-    "tags": [
-      "level_1",
-      "topic_appr",
-      "type_numerical"
-    ],
-    "reasoning": "冷門法規（Cold Spot）測試，評估系統對非核心章節的覆蓋率。"
-  },
-  {
-    "id": "L1-RULE-001",
-    "question": "雇主僱用勞工人數達幾人以上者，應訂立工作規則並報請主管機關核備？",
-    "ground_truth": "三十人以上。",
-    "reference_articles_id": [
-      [
-        "LSA-70"
-      ]
-    ],
-    "supporting_context": "雇主僱用勞工人數在三十人以上者，應依其事業性質，就左列事項訂立工作規則",
-    "tags": [
-      "level_1",
-      "topic_rule",
-      "type_numerical"
-    ],
-    "reasoning": "門檻值測試，這是企業合規常見問題，測試系統數值界定能力。"
-  },
-  {
-    "id": "L1-INSP-001",
-    "question": "事業單位拒絕、規避或阻撓勞工檢查員依法執行職務者，處多少罰鍰？",
-    "ground_truth": "處新臺幣三萬元以上十五萬元以下罰鍰。",
-    "reference_articles_id": [
-      [
-        "LSA-80"
-      ]
-    ],
-    "supporting_context": "拒絕、規避或阻撓勞工檢查員依法執行職務者，處新臺幣三萬元以上十五萬元以下罰鍰。",
-    "tags": [
-      "level_1",
-      "topic_insp",
-      "type_specific_entity"
-    ],
-    "reasoning": "罰則類測試，確保系統能針對特定違規行為（妨礙檢查）找到對應的罰金區間。"
-  },
-  {
-    "id": "L1-LEAVE-001",
-    "question": "勞工結婚者，應給予婚假幾日？",
-    "ground_truth": "八日",
-    "reference_articles_id": [
-      [
-        "LEAVE_RULE-2"
-      ]
-    ],
-    "supporting_context": "勞工結婚者給予婚假八日，工資照給。",
-    "tags": [
-      "level_1",
-      "topic_leave",
-      "type_numerical",
-      "smoke_test"
-    ],
-    "reasoning": "此題包含明確實體「婚假」，且答案為單一數值，能精準測試 Retriever 針對特定假別的召回能力 (Recall) 與 Generator 的精確度。"
-  },
-  {
-    "id": "L1-LEAVE-002",
-    "question": "勞工未住院者，一年內普通傷病假合計不得超過幾日？",
-    "ground_truth": "三十日",
-    "reference_articles_id": [
-      [
-        "LEAVE_RULE-4"
-      ]
-    ],
-    "supporting_context": "勞工因普通傷害、疾病或生理原因必須治療或休養者，得在左列規定範圍內請普通傷病假：一、未住院者，一年內合計不得超過三十日。",
-    "tags": [
-      "level_1",
-      "topic_leave",
-      "type_numerical"
-    ],
-    "reasoning": "此題設有「未住院」之條件限制，測試 RAG 系統能否精準區分法條中不同情境（住院 vs 未住院）的細節，是高品質的 Level 1 測試題。"
-  },
-  {
-    "id": "L1-LEAVE-003",
-    "question": "勞工因有事故必須親自處理得請事假，一年內合計不得超過幾日？",
-    "ground_truth": "十四日",
-    "reference_articles_id": [
-      [
-        "LEAVE_RULE-7"
-      ]
-    ],
-    "supporting_context": "勞工因有事故必須親自處理，得請事假，一年內合計不得超過十四日。",
-    "tags": [
-      "level_1",
-      "topic_leave",
-      "type_numerical"
-    ],
-    "reasoning": "選用「事假」作為測試點，確保測試集覆蓋不同法條來源 (Source Diversity)，避免過度集中於同一條文，有效評估 Retriever 的廣度。"
-  },
-  {
-    "id": "L1-WAGE-004",
-    "question": "勞工請婚假、喪假、公傷病假及公假，雇主得否視為缺勤而影響其全勤獎金？",
-    "ground_truth": "不得視為缺勤而影響其全勤獎金",
-    "reference_articles_id": [
-      [
-        "LEAVE_RULE-9"
-      ]
-    ],
-    "supporting_context": "勞工有下列情形，雇主不得視為缺勤而影響其全勤獎金...一、勞工請婚假、喪假、公傷病假及公假。",
-    "tags": [
-      "level_1",
-      "topic_wage",
-      "type_boolean_constraint"
-    ],
-    "reasoning": "此題測試法規中的「禁止條款」與權益保障，關鍵字「全勤獎金」具高辨識度，且答案句型結構完整，適合評估生成內容的正確性 (Faithfulness)。"
-  },
-  {
-    "id": "L1-LEAVE-004",
-    "question": "勞工遇有急病或緊急事故，無法親自辦理請假手續時，得如何處理？",
-    "ground_truth": "得委託他人代辦請假手續",
-    "reference_articles_id": [
-      [
-        "LEAVE_RULE-10"
-      ]
-    ],
-    "supporting_context": "但遇有急病或緊急事故，得委託他人代辦請假手續。",
-    "tags": [
-      "level_1",
-      "topic_leave",
-      "type_procedure"
-    ],
-    "reasoning": "此題屬於「程序性」問題，不同於單純的數值提取，測試 RAG 系統能否正確檢索並回答特定狀況下的處置流程。"
-  },
-  {
-    "id": "L1-CNTR-004",
-    "question": "勞動契約中的「臨時性工作」是如何定義的？其工作期間上限為多久？",
-    "ground_truth": "係指無法預期之非繼續性工作，其工作期間在六個月以內者。",
-    "reference_articles_id": [
-      [
-        "ENF_RULE-6"
-      ]
-    ],
-    "supporting_context": "臨時性工作：係指無法預期之非繼續性工作，其工作期間在六個月以內者。",
-    "tags": [
-      "level_1",
-      "topic_cntr",
-      "type_definition",
-      "smoke_test"
-    ],
-    "reasoning": "包含具體定義與時間限制（六個月），適合測試模型對專有名詞定義的精準提取能力。"
-  },
-  {
-    "id": "L1-CNTR-005",
-    "question": "雇主依法終止勞動契約時，應於何時結清工資給付勞工？",
-    "ground_truth": "應即結清（即時）。",
-    "reference_articles_id": [
-      [
-        "ENF_RULE-9"
-      ]
-    ],
-    "supporting_context": "依本法終止勞動契約時，雇主應即結清工資給付勞工。",
-    "tags": [
-      "level_1",
-      "topic_cntr",
-      "type_specific_entity"
-    ],
-    "reasoning": "測試模型對於時間副詞「即」或「即時」的理解與提取。"
-  },
-  {
-    "id": "L1-WAGE-005",
-    "question": "雇主提供之工資計算明細（薪資單），必須包含哪些具體事項？",
-    "ground_truth": "一、勞雇雙方議定之工資總額。二、工資各項目之給付金額。三、依法令或約定得扣除之金額。四、實際發給金額。",
-    "reference_articles_id": [
-      [
-        "ENF_RULE-14-1"
-      ]
-    ],
-    "supporting_context": "本法第二十三條所定工資各項目計算方式明細，應包括下列事項...",
-    "tags": [
-      "level_1",
-      "topic_wage",
-      "type_list_extraction"
-    ],
-    "reasoning": "法律明確規範的四個項目，答案具有唯一性，適合自動化評測。"
-  },
-  {
-    "id": "L1-WAGE-006",
-    "question": "積欠之工資墊償範圍以雇主於何時起算前幾個月內所積欠者為限？",
-    "ground_truth": "以雇主於歇業、清算或宣告破產前六個月內所積欠者為限。",
-    "reference_articles_id": [
-      [
-        "ENF_RULE-15"
-      ]
-    ],
-    "supporting_context": "本法第二十八條第一項第一款所定積欠之工資，以雇主於歇業、清算或宣告破產前六個月內所積欠者為限。",
-    "tags": [
-      "level_1",
-      "topic_wage",
-      "type_numerical"
-    ],
-    "reasoning": "結合了特定情境（歇業/破產）與具體數字（六個月），是高品質的 Level 1 測試題。"
-  },
-  {
-    "id": "L1-TIME-005",
-    "question": "勞工因出差在事業場所外工作，若不易計算工作時間，其工時應如何認定？",
-    "ground_truth": "以平時之工作時間為其工作時間。但其實際工作時間經證明者，不在此限。",
-    "reference_articles_id": [
-      [
-        "ENF_RULE-18"
-      ]
-    ],
-    "supporting_context": "勞工因出差或其他原因於事業場所外從事工作致不易計算工作時間者，以平時之工作時間為其工作時間...",
-    "tags": [
-      "level_1",
-      "topic_time",
-      "type_conditional"
-    ],
-    "reasoning": "測試模型處理「原則」與「例外」邏輯的能力。"
-  },
-  {
-    "id": "L1-RETIRE-004",
-    "question": "雇主在何種特定情形下，得報經主管機關核定分期給付勞工退休金？",
-    "ground_truth": "一、依法提撥之退休準備金不敷支付。二、事業之經營或財務確有困難。",
-    "reference_articles_id": [
-      [
-        "ENF_RULE-29"
-      ]
-    ],
-    "supporting_context": "本法第五十五條第三項所定雇主得報經主管機關核定分期給付勞工退休金之情形如下：一、依法提撥之退休準備金不敷支付。二、事業之經營或財務確有困難。",
-    "tags": [
-      "level_1",
-      "topic_retire",
-      "type_condition"
-    ],
-    "reasoning": "測試模型對於「例外許可條件」的檢索能力。"
-  },
-  {
-    "id": "L1-INJR-003",
-    "question": "職業災害補償中，所謂「原領工資」在計月的情況下應如何計算一日工資？",
-    "ground_truth": "以遭遇職業災害前最近一個月正常工作時間所得之工資除以三十所得之金額。",
-    "reference_articles_id": [
-      [
-        "ENF_RULE-31"
-      ]
-    ],
-    "supporting_context": "其為計月者，以遭遇職業災害前最近一個月正常工作時間所得之工資除以三十所得之金額，為其一日之工資。",
-    "tags": [
-      "level_1",
-      "topic_injr",
-      "type_definition"
-    ],
-    "reasoning": "包含具體算式描述（除以三十），能精確評估 Faithfulness。"
-  },
-  {
-    "id": "L1-APPR-002",
-    "question": "技術生是否可以從事事業場所內的清潔整頓工作？",
-    "ground_truth": "可以。雖然不得從事雜役，但從事事業場所內之清潔整頓，器具工具及機械之清理者不在此限。",
-    "reference_articles_id": [
-      [
-        "ENF_RULE-35"
-      ]
-    ],
-    "supporting_context": "雇主不得使技術生從事家事、雜役...但從事事業場所內之清潔整頓，器具工具及機械之清理者不在此限。",
-    "tags": [
-      "level_1",
-      "topic_appr",
-      "type_boolean",
-      "smoke_test"
-    ],
-    "reasoning": "測試模型對於「禁止事項的例外」（但書）的理解能力。"
-  },
-  {
-    "id": "L1-INSP-002",
-    "question": "檢查機構在發布勞工檢查方針後，應於幾日內報請中央主管機關核定檢查計畫？",
-    "ground_truth": "應於檢查方針發布之日起五十日內報請中央主管機關核定。",
-    "reference_articles_id": [
-      [
-        "ENF_RULE-41"
-      ]
-    ],
-    "supporting_context": "並於檢查方針發布之日起五十日內報請中央主管機關核定後，依該檢查計畫實施檢查。",
-    "tags": [
-      "level_1",
-      "topic_insp",
-      "type_numerical"
-    ],
-    "reasoning": "冷門法條，適合測試 Retriever 對於長尾知識的覆蓋率。"
-  },
-  {
-    "id": "L1-INSP-003",
-    "question": "事業單位對於勞工檢查機構之檢查結果有異議時，應於收到通知後幾日內提出書面異議？",
-    "ground_truth": "應於通知送達後十日內向檢查機構以書面提出。",
-    "reference_articles_id": [
-      [
-        "ENF_RULE-45"
-      ]
-    ],
-    "supporting_context": "事業單位對檢查結果有異議時，應於通知送達後十日內向檢查機構以書面提出。",
-    "tags": [
-      "level_1",
-      "topic_insp",
-      "type_numerical"
-    ],
-    "reasoning": "明確的行政程序與期限（10日），答案無歧義。"
-  },
-  {
-    "id": "L3-LEAVE-005",
     "question": "根據勞工請假相關規定，勞工結婚時可以請幾天婚假？這段期間的薪資如何計算？",
     "ground_truth": "勞工結婚時可以享有八天的婚假，期間工資應照常發給。",
     "reference_articles_id": [
@@ -596,15 +12,13 @@
       "勞工因婚、喪、疾病或其他正當事由得請假；請假應給之假期及事假以外期間內工資給付之最低標準，由中央主管機關定之。",
       "勞工結婚者給予婚假八日，工資照給。"
     ],
-    "tags": [
-      "level_3",
-      "topic_leave",
-      "type_cross-document"
-    ],
+    "tags": {
+      "chapter": "休假",
+      "type": "Cross-Document"
+    },
     "reasoning": "【請假規則】測試母法授權至子法規定的檢索。LSA-43 僅提到有請假權利，具體天數與給薪規範位於《勞工請假規則》第2條，模型需具備跨文件檢索能力。"
   },
   {
-    "id": "L3-LEAVE-006",
     "question": "如果一名勞工在一個月內請了5天普通傷病假（非職災），雇主是否可以因此扣除他當月的全部全勤獎金？",
     "ground_truth": "不可以。根據《勞工請假規則》第9條規定，對於非因公傷病的普通傷病假，全勤獎金的扣發應按請假天數比例計算，除非勞雇雙方有更優於法令的約定。因此，雇主不得因勞工請5天普通病假就扣除全部的全勤獎金，而應按比例扣發。",
     "reference_articles_id": [
@@ -617,15 +31,13 @@
       "勞工因婚、喪、疾病或其他正當事由得請假...",
       "勞工請前項第二款以外之普通傷病假，其全勤獎金之扣發，應按請普通傷病假日數依比例計算。但勞雇雙方另有優於法令之約定者，從其約定。"
     ],
-    "tags": [
-      "level_3",
-      "topic_leave",
-      "type_cross-document"
-    ],
+    "tags": {
+      "chapter": "休假",
+      "type": "Cross-Document"
+    },
     "reasoning": "【請假規則】這題測試對於「請假後果」的細節檢索。全勤獎金的扣發比例是請假規則中的重要細節，模型常會遺漏此關聯條文。"
   },
   {
-    "id": "L3-WAGE-007",
     "question": "在計算勞工的平均工資以支付資遣費時，若該勞工在計算期間內曾請了10天未住院的普通傷病假，這10天是否應從計算平均工資的總日數中扣除？",
     "ground_truth": "是，應當扣除。勞基法第2條定義了平均工資的計算方式，而勞基法施行細則第2條則明確列出了不應計入計算的期間。其中第五款規定「依勞工請假規則請普通傷病假者」的期間不計入。因此，這10天普通傷病假應從計算期間中排除。",
     "reference_articles_id": [
@@ -638,15 +50,13 @@
       "平均工資：指計算事由發生之當日前六個月內所得工資總額除以該期間之總日數所得之金額。",
       "依本法第二條第四款計算平均工資時，下列各款期日或期間均不計入：...五、依勞工請假規則請普通傷病假者。"
     ],
-    "tags": [
-      "level_3",
-      "topic_wage",
-      "type_definition_exclusion"
-    ],
+    "tags": {
+      "chapter": "工資",
+      "type": "Definition Exclusion"
+    },
     "reasoning": "【請假規則+工資定義】這題結合了工資定義與請假規則。測試系統是否知道「普通傷病假」是計算平均工資時的「排除期間」，需要精確檢索施行細則。"
   },
   {
-    "id": "L3-CNTR-006",
     "question": "公司通知勞工因業務緊縮要資遣，但在預告期間內不讓勞工請假外出找工作，此舉是否合法？勞工依法應有多少謀職假？",
     "ground_truth": "此舉不合法。根據法律，雇主依業務緊縮等原因預告終止勞動契約後，勞工為另謀工作，得於工作時間請假外出。其請假時數每星期不得超過二日之工作時間，且請假期間之工資應照常發給。",
     "reference_articles_id": [
@@ -659,15 +69,13 @@
       "非有左列情事之一者，雇主不得預告勞工終止勞動契約：\n二、虧損或業務緊縮時。",
       "勞工於接到前項預告後，為另謀工作得於工作時間請假外出。其請假時數，每星期不得超過二日之工作時間，請假期間之工資照給。"
     ],
-    "tags": [
-      "level_3",
-      "topic_cntr",
-      "type_condition+right"
-    ],
+    "tags": {
+      "chapter": "勞動契約",
+      "type": "Condition+Right"
+    },
     "reasoning": "【特殊請假權】測試在特定條件（資遣預告）下觸發的特殊請假權利（謀職假）。模型需先確認資遣事由，再連結到對應的請假權利。"
   },
   {
-    "id": "L3-LEAVE-007",
     "question": "當勞工離職時有未休完的特別休假，雇主應如何計算應發給的工資？",
     "ground_truth": "雇主應將勞工未休畢的特別休假日數，乘以其一日工資計發。對於月薪制勞工，一日工資的計算方式為契約終止前最近一個月正常工作時間所得的工資除以三十。",
     "reference_articles_id": [
@@ -680,15 +88,13 @@
       "勞工之特別休假，因年度終結或契約終止而未休之日數，雇主應發給工資。",
       "本法第三十八條第四項所定雇主應發給工資...（二）前目所定一日工資，為勞工之特別休假於年度終結或契約終止前一日之正常工作時間所得之工資。其為計月者，為年度終結或契約終止前最近一個月正常工作時間所得之工資除以三十所得之金額。"
     ],
-    "tags": [
-      "level_3",
-      "topic_leave",
-      "type_calculation_method"
-    ],
+    "tags": {
+      "chapter": "休假",
+      "type": "Calculation Method"
+    },
     "reasoning": "【特休計算】LSA-38 僅規定「應發給工資」，但最具爭議的「一日工資如何計算（除以30）」藏在施行細則 ENF_RULE-24-1。這是高頻檢索需求。"
   },
   {
-    "id": "L3-LEAVE-008",
     "question": "若雇主因突發事件要求勞工停止休假，但事後超過二十四小時才向主管機關報備，依法會面臨什麼罰則？",
     "ground_truth": "雇主因天災、事變或突發事件停止勞工假期，應於事後二十四小時內詳述理由報請當地主管機關核備。若違反此報備規定，將被處以新臺幣二萬元以上一百萬元以下罰鍰。",
     "reference_articles_id": [
@@ -701,15 +107,13 @@
       "前項停止勞工假期，應於事後二十四小時內，詳述理由，報請當地主管機關核備。",
       "有下列各款規定行為之一者，處新臺幣二萬元以上一百萬元以下罰鍰：\n一、違反...第四十條...規定。"
     ],
-    "tags": [
-      "level_3",
-      "topic_leave",
-      "type_procedure_violation"
-    ],
+    "tags": {
+      "chapter": "休假",
+      "type": "Procedure Violation"
+    },
     "reasoning": "【休假程序】測試對於「程序性義務」（報備）違反時的罰則檢索。LSA-40 包含實體義務（加倍工資）與程序義務，需精準對應罰則。"
   },
   {
-    "id": "L3-WAGE-008",
     "question": "雇主發給員工的年終獎金或三節獎金，在法律上是否被歸類為「工資」的一部分？",
     "ground_truth": "不屬於。根據施行細則的定義，「工資」指的是因工作而獲得之報酬中的「經常性給與」，而年終獎金、春節、端午節、中秋節給與之節金等，被明確排除在經常性給與之外，因此不屬於工資。",
     "reference_articles_id": [
@@ -722,15 +126,13 @@
       "三、工資：指勞工因工作而獲得之報酬；包括工資...及其他任何名義之經常性給與均屬之。",
       "本法第二條第三款所稱之其他任何名義之經常性給與係指左列各款以外之給與。\n二、獎金：指年終獎金...三、春節、端午節、中秋節給與之節金。"
     ],
-    "tags": [
-      "level_3",
-      "topic_wage",
-      "type_definition_exclusion"
-    ],
+    "tags": {
+      "chapter": "工資",
+      "type": "Definition Exclusion"
+    },
     "reasoning": "【工資定義】這是勞基法 RAG 的基礎測試題。測試系統能否結合母法定義與施行細則的「負面表列」來回答。"
   },
   {
-    "id": "L3-WAGE-009",
     "question": "公司每月固定發放一筆2000元的「交通津貼」給每位員工，不論其通勤方式或實際花費。依據勞基法及其施行細則，這筆津貼是否應被視為計算加班費基礎的「工資」的一部分？",
     "ground_truth": "是，這筆津貼應被視為工資。雖然施行細則第10條排除「差旅費」，但該津貼為固定發放且與實際支出無關，符合母法第2條「經常性給與」的定義，故屬於工資。",
     "reference_articles_id": [
@@ -743,15 +145,13 @@
       "工資...包括...其他任何名義之經常性給與均屬之。",
       "本法第二條第三款所稱之其他任何名義之經常性給與係指左列各款以外之給與...九、差旅費、差旅津貼及交際費。"
     ],
-    "tags": [
-      "level_3",
-      "topic_wage",
-      "type_interpretation"
-    ],
+    "tags": {
+      "chapter": "工資",
+      "type": "Interpretation"
+    },
     "reasoning": "【工資認定】高難度題目。施行細則雖排除差旅津貼，但「固定發放」符合母法「經常性給與」定義。測試系統能否權衡母法與細則的適用情境。"
   },
   {
-    "id": "L3-TIME-006",
     "question": "雇主若要求勞工在「休息日」與「國定假日」出勤，其加班費的計算標準是否相同？請分別說明。",
     "ground_truth": "不相同。若勞工同意在「國定假日」等休假日工作，工資應加倍發給。而在「休息日」工作，其加班費計算標準較為複雜：工作時間在二小時以內者，按平日每小時工資額另再加給一又三分之一以上；工作二小時後再繼續工作者，按平日每小時工資額另再加給一又三分之二以上。",
     "reference_articles_id": [
@@ -764,15 +164,13 @@
       "雇主經徵得勞工同意於休假日工作者，工資應加倍發給。",
       "雇主使勞工於第三十六條所定休息日工作，工作時間在二小時以內者，其工資按平日每小時工資額另再加給一又三分之一以上..."
     ],
-    "tags": [
-      "level_3",
-      "topic_time",
-      "type_comparison"
-    ],
+    "tags": {
+      "chapter": "工時",
+      "type": "Comparison"
+    },
     "reasoning": "【假日比較】測試對「休息日」與「休假日（國定假日）」這兩個易混淆概念的區辨能力，及其對應的不同加班費計算公式（LSA-24 vs LSA-39）。"
   },
   {
-    "id": "L3-INJR-004",
     "question": "當勞工因職業災害在醫療期間無法工作時，雇主應補償其「原領工資」。請問這個「原領工資」的具體計算標準是什麼？",
     "ground_truth": "所謂「原領工資」，是指勞工遭遇職業災害前一日正常工作時間所得的工資。如果是按月計薪，則是以遭遇職災前最近一個月正常工作時間所得的工資除以三十，作為其一日的工資標準。",
     "reference_articles_id": [
@@ -785,15 +183,13 @@
       "勞工在醫療中不能工作時，雇主應按其原領工資數額予以補償。",
       "本法第五十九條第二款所稱原領工資，係指該勞工遭遇職業災害前一日正常工作時間所得之工資。其為計月者，以遭遇職業災害前最近一個月...除以三十..."
     ],
-    "tags": [
-      "level_3",
-      "topic_injr",
-      "type_definition_trace"
-    ],
+    "tags": {
+      "chapter": "職業災害",
+      "type": "Definition Trace"
+    },
     "reasoning": "【專有名詞定義】LSA-59 提出「原領工資」但未定義，ENF_RULE-31 給出具體定義。這對職災補償計算至關重要，測試名詞定義追蹤能力。"
   },
   {
-    "id": "L3-TIME-007",
     "question": "公司安排加班後讓員工補休，但補休期限屆滿時未休完也未發給加班費，此行為應被認定為違反哪一條加班費規定？",
     "ground_truth": "雇主未將到期的補休時數換算加班費，會被認定為違反《勞動基準法》第24條關於延長工時工資加給的規定來論處。",
     "reference_articles_id": [
@@ -806,15 +202,13 @@
       "補休期限屆期或契約終止未補休之時數，應依延長工作時間...之工資計算標準發給工資；未發給工資者，依違反第二十四條規定論處。",
       "雇主延長勞工工作時間者，其延長工作時間之工資，依下列標準加給..."
     ],
-    "tags": [
-      "level_3",
-      "topic_time",
-      "type_legal_fiction"
-    ],
+    "tags": {
+      "chapter": "工時",
+      "type": "Legal Fiction"
+    },
     "reasoning": "【擬制違法】這題測試法律引用跳轉。LSA-32-1 規定未發給工資「視同違反 LSA-24」。系統需理解這種法律上的擬制邏輯才能正確回答。"
   },
   {
-    "id": "L3-GEN-001",
     "question": "如果雇主使用非法手段，例如強暴或脅迫來強迫勞工工作，將面臨什麼樣的刑事處罰？",
     "ground_truth": "雇主若以強暴、脅迫、拘禁或其他非法之方法強制勞工從事勞動，將被處以五年以下有期徒刑、拘役或科或併科新臺幣七十五萬元以下罰金。",
     "reference_articles_id": [
@@ -827,15 +221,13 @@
       "雇主不得以強暴、脅迫、拘禁或其他非法之方法，強制勞工從事勞動。",
       "違反第五條規定者，處五年以下有期徒刑、拘役或科或併科新臺幣七十五萬元以下罰金。"
     ],
-    "tags": [
-      "level_3",
-      "topic_gen",
-      "type_violation+penalty"
-    ],
+    "tags": {
+      "chapter": "總則",
+      "type": "Violation+Penalty"
+    },
     "reasoning": "【刑責檢索】最基礎的跨章節檢索。LSA-5 定義禁止行為，LSA-75 定義刑事罰則，兩者位於法規的首尾兩端。"
   },
   {
-    "id": "L3-TIME-008",
     "question": "如果雇主沒有依法置備勞工的出勤紀錄並保存五年，會面臨什麼樣的罰則？",
     "ground_truth": "雇主若未依法置備勞工出勤紀錄並保存五年，將被處以新臺幣九萬元以上四十五萬元以下罰鍰。",
     "reference_articles_id": [
@@ -848,15 +240,13 @@
       "雇主應置備勞工出勤紀錄，並保存五年。",
       "違反第三十條第五項或第四十九條第五項規定者，處新臺幣九萬元以上四十五萬元以下罰鍰。"
     ],
-    "tags": [
-      "level_3",
-      "topic_time",
-      "type_specific_penalty"
-    ],
+    "tags": {
+      "chapter": "工時",
+      "type": "Specific Penalty"
+    },
     "reasoning": "【特定項次罰則】LSA-79 第 2 項專門針對 LSA-30 第 5 項（出勤紀錄）設定較高罰鍰。測試系統能否區分同一條文中不同項次的罰則差異。"
   },
   {
-    "id": "L3-WAGE-010",
     "question": "若雇主在勞動契約中約定，勞工若造成公司損失可直接從下個月薪水中預扣賠償費用，此舉會有什麼法律後果？",
     "ground_truth": "雇主不得預扣勞工工資作為違約金或賠償費用。若違反此規定，將被處以新臺幣九萬元以上四十五萬元以下罰鍰。",
     "reference_articles_id": [
@@ -869,15 +259,13 @@
       "雇主不得預扣勞工工資作為違約金或賠償費用。",
       "違反...第二十六條...規定者，處新臺幣九萬元以上四十五萬元以下罰鍰。"
     ],
-    "tags": [
-      "level_3",
-      "topic_wage",
-      "type_prohibition+penalty"
-    ],
+    "tags": {
+      "chapter": "工資",
+      "type": "Prohibition+Penalty"
+    },
     "reasoning": "【禁止行為罰則】測試對於「禁止預扣工資」這一具體行為的罰則檢索。LSA-78 針對此行為有獨立的罰鍰區間（9-45萬）。"
   },
   {
-    "id": "L3-CNTR-007",
     "question": "法律上所稱的「臨時性工作」是指工作期間在多久以內，且性質為何的工作？",
     "ground_truth": "法律上所稱的「臨時性工作」，是指無法預期的非繼續性工作，且其工作期間在六個月以內。",
     "reference_articles_id": [
@@ -890,15 +278,13 @@
       "臨時性、短期性、季節性及特定性工作得為定期契約...",
       "本法第九條第一項所稱臨時性...工作，依左列規定認定之：\n一、臨時性工作：係指無法預期之非繼續性工作，其工作期間在六個月以內者。"
     ],
-    "tags": [
-      "level_3",
-      "topic_cntr",
-      "type_definition_trace"
-    ],
+    "tags": {
+      "chapter": "勞動契約",
+      "type": "Definition Trace"
+    },
     "reasoning": "【名詞定義】LSA-9 提到此契約類型，但具體定義（6個月內）在施行細則 ENF_RULE-6。測試跨文件的名詞解釋能力。"
   },
   {
-    "id": "L3-CNTR-008",
     "question": "一家人力派遣公司主張其與派遣勞工的合約不受勞基法規範，並以「案子只有一年」為由簽訂定期契約。此主張是否合法？",
     "ground_truth": "此主張不合法。首先，派遣勞工受勞基法保障。其次，法律明定派遣事業單位與派遣勞工訂定的勞動契約「應為不定期契約」，不得以個案期間為由改簽定期契約。",
     "reference_articles_id": [
@@ -911,15 +297,13 @@
       "九、派遣勞工：指受派遣事業單位僱用...",
       "派遣事業單位與派遣勞工訂定之勞動契約，應為不定期契約。"
     ],
-    "tags": [
-      "level_3",
-      "topic_cntr",
-      "type_mandatory_rule"
-    ],
+    "tags": {
+      "chapter": "勞動契約",
+      "type": "Mandatory Rule"
+    },
     "reasoning": "【強制規定】LSA-9 第 1 項後段針對派遣勞工設有「強制不定期契約」的特別規定，這是否定該公司主張的關鍵，測試對特別條款的檢索。"
   },
   {
-    "id": "L3-CNTR-009",
     "question": "雇主與員工的離職後競業禁止條款中，主張在職期間的薪資已包含補償，且條款未以書面詳細記載，此約定是否有效？",
     "ground_truth": "該競業禁止約定無效。首先，法律規定合理補償不包括勞工在職期間的給付。其次，施行細則要求競業禁止約定必須以書面詳細記載限制範圍及補償內容。題述情形兩者皆未符合，因此約定無效。",
     "reference_articles_id": [
@@ -932,15 +316,13 @@
       "前項第四款所定合理補償，不包括勞工於工作期間所受領之給付。",
       "離職後競業禁止之約定，應以書面為之..."
     ],
-    "tags": [
-      "level_3",
-      "topic_cntr",
-      "type_validity_check"
-    ],
+    "tags": {
+      "chapter": "勞動契約",
+      "type": "Validity Check"
+    },
     "reasoning": "【生效要件】測試競業禁止的「形式要件」（書面）與「實質要件」（補償排除薪資）。需同時引用 LSA-9-1 與 ENF_RULE-7-1 才能完整判定無效。"
   },
   {
-    "id": "L3-CNTR-010",
     "question": "公司在離職後競業禁止條款中約定每月補償勞工離職時平均工資的40%，這樣的補償是否可能被認定為不合理？",
     "ground_truth": "是的，這樣的補償很可能被認定為不合理。因為《勞動基準法施行細則》規定，判斷合理補償的基準之一是「每月補償金額不低於勞工離職時一個月平均工資百分之五十」。",
     "reference_articles_id": [
@@ -953,15 +335,13 @@
       "雇主對勞工因不從事競業行為所受損失有合理補償。",
       "本法第九條之一第一項第四款所定之合理補償...一、每月補償金額不低於勞工離職時一個月平均工資百分之五十。"
     ],
-    "tags": [
-      "level_3",
-      "topic_cntr",
-      "type_quantitative_standard"
-    ],
+    "tags": {
+      "chapter": "勞動契約",
+      "type": "Quantitative Standard"
+    },
     "reasoning": "【量化標準】測試對「合理補償」具體量化標準的檢索。LSA-9-1 僅提「合理補償」，ENF_RULE-7-3 提供了「50%」這個關鍵判斷依據。"
   },
   {
-    "id": "L3-TIME-009",
     "question": "某企業總公司與分公司合計超過30人，若要放寬加班時數上限，是否需要報備？應如何計算員工人數及向哪個主管機關報備？",
     "ground_truth": "需要報備。計算勞工人數時，應以同一雇主僱用的總人數計算，包含所有分支機構。應向雇主主事務所或主營業所所在地的政府報備。",
     "reference_articles_id": [
@@ -975,15 +355,13 @@
       "本法第三十二條...所定雇主僱用勞工人數...包括分支機構之僱用人數。",
       "本法第三十二條...所定當地主管機關，為雇主之主事務所...所在地之直轄市政府或縣（市）政府。"
     ],
-    "tags": [
-      "level_3",
-      "topic_time",
-      "type_admin_procedure"
-    ],
+    "tags": {
+      "chapter": "工時",
+      "type": "Admin Procedure"
+    },
     "reasoning": "【行政程序細節】LSA-32 設下 30 人門檻，ENF_RULE-22-1 定義了「人數計算方式（含分支）」與「管轄機關（主事務所）」。這對連鎖企業至關重要。"
   },
   {
-    "id": "L3-RETIRE-005",
     "question": "雇主若未在勞工退休後三十天內給付退休金，將面臨何種處罰？",
     "ground_truth": "雇主應於勞工退休之日起三十日內給付退休金。若未依此期限給付，將被處以新臺幣三十萬元以上一百五十萬元以下罰鍰，並會被限期令其給付。",
     "reference_articles_id": [
@@ -996,15 +374,13 @@
       "第一項所定退休金，雇主應於勞工退休之日起三十日內給付...",
       "未依...第五十五條規定之標準或期限給付者，處新臺幣三十萬元以上一百五十萬元以下罰鍰..."
     ],
-    "tags": [
-      "level_3",
-      "topic_retire",
-      "type_violation+penalty"
-    ],
+    "tags": {
+      "chapter": "退休",
+      "type": "Violation+Penalty"
+    },
     "reasoning": "【給付期限罰則】測試期限義務的罰則。LSA-55 設定付款期限，LSA-78 設定罰則。LSA-78 具體指名了「違反第五十五條期限」，需精確匹配。"
   },
   {
-    "id": "L3-INSP-004",
     "question": "勞工向主管機關申訴雇主違法後，若遭雇主降調減薪報復，此報復行為的法律效力為何？雇主會面臨什麼罰鍰？",
     "ground_truth": "此報復性處分在法律上是無效的。且雇主會因此被處以新臺幣二萬元以上三十萬元以下罰鍰。",
     "reference_articles_id": [
@@ -1018,15 +394,13 @@
       "雇主為前項行為之一者，無效。",
       "違反...第七十四條第二項規定者，處新臺幣二萬元以上三十萬元以下罰鍰。"
     ],
-    "tags": [
-      "level_3",
-      "topic_insp",
-      "type_legal_effect"
-    ],
+    "tags": {
+      "chapter": "監督與檢查",
+      "type": "Legal Effect"
+    },
     "reasoning": "【法律效力】需回答兩個層面：行為的效力（LSA-74 規定無效）與行政處罰（LSA-79）。這是權利救濟章節中的關鍵題目。"
   },
   {
-    "id": "L3-PEN-001",
     "question": "雇主若違反勞工每七日應有例假與休息日的規定，除了罰鍰外，主管機關在決定罰鍰金額時可以考量哪些因素？",
     "ground_truth": "主管機關裁罰時，得審酌與違法行為相關的勞工人數、累計違法次數或未依法給付之金額，作為量罰輕重的標準。",
     "reference_articles_id": [
@@ -1041,15 +415,13 @@
       "違反...第三十六條...規定者，處新臺幣二萬元以上一百萬元以下罰鍰...",
       "主管機關裁處罰鍰，得審酌與違反行為有關之勞工人數、累計違法次數或未依法給付之金額..."
     ],
-    "tags": [
-      "level_3",
-      "topic_pen",
-      "type_discretionary_factor"
-    ],
+    "tags": {
+      "chapter": "罰則",
+      "type": "Discretionary Factor"
+    },
     "reasoning": "【裁量基準】高階題目。LSA-36 是義務，LSA-79 是罰則範圍，LSA-80-1 是裁量標準。RAG 需串聯這三層資訊才能完整回答「考量因素」。"
   },
   {
-    "id": "L3-CNTR-011",
     "question": "某公司為一個為期八個月的專案聘僱一名員工，簽訂定期契約。專案結束後，雙方間隔15天再簽訂一個為期四個月的新合約。請問在這種情況下，此契約是否會被視為不定期契約？",
     "ground_truth": "不會。因為八個月的專案屬於「特定性工作」。雖然勞基法第9條規定前後契約工作超過90天且間斷未超過30天視為不定期，但同條文第三項排除了「特定性工作」的適用。因此仍為定期契約。",
     "reference_articles_id": [
@@ -1063,15 +435,13 @@
       "前項規定於特定性或季節性之定期工作不適用之。",
       "特定性工作：係指可在特定期間完成之非繼續性工作。"
     ],
-    "tags": [
-      "level_3",
-      "topic_cntr",
-      "type_exception_logic"
-    ],
+    "tags": {
+      "chapter": "勞動契約",
+      "type": "Exception Logic"
+    },
     "reasoning": "【例外排除】這題設有陷阱。LSA-9 第 2 項看似符合，但必須結合 LSA-9 第 3 項的「排除條款」與 ENF_RULE-6 對「特定性工作」的定義，才能得出正確結論。"
   },
   {
-    "id": "L3-FEM-003",
     "question": "一名15歲的童工在某工作日從下午1點工作到晚上10點，中間休息30分鐘。請問雇主的行為有哪兩項違法之處？",
     "ground_truth": "第一，工時超過8小時（實際8.5小時），違反勞基法第47條。第二，於晚上10點工作，違反勞基法第48條童工不得於午後8時至翌晨6時工作的規定。",
     "reference_articles_id": [
@@ -1084,15 +454,13 @@
       "童工每日之工作時間不得超過八小時...",
       "童工不得於午後八時至翌晨六時之時間內工作。"
     ],
-    "tags": [
-      "level_3",
-      "topic_fem",
-      "type_multi-violation"
-    ],
+    "tags": {
+      "chapter": "童工、女工",
+      "type": "Multi-Violation"
+    },
     "reasoning": "【多重違規】情境題，測試系統是否能從一個案例中識別出多個違規點（工時超長 + 夜間工作），需同時命中 LSA-47 與 LSA-48。"
   },
   {
-    "id": "L3-FEM-004",
     "question": "一位在公司任職超過一年的女性勞工，依法請8週產假。在此期間，她的薪資應如何發給？若雇主在此期間將她解僱，將面臨何種處罰？",
     "ground_truth": "產假期間薪資應照給（因受僱滿六個月）。若雇主在產假期間終止契約，將被處以新臺幣九萬元以上四十五萬元以下罰鍰。",
     "reference_articles_id": [
@@ -1107,15 +475,13 @@
       "勞工在第五十條規定之停止工作期間...雇主不得終止契約。",
       "違反第十三條...規定者，處新臺幣九萬元以上四十五萬元以下罰鍰。"
     ],
-    "tags": [
-      "level_3",
-      "topic_fem",
-      "type_full_protection"
-    ],
+    "tags": {
+      "chapter": "童工、女工",
+      "type": "Full Protection"
+    },
     "reasoning": "【完整保護鏈】權利（薪資）+ 保護（禁解僱）+ 罰則。這需要跨越第 5 章（女工）、第 2 章（契約終止保護）、第 11 章（罰則）三個章節。"
   },
   {
-    "id": "L3-GEN-002",
     "question": "雇主依法應將勞工名卡保存至勞工離職後五年，若未遵守此規定，將面臨何種罰鍰？",
     "ground_truth": "雇主若未將勞工名卡保存至勞工離職後五年，將被處以新臺幣二萬元以上三十萬元以下罰鍰。",
     "reference_articles_id": [
@@ -1128,15 +494,13 @@
       "前項勞工名卡，應保管至勞工離職後五年。",
       "違反第七條...規定者，處新臺幣二萬元以上三十萬元以下罰鍰。"
     ],
-    "tags": [
-      "level_3",
-      "topic_gen",
-      "type_violation+penalty"
-    ],
+    "tags": {
+      "chapter": "總則",
+      "type": "Violation+Penalty"
+    },
     "reasoning": "【文件保存罰則】典型的義務與罰則分離。LSA-7 規定保存義務，LSA-79 規定對應的行政罰鍰。需要準確定位 LSA-79 中提及 LSA-7 的部分。"
   },
   {
-    "id": "L3-TIME-010",
     "question": "一家有30名員工的公司，打算將輪班員工的換班間隔從11小時縮短為8小時。除了需經勞資會議同意外，還需履行什麼程序？",
     "ground_truth": "由於員工人數達30人，雇主除了需經工會或勞資會議同意外，還應報請當地主管機關備查。",
     "reference_articles_id": [
@@ -1149,15 +513,13 @@
       "雇主依前項但書規定變更休息時間者...雇主僱用勞工人數在三十人以上者，應報當地主管機關備查。",
       "本法...第三十四條第三項...所定雇主僱用勞工人數，以同一雇主僱用適用本法之勞工人數計算，包括分支機構之僱用人數。"
     ],
-    "tags": [
-      "level_3",
-      "topic_time",
-      "type_threshold_check"
-    ],
+    "tags": {
+      "chapter": "工時",
+      "type": "Threshold Check"
+    },
     "reasoning": "【門檻判定】LSA-34 規定了「30人以上需備查」，而 ENF_RULE-22-1 定義了這 30 人如何計算（含分支機構）。這對於判斷是否符合備查門檻至關重要。"
   },
   {
-    "id": "L3-WAGE-011",
     "question": "公司把員工工資延遲發放，經主管機關下令限期給付後仍不理會。針對這種「不遵守限期給付命令」的行為，最高可處多少罰鍰？",
     "ground_truth": "若雇主違反主管機關依勞基法第27條所為的限期給付工資命令，可處新臺幣二萬元以上一百萬元以下罰鍰。",
     "reference_articles_id": [
@@ -1170,15 +532,13 @@
       "雇主不按期給付工資者，主管機關得限期令其給付。",
       "違反主管機關依第二十七條限期給付工資...之命令...處新臺幣二萬元以上一百萬元以下罰鍰。"
     ],
-    "tags": [
-      "level_3",
-      "topic_wage",
-      "type_violation_of_order"
-    ],
+    "tags": {
+      "chapter": "工資",
+      "type": "Violation of Order"
+    },
     "reasoning": "【違反命令罰則】這不是直接罰「沒付薪水」，而是罰「違反行政命令」。LSA-79 特別有一款是針對違反 LSA-27 命令的處罰。"
   },
   {
-    "id": "L3-CNTR-012",
     "question": "當勞工遭遇職業災害正在治療期間，雇主可以在什麼條件下終止勞動契約？如果違法終止會受到什麼處罰？",
     "ground_truth": "原則上禁止終止。例外僅限於「雇主因天災、事變或其他不可抗力致事業不能繼續，經報主管機關核定者」。違法終止將處新臺幣九萬元以上四十五萬元以下罰鍰。",
     "reference_articles_id": [
@@ -1191,15 +551,13 @@
       "勞工在...第五十九條規定之醫療期間，雇主不得終止契約。但雇主因天災...經報主管機關核定者，不在此限。",
       "違反第十三條...規定者，處新臺幣九萬元以上四十五萬元以下罰鍰。"
     ],
-    "tags": [
-      "level_3",
-      "topic_cntr",
-      "type_exception+penalty"
-    ],
+    "tags": {
+      "chapter": "勞動契約",
+      "type": "Exception+Penalty"
+    },
     "reasoning": "【職災解僱保護】LSA-13 是著名的「職災解僱保護條款」，其罰則位於 LSA-78。此題測試對「禁止解僱」的例外條款及其對應罰則的掌握。"
   },
   {
-    "id": "L3-CNTR-013",
     "question": "雇主沒有按照法定期限發給員工資遣費，會面臨什麼樣的罰則？",
     "ground_truth": "雇主應於終止勞動契約三十日內發給資遣費。若未依規定期限給付，將被處以新臺幣三十萬元以上一百五十萬元以下罰鍰。",
     "reference_articles_id": [
@@ -1212,11 +570,10 @@
       "前項所定資遣費，雇主應於終止勞動契約三十日內發給。",
       "未依第十七條...規定之標準或期限給付者，處新臺幣三十萬元以上一百五十萬元以下罰鍰..."
     ],
-    "tags": [
-      "level_3",
-      "topic_cntr",
-      "type_deadline_penalty"
-    ],
+    "tags": {
+      "chapter": "勞動契約",
+      "type": "Deadline Penalty"
+    },
     "reasoning": "【資遣費期限】LSA-17 定義了「30天內發給」的期限，LSA-78 針對違反 LSA-17 設定了重罰（30-150萬）。這對資遣相關的法律諮詢非常關鍵。"
   }
 ]

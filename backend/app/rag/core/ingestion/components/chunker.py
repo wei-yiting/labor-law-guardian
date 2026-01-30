@@ -13,6 +13,7 @@ from backend.app.rag.types import (
     HierarchyCoarse,
     SplitStrategyEnum,
 )
+from backend.data.law_data.law_config import LAW_FILES
 
 
 class LawArticleChunker:
@@ -23,6 +24,22 @@ class LawArticleChunker:
 
     def __init__(self, strategy: str = "PARENT_CHILD_FINE"):
         self.strategy = strategy
+        # Map prefix (e.g., "LSA") to Law Name (e.g., "勞動基準法")
+        self.prefix_map = {item["prefix"]: item["name"] for item in LAW_FILES}
+
+    def _get_law_name(self, article_id: str) -> str:
+        """
+        Resolve law name from article ID (e.g., 'LSA-24' -> '勞動基準法').
+        """
+        # Assume ID format is "{PREFIX}-{ArticleNum}"
+        # Some prefixes might contain underscores, so we split by the first hyphen if present.
+        # Check if hyphen exists
+        if "-" in article_id:
+            prefix = article_id.split("-")[0]
+            return self.prefix_map.get(prefix, "勞動基準法")
+
+        # Fallback logic if ID structure is different or prefix not found
+        return "勞動基準法"
 
     def process_files(self, file_paths: List[str]) -> List[LawChunk]:
         all_chunks = []
@@ -46,10 +63,11 @@ class LawArticleChunker:
         """
         Entry point for parsing a single article.
         """
+        law_name = self._get_law_name(article.id)
         if self.strategy == "PARENT_CHILD_COARSE":
-            return self._split_coarse(article)
+            return self._split_coarse(article, law_name)
         else:
-            return self._split_fine(article)
+            return self._split_fine(article, law_name)
 
     # --- Shared Helpers ---
 
@@ -123,8 +141,9 @@ class LawArticleChunker:
         return res
 
     # --- Coarse Strategy (v0.0.3) ---
-
-    def _split_coarse(self, article: RawLawArticle) -> List[LawChunkCoarse]:
+    def _split_coarse(
+        self, article: RawLawArticle, law_name: str
+    ) -> List[LawChunkCoarse]:
         chunks = []
 
         # Base metadata info
@@ -147,7 +166,7 @@ class LawArticleChunker:
                 )
 
                 # Format citation (No Subparagraph)
-                citation = self._format_citation_coarse(hierarchy)
+                citation = self._format_citation_coarse(hierarchy, law_name)
 
                 metadata = ChunkMetadataCoarse(
                     **base_kwargs,
@@ -168,7 +187,7 @@ class LawArticleChunker:
             # Atomic (Article Level)
             chunk_id = article.id
             hierarchy = HierarchyCoarse(article=article.article_no, paragraph=None)
-            citation = self._format_citation_coarse(hierarchy)
+            citation = self._format_citation_coarse(hierarchy, law_name)
 
             metadata = ChunkMetadataCoarse(
                 **base_kwargs,
@@ -188,7 +207,7 @@ class LawArticleChunker:
 
         return chunks
 
-    def _format_citation_coarse(self, hierarchy: HierarchyCoarse) -> str:
+    def _format_citation_coarse(self, hierarchy: HierarchyCoarse, law_name: str) -> str:
         # Same logic as fine but without subparagraph check
         art_str = hierarchy.article
 
@@ -204,7 +223,7 @@ class LawArticleChunker:
             else:
                 art_text = f"第{art_str}條"
 
-        title = f"勞動基準法{art_text}"
+        title = f"{law_name}{art_text}"
 
         if hierarchy.paragraph:
             para_cn = self._convert_to_chinese_numeral(hierarchy.paragraph)
@@ -214,7 +233,7 @@ class LawArticleChunker:
 
     # --- Fine Strategy (v0.0.2) ---
 
-    def _split_fine(self, article: RawLawArticle) -> List[LawChunkFine]:
+    def _split_fine(self, article: RawLawArticle, law_name: str) -> List[LawChunkFine]:
         hierarchy = HierarchyFine(article=article.article_no)
         metadata = ChunkMetadataFine(
             url=article.url,
@@ -227,7 +246,7 @@ class LawArticleChunker:
             article_no=article.article_no,
         )
         return self._split_recursive_fine(
-            article.content, article.id, article.article_no, metadata
+            article.content, article.id, article.article_no, metadata, law_name
         )
 
     def _split_recursive_fine(
@@ -236,6 +255,7 @@ class LawArticleChunker:
         parent_id: str,
         article_no: str,
         base_metadata: ChunkMetadataFine,
+        law_name: str,
     ) -> List[LawChunkFine]:
         # Step 1: Check for Numeric Paragraphs
         paragraphs = self._split_by_paragraph(text)
@@ -244,7 +264,7 @@ class LawArticleChunker:
             chunks = []
             for para_num, para_text, _, _ in paragraphs:
                 sub_chunks = self._process_subparagraphs_fine(
-                    para_text, parent_id, article_no, base_metadata, para_num
+                    para_text, parent_id, article_no, base_metadata, para_num, law_name
                 )
                 chunks.extend(sub_chunks)
             return chunks
@@ -252,7 +272,7 @@ class LawArticleChunker:
         # Step 2: Check for Subparagraphs (e.g., "一、")
         else:
             return self._process_subparagraphs_fine(
-                text, parent_id, article_no, base_metadata, None
+                text, parent_id, article_no, base_metadata, None, law_name
             )
 
     def _process_subparagraphs_fine(
@@ -262,6 +282,7 @@ class LawArticleChunker:
         article_no: str,
         base_metadata: ChunkMetadataFine,
         para_num: Optional[int],
+        law_name: str,
     ) -> List[LawChunkFine]:
         """
         Step 2 logic: Checks for "一、", "二、"...
@@ -298,7 +319,7 @@ class LawArticleChunker:
                     article=article_no, paragraph=para_num, subparagraph=current_sub_id
                 )
 
-                citation = self._format_citation_fine(new_hierarchy)
+                citation = self._format_citation_fine(new_hierarchy, law_name)
 
                 new_meta = base_metadata.model_copy()
                 new_meta.split_strategy = strategy
@@ -331,7 +352,7 @@ class LawArticleChunker:
                     article=article_no, paragraph=None, subparagraph=None
                 )
 
-            citation = self._format_citation_fine(new_hierarchy)
+            citation = self._format_citation_fine(new_hierarchy, law_name)
 
             new_meta = base_metadata.model_copy()
             new_meta.split_strategy = strategy
@@ -347,7 +368,7 @@ class LawArticleChunker:
             )
             return [chunk]
 
-    def _format_citation_fine(self, hierarchy: HierarchyFine) -> str:
+    def _format_citation_fine(self, hierarchy: HierarchyFine, law_name: str) -> str:
         art_str = hierarchy.article
         if "-" in art_str:
             main_num, sub_num = art_str.split("-")
@@ -361,7 +382,7 @@ class LawArticleChunker:
             else:
                 art_text = f"第{art_str}條"
 
-        title = f"勞動基準法{art_text}"
+        title = f"{law_name}{art_text}"
 
         if hierarchy.paragraph:
             para_cn = self._convert_to_chinese_numeral(hierarchy.paragraph)

@@ -1,5 +1,5 @@
 from enum import StrEnum, Enum
-from typing import Optional, List
+from typing import Optional, List, Dict
 from datetime import date
 from pydantic import BaseModel, Field, HttpUrl
 
@@ -82,6 +82,35 @@ class SplitStrategyEnum(str, Enum):
     parent_child_coarse = "parent_child_coarse"
 
 
+class EvalQuestionCandidate(BaseModel):
+    question: str = Field(description="Concrete, specific question text")
+    ground_truth: str = Field(description="The complete answer derived from documents")
+    reference_articles_id: List[List[str]] = Field(
+        description="List of list of Article IDs used (e.g., [['LSA-12', 'ENF-3'], ['LSA-12', 'ENF-4']]). Inner lists are AND (all required), outer list is OR (alternatives)."
+    )
+    source_model: str = Field(description="Source LLM model generate this question")
+
+
+class EvalDatasetItem(BaseModel):
+    question: str = Field(description="Concrete, specific question text")
+    ground_truth: str = Field(description="The complete answer derived from documents")
+    reference_articles_id: List[List[str]] = Field(
+        description="List of list of Article IDs used (e.g., [['LSA-12', 'ENF-3'], ['LSA-12', 'ENF-4']]). Inner lists are AND (all required), outer list is OR (alternatives)."
+    )
+    supporting_context: List[str] = Field(
+        description="The exact quotes from documents used for the answer"
+    )
+    tags: Dict[str, str] = Field(
+        description="e.g., {'chapter': '工資', 'type': 'Cross-Document'}"
+    )
+    reasoning: str = Field(
+        description="Explanation of why this question is qualified to be in the dataset"
+    )
+
+
+EvalDataset = List[EvalDatasetItem]
+
+
 # --- Fine-Grained Models (v0.0.2) ---
 
 
@@ -134,6 +163,30 @@ class LawChunkCoarse(BaseModel):
     parent_id: str
     text: str
     metadata: ChunkMetadataCoarse
+
+
+class ChunkRelationshipType(str, Enum):
+    MENTIONS = "mentions"
+    IS_MENTIONED_BY = "is_mentioned_by"
+    PENALIZES = "penalizes"
+    IS_PENALIZED_BY = "is_penalized_by"
+    ELABORATES = "elaborates"
+    IS_ELABORATED_BY = "is_elaborated_by"
+    OVERRIDES = "overrides"
+    IS_OVERRIDDEN_BY = "is_overridden_by"
+    DEFINES = "defines"
+    USES_DEFINITION_FROM = "uses_definition_from"
+
+
+class ChunkRelationship(BaseModel):
+    target_chunk_id: str
+    relationship_type: ChunkRelationshipType
+
+
+class LawChunkWithRelationship(LawChunkCoarse):
+    related_chunks: List[ChunkRelationship] = Field(
+        default=[], description="List of related chunk relationships"
+    )
 
 
 # --- Union Type ---
