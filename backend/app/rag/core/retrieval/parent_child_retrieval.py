@@ -11,6 +11,7 @@ from backend.app.rag.config import (
     QDRANT_PORT,
     COLLECTION_NAME_PC_FINE,
     COLLECTION_NAME_PC_COARSE,
+    COLLECTION_NAME_PC_BGE_M3,
 )
 from backend.app.rag.core.retrieval.postprocessors import ArticleDedupPostprocessor
 from backend.app.rag.core.retrieval.components import DiversityRetriever
@@ -23,7 +24,7 @@ class ParentChildRetrieverStrategy(RetrieverStrategy):
         self.version = version
 
         # Setup Shared Settings
-        setup_common_settings()
+        setup_common_settings(version=version)
 
         # Determine Collection
         if version not in RagVersion:
@@ -31,6 +32,8 @@ class ParentChildRetrieverStrategy(RetrieverStrategy):
 
         if version == RagVersion.V0_0_2:
             collection_name = COLLECTION_NAME_PC_FINE
+        elif version == RagVersion.V0_0_4:
+            collection_name = COLLECTION_NAME_PC_BGE_M3
         else:
             collection_name = COLLECTION_NAME_PC_COARSE
 

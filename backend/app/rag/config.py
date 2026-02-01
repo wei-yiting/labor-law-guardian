@@ -17,10 +17,9 @@ LAW_FILES = [
 
 # RAG Settings
 OPENAI_MODEL_NAME = "gpt-4o"
-# Embedding Settings
-# Provider options: "openai", "huggingface" (local)
-EMBEDDING_PROVIDER = "huggingface"
-EMBEDDING_MODEL_NAME = "BAAI/bge-m3"
+# Embedding model configuration is now handled by EmbeddingStrategy (see core/embedding/)
+# - v0.0.1, v0.0.2, v0.0.3: OpenAI text-embedding-3-small
+# - v0.0.4: BAAI/bge-m3 (HuggingFace local)
 OPENAI_TEMPERATURE = 0
 CHUNK_SIZE = 1024
 RETRIEVER_TOP_K = 5
@@ -45,3 +44,4 @@ QDRANT_URL = f"http://{QDRANT_HOST}:{QDRANT_PORT}"
 COLLECTION_NAME_NAIVE = "naive"
 COLLECTION_NAME_PC_FINE = "parent-child-fine"
 COLLECTION_NAME_PC_COARSE = "parent-child-coarse"
+COLLECTION_NAME_PC_BGE_M3 = "parent-child-bge-m3"

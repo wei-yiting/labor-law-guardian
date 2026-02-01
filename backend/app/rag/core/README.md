@@ -30,6 +30,19 @@ Contains logic for measuring RAG performance.
 - **`reporting.py`**:
   - Helper functions to write JSON logs (`backend/experiments/`) and Text Reports (`backend/app/rag/evals/reports/`).
 
+### `embedding/`
+
+Contains the concrete implementations of `EmbeddingStrategy`.
+
+- **`openai_embedding.py`**:
+  - Implements `OpenAIEmbeddingStrategy`.
+  - Uses `text-embedding-3-small` (OpenAI API).
+  - Used by RAG versions 0.0.1, 0.0.2, 0.0.3.
+- **`huggingface_embedding.py`**:
+  - Implements `HuggingFaceEmbeddingStrategy`.
+  - Uses `BAAI/bge-m3` (local HuggingFace model).
+  - Used by RAG version 0.0.4.
+
 ### `common.py`
 
-- `setup_common_settings()`: Centralizes LlamaIndex global configuration (LLM, Embed Model, Chunk Size) to ensure consistency across all strategies.
+- `setup_common_settings(version)`: Centralizes LlamaIndex global configuration (Embed Model, Chunk Size) to ensure consistency across all strategies. Uses `get_embedding_strategy(version)` to select the correct embedding model based on the RAG version.

@@ -16,7 +16,7 @@ from backend.app.rag.core.common import setup_common_settings
 class NaiveRetrieverStrategy(RetrieverStrategy):
     def __init__(self):
         # 1. Setup Shared Settings
-        setup_common_settings()
+        setup_common_settings(version="0.0.1")
         
         # 2. Connect to Qdrant
         client = QdrantClient(host=QDRANT_HOST, port=QDRANT_PORT)

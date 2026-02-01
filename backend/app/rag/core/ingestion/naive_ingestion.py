@@ -36,7 +36,7 @@ class NaiveIngestionStrategy(IngestionStrategy):
             return documents
 
         # Setup global embedding settings before ingestion
-        setup_common_settings()
+        setup_common_settings(version="0.0.1")
 
         client = QdrantClient(host=QDRANT_HOST, port=QDRANT_PORT)
 

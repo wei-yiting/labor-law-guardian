@@ -1,6 +1,19 @@
 from abc import ABC, abstractmethod
 from typing import List, Any
 from llama_index.core.schema import Node, Document
+from llama_index.core.embeddings import BaseEmbedding
+
+
+class EmbeddingStrategy(ABC):
+    """
+    Abstract Base Class for Embedding Strategies.
+    Responsible for creating the appropriate embedding model instance.
+    """
+
+    @abstractmethod
+    def create_embedding(self) -> BaseEmbedding:
+        """Return a configured LlamaIndex embedding model instance."""
+        pass
 
 
 class IngestionStrategy(ABC):

@@ -6,10 +6,19 @@ from typing import Dict, Any, List
 from backend.app.rag.config import (
     RAG_VERSIONS,
     OPENAI_MODEL_NAME,
-    EMBEDDING_MODEL_NAME,
     CHUNK_SIZE,
     RETRIEVER_TOP_K,
 )
+from backend.app.rag.core.embedding.openai_embedding import OPENAI_EMBEDDING_MODEL
+from backend.app.rag.core.embedding.huggingface_embedding import BGE_M3_MODEL
+
+# Version-to-embedding-model mapping for reporting
+_EMBEDDING_MODEL_MAP = {
+    "0.0.1": OPENAI_EMBEDDING_MODEL,
+    "0.0.2": OPENAI_EMBEDDING_MODEL,
+    "0.0.3": OPENAI_EMBEDDING_MODEL,
+    "0.0.4": BGE_M3_MODEL,
+}
 
 
 def save_json_log(
@@ -42,7 +51,7 @@ def save_json_log(
                 "rag_version": version,
                 "strategy": RAG_VERSIONS.get(version, "UNKNOWN"),
                 "tokenizer": OPENAI_MODEL_NAME,
-                "embedding": EMBEDDING_MODEL_NAME,
+                "embedding": _EMBEDDING_MODEL_MAP.get(version, "UNKNOWN"),
                 "chunk_size": CHUNK_SIZE,
                 "top_k": RETRIEVER_TOP_K,
             },

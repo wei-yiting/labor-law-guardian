@@ -18,6 +18,7 @@ from backend.app.rag.config import (
     RAG_VERSIONS,
     COLLECTION_NAME_PC_FINE,
     COLLECTION_NAME_PC_COARSE,
+    COLLECTION_NAME_PC_BGE_M3,
     QDRANT_HOST,
     QDRANT_PORT,
 )
@@ -87,6 +88,8 @@ class ParentChildIngestionStrategy(IngestionStrategy):
             collection = COLLECTION_NAME_PC_FINE
         elif self.version == "0.0.3":
             collection = COLLECTION_NAME_PC_COARSE
+        elif self.version == "0.0.4":
+            collection = COLLECTION_NAME_PC_BGE_M3
         else:
             logger.warning(
                 f"Unknown version {self.version} for Qdrant ingestion, skipping"
@@ -94,7 +97,7 @@ class ParentChildIngestionStrategy(IngestionStrategy):
             return nodes
 
         # Setup global embedding settings before ingestion
-        setup_common_settings()
+        setup_common_settings(version=self.version)
 
         client = QdrantClient(host=QDRANT_HOST, port=QDRANT_PORT)
 
