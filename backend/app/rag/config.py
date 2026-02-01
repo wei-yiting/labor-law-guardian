@@ -17,23 +17,25 @@ LAW_FILES = [
 
 # RAG Settings
 OPENAI_MODEL_NAME = "gpt-4o"
-# Embedding model configuration is now handled by EmbeddingStrategy (see core/embedding/)
-# - v0.0.1, v0.0.2, v0.0.3: OpenAI text-embedding-3-small
-# - v0.0.4: BAAI/bge-m3 (HuggingFace local)
+# Embedding model configuration is handled by EmbeddingStrategy (see core/embedding/)
+# - v0.0.x: OpenAI text-embedding-3-small
+# - v0.1.x+: BAAI/bge-m3 (HuggingFace local)
 OPENAI_TEMPERATURE = 0
 CHUNK_SIZE = 1024
 RETRIEVER_TOP_K = 5
 
 # RAG Versions
-# 0.0.1: Naive (Atomic) Strategy
-# 0.0.2: Parent-Child Strategy
+# v0.0.x: OpenAI text-embedding-3-small
+# v0.1.x: BAAI/bge-m3 (same ingestion/retrieval strategies as v0.0.x counterparts)
 RAG_VERSIONS = {
     "0.0.1": "NAIVE",
     "0.0.2": "PARENT_CHILD_FINE",
     "0.0.3": "PARENT_CHILD_COARSE",
-    "0.0.4": "BGE_M3_EMBEDDING",
+    "0.1.1": "NAIVE",
+    "0.1.2": "PARENT_CHILD_FINE",
+    "0.1.3": "PARENT_CHILD_COARSE",
 }
-LATEST_RAG_VERSION = "0.0.4"
+LATEST_RAG_VERSION = "0.1.3"
 
 # Vector Store Settings
 QDRANT_HOST = "localhost"
@@ -41,7 +43,11 @@ QDRANT_PORT = 6333
 QDRANT_URL = f"http://{QDRANT_HOST}:{QDRANT_PORT}"
 
 # Qdrant Collection Names
+# v0.0.x (OpenAI embedding)
 COLLECTION_NAME_NAIVE = "naive"
 COLLECTION_NAME_PC_FINE = "parent-child-fine"
 COLLECTION_NAME_PC_COARSE = "parent-child-coarse"
-COLLECTION_NAME_PC_BGE_M3 = "parent-child-bge-m3"
+# v0.1.x (bge-m3 embedding)
+COLLECTION_NAME_NAIVE_BGE_M3 = "naive-bge-m3"
+COLLECTION_NAME_PC_FINE_BGE_M3 = "parent-child-fine-bge-m3"
+COLLECTION_NAME_PC_COARSE_BGE_M3 = "parent-child-coarse-bge-m3"

@@ -8,28 +8,36 @@ from backend.app.rag.core.ingestion.naive_ingestion import NaiveIngestionStrateg
 from backend.app.rag.core.ingestion.parent_child_ingestion import (
     ParentChildIngestionStrategy,
 )
-from backend.app.rag.core.embedding.openai_embedding import OpenAIEmbeddingStrategy
-from backend.app.rag.core.embedding.huggingface_embedding import (
-    HuggingFaceEmbeddingStrategy,
+from backend.app.rag.core.embedding.openai_text_3_small_embedding import (
+    OpenAIEmbeddingStrategy,
 )
+from backend.app.rag.core.embedding.bge_m3_embedding import BgeM3EmbeddingStrategy
 
 
-def get_retriever_strategy(version: str) -> RetrieverStrategy:
-    # Validate version string by trying to construct Enum
+def _validate_version(version: str) -> RagVersion:
+    """Validate version string and return the corresponding RagVersion enum."""
     try:
-        rag_version = RagVersion(version)
+        return RagVersion(version)
     except ValueError:
         raise ValueError(
             f"Unknown RAG version: {version}. Valid versions: {[v.value for v in RagVersion]}"
         )
 
+
+def get_retriever_strategy(version: str) -> RetrieverStrategy:
+    rag_version = _validate_version(version)
+
     match rag_version:
-        case RagVersion.V0_0_1:
-            return NaiveRetrieverStrategy()
-        case RagVersion.V0_0_2 | RagVersion.V0_0_3 | RagVersion.V0_0_4:
-            return ParentChildRetrieverStrategy(version=version)
+        case RagVersion.V0_0_1 | RagVersion.V0_1_1:
+            return NaiveRetrieverStrategy(version=rag_version)
+        case (
+            RagVersion.V0_0_2
+            | RagVersion.V0_0_3
+            | RagVersion.V0_1_2
+            | RagVersion.V0_1_3
+        ):
+            return ParentChildRetrieverStrategy(version=rag_version)
         case _:
-            # Should be unreachable if Enum covers all cases, but good practice
             raise ValueError(f"Strategy not implemented for version: {rag_version}")
 
 
@@ -38,40 +46,30 @@ def get_embedding_strategy(version: str) -> EmbeddingStrategy:
     Factory function to create the appropriate EmbeddingStrategy based on RAG version.
 
     - v0.0.1, v0.0.2, v0.0.3: OpenAI text-embedding-3-small
-    - v0.0.4: BAAI/bge-m3 (HuggingFace local)
+    - All others (v0.1.x+): BAAI/bge-m3 (HuggingFace local)
     """
-    try:
-        rag_version = RagVersion(version)
-    except ValueError:
-        raise ValueError(
-            f"Unknown RAG version: {version}. Valid versions: {[v.value for v in RagVersion]}"
-        )
+    rag_version = _validate_version(version)
 
     match rag_version:
         case RagVersion.V0_0_1 | RagVersion.V0_0_2 | RagVersion.V0_0_3:
             return OpenAIEmbeddingStrategy()
-        case RagVersion.V0_0_4:
-            return HuggingFaceEmbeddingStrategy()
         case _:
-            raise ValueError(
-                f"Embedding Strategy not implemented for version: {rag_version}"
-            )
+            return BgeM3EmbeddingStrategy()
 
 
 def get_ingestion_strategy(version: str) -> IngestionStrategy:
-    # Validate version
-    try:
-        rag_version = RagVersion(version)
-    except ValueError:
-        raise ValueError(
-            f"Unknown RAG version: {version}. Valid versions: {[v.value for v in RagVersion]}"
-        )
+    rag_version = _validate_version(version)
 
     match rag_version:
-        case RagVersion.V0_0_1:
-            return NaiveIngestionStrategy()
-        case RagVersion.V0_0_2 | RagVersion.V0_0_3 | RagVersion.V0_0_4:
-            return ParentChildIngestionStrategy(version=version)
+        case RagVersion.V0_0_1 | RagVersion.V0_1_1:
+            return NaiveIngestionStrategy(version=rag_version)
+        case (
+            RagVersion.V0_0_2
+            | RagVersion.V0_0_3
+            | RagVersion.V0_1_2
+            | RagVersion.V0_1_3
+        ):
+            return ParentChildIngestionStrategy(version=rag_version)
         case _:
             raise ValueError(
                 f"Ingestion Strategy not implemented for version: {rag_version}"

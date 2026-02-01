@@ -6,8 +6,8 @@ This directory contains concrete implementations of the `EmbeddingStrategy` inte
 
 | File | Class | Model | Used By |
 | :--- | :---- | :---- | :------ |
-| `openai_embedding.py` | `OpenAIEmbeddingStrategy` | `text-embedding-3-small` | v0.0.1, v0.0.2, v0.0.3 |
-| `huggingface_embedding.py` | `HuggingFaceEmbeddingStrategy` | `BAAI/bge-m3` | v0.0.4 |
+| `openai_text_3_small_embedding.py` | `OpenAIEmbeddingStrategy` | `text-embedding-3-small` | v0.0.1, v0.0.2, v0.0.3 |
+| `bge_m3_embedding.py` | `BgeM3EmbeddingStrategy` | `BAAI/bge-m3` | v0.1.x+ (default for new versions) |
 
 ## Architecture
 

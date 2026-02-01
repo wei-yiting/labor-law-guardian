@@ -11,8 +11,8 @@ def setup_common_settings(version: str):
     Configures the global LlamaIndex Settings based on the RAG version.
 
     Uses the EmbeddingStrategy factory to select the correct embedding model:
-    - v0.0.1, v0.0.2, v0.0.3: OpenAI text-embedding-3-small
-    - v0.0.4: BAAI/bge-m3 (HuggingFace local)
+    - v0.0.x: OpenAI text-embedding-3-small
+    - v0.1.x+: BAAI/bge-m3 (HuggingFace local)
 
     Should be called before any index construction or retrieval.
     """

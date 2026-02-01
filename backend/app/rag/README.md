@@ -30,7 +30,7 @@ classDiagram
     class OpenAIEmbeddingStrategy {
         +create_embedding()
     }
-    class HuggingFaceEmbeddingStrategy {
+    class BgeM3EmbeddingStrategy {
         +create_embedding()
     }
     class RetrieverEvaluator {
@@ -46,7 +46,7 @@ classDiagram
     RetrieverStrategy <|-- NaiveRetrieverStrategy
     RetrieverStrategy <|-- ParentChildRetrieverStrategy
     EmbeddingStrategy <|-- OpenAIEmbeddingStrategy
-    EmbeddingStrategy <|-- HuggingFaceEmbeddingStrategy
+    EmbeddingStrategy <|-- BgeM3EmbeddingStrategy
     RetrieverEvaluator --> RetrieverStrategy : uses
     Factory ..> RetrieverStrategy : creates
     Factory ..> EmbeddingStrategy : creates
@@ -126,7 +126,9 @@ The factory functions interpret the version string (e.g., `0.0.1`, `0.0.3`) and 
 | **0.0.1** | `V0_0_1` | Naive / Baseline      | `NaiveRetrieverStrategy` (Raw Chunking)             | OpenAI `text-embedding-3-small` |
 | **0.0.2** | `V0_0_2` | Parent-Child (Fine)   | `ParentChildRetrieverStrategy` (Fine Granularity)   | OpenAI `text-embedding-3-small` |
 | **0.0.3** | `V0_0_3` | Parent-Child (Coarse) | `ParentChildRetrieverStrategy` (Coarse Granularity) | OpenAI `text-embedding-3-small` |
-| **0.0.4** | `V0_0_4` | Parent-Child (BGE-M3) | `ParentChildRetrieverStrategy` (Coarse Granularity) | HuggingFace `BAAI/bge-m3`      |
+| **0.1.1** | `V0_1_1` | Naive / Baseline      | `NaiveRetrieverStrategy` (Raw Chunking)             | HuggingFace `BAAI/bge-m3`      |
+| **0.1.2** | `V0_1_2` | Parent-Child (Fine)   | `ParentChildRetrieverStrategy` (Fine Granularity)   | HuggingFace `BAAI/bge-m3`      |
+| **0.1.3** | `V0_1_3` | Parent-Child (Coarse) | `ParentChildRetrieverStrategy` (Coarse Granularity) | HuggingFace `BAAI/bge-m3`      |
 
 ## Development Guide
 

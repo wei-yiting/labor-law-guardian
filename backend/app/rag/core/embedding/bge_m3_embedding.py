@@ -9,10 +9,10 @@ logger = logging.getLogger(__name__)
 BGE_M3_MODEL = "BAAI/bge-m3"
 
 
-class HuggingFaceEmbeddingStrategy(EmbeddingStrategy):
+class BgeM3EmbeddingStrategy(EmbeddingStrategy):
     """
     Embedding strategy using BAAI/bge-m3 (local HuggingFace model).
-    Used by RAG version 0.0.4.
+    Default embedding for all RAG versions except v0.0.x (which use OpenAI).
     """
 
     def create_embedding(self) -> BaseEmbedding:

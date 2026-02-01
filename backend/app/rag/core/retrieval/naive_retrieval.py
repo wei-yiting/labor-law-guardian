@@ -5,25 +5,36 @@ from llama_index.vector_stores.qdrant import QdrantVectorStore
 from qdrant_client import QdrantClient
 
 from backend.app.rag.interface import RetrieverStrategy
+from backend.app.rag.types import RagVersion
 from backend.app.rag.config import (
-    RETRIEVER_TOP_K, 
-    QDRANT_HOST, 
-    QDRANT_PORT, 
-    COLLECTION_NAME_NAIVE
+    RETRIEVER_TOP_K,
+    QDRANT_HOST,
+    QDRANT_PORT,
+    COLLECTION_NAME_NAIVE,
+    COLLECTION_NAME_NAIVE_BGE_M3,
 )
 from backend.app.rag.core.common import setup_common_settings
 
+
 class NaiveRetrieverStrategy(RetrieverStrategy):
-    def __init__(self):
+    def __init__(self, version: RagVersion = RagVersion.V0_0_1):
+        self.version = version
+
         # 1. Setup Shared Settings
-        setup_common_settings(version="0.0.1")
+        setup_common_settings(version=version)
         
-        # 2. Connect to Qdrant
+        # 2. Determine Collection
+        if version == RagVersion.V0_1_1:
+            collection_name = COLLECTION_NAME_NAIVE_BGE_M3
+        else:
+            collection_name = COLLECTION_NAME_NAIVE
+
+        # 3. Connect to Qdrant
         client = QdrantClient(host=QDRANT_HOST, port=QDRANT_PORT)
-        
-        # 3. Initialize Vector Store & Index
+
+        # 4. Initialize Vector Store & Index
         vector_store = QdrantVectorStore(
-            collection_name=COLLECTION_NAME_NAIVE,
+            collection_name=collection_name,
             client=client
         )
         
