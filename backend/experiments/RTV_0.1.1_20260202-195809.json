@@ -1,12 +1,12 @@
 {
   "meta": {
-    "run_id": "RTV_0.0.4_20260128-172603",
-    "timestamp": "2026-01-28T17:26:03.196011",
-    "description": "\"switch from openai text-embedding-3-small to BAAI/bge-m3 embedding model",
-    "agent_version": "0.0.4",
+    "run_id": "RTV_0.1.1_20260202-195809",
+    "timestamp": "2026-02-02T19:58:09.518853",
+    "description": "Naive Chunking (chunk per article) using BAAI/bge-m3 embedding model",
+    "agent_version": "0.1.1",
     "configuration": {
-      "rag_version": "0.0.4",
-      "strategy": "BGE_M3_EMBEDDING",
+      "rag_version": "0.1.1",
+      "strategy": "NAIVE_BGE_M3",
       "tokenizer": "gpt-4o",
       "embedding": "BAAI/bge-m3",
       "chunk_size": 1024,

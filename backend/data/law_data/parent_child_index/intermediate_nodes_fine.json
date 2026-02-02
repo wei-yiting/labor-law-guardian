@@ -5669,7 +5669,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=1",
       "split_strategy": "atomic",
       "is_expanded": false,
-      "citation_title": "勞動基準法第一條",
+      "citation_title": "勞動基準法施行細則第一條",
       "hierarchy": {
         "article": "1",
         "paragraph": null,
@@ -5688,7 +5688,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=2",
       "split_strategy": "contextual",
       "is_expanded": true,
-      "citation_title": "勞動基準法第二條第一款",
+      "citation_title": "勞動基準法施行細則第二條第一款",
       "hierarchy": {
         "article": "2",
         "paragraph": null,
@@ -5707,7 +5707,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=2",
       "split_strategy": "contextual",
       "is_expanded": true,
-      "citation_title": "勞動基準法第二條第二款",
+      "citation_title": "勞動基準法施行細則第二條第二款",
       "hierarchy": {
         "article": "2",
         "paragraph": null,
@@ -5726,7 +5726,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=2",
       "split_strategy": "contextual",
       "is_expanded": true,
-      "citation_title": "勞動基準法第二條第三款",
+      "citation_title": "勞動基準法施行細則第二條第三款",
       "hierarchy": {
         "article": "2",
         "paragraph": null,
@@ -5745,7 +5745,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=2",
       "split_strategy": "contextual",
       "is_expanded": true,
-      "citation_title": "勞動基準法第二條第四款",
+      "citation_title": "勞動基準法施行細則第二條第四款",
       "hierarchy": {
         "article": "2",
         "paragraph": null,
@@ -5764,7 +5764,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=2",
       "split_strategy": "contextual",
       "is_expanded": true,
-      "citation_title": "勞動基準法第二條第五款",
+      "citation_title": "勞動基準法施行細則第二條第五款",
       "hierarchy": {
         "article": "2",
         "paragraph": null,
@@ -5783,7 +5783,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=2",
       "split_strategy": "contextual",
       "is_expanded": true,
-      "citation_title": "勞動基準法第二條第六款",
+      "citation_title": "勞動基準法施行細則第二條第六款",
       "hierarchy": {
         "article": "2",
         "paragraph": null,
@@ -5802,7 +5802,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=2",
       "split_strategy": "contextual",
       "is_expanded": true,
-      "citation_title": "勞動基準法第二條第七款",
+      "citation_title": "勞動基準法施行細則第二條第七款",
       "hierarchy": {
         "article": "2",
         "paragraph": null,
@@ -5821,7 +5821,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=3",
       "split_strategy": "atomic",
       "is_expanded": false,
-      "citation_title": "勞動基準法第三條",
+      "citation_title": "勞動基準法施行細則第三條",
       "hierarchy": {
         "article": "3",
         "paragraph": null,
@@ -5840,7 +5840,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=4",
       "split_strategy": "atomic",
       "is_expanded": false,
-      "citation_title": "勞動基準法第四條",
+      "citation_title": "勞動基準法施行細則第四條",
       "hierarchy": {
         "article": "4",
         "paragraph": null,
@@ -5859,7 +5859,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=4-1",
       "split_strategy": "atomic",
       "is_expanded": false,
-      "citation_title": "勞動基準法第四條之一",
+      "citation_title": "勞動基準法施行細則第四條之一",
       "hierarchy": {
         "article": "4-1",
         "paragraph": null,
@@ -5878,7 +5878,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=5",
       "split_strategy": "numeric",
       "is_expanded": false,
-      "citation_title": "勞動基準法第五條第一項",
+      "citation_title": "勞動基準法施行細則第五條第一項",
       "hierarchy": {
         "article": "5",
         "paragraph": 1,
@@ -5897,7 +5897,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=5",
       "split_strategy": "numeric",
       "is_expanded": false,
-      "citation_title": "勞動基準法第五條第二項",
+      "citation_title": "勞動基準法施行細則第五條第二項",
       "hierarchy": {
         "article": "5",
         "paragraph": 2,
@@ -5916,7 +5916,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=6",
       "split_strategy": "contextual",
       "is_expanded": true,
-      "citation_title": "勞動基準法第六條第一款",
+      "citation_title": "勞動基準法施行細則第六條第一款",
       "hierarchy": {
         "article": "6",
         "paragraph": null,
@@ -5935,7 +5935,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=6",
       "split_strategy": "contextual",
       "is_expanded": true,
-      "citation_title": "勞動基準法第六條第二款",
+      "citation_title": "勞動基準法施行細則第六條第二款",
       "hierarchy": {
         "article": "6",
         "paragraph": null,
@@ -5954,7 +5954,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=6",
       "split_strategy": "contextual",
       "is_expanded": true,
-      "citation_title": "勞動基準法第六條第三款",
+      "citation_title": "勞動基準法施行細則第六條第三款",
       "hierarchy": {
         "article": "6",
         "paragraph": null,
@@ -5973,7 +5973,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=6",
       "split_strategy": "contextual",
       "is_expanded": true,
-      "citation_title": "勞動基準法第六條第四款",
+      "citation_title": "勞動基準法施行細則第六條第四款",
       "hierarchy": {
         "article": "6",
         "paragraph": null,
@@ -5992,7 +5992,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=7",
       "split_strategy": "contextual",
       "is_expanded": true,
-      "citation_title": "勞動基準法第七條第一款",
+      "citation_title": "勞動基準法施行細則第七條第一款",
       "hierarchy": {
         "article": "7",
         "paragraph": null,
@@ -6011,7 +6011,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=7",
       "split_strategy": "contextual",
       "is_expanded": true,
-      "citation_title": "勞動基準法第七條第二款",
+      "citation_title": "勞動基準法施行細則第七條第二款",
       "hierarchy": {
         "article": "7",
         "paragraph": null,
@@ -6030,7 +6030,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=7",
       "split_strategy": "contextual",
       "is_expanded": true,
-      "citation_title": "勞動基準法第七條第三款",
+      "citation_title": "勞動基準法施行細則第七條第三款",
       "hierarchy": {
         "article": "7",
         "paragraph": null,
@@ -6049,7 +6049,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=7",
       "split_strategy": "contextual",
       "is_expanded": true,
-      "citation_title": "勞動基準法第七條第四款",
+      "citation_title": "勞動基準法施行細則第七條第四款",
       "hierarchy": {
         "article": "7",
         "paragraph": null,
@@ -6068,7 +6068,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=7",
       "split_strategy": "contextual",
       "is_expanded": true,
-      "citation_title": "勞動基準法第七條第五款",
+      "citation_title": "勞動基準法施行細則第七條第五款",
       "hierarchy": {
         "article": "7",
         "paragraph": null,
@@ -6087,7 +6087,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=7",
       "split_strategy": "contextual",
       "is_expanded": true,
-      "citation_title": "勞動基準法第七條第六款",
+      "citation_title": "勞動基準法施行細則第七條第六款",
       "hierarchy": {
         "article": "7",
         "paragraph": null,
@@ -6106,7 +6106,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=7",
       "split_strategy": "contextual",
       "is_expanded": true,
-      "citation_title": "勞動基準法第七條第七款",
+      "citation_title": "勞動基準法施行細則第七條第七款",
       "hierarchy": {
         "article": "7",
         "paragraph": null,
@@ -6125,7 +6125,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=7",
       "split_strategy": "contextual",
       "is_expanded": true,
-      "citation_title": "勞動基準法第七條第八款",
+      "citation_title": "勞動基準法施行細則第七條第八款",
       "hierarchy": {
         "article": "7",
         "paragraph": null,
@@ -6144,7 +6144,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=7",
       "split_strategy": "contextual",
       "is_expanded": true,
-      "citation_title": "勞動基準法第七條第九款",
+      "citation_title": "勞動基準法施行細則第七條第九款",
       "hierarchy": {
         "article": "7",
         "paragraph": null,
@@ -6163,7 +6163,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=7",
       "split_strategy": "contextual",
       "is_expanded": true,
-      "citation_title": "勞動基準法第七條第十款",
+      "citation_title": "勞動基準法施行細則第七條第十款",
       "hierarchy": {
         "article": "7",
         "paragraph": null,
@@ -6182,7 +6182,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=7",
       "split_strategy": "contextual",
       "is_expanded": true,
-      "citation_title": "勞動基準法第七條第十一款",
+      "citation_title": "勞動基準法施行細則第七條第十一款",
       "hierarchy": {
         "article": "7",
         "paragraph": null,
@@ -6201,7 +6201,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=7",
       "split_strategy": "contextual",
       "is_expanded": true,
-      "citation_title": "勞動基準法第七條第十二款",
+      "citation_title": "勞動基準法施行細則第七條第十二款",
       "hierarchy": {
         "article": "7",
         "paragraph": null,
@@ -6220,7 +6220,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=7",
       "split_strategy": "contextual",
       "is_expanded": true,
-      "citation_title": "勞動基準法第七條第十三款",
+      "citation_title": "勞動基準法施行細則第七條第十三款",
       "hierarchy": {
         "article": "7",
         "paragraph": null,
@@ -6239,7 +6239,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=7-1",
       "split_strategy": "atomic",
       "is_expanded": false,
-      "citation_title": "勞動基準法第七條之一",
+      "citation_title": "勞動基準法施行細則第七條之一",
       "hierarchy": {
         "article": "7-1",
         "paragraph": null,
@@ -6258,7 +6258,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=7-2",
       "split_strategy": "contextual",
       "is_expanded": true,
-      "citation_title": "勞動基準法第七條之二第一款",
+      "citation_title": "勞動基準法施行細則第七條之二第一款",
       "hierarchy": {
         "article": "7-2",
         "paragraph": null,
@@ -6277,7 +6277,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=7-2",
       "split_strategy": "contextual",
       "is_expanded": true,
-      "citation_title": "勞動基準法第七條之二第二款",
+      "citation_title": "勞動基準法施行細則第七條之二第二款",
       "hierarchy": {
         "article": "7-2",
         "paragraph": null,
@@ -6296,7 +6296,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=7-2",
       "split_strategy": "contextual",
       "is_expanded": true,
-      "citation_title": "勞動基準法第七條之二第三款",
+      "citation_title": "勞動基準法施行細則第七條之二第三款",
       "hierarchy": {
         "article": "7-2",
         "paragraph": null,
@@ -6315,7 +6315,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=7-2",
       "split_strategy": "contextual",
       "is_expanded": true,
-      "citation_title": "勞動基準法第七條之二第四款",
+      "citation_title": "勞動基準法施行細則第七條之二第四款",
       "hierarchy": {
         "article": "7-2",
         "paragraph": null,
@@ -6334,7 +6334,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=7-3",
       "split_strategy": "numeric_contextual",
       "is_expanded": true,
-      "citation_title": "勞動基準法第七條之三第一項第一款",
+      "citation_title": "勞動基準法施行細則第七條之三第一項第一款",
       "hierarchy": {
         "article": "7-3",
         "paragraph": 1,
@@ -6353,7 +6353,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=7-3",
       "split_strategy": "numeric_contextual",
       "is_expanded": true,
-      "citation_title": "勞動基準法第七條之三第一項第二款",
+      "citation_title": "勞動基準法施行細則第七條之三第一項第二款",
       "hierarchy": {
         "article": "7-3",
         "paragraph": 1,
@@ -6372,7 +6372,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=7-3",
       "split_strategy": "numeric_contextual",
       "is_expanded": true,
-      "citation_title": "勞動基準法第七條之三第一項第三款",
+      "citation_title": "勞動基準法施行細則第七條之三第一項第三款",
       "hierarchy": {
         "article": "7-3",
         "paragraph": 1,
@@ -6391,7 +6391,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=7-3",
       "split_strategy": "numeric_contextual",
       "is_expanded": true,
-      "citation_title": "勞動基準法第七條之三第一項第四款",
+      "citation_title": "勞動基準法施行細則第七條之三第一項第四款",
       "hierarchy": {
         "article": "7-3",
         "paragraph": 1,
@@ -6410,7 +6410,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=7-3",
       "split_strategy": "numeric",
       "is_expanded": false,
-      "citation_title": "勞動基準法第七條之三第二項",
+      "citation_title": "勞動基準法施行細則第七條之三第二項",
       "hierarchy": {
         "article": "7-3",
         "paragraph": 2,
@@ -6429,7 +6429,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=8",
       "split_strategy": "atomic",
       "is_expanded": false,
-      "citation_title": "勞動基準法第八條",
+      "citation_title": "勞動基準法施行細則第八條",
       "hierarchy": {
         "article": "8",
         "paragraph": null,
@@ -6448,7 +6448,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=9",
       "split_strategy": "atomic",
       "is_expanded": false,
-      "citation_title": "勞動基準法第九條",
+      "citation_title": "勞動基準法施行細則第九條",
       "hierarchy": {
         "article": "9",
         "paragraph": null,
@@ -6467,7 +6467,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=10",
       "split_strategy": "contextual",
       "is_expanded": true,
-      "citation_title": "勞動基準法第十條第一款",
+      "citation_title": "勞動基準法施行細則第十條第一款",
       "hierarchy": {
         "article": "10",
         "paragraph": null,
@@ -6486,7 +6486,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=10",
       "split_strategy": "contextual",
       "is_expanded": true,
-      "citation_title": "勞動基準法第十條第二款",
+      "citation_title": "勞動基準法施行細則第十條第二款",
       "hierarchy": {
         "article": "10",
         "paragraph": null,
@@ -6505,7 +6505,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=10",
       "split_strategy": "contextual",
       "is_expanded": true,
-      "citation_title": "勞動基準法第十條第三款",
+      "citation_title": "勞動基準法施行細則第十條第三款",
       "hierarchy": {
         "article": "10",
         "paragraph": null,
@@ -6524,7 +6524,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=10",
       "split_strategy": "contextual",
       "is_expanded": true,
-      "citation_title": "勞動基準法第十條第四款",
+      "citation_title": "勞動基準法施行細則第十條第四款",
       "hierarchy": {
         "article": "10",
         "paragraph": null,
@@ -6543,7 +6543,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=10",
       "split_strategy": "contextual",
       "is_expanded": true,
-      "citation_title": "勞動基準法第十條第五款",
+      "citation_title": "勞動基準法施行細則第十條第五款",
       "hierarchy": {
         "article": "10",
         "paragraph": null,
@@ -6562,7 +6562,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=10",
       "split_strategy": "contextual",
       "is_expanded": true,
-      "citation_title": "勞動基準法第十條第六款",
+      "citation_title": "勞動基準法施行細則第十條第六款",
       "hierarchy": {
         "article": "10",
         "paragraph": null,
@@ -6581,7 +6581,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=10",
       "split_strategy": "contextual",
       "is_expanded": true,
-      "citation_title": "勞動基準法第十條第七款",
+      "citation_title": "勞動基準法施行細則第十條第七款",
       "hierarchy": {
         "article": "10",
         "paragraph": null,
@@ -6600,7 +6600,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=10",
       "split_strategy": "contextual",
       "is_expanded": true,
-      "citation_title": "勞動基準法第十條第八款",
+      "citation_title": "勞動基準法施行細則第十條第八款",
       "hierarchy": {
         "article": "10",
         "paragraph": null,
@@ -6619,7 +6619,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=10",
       "split_strategy": "contextual",
       "is_expanded": true,
-      "citation_title": "勞動基準法第十條第九款",
+      "citation_title": "勞動基準法施行細則第十條第九款",
       "hierarchy": {
         "article": "10",
         "paragraph": null,
@@ -6638,7 +6638,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=10",
       "split_strategy": "contextual",
       "is_expanded": true,
-      "citation_title": "勞動基準法第十條第十款",
+      "citation_title": "勞動基準法施行細則第十條第十款",
       "hierarchy": {
         "article": "10",
         "paragraph": null,
@@ -6657,7 +6657,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=10",
       "split_strategy": "contextual",
       "is_expanded": true,
-      "citation_title": "勞動基準法第十條第十一款",
+      "citation_title": "勞動基準法施行細則第十條第十一款",
       "hierarchy": {
         "article": "10",
         "paragraph": null,
@@ -6676,7 +6676,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=11",
       "split_strategy": "atomic",
       "is_expanded": false,
-      "citation_title": "勞動基準法第十一條",
+      "citation_title": "勞動基準法施行細則第十一條",
       "hierarchy": {
         "article": "11",
         "paragraph": null,
@@ -6695,7 +6695,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=12",
       "split_strategy": "atomic",
       "is_expanded": false,
-      "citation_title": "勞動基準法第十二條",
+      "citation_title": "勞動基準法施行細則第十二條",
       "hierarchy": {
         "article": "12",
         "paragraph": null,
@@ -6714,7 +6714,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=13",
       "split_strategy": "atomic",
       "is_expanded": false,
-      "citation_title": "勞動基準法第十三條",
+      "citation_title": "勞動基準法施行細則第十三條",
       "hierarchy": {
         "article": "13",
         "paragraph": null,
@@ -6733,7 +6733,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=14",
       "split_strategy": "atomic",
       "is_expanded": false,
-      "citation_title": "勞動基準法第十四條",
+      "citation_title": "勞動基準法施行細則第十四條",
       "hierarchy": {
         "article": "14",
         "paragraph": null,
@@ -6752,7 +6752,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=14-1",
       "split_strategy": "numeric_contextual",
       "is_expanded": true,
-      "citation_title": "勞動基準法第十四條之一第一項第一款",
+      "citation_title": "勞動基準法施行細則第十四條之一第一項第一款",
       "hierarchy": {
         "article": "14-1",
         "paragraph": 1,
@@ -6771,7 +6771,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=14-1",
       "split_strategy": "numeric_contextual",
       "is_expanded": true,
-      "citation_title": "勞動基準法第十四條之一第一項第二款",
+      "citation_title": "勞動基準法施行細則第十四條之一第一項第二款",
       "hierarchy": {
         "article": "14-1",
         "paragraph": 1,
@@ -6790,7 +6790,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=14-1",
       "split_strategy": "numeric_contextual",
       "is_expanded": true,
-      "citation_title": "勞動基準法第十四條之一第一項第三款",
+      "citation_title": "勞動基準法施行細則第十四條之一第一項第三款",
       "hierarchy": {
         "article": "14-1",
         "paragraph": 1,
@@ -6809,7 +6809,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=14-1",
       "split_strategy": "numeric_contextual",
       "is_expanded": true,
-      "citation_title": "勞動基準法第十四條之一第一項第四款",
+      "citation_title": "勞動基準法施行細則第十四條之一第一項第四款",
       "hierarchy": {
         "article": "14-1",
         "paragraph": 1,
@@ -6828,7 +6828,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=14-1",
       "split_strategy": "numeric",
       "is_expanded": false,
-      "citation_title": "勞動基準法第十四條之一第二項",
+      "citation_title": "勞動基準法施行細則第十四條之一第二項",
       "hierarchy": {
         "article": "14-1",
         "paragraph": 2,
@@ -6847,7 +6847,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=15",
       "split_strategy": "atomic",
       "is_expanded": false,
-      "citation_title": "勞動基準法第十五條",
+      "citation_title": "勞動基準法施行細則第十五條",
       "hierarchy": {
         "article": "15",
         "paragraph": null,
@@ -6866,7 +6866,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=16",
       "split_strategy": "numeric",
       "is_expanded": false,
-      "citation_title": "勞動基準法第十六條第一項",
+      "citation_title": "勞動基準法施行細則第十六條第一項",
       "hierarchy": {
         "article": "16",
         "paragraph": 1,
@@ -6885,7 +6885,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=16",
       "split_strategy": "numeric",
       "is_expanded": false,
-      "citation_title": "勞動基準法第十六條第二項",
+      "citation_title": "勞動基準法施行細則第十六條第二項",
       "hierarchy": {
         "article": "16",
         "paragraph": 2,
@@ -6904,7 +6904,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=17",
       "split_strategy": "atomic",
       "is_expanded": false,
-      "citation_title": "勞動基準法第十七條",
+      "citation_title": "勞動基準法施行細則第十七條",
       "hierarchy": {
         "article": "17",
         "paragraph": null,
@@ -6923,7 +6923,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=18",
       "split_strategy": "atomic",
       "is_expanded": false,
-      "citation_title": "勞動基準法第十八條",
+      "citation_title": "勞動基準法施行細則第十八條",
       "hierarchy": {
         "article": "18",
         "paragraph": null,
@@ -6942,7 +6942,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=19",
       "split_strategy": "atomic",
       "is_expanded": false,
-      "citation_title": "勞動基準法第十九條",
+      "citation_title": "勞動基準法施行細則第十九條",
       "hierarchy": {
         "article": "19",
         "paragraph": null,
@@ -6961,7 +6961,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=20",
       "split_strategy": "contextual",
       "is_expanded": true,
-      "citation_title": "勞動基準法第二十條第一款",
+      "citation_title": "勞動基準法施行細則第二十條第一款",
       "hierarchy": {
         "article": "20",
         "paragraph": null,
@@ -6980,7 +6980,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=20",
       "split_strategy": "contextual",
       "is_expanded": true,
-      "citation_title": "勞動基準法第二十條第二款",
+      "citation_title": "勞動基準法施行細則第二十條第二款",
       "hierarchy": {
         "article": "20",
         "paragraph": null,
@@ -6999,7 +6999,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=20",
       "split_strategy": "contextual",
       "is_expanded": true,
-      "citation_title": "勞動基準法第二十條第三款",
+      "citation_title": "勞動基準法施行細則第二十條第三款",
       "hierarchy": {
         "article": "20",
         "paragraph": null,
@@ -7018,7 +7018,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=20",
       "split_strategy": "contextual",
       "is_expanded": true,
-      "citation_title": "勞動基準法第二十條第四款",
+      "citation_title": "勞動基準法施行細則第二十條第四款",
       "hierarchy": {
         "article": "20",
         "paragraph": null,
@@ -7037,7 +7037,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=20-1",
       "split_strategy": "contextual",
       "is_expanded": true,
-      "citation_title": "勞動基準法第二十條之一第一款",
+      "citation_title": "勞動基準法施行細則第二十條之一第一款",
       "hierarchy": {
         "article": "20-1",
         "paragraph": null,
@@ -7056,7 +7056,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=20-1",
       "split_strategy": "contextual",
       "is_expanded": true,
-      "citation_title": "勞動基準法第二十條之一第二款",
+      "citation_title": "勞動基準法施行細則第二十條之一第二款",
       "hierarchy": {
         "article": "20-1",
         "paragraph": null,
@@ -7075,7 +7075,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=21",
       "split_strategy": "numeric",
       "is_expanded": false,
-      "citation_title": "勞動基準法第二十一條第一項",
+      "citation_title": "勞動基準法施行細則第二十一條第一項",
       "hierarchy": {
         "article": "21",
         "paragraph": 1,
@@ -7094,7 +7094,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=21",
       "split_strategy": "numeric",
       "is_expanded": false,
-      "citation_title": "勞動基準法第二十一條第二項",
+      "citation_title": "勞動基準法施行細則第二十一條第二項",
       "hierarchy": {
         "article": "21",
         "paragraph": 2,
@@ -7113,7 +7113,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=22",
       "split_strategy": "numeric",
       "is_expanded": false,
-      "citation_title": "勞動基準法第二十二條第一項",
+      "citation_title": "勞動基準法施行細則第二十二條第一項",
       "hierarchy": {
         "article": "22",
         "paragraph": 1,
@@ -7132,7 +7132,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=22",
       "split_strategy": "numeric_contextual",
       "is_expanded": true,
-      "citation_title": "勞動基準法第二十二條第二項第一款",
+      "citation_title": "勞動基準法施行細則第二十二條第二項第一款",
       "hierarchy": {
         "article": "22",
         "paragraph": 2,
@@ -7151,7 +7151,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=22",
       "split_strategy": "numeric_contextual",
       "is_expanded": true,
-      "citation_title": "勞動基準法第二十二條第二項第二款",
+      "citation_title": "勞動基準法施行細則第二十二條第二項第二款",
       "hierarchy": {
         "article": "22",
         "paragraph": 2,
@@ -7170,7 +7170,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=22",
       "split_strategy": "numeric_contextual",
       "is_expanded": true,
-      "citation_title": "勞動基準法第二十二條第二項第三款",
+      "citation_title": "勞動基準法施行細則第二十二條第二項第三款",
       "hierarchy": {
         "article": "22",
         "paragraph": 2,
@@ -7189,7 +7189,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=22",
       "split_strategy": "numeric_contextual",
       "is_expanded": true,
-      "citation_title": "勞動基準法第二十二條第二項第四款",
+      "citation_title": "勞動基準法施行細則第二十二條第二項第四款",
       "hierarchy": {
         "article": "22",
         "paragraph": 2,
@@ -7208,7 +7208,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=22-1",
       "split_strategy": "numeric",
       "is_expanded": false,
-      "citation_title": "勞動基準法第二十二條之一第一項",
+      "citation_title": "勞動基準法施行細則第二十二條之一第一項",
       "hierarchy": {
         "article": "22-1",
         "paragraph": 1,
@@ -7227,7 +7227,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=22-1",
       "split_strategy": "numeric",
       "is_expanded": false,
-      "citation_title": "勞動基準法第二十二條之一第二項",
+      "citation_title": "勞動基準法施行細則第二十二條之一第二項",
       "hierarchy": {
         "article": "22-1",
         "paragraph": 2,
@@ -7246,7 +7246,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=22-1",
       "split_strategy": "numeric",
       "is_expanded": false,
-      "citation_title": "勞動基準法第二十二條之一第三項",
+      "citation_title": "勞動基準法施行細則第二十二條之一第三項",
       "hierarchy": {
         "article": "22-1",
         "paragraph": 3,
@@ -7265,7 +7265,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=22-2",
       "split_strategy": "numeric",
       "is_expanded": false,
-      "citation_title": "勞動基準法第二十二條之二第一項",
+      "citation_title": "勞動基準法施行細則第二十二條之二第一項",
       "hierarchy": {
         "article": "22-2",
         "paragraph": 1,
@@ -7284,7 +7284,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=22-2",
       "split_strategy": "numeric_contextual",
       "is_expanded": true,
-      "citation_title": "勞動基準法第二十二條之二第二項第一款",
+      "citation_title": "勞動基準法施行細則第二十二條之二第二項第一款",
       "hierarchy": {
         "article": "22-2",
         "paragraph": 2,
@@ -7303,7 +7303,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=22-2",
       "split_strategy": "numeric_contextual",
       "is_expanded": true,
-      "citation_title": "勞動基準法第二十二條之二第二項第二款",
+      "citation_title": "勞動基準法施行細則第二十二條之二第二項第二款",
       "hierarchy": {
         "article": "22-2",
         "paragraph": 2,
@@ -7322,7 +7322,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=22-2",
       "split_strategy": "numeric",
       "is_expanded": false,
-      "citation_title": "勞動基準法第二十二條之二第三項",
+      "citation_title": "勞動基準法施行細則第二十二條之二第三項",
       "hierarchy": {
         "article": "22-2",
         "paragraph": 3,
@@ -7341,7 +7341,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=22-3",
       "split_strategy": "atomic",
       "is_expanded": false,
-      "citation_title": "勞動基準法第二十二條之三",
+      "citation_title": "勞動基準法施行細則第二十二條之三",
       "hierarchy": {
         "article": "22-3",
         "paragraph": null,
@@ -7360,7 +7360,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=23",
       "split_strategy": "atomic",
       "is_expanded": false,
-      "citation_title": "勞動基準法第二十三條",
+      "citation_title": "勞動基準法施行細則第二十三條",
       "hierarchy": {
         "article": "23",
         "paragraph": null,
@@ -7379,7 +7379,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=23-1",
       "split_strategy": "numeric",
       "is_expanded": false,
-      "citation_title": "勞動基準法第二十三條之一第一項",
+      "citation_title": "勞動基準法施行細則第二十三條之一第一項",
       "hierarchy": {
         "article": "23-1",
         "paragraph": 1,
@@ -7398,7 +7398,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=23-1",
       "split_strategy": "numeric",
       "is_expanded": false,
-      "citation_title": "勞動基準法第二十三條之一第二項",
+      "citation_title": "勞動基準法施行細則第二十三條之一第二項",
       "hierarchy": {
         "article": "23-1",
         "paragraph": 2,
@@ -7417,7 +7417,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=24",
       "split_strategy": "numeric",
       "is_expanded": false,
-      "citation_title": "勞動基準法第二十四條第一項",
+      "citation_title": "勞動基準法施行細則第二十四條第一項",
       "hierarchy": {
         "article": "24",
         "paragraph": 1,
@@ -7436,7 +7436,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=24",
       "split_strategy": "numeric_contextual",
       "is_expanded": true,
-      "citation_title": "勞動基準法第二十四條第二項第一款",
+      "citation_title": "勞動基準法施行細則第二十四條第二項第一款",
       "hierarchy": {
         "article": "24",
         "paragraph": 2,
@@ -7455,7 +7455,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=24",
       "split_strategy": "numeric_contextual",
       "is_expanded": true,
-      "citation_title": "勞動基準法第二十四條第二項第二款",
+      "citation_title": "勞動基準法施行細則第二十四條第二項第二款",
       "hierarchy": {
         "article": "24",
         "paragraph": 2,
@@ -7474,7 +7474,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=24",
       "split_strategy": "numeric_contextual",
       "is_expanded": true,
-      "citation_title": "勞動基準法第二十四條第二項第三款",
+      "citation_title": "勞動基準法施行細則第二十四條第二項第三款",
       "hierarchy": {
         "article": "24",
         "paragraph": 2,
@@ -7493,7 +7493,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=24",
       "split_strategy": "numeric",
       "is_expanded": false,
-      "citation_title": "勞動基準法第二十四條第三項",
+      "citation_title": "勞動基準法施行細則第二十四條第三項",
       "hierarchy": {
         "article": "24",
         "paragraph": 3,
@@ -7512,7 +7512,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=24-1",
       "split_strategy": "numeric",
       "is_expanded": false,
-      "citation_title": "勞動基準法第二十四條之一第一項",
+      "citation_title": "勞動基準法施行細則第二十四條之一第一項",
       "hierarchy": {
         "article": "24-1",
         "paragraph": 1,
@@ -7531,7 +7531,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=24-1",
       "split_strategy": "numeric_contextual",
       "is_expanded": true,
-      "citation_title": "勞動基準法第二十四條之一第二項第一款",
+      "citation_title": "勞動基準法施行細則第二十四條之一第二項第一款",
       "hierarchy": {
         "article": "24-1",
         "paragraph": 2,
@@ -7550,7 +7550,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=24-1",
       "split_strategy": "numeric_contextual",
       "is_expanded": true,
-      "citation_title": "勞動基準法第二十四條之一第二項第二款",
+      "citation_title": "勞動基準法施行細則第二十四條之一第二項第二款",
       "hierarchy": {
         "article": "24-1",
         "paragraph": 2,
@@ -7569,7 +7569,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=24-1",
       "split_strategy": "numeric",
       "is_expanded": false,
-      "citation_title": "勞動基準法第二十四條之一第三項",
+      "citation_title": "勞動基準法施行細則第二十四條之一第三項",
       "hierarchy": {
         "article": "24-1",
         "paragraph": 3,
@@ -7588,7 +7588,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=24-2",
       "split_strategy": "contextual",
       "is_expanded": true,
-      "citation_title": "勞動基準法第二十四條之二第一款",
+      "citation_title": "勞動基準法施行細則第二十四條之二第一款",
       "hierarchy": {
         "article": "24-2",
         "paragraph": null,
@@ -7607,7 +7607,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=24-2",
       "split_strategy": "contextual",
       "is_expanded": true,
-      "citation_title": "勞動基準法第二十四條之二第二款",
+      "citation_title": "勞動基準法施行細則第二十四條之二第二款",
       "hierarchy": {
         "article": "24-2",
         "paragraph": null,
@@ -7626,7 +7626,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=24-3",
       "split_strategy": "atomic",
       "is_expanded": false,
-      "citation_title": "勞動基準法第二十四條之三",
+      "citation_title": "勞動基準法施行細則第二十四條之三",
       "hierarchy": {
         "article": "24-3",
         "paragraph": null,
@@ -7645,7 +7645,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=25",
       "split_strategy": "atomic",
       "is_expanded": false,
-      "citation_title": "勞動基準法第二十五條",
+      "citation_title": "勞動基準法施行細則第二十五條",
       "hierarchy": {
         "article": "25",
         "paragraph": null,
@@ -7664,7 +7664,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=26",
       "split_strategy": "atomic",
       "is_expanded": false,
-      "citation_title": "勞動基準法第二十六條",
+      "citation_title": "勞動基準法施行細則第二十六條",
       "hierarchy": {
         "article": "26",
         "paragraph": null,
@@ -7683,7 +7683,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=27",
       "split_strategy": "atomic",
       "is_expanded": false,
-      "citation_title": "勞動基準法第二十七條",
+      "citation_title": "勞動基準法施行細則第二十七條",
       "hierarchy": {
         "article": "27",
         "paragraph": null,
@@ -7702,7 +7702,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=28",
       "split_strategy": "atomic",
       "is_expanded": false,
-      "citation_title": "勞動基準法第二十八條",
+      "citation_title": "勞動基準法施行細則第二十八條",
       "hierarchy": {
         "article": "28",
         "paragraph": null,
@@ -7721,7 +7721,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=29",
       "split_strategy": "contextual",
       "is_expanded": true,
-      "citation_title": "勞動基準法第二十九條第一款",
+      "citation_title": "勞動基準法施行細則第二十九條第一款",
       "hierarchy": {
         "article": "29",
         "paragraph": null,
@@ -7740,7 +7740,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=29",
       "split_strategy": "contextual",
       "is_expanded": true,
-      "citation_title": "勞動基準法第二十九條第二款",
+      "citation_title": "勞動基準法施行細則第二十九條第二款",
       "hierarchy": {
         "article": "29",
         "paragraph": null,
@@ -7759,7 +7759,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=29-1",
       "split_strategy": "numeric_contextual",
       "is_expanded": true,
-      "citation_title": "勞動基準法第二十九條之一第一項第一款",
+      "citation_title": "勞動基準法施行細則第二十九條之一第一項第一款",
       "hierarchy": {
         "article": "29-1",
         "paragraph": 1,
@@ -7778,7 +7778,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=29-1",
       "split_strategy": "numeric_contextual",
       "is_expanded": true,
-      "citation_title": "勞動基準法第二十九條之一第一項第二款",
+      "citation_title": "勞動基準法施行細則第二十九條之一第一項第二款",
       "hierarchy": {
         "article": "29-1",
         "paragraph": 1,
@@ -7797,7 +7797,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=29-1",
       "split_strategy": "numeric_contextual",
       "is_expanded": true,
-      "citation_title": "勞動基準法第二十九條之一第一項第三款",
+      "citation_title": "勞動基準法施行細則第二十九條之一第一項第三款",
       "hierarchy": {
         "article": "29-1",
         "paragraph": 1,
@@ -7816,7 +7816,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=29-1",
       "split_strategy": "numeric",
       "is_expanded": false,
-      "citation_title": "勞動基準法第二十九條之一第二項",
+      "citation_title": "勞動基準法施行細則第二十九條之一第二項",
       "hierarchy": {
         "article": "29-1",
         "paragraph": 2,
@@ -7835,7 +7835,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=30",
       "split_strategy": "atomic",
       "is_expanded": false,
-      "citation_title": "勞動基準法第三十條",
+      "citation_title": "勞動基準法施行細則第三十條",
       "hierarchy": {
         "article": "30",
         "paragraph": null,
@@ -7854,7 +7854,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=31",
       "split_strategy": "numeric",
       "is_expanded": false,
-      "citation_title": "勞動基準法第三十一條第一項",
+      "citation_title": "勞動基準法施行細則第三十一條第一項",
       "hierarchy": {
         "article": "31",
         "paragraph": 1,
@@ -7873,7 +7873,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=31",
       "split_strategy": "numeric",
       "is_expanded": false,
-      "citation_title": "勞動基準法第三十一條第二項",
+      "citation_title": "勞動基準法施行細則第三十一條第二項",
       "hierarchy": {
         "article": "31",
         "paragraph": 2,
@@ -7892,7 +7892,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=32",
       "split_strategy": "atomic",
       "is_expanded": false,
-      "citation_title": "勞動基準法第三十二條",
+      "citation_title": "勞動基準法施行細則第三十二條",
       "hierarchy": {
         "article": "32",
         "paragraph": null,
@@ -7911,7 +7911,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=33",
       "split_strategy": "atomic",
       "is_expanded": false,
-      "citation_title": "勞動基準法第三十三條",
+      "citation_title": "勞動基準法施行細則第三十三條",
       "hierarchy": {
         "article": "33",
         "paragraph": null,
@@ -7930,7 +7930,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=34",
       "split_strategy": "atomic",
       "is_expanded": false,
-      "citation_title": "勞動基準法第三十四條",
+      "citation_title": "勞動基準法施行細則第三十四條",
       "hierarchy": {
         "article": "34",
         "paragraph": null,
@@ -7949,7 +7949,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=34-1",
       "split_strategy": "atomic",
       "is_expanded": false,
-      "citation_title": "勞動基準法第三十四條之一",
+      "citation_title": "勞動基準法施行細則第三十四條之一",
       "hierarchy": {
         "article": "34-1",
         "paragraph": null,
@@ -7968,7 +7968,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=35",
       "split_strategy": "atomic",
       "is_expanded": false,
-      "citation_title": "勞動基準法第三十五條",
+      "citation_title": "勞動基準法施行細則第三十五條",
       "hierarchy": {
         "article": "35",
         "paragraph": null,
@@ -7987,7 +7987,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=36",
       "split_strategy": "atomic",
       "is_expanded": false,
-      "citation_title": "勞動基準法第三十六條",
+      "citation_title": "勞動基準法施行細則第三十六條",
       "hierarchy": {
         "article": "36",
         "paragraph": null,
@@ -8006,7 +8006,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=37",
       "split_strategy": "numeric",
       "is_expanded": false,
-      "citation_title": "勞動基準法第三十七條第一項",
+      "citation_title": "勞動基準法施行細則第三十七條第一項",
       "hierarchy": {
         "article": "37",
         "paragraph": 1,
@@ -8025,7 +8025,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=37",
       "split_strategy": "numeric",
       "is_expanded": false,
-      "citation_title": "勞動基準法第三十七條第二項",
+      "citation_title": "勞動基準法施行細則第三十七條第二項",
       "hierarchy": {
         "article": "37",
         "paragraph": 2,
@@ -8044,7 +8044,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=37",
       "split_strategy": "numeric",
       "is_expanded": false,
-      "citation_title": "勞動基準法第三十七條第三項",
+      "citation_title": "勞動基準法施行細則第三十七條第三項",
       "hierarchy": {
         "article": "37",
         "paragraph": 3,
@@ -8063,7 +8063,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=37",
       "split_strategy": "numeric",
       "is_expanded": false,
-      "citation_title": "勞動基準法第三十七條第四項",
+      "citation_title": "勞動基準法施行細則第三十七條第四項",
       "hierarchy": {
         "article": "37",
         "paragraph": 4,
@@ -8082,7 +8082,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=38",
       "split_strategy": "atomic",
       "is_expanded": false,
-      "citation_title": "勞動基準法第三十八條",
+      "citation_title": "勞動基準法施行細則第三十八條",
       "hierarchy": {
         "article": "38",
         "paragraph": null,
@@ -8101,7 +8101,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=39",
       "split_strategy": "atomic",
       "is_expanded": false,
-      "citation_title": "勞動基準法第三十九條",
+      "citation_title": "勞動基準法施行細則第三十九條",
       "hierarchy": {
         "article": "39",
         "paragraph": null,
@@ -8120,7 +8120,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=40",
       "split_strategy": "atomic",
       "is_expanded": false,
-      "citation_title": "勞動基準法第四十條",
+      "citation_title": "勞動基準法施行細則第四十條",
       "hierarchy": {
         "article": "40",
         "paragraph": null,
@@ -8139,7 +8139,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=41",
       "split_strategy": "numeric",
       "is_expanded": false,
-      "citation_title": "勞動基準法第四十一條第一項",
+      "citation_title": "勞動基準法施行細則第四十一條第一項",
       "hierarchy": {
         "article": "41",
         "paragraph": 1,
@@ -8158,7 +8158,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=41",
       "split_strategy": "numeric",
       "is_expanded": false,
-      "citation_title": "勞動基準法第四十一條第二項",
+      "citation_title": "勞動基準法施行細則第四十一條第二項",
       "hierarchy": {
         "article": "41",
         "paragraph": 2,
@@ -8177,7 +8177,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=42",
       "split_strategy": "atomic",
       "is_expanded": false,
-      "citation_title": "勞動基準法第四十二條",
+      "citation_title": "勞動基準法施行細則第四十二條",
       "hierarchy": {
         "article": "42",
         "paragraph": null,
@@ -8196,7 +8196,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=43",
       "split_strategy": "atomic",
       "is_expanded": false,
-      "citation_title": "勞動基準法第四十三條",
+      "citation_title": "勞動基準法施行細則第四十三條",
       "hierarchy": {
         "article": "43",
         "paragraph": null,
@@ -8215,7 +8215,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=44",
       "split_strategy": "numeric",
       "is_expanded": false,
-      "citation_title": "勞動基準法第四十四條第一項",
+      "citation_title": "勞動基準法施行細則第四十四條第一項",
       "hierarchy": {
         "article": "44",
         "paragraph": 1,
@@ -8234,7 +8234,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=44",
       "split_strategy": "numeric",
       "is_expanded": false,
-      "citation_title": "勞動基準法第四十四條第二項",
+      "citation_title": "勞動基準法施行細則第四十四條第二項",
       "hierarchy": {
         "article": "44",
         "paragraph": 2,
@@ -8253,7 +8253,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=45",
       "split_strategy": "atomic",
       "is_expanded": false,
-      "citation_title": "勞動基準法第四十五條",
+      "citation_title": "勞動基準法施行細則第四十五條",
       "hierarchy": {
         "article": "45",
         "paragraph": null,
@@ -8272,7 +8272,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=46",
       "split_strategy": "atomic",
       "is_expanded": false,
-      "citation_title": "勞動基準法第四十六條",
+      "citation_title": "勞動基準法施行細則第四十六條",
       "hierarchy": {
         "article": "46",
         "paragraph": null,
@@ -8291,7 +8291,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=47",
       "split_strategy": "atomic",
       "is_expanded": false,
-      "citation_title": "勞動基準法第四十七條",
+      "citation_title": "勞動基準法施行細則第四十七條",
       "hierarchy": {
         "article": "47",
         "paragraph": null,
@@ -8310,7 +8310,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=48",
       "split_strategy": "atomic",
       "is_expanded": false,
-      "citation_title": "勞動基準法第四十八條",
+      "citation_title": "勞動基準法施行細則第四十八條",
       "hierarchy": {
         "article": "48",
         "paragraph": null,
@@ -8329,7 +8329,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=49",
       "split_strategy": "atomic",
       "is_expanded": false,
-      "citation_title": "勞動基準法第四十九條",
+      "citation_title": "勞動基準法施行細則第四十九條",
       "hierarchy": {
         "article": "49",
         "paragraph": null,
@@ -8348,7 +8348,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=50",
       "split_strategy": "atomic",
       "is_expanded": false,
-      "citation_title": "勞動基準法第五十條",
+      "citation_title": "勞動基準法施行細則第五十條",
       "hierarchy": {
         "article": "50",
         "paragraph": null,
@@ -8367,7 +8367,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=50-1",
       "split_strategy": "contextual",
       "is_expanded": true,
-      "citation_title": "勞動基準法第五十條之一第一款",
+      "citation_title": "勞動基準法施行細則第五十條之一第一款",
       "hierarchy": {
         "article": "50-1",
         "paragraph": null,
@@ -8386,7 +8386,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=50-1",
       "split_strategy": "contextual",
       "is_expanded": true,
-      "citation_title": "勞動基準法第五十條之一第二款",
+      "citation_title": "勞動基準法施行細則第五十條之一第二款",
       "hierarchy": {
         "article": "50-1",
         "paragraph": null,
@@ -8405,7 +8405,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=50-1",
       "split_strategy": "contextual",
       "is_expanded": true,
-      "citation_title": "勞動基準法第五十條之一第三款",
+      "citation_title": "勞動基準法施行細則第五十條之一第三款",
       "hierarchy": {
         "article": "50-1",
         "paragraph": null,
@@ -8424,7 +8424,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=50-1",
       "split_strategy": "contextual",
       "is_expanded": true,
-      "citation_title": "勞動基準法第五十條之一第四款",
+      "citation_title": "勞動基準法施行細則第五十條之一第四款",
       "hierarchy": {
         "article": "50-1",
         "paragraph": null,
@@ -8443,7 +8443,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=50-2",
       "split_strategy": "atomic",
       "is_expanded": false,
-      "citation_title": "勞動基準法第五十條之二",
+      "citation_title": "勞動基準法施行細則第五十條之二",
       "hierarchy": {
         "article": "50-2",
         "paragraph": null,
@@ -8462,7 +8462,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=50-3",
       "split_strategy": "numeric",
       "is_expanded": false,
-      "citation_title": "勞動基準法第五十條之三第一項",
+      "citation_title": "勞動基準法施行細則第五十條之三第一項",
       "hierarchy": {
         "article": "50-3",
         "paragraph": 1,
@@ -8481,7 +8481,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=50-3",
       "split_strategy": "numeric",
       "is_expanded": false,
-      "citation_title": "勞動基準法第五十條之三第二項",
+      "citation_title": "勞動基準法施行細則第五十條之三第二項",
       "hierarchy": {
         "article": "50-3",
         "paragraph": 2,
@@ -8500,7 +8500,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=50-4",
       "split_strategy": "atomic",
       "is_expanded": false,
-      "citation_title": "勞動基準法第五十條之四",
+      "citation_title": "勞動基準法施行細則第五十條之四",
       "hierarchy": {
         "article": "50-4",
         "paragraph": null,
@@ -8519,7 +8519,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030002&flno=51",
       "split_strategy": "atomic",
       "is_expanded": false,
-      "citation_title": "勞動基準法第五十一條",
+      "citation_title": "勞動基準法施行細則第五十一條",
       "hierarchy": {
         "article": "51",
         "paragraph": null,
@@ -8538,7 +8538,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030006&flno=1",
       "split_strategy": "atomic",
       "is_expanded": false,
-      "citation_title": "勞動基準法第一條",
+      "citation_title": "勞工請假規則第一條",
       "hierarchy": {
         "article": "1",
         "paragraph": null,
@@ -8557,7 +8557,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030006&flno=2",
       "split_strategy": "atomic",
       "is_expanded": false,
-      "citation_title": "勞動基準法第二條",
+      "citation_title": "勞工請假規則第二條",
       "hierarchy": {
         "article": "2",
         "paragraph": null,
@@ -8576,7 +8576,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030006&flno=3",
       "split_strategy": "contextual",
       "is_expanded": true,
-      "citation_title": "勞動基準法第三條第一款",
+      "citation_title": "勞工請假規則第三條第一款",
       "hierarchy": {
         "article": "3",
         "paragraph": null,
@@ -8595,7 +8595,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030006&flno=3",
       "split_strategy": "contextual",
       "is_expanded": true,
-      "citation_title": "勞動基準法第三條第二款",
+      "citation_title": "勞工請假規則第三條第二款",
       "hierarchy": {
         "article": "3",
         "paragraph": null,
@@ -8614,7 +8614,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030006&flno=3",
       "split_strategy": "contextual",
       "is_expanded": true,
-      "citation_title": "勞動基準法第三條第三款",
+      "citation_title": "勞工請假規則第三條第三款",
       "hierarchy": {
         "article": "3",
         "paragraph": null,
@@ -8633,7 +8633,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030006&flno=4",
       "split_strategy": "numeric_contextual",
       "is_expanded": true,
-      "citation_title": "勞動基準法第四條第一項第一款",
+      "citation_title": "勞工請假規則第四條第一項第一款",
       "hierarchy": {
         "article": "4",
         "paragraph": 1,
@@ -8652,7 +8652,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030006&flno=4",
       "split_strategy": "numeric_contextual",
       "is_expanded": true,
-      "citation_title": "勞動基準法第四條第一項第二款",
+      "citation_title": "勞工請假規則第四條第一項第二款",
       "hierarchy": {
         "article": "4",
         "paragraph": 1,
@@ -8671,7 +8671,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030006&flno=4",
       "split_strategy": "numeric_contextual",
       "is_expanded": true,
-      "citation_title": "勞動基準法第四條第一項第三款",
+      "citation_title": "勞工請假規則第四條第一項第三款",
       "hierarchy": {
         "article": "4",
         "paragraph": 1,
@@ -8690,7 +8690,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030006&flno=4",
       "split_strategy": "numeric",
       "is_expanded": false,
-      "citation_title": "勞動基準法第四條第二項",
+      "citation_title": "勞工請假規則第四條第二項",
       "hierarchy": {
         "article": "4",
         "paragraph": 2,
@@ -8709,7 +8709,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030006&flno=4",
       "split_strategy": "numeric",
       "is_expanded": false,
-      "citation_title": "勞動基準法第四條第三項",
+      "citation_title": "勞工請假規則第四條第三項",
       "hierarchy": {
         "article": "4",
         "paragraph": 3,
@@ -8728,7 +8728,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030006&flno=5",
       "split_strategy": "atomic",
       "is_expanded": false,
-      "citation_title": "勞動基準法第五條",
+      "citation_title": "勞工請假規則第五條",
       "hierarchy": {
         "article": "5",
         "paragraph": null,
@@ -8747,7 +8747,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030006&flno=6",
       "split_strategy": "atomic",
       "is_expanded": false,
-      "citation_title": "勞動基準法第六條",
+      "citation_title": "勞工請假規則第六條",
       "hierarchy": {
         "article": "6",
         "paragraph": null,
@@ -8766,7 +8766,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030006&flno=7",
       "split_strategy": "numeric",
       "is_expanded": false,
-      "citation_title": "勞動基準法第七條第一項",
+      "citation_title": "勞工請假規則第七條第一項",
       "hierarchy": {
         "article": "7",
         "paragraph": 1,
@@ -8785,7 +8785,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030006&flno=7",
       "split_strategy": "numeric",
       "is_expanded": false,
-      "citation_title": "勞動基準法第七條第二項",
+      "citation_title": "勞工請假規則第七條第二項",
       "hierarchy": {
         "article": "7",
         "paragraph": 2,
@@ -8804,7 +8804,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030006&flno=8",
       "split_strategy": "atomic",
       "is_expanded": false,
-      "citation_title": "勞動基準法第八條",
+      "citation_title": "勞工請假規則第八條",
       "hierarchy": {
         "article": "8",
         "paragraph": null,
@@ -8823,7 +8823,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030006&flno=9",
       "split_strategy": "numeric_contextual",
       "is_expanded": true,
-      "citation_title": "勞動基準法第九條第一項第一款",
+      "citation_title": "勞工請假規則第九條第一項第一款",
       "hierarchy": {
         "article": "9",
         "paragraph": 1,
@@ -8842,7 +8842,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030006&flno=9",
       "split_strategy": "numeric_contextual",
       "is_expanded": true,
-      "citation_title": "勞動基準法第九條第一項第二款",
+      "citation_title": "勞工請假規則第九條第一項第二款",
       "hierarchy": {
         "article": "9",
         "paragraph": 1,
@@ -8861,7 +8861,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030006&flno=9",
       "split_strategy": "numeric_contextual",
       "is_expanded": true,
-      "citation_title": "勞動基準法第九條第一項第三款",
+      "citation_title": "勞工請假規則第九條第一項第三款",
       "hierarchy": {
         "article": "9",
         "paragraph": 1,
@@ -8880,7 +8880,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030006&flno=9",
       "split_strategy": "numeric",
       "is_expanded": false,
-      "citation_title": "勞動基準法第九條第二項",
+      "citation_title": "勞工請假規則第九條第二項",
       "hierarchy": {
         "article": "9",
         "paragraph": 2,
@@ -8899,7 +8899,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030006&flno=9-1",
       "split_strategy": "numeric",
       "is_expanded": false,
-      "citation_title": "勞動基準法第九條之一第一項",
+      "citation_title": "勞工請假規則第九條之一第一項",
       "hierarchy": {
         "article": "9-1",
         "paragraph": 1,
@@ -8918,7 +8918,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030006&flno=9-1",
       "split_strategy": "numeric",
       "is_expanded": false,
-      "citation_title": "勞動基準法第九條之一第二項",
+      "citation_title": "勞工請假規則第九條之一第二項",
       "hierarchy": {
         "article": "9-1",
         "paragraph": 2,
@@ -8937,7 +8937,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030006&flno=9-1",
       "split_strategy": "numeric",
       "is_expanded": false,
-      "citation_title": "勞動基準法第九條之一第三項",
+      "citation_title": "勞工請假規則第九條之一第三項",
       "hierarchy": {
         "article": "9-1",
         "paragraph": 3,
@@ -8956,7 +8956,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030006&flno=10",
       "split_strategy": "atomic",
       "is_expanded": false,
-      "citation_title": "勞動基準法第十條",
+      "citation_title": "勞工請假規則第十條",
       "hierarchy": {
         "article": "10",
         "paragraph": null,
@@ -8975,7 +8975,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030006&flno=11",
       "split_strategy": "atomic",
       "is_expanded": false,
-      "citation_title": "勞動基準法第十一條",
+      "citation_title": "勞工請假規則第十一條",
       "hierarchy": {
         "article": "11",
         "paragraph": null,
@@ -8994,7 +8994,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030006&flno=12",
       "split_strategy": "numeric",
       "is_expanded": false,
-      "citation_title": "勞動基準法第十二條第一項",
+      "citation_title": "勞工請假規則第十二條第一項",
       "hierarchy": {
         "article": "12",
         "paragraph": 1,
@@ -9013,7 +9013,7 @@
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0030006&flno=12",
       "split_strategy": "numeric",
       "is_expanded": false,
-      "citation_title": "勞動基準法第十二條第二項",
+      "citation_title": "勞工請假規則第十二條第二項",
       "hierarchy": {
         "article": "12",
         "paragraph": 2,

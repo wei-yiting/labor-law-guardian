@@ -1,0 +1,28 @@
+{
+  "meta": {
+    "run_id": "RTV_0.0.2_20260202-195601",
+    "timestamp": "2026-02-02T19:56:01.298548",
+    "description": "After citation correction",
+    "agent_version": "0.0.2",
+    "configuration": {
+      "rag_version": "0.0.2",
+      "strategy": "PARENT_CHILD_FINE_OPENAI",
+      "tokenizer": "gpt-4o",
+      "embedding": "text-embedding-3-small",
+      "chunk_size": 1024,
+      "top_k": 3
+    },
+    "data": {
+      "eval_datasets": [],
+      "source_documents": [],
+      "total_queries": 34
+    },
+    "overall_score": {
+      "avg_recall@3": 1.0,
+      "avg_precision@3": 0.3333,
+      "MAP@3": 0.951,
+      "MRR@3": 0.951
+    }
+  },
+  "fail_cases": []
+}

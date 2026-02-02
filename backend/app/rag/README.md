@@ -15,6 +15,10 @@ classDiagram
         +retrieve(query: str) List[Node]
         +get_retrieved_article_id(node: Node) str
     }
+    class EmbeddingStrategy {
+        <<Interface>>
+        +create_embedding() BaseEmbedding
+    }
     class NaiveRetrieverStrategy {
         +retrieve(query)
         +get_retrieved_article_id(node)
@@ -23,6 +27,12 @@ classDiagram
         +retrieve(query)
         +get_retrieved_article_id(node)
     }
+    class OpenAIEmbeddingStrategy {
+        +create_embedding()
+    }
+    class BgeM3EmbeddingStrategy {
+        +create_embedding()
+    }
     class RetrieverEvaluator {
         -strategy: RetrieverStrategy
         +calculate_metrics()
@@ -30,12 +40,16 @@ classDiagram
     }
     class Factory {
         +get_retriever_strategy(version)
+        +get_embedding_strategy(version)
     }
 
     RetrieverStrategy <|-- NaiveRetrieverStrategy
     RetrieverStrategy <|-- ParentChildRetrieverStrategy
+    EmbeddingStrategy <|-- OpenAIEmbeddingStrategy
+    EmbeddingStrategy <|-- BgeM3EmbeddingStrategy
     RetrieverEvaluator --> RetrieverStrategy : uses
     Factory ..> RetrieverStrategy : creates
+    Factory ..> EmbeddingStrategy : creates
 ```
 
 ### Code Flow Demonstration
@@ -78,7 +92,8 @@ backend/app/rag/
 ├── types.py              # [Types] Core Enums including RagVersion
 ├── config.py             # [Config] Configuration (paths, model names, constants)
 ├── core/                 # [Library] Pure implementation logic (No CLI/IO dependencies)
-│   ├── common.py         # Shared setup (e.g., LlamaIndex settings)
+│   ├── common.py         # Shared setup (e.g., LlamaIndex settings, version-based embedding)
+│   ├── embedding/        # Concrete implementations of EmbeddingStrategy
 │   ├── retrieval/        # Concrete implementations of RetrieverStrategy
 │   └── evaluation/       # Logic for evaluating retrieval performance
 └── scripts/              # [DEPRECATED] Scripts have been moved to backend/scripts/
@@ -93,18 +108,27 @@ We define strict interfaces that all versions must adhere to. This allows the Ev
 - **`RetrieverStrategy`**:
   - `retrieve(query: str) -> List[Node]`: Return relevant nodes.
   - `get_retrieved_article_id(node: Node) -> str`: Extract the comparison key (Article ID) for evaluation ground truth matching.
+- **`EmbeddingStrategy`**:
+  - `create_embedding() -> BaseEmbedding`: Return a configured LlamaIndex embedding model instance.
 
 ### 2. Factory Pattern (`factory.py`)
 
-The `get_retriever_strategy(version: str)` function interprets the version string (e.g., `0.0.1`, `0.0.3`) and returns the configured Strategy object. It uses the `backend/app/rag/types.py::RagVersion` Enum for validation.
+The factory functions interpret the version string (e.g., `0.0.1`, `0.0.3`) and return the configured Strategy object. They use the `backend/app/rag/types.py::RagVersion` Enum for validation.
+
+- `get_retriever_strategy(version)` → Returns the retrieval strategy
+- `get_ingestion_strategy(version)` → Returns the ingestion strategy
+- `get_embedding_strategy(version)` → Returns the embedding strategy
 
 ## Supported Versions
 
-| Version   | Enum Key | Description           | Implementation Strategy                             |
-| :-------- | :------- | :-------------------- | :-------------------------------------------------- |
-| **0.0.1** | `V0_0_1` | Naive / Baseline      | `NaiveRetrieverStrategy` (Raw Chunking)             |
-| **0.0.2** | `V0_0_2` | Parent-Child (Fine)   | `ParentChildRetrieverStrategy` (Fine Granularity)   |
-| **0.0.3** | `V0_0_3` | Parent-Child (Coarse) | `ParentChildRetrieverStrategy` (Coarse Granularity) |
+| Version   | Enum Key | Description           | Retrieval Strategy                                  | Embedding Strategy              |
+| :-------- | :------- | :-------------------- | :-------------------------------------------------- | :------------------------------ |
+| **0.0.1** | `V0_0_1` | Naive / Baseline      | `NaiveRetrieverStrategy` (Raw Chunking)             | OpenAI `text-embedding-3-small` |
+| **0.0.2** | `V0_0_2` | Parent-Child (Fine)   | `ParentChildRetrieverStrategy` (Fine Granularity)   | OpenAI `text-embedding-3-small` |
+| **0.0.3** | `V0_0_3` | Parent-Child (Coarse) | `ParentChildRetrieverStrategy` (Coarse Granularity) | OpenAI `text-embedding-3-small` |
+| **0.1.1** | `V0_1_1` | Naive / Baseline      | `NaiveRetrieverStrategy` (Raw Chunking)             | HuggingFace `BAAI/bge-m3`      |
+| **0.1.2** | `V0_1_2` | Parent-Child (Fine)   | `ParentChildRetrieverStrategy` (Fine Granularity)   | HuggingFace `BAAI/bge-m3`      |
+| **0.1.3** | `V0_1_3` | Parent-Child (Coarse) | `ParentChildRetrieverStrategy` (Coarse Granularity) | HuggingFace `BAAI/bge-m3`      |
 
 ## Development Guide
 

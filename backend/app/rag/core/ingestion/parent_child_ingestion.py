@@ -10,14 +10,17 @@ from qdrant_client import QdrantClient
 
 from backend.app.rag.core.common import setup_common_settings
 from backend.app.rag.interface import IngestionStrategy
+from backend.app.rag.types import RagVersion
 from backend.app.rag.core.ingestion.components.chunker import LawArticleChunker
 from backend.app.rag.core.ingestion.components.loaders import load_persisted_nodes
 from backend.app.rag.config import (
     LAW_DATA_DIR,
     LAW_FILES,
     RAG_VERSIONS,
-    COLLECTION_NAME_PC_FINE,
-    COLLECTION_NAME_PC_COARSE,
+    COLLECTION_NAME_PC_FINE_OPENAI,
+    COLLECTION_NAME_PC_COARSE_OPENAI,
+    COLLECTION_NAME_PC_FINE_BGE_M3,
+    COLLECTION_NAME_PC_COARSE_BGE_M3,
     QDRANT_HOST,
     QDRANT_PORT,
 )
@@ -27,13 +30,14 @@ logger = logging.getLogger(__name__)
 
 class ParentChildIngestionStrategy(IngestionStrategy):
     """
-    Ingestion Strategy for Parent-Child RAG (v0.0.2 / v0.0.3).
+    Ingestion Strategy for Parent-Child RAG.
+    Supports v0.0.2/v0.0.3 (OpenAI embedding) and v0.1.2/v0.1.3 (bge-m3 embedding).
     1. Chunks raw data using LawArticleChunker.
     2. Persists chunks to Intermediate JSON.
     3. Ingests chunks into Qdrant.
     """
 
-    def __init__(self, version: str):
+    def __init__(self, version: RagVersion):
         self.version = version
         self.strategy_name = RAG_VERSIONS.get(version)
         if not self.strategy_name:
@@ -83,18 +87,23 @@ class ParentChildIngestionStrategy(IngestionStrategy):
             node.id_ = new_id
 
         # Determine target Qdrant collection based on version
-        if self.version == "0.0.2":
-            collection = COLLECTION_NAME_PC_FINE
-        elif self.version == "0.0.3":
-            collection = COLLECTION_NAME_PC_COARSE
-        else:
-            logger.warning(
-                f"Unknown version {self.version} for Qdrant ingestion, skipping"
-            )
-            return nodes
+        match self.version:
+            case RagVersion.V0_0_2:
+                collection = COLLECTION_NAME_PC_FINE_OPENAI
+            case RagVersion.V0_0_3:
+                collection = COLLECTION_NAME_PC_COARSE_OPENAI
+            case RagVersion.V0_1_2:
+                collection = COLLECTION_NAME_PC_FINE_BGE_M3
+            case RagVersion.V0_1_3:
+                collection = COLLECTION_NAME_PC_COARSE_BGE_M3
+            case _:
+                logger.warning(
+                    f"Unknown version {self.version} for Qdrant ingestion, skipping"
+                )
+                return nodes
 
         # Setup global embedding settings before ingestion
-        setup_common_settings()
+        setup_common_settings(version=self.version)
 
         client = QdrantClient(host=QDRANT_HOST, port=QDRANT_PORT)
 

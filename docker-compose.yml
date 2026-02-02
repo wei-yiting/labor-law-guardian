@@ -6,7 +6,10 @@ services:
       - "6333:6333" # HTTP API (REST) & Dashboard
       - "6334:6334" # gRPC API (Python client internal optimization transport)
     volumes:
-      - ./qdrant_data:/qdrant/storage
+      - qdrant_storage:/qdrant/storage
     environment:
       - QDRANT__SERVICE__ENABLE_API_KEY=false
     restart: always
+
+volumes:
+  qdrant_storage:

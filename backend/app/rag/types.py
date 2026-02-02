@@ -8,7 +8,9 @@ class RagVersion(StrEnum):
     V0_0_1 = "0.0.1"
     V0_0_2 = "0.0.2"
     V0_0_3 = "0.0.3"
-    V0_0_4 = "0.0.4"
+    V0_1_1 = "0.1.1"
+    V0_1_2 = "0.1.2"
+    V0_1_3 = "0.1.3"
 
 
 class LawCategory(Enum):

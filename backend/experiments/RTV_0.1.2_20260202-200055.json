@@ -1,12 +1,12 @@
 {
   "meta": {
-    "run_id": "RTV_0.0.2_20260128-154200",
-    "timestamp": "2026-01-28T15:42:00.911559",
-    "description": "change embedding model from open ai text-embedding-3-small to BAAI/bge-m3",
-    "agent_version": "0.0.2",
+    "run_id": "RTV_0.1.2_20260202-200055",
+    "timestamp": "2026-02-02T20:00:55.926390",
+    "description": "Parent-Child Indexing wit＆款 (paragraph & subparagraph), using BAAI/bge-m3 embedding model",
+    "agent_version": "0.1.2",
     "configuration": {
-      "rag_version": "0.0.2",
-      "strategy": "PARENT_CHILD_FINE",
+      "rag_version": "0.1.2",
+      "strategy": "PARENT_CHILD_FINE_BGE_M3",
       "tokenizer": "gpt-4o",
       "embedding": "BAAI/bge-m3",
       "chunk_size": 1024,

@@ -1,12 +1,12 @@
 {
   "meta": {
-    "run_id": "RTV_0.0.1_20260128-153517",
-    "timestamp": "2026-01-28T15:35:17.840347",
-    "description": "switch from openai text-embedding-3-small to BAAI/bge-m3",
-    "agent_version": "0.0.1",
+    "run_id": "RTV_0.1.3_20260202-200245",
+    "timestamp": "2026-02-02T20:02:45.499513",
+    "description": "Parent-Child indexing with 項 (paragraph) only, using BAAI/bge-m3 embedding model",
+    "agent_version": "0.1.3",
     "configuration": {
-      "rag_version": "0.0.1",
-      "strategy": "NAIVE",
+      "rag_version": "0.1.3",
+      "strategy": "PARENT_CHILD_COARSE_BGE_M3",
       "tokenizer": "gpt-4o",
       "embedding": "BAAI/bge-m3",
       "chunk_size": 1024,

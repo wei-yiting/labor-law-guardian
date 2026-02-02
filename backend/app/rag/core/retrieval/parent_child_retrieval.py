@@ -9,8 +9,10 @@ from backend.app.rag.config import (
     RETRIEVER_TOP_K,
     QDRANT_HOST,
     QDRANT_PORT,
-    COLLECTION_NAME_PC_FINE,
-    COLLECTION_NAME_PC_COARSE,
+    COLLECTION_NAME_PC_FINE_OPENAI,
+    COLLECTION_NAME_PC_COARSE_OPENAI,
+    COLLECTION_NAME_PC_FINE_BGE_M3,
+    COLLECTION_NAME_PC_COARSE_BGE_M3,
 )
 from backend.app.rag.core.retrieval.postprocessors import ArticleDedupPostprocessor
 from backend.app.rag.core.retrieval.components import DiversityRetriever
@@ -19,20 +21,26 @@ from backend.app.rag.types import RagVersion
 
 
 class ParentChildRetrieverStrategy(RetrieverStrategy):
-    def __init__(self, version: str):
+    def __init__(self, version: RagVersion):
         self.version = version
 
         # Setup Shared Settings
-        setup_common_settings()
+        setup_common_settings(version=version)
 
         # Determine Collection
-        if version not in RagVersion:
-            raise ValueError(f"Unknown version for ParentChild Retriever: {version}")
-
-        if version == RagVersion.V0_0_2:
-            collection_name = COLLECTION_NAME_PC_FINE
-        else:
-            collection_name = COLLECTION_NAME_PC_COARSE
+        match version:
+            case RagVersion.V0_0_2:
+                collection_name = COLLECTION_NAME_PC_FINE_OPENAI
+            case RagVersion.V0_0_3:
+                collection_name = COLLECTION_NAME_PC_COARSE_OPENAI
+            case RagVersion.V0_1_2:
+                collection_name = COLLECTION_NAME_PC_FINE_BGE_M3
+            case RagVersion.V0_1_3:
+                collection_name = COLLECTION_NAME_PC_COARSE_BGE_M3
+            case _:
+                raise ValueError(
+                    f"Unknown version for ParentChild Retriever: {version}"
+                )
 
         # Connect to Qdrant
         client = QdrantClient(host=QDRANT_HOST, port=QDRANT_PORT)
