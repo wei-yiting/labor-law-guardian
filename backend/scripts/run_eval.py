@@ -1,6 +1,7 @@
 import sys
 import argparse
 import json
+import logging
 from pathlib import Path
 
 # Adjust sys.path to ensure absolute imports work from the project root
@@ -8,7 +9,18 @@ PROJECT_ROOT = Path(__file__).resolve().parents[2]
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.append(str(PROJECT_ROOT))
 
-from backend.app.rag.config import RAG_VERSIONS, LATEST_RAG_VERSION
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(message)s"
+)
+logger = logging.getLogger(__name__)
+
+# Suppress verbose httpx HTTP request logs
+logging.getLogger("httpx").setLevel(logging.WARNING)
+
+from backend.app.rag.config import LATEST_RAG_VERSION
+from backend.app.rag.types import RagVersion
+from backend.app.rag.version_utils import get_strategy_display_name
 from backend.app.rag.factory import get_retriever_strategy
 from backend.app.rag.core.evaluation.evaluator import RetrieverEvaluator
 from backend.app.rag.core.evaluation.reporting import (
@@ -33,7 +45,7 @@ def main():
     parser.add_argument(
         "--rag-version",
         type=str,
-        help=f"Choose RAG Version. Options: {list(RAG_VERSIONS.keys())}",
+        help=f"Choose RAG Version. Options: {[v.value for v in RagVersion]}",
     )
     parser.add_argument(
         "--incl-tag",
@@ -50,11 +62,16 @@ def main():
 
     # 1. Determine Version
     version = args.rag_version if args.rag_version else LATEST_RAG_VERSION
-    if version not in RAG_VERSIONS:
-        print(f"Error: Invalid Version '{version}'")
+
+    try:
+        rag_version = RagVersion(version)
+    except ValueError:
+        logger.error(f"Invalid Version '{version}'")
+        logger.error(f"Valid versions: {[v.value for v in RagVersion]}")
         sys.exit(1)
 
-    print(f"Using RAG Version: {version} ({RAG_VERSIONS[version]})")
+    strategy_name = get_strategy_display_name(rag_version)
+    logger.info(f"Using RAG Version: {version} ({strategy_name})")
 
     # 2. Setup Strategy & Evaluator
     try:
@@ -66,10 +83,7 @@ def main():
             use_json_logging=args.json,
         )
     except Exception as e:
-        print(f"Failed to initialize RAG components: {e}")
-        import traceback
-
-        traceback.print_exc()
+        logger.error(f"Failed to initialize RAG components: {e}", exc_info=True)
         sys.exit(1)
 
     # 3. Interactive Inputs (only if not query mode or verification mode)
@@ -83,7 +97,7 @@ def main():
     if not args.query:
         if args.json or args.report:
             try:
-                print("\n--- Experiment Settings ---")
+                logger.info("Experiment Settings")
                 # Only ask for log prefix if JSON is enabled, or just keep it simple?
                 # The user requirement specifically asked to ensure "Description" is available for Text Reports.
                 # JSON log prefix seems specific to JSON filenames.
@@ -105,15 +119,15 @@ def main():
 
     # 4. Execution Mode
     if args.query:
-        print(f"\nRunning Single Query: {args.query}")
+        logger.info(f"Running Single Query: {args.query}")
         nodes = evaluator.run_retrieval(args.query)
-        print(f"Retrieved {len(nodes)} nodes:\n")
+        logger.info(f"Retrieved {len(nodes)} nodes")
         for i, node in enumerate(nodes, 1):
-            print(f"[{i}] Content: {node.get_content()[:100]}...")
+            logger.info(f"[{i}] Content: {node.get_content()[:100]}...")
             if hasattr(node, "score"):
-                print(f"    Score: {node.score}")
+                logger.info(f"    Score: {node.score}")
             if node.metadata:
-                print(f"    Meta: {node.metadata}")
+                logger.info(f"    Meta: {node.metadata}")
         return
 
     # Load Dataset
@@ -143,10 +157,10 @@ def main():
             filtered_dataset.append(item)
 
         dataset = filtered_dataset
-        print(f"Filtered dataset: {len(dataset)} items (Original: {original_count})")
+        logger.info(f"Filtered dataset: {len(dataset)} items (Original: {original_count})")
 
         if not dataset:
-            print("No items found after filtering.")
+            logger.warning("No items found after filtering.")
             sys.exit(0)
 
     # Smoke Test
@@ -154,7 +168,7 @@ def main():
         sys.exit(1)
 
     # Full Evaluation
-    print("\nRunning Full Evaluation...")
+    logger.info("Running Full Evaluation...")
     results = evaluator.evaluate_dataset(dataset)
 
     # Print & Save

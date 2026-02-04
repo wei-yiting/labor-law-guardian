@@ -4,11 +4,12 @@ import re
 from pathlib import Path
 from typing import Dict, Any, List
 from backend.app.rag.config import (
-    RAG_VERSIONS,
     OPENAI_MODEL_NAME,
     CHUNK_SIZE,
     RETRIEVER_TOP_K,
 )
+from backend.app.rag.types import RagVersion
+from backend.app.rag.version_utils import get_strategy_display_name
 from backend.app.rag.core.embedding.openai_text_3_small_embedding import (
     OPENAI_EMBEDDING_MODEL,
 )
@@ -45,6 +46,13 @@ def save_json_log(
         if k.startswith(("avg_recall@", "avg_precision@", "MAP@", "MRR@"))
     }
 
+    # Get strategy display name based on version
+    try:
+        rag_version = RagVersion(version)
+        strategy_name = get_strategy_display_name(rag_version)
+    except ValueError:
+        strategy_name = "UNKNOWN"
+
     output_data = {
         "meta": {
             "run_id": run_id,
@@ -53,7 +61,7 @@ def save_json_log(
             "agent_version": version,
             "configuration": {
                 "rag_version": version,
-                "strategy": RAG_VERSIONS.get(version, "UNKNOWN"),
+                "strategy": strategy_name,
                 "tokenizer": OPENAI_MODEL_NAME,
                 "embedding": _EMBEDDING_MODEL_MAP.get(version, "UNKNOWN"),
                 "chunk_size": CHUNK_SIZE,

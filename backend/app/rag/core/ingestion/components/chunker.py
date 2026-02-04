@@ -64,7 +64,8 @@ class LawArticleChunker:
         Entry point for parsing a single article.
         """
         law_name = self._get_law_name(article.id)
-        if self.strategy == "PARENT_CHILD_COARSE":
+        # Support both full strategy names (e.g., "PARENT_CHILD_COARSE_BGE_M3") and short names
+        if "PARENT_CHILD_COARSE" in self.strategy:
             return self._split_coarse(article, law_name)
         else:
             return self._split_fine(article, law_name)
@@ -185,7 +186,7 @@ class LawArticleChunker:
                 chunks.append(chunk)
         else:
             # Atomic (Article Level)
-            chunk_id = article.id
+            chunk_id = f"{article.id}_W"
             hierarchy = HierarchyCoarse(article=article.article_no, paragraph=None)
             citation = self._format_citation_coarse(hierarchy, law_name)
 
@@ -346,7 +347,7 @@ class LawArticleChunker:
                     article=article_no, paragraph=para_num, subparagraph=None
                 )
             else:
-                chunk_id = parent_id
+                chunk_id = f"{parent_id}_W"
                 strategy = SplitStrategyEnum.atomic
                 new_hierarchy = HierarchyFine(
                     article=article_no, paragraph=None, subparagraph=None

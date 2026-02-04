@@ -13,10 +13,14 @@ from backend.app.rag.interface import IngestionStrategy
 from backend.app.rag.types import RagVersion
 from backend.app.rag.core.ingestion.components.chunker import LawArticleChunker
 from backend.app.rag.core.ingestion.components.loaders import load_persisted_nodes
+from backend.app.rag.version_utils import (
+    get_chunking_strategy,
+    ChunkingStrategy,
+    get_strategy_display_name,
+)
 from backend.app.rag.config import (
     LAW_DATA_DIR,
     LAW_FILES,
-    RAG_VERSIONS,
     COLLECTION_NAME_PC_FINE_OPENAI,
     COLLECTION_NAME_PC_COARSE_OPENAI,
     COLLECTION_NAME_PC_FINE_BGE_M3,
@@ -39,18 +43,15 @@ class ParentChildIngestionStrategy(IngestionStrategy):
 
     def __init__(self, version: RagVersion):
         self.version = version
-        self.strategy_name = RAG_VERSIONS.get(version)
-        if not self.strategy_name:
-            raise ValueError(
-                f"Invalid version for ParentChildIngestionStrategy: {version}"
-            )
+        self.chunking_strategy = get_chunking_strategy(version)
+        self.strategy_display_name = get_strategy_display_name(version)
 
     def run(self, documents: List[Document] = None, **kwargs) -> Any:
         logger.info(
-            f"Running Parent-Child Ingestion Strategy ({self.version}: {self.strategy_name})"
+            f"Running Parent-Child Ingestion Strategy ({self.version}: {self.strategy_display_name})"
         )
 
-        chunker = LawArticleChunker(strategy=self.strategy_name)
+        chunker = LawArticleChunker(strategy=self.strategy_display_name)
 
         # Process law files defined in config
         full_paths = [str(Path(LAW_DATA_DIR) / f) for f in LAW_FILES]
@@ -133,7 +134,7 @@ class ParentChildIngestionStrategy(IngestionStrategy):
         output_dir = Path(LAW_DATA_DIR) / "parent_child_index"
         output_dir.mkdir(parents=True, exist_ok=True)
 
-        if self.strategy_name == "PARENT_CHILD_COARSE":
+        if self.chunking_strategy == ChunkingStrategy.PARENT_CHILD_COARSE:
             filename = "intermediate_nodes_coarse.json"
         else:
             filename = "intermediate_nodes_fine.json"

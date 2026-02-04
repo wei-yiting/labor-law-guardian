@@ -437,7 +437,7 @@
     }
   },
   {
-    "chunk_id": "LSA-4",
+    "chunk_id": "LSA-4_W",
     "parent_id": "LSA-4",
     "text": "本法所稱主管機關：在中央為勞動部；在直轄市為直轄市政府；在縣（市）為縣（市）政府。",
     "metadata": {
@@ -456,7 +456,7 @@
     }
   },
   {
-    "chunk_id": "LSA-5",
+    "chunk_id": "LSA-5_W",
     "parent_id": "LSA-5",
     "text": "雇主不得以強暴、脅迫、拘禁或其他非法之方法，強制勞工從事勞動。",
     "metadata": {
@@ -475,7 +475,7 @@
     }
   },
   {
-    "chunk_id": "LSA-6",
+    "chunk_id": "LSA-6_W",
     "parent_id": "LSA-6",
     "text": "任何人不得介入他人之勞動契約，抽取不法利益。",
     "metadata": {
@@ -532,7 +532,7 @@
     }
   },
   {
-    "chunk_id": "LSA-8",
+    "chunk_id": "LSA-8_W",
     "parent_id": "LSA-8",
     "text": "雇主對於僱用之勞工，應預防職業上災害，建立適當之工作環境及福利設施。其有關安全衛生及福利事項，依有關法律之規定。",
     "metadata": {
@@ -760,7 +760,7 @@
     }
   },
   {
-    "chunk_id": "LSA-10",
+    "chunk_id": "LSA-10_W",
     "parent_id": "LSA-10",
     "text": "定期契約屆滿後或不定期契約因故停止履行後，未滿三個月而訂定新約或繼續履行原約時，勞工前後工作年資，應合併計算。",
     "metadata": {
@@ -1102,7 +1102,7 @@
     }
   },
   {
-    "chunk_id": "LSA-13",
+    "chunk_id": "LSA-13_W",
     "parent_id": "LSA-13",
     "text": "勞工在第五十條規定之停止工作期間或第五十九條規定之醫療期間，雇主不得終止契約。但雇主因天災、事變或其他不可抗力致事業不能繼續，經報主管機關核定者，不在此限。",
     "metadata": {
@@ -1805,7 +1805,7 @@
     }
   },
   {
-    "chunk_id": "LSA-19",
+    "chunk_id": "LSA-19_W",
     "parent_id": "LSA-19",
     "text": "勞動契約終止時，勞工如請求發給服務證明書，雇主或其代理人不得拒絕。",
     "metadata": {
@@ -1824,7 +1824,7 @@
     }
   },
   {
-    "chunk_id": "LSA-20",
+    "chunk_id": "LSA-20_W",
     "parent_id": "LSA-20",
     "text": "事業單位改組或轉讓時，除新舊雇主商定留用之勞工外，其餘勞工應依第十六條規定期間預告終止契約，並應依第十七條規定發給勞工資遣費。其留用勞工之工作年資，應由新雇主繼續予以承認。",
     "metadata": {
@@ -2090,7 +2090,7 @@
     }
   },
   {
-    "chunk_id": "LSA-25",
+    "chunk_id": "LSA-25_W",
     "parent_id": "LSA-25",
     "text": "雇主對勞工不得因性別而有差別之待遇。工作相同、效率相同者，給付同等之工資。",
     "metadata": {
@@ -2109,7 +2109,7 @@
     }
   },
   {
-    "chunk_id": "LSA-26",
+    "chunk_id": "LSA-26_W",
     "parent_id": "LSA-26",
     "text": "雇主不得預扣勞工工資作為違約金或賠償費用。",
     "metadata": {
@@ -2128,7 +2128,7 @@
     }
   },
   {
-    "chunk_id": "LSA-27",
+    "chunk_id": "LSA-27_W",
     "parent_id": "LSA-27",
     "text": "雇主不按期給付工資者，主管機關得限期令其給付。",
     "metadata": {
@@ -2318,7 +2318,7 @@
     }
   },
   {
-    "chunk_id": "LSA-29",
+    "chunk_id": "LSA-29_W",
     "parent_id": "LSA-29",
     "text": "事業單位於營業年度終了結算，如有盈餘，除繳納稅捐、彌補虧損及提列股息、公積金外，對於全年工作並無過失之勞工，應給與獎金或分配紅利。",
     "metadata": {
@@ -2565,7 +2565,7 @@
     }
   },
   {
-    "chunk_id": "LSA-31",
+    "chunk_id": "LSA-31_W",
     "parent_id": "LSA-31",
     "text": "在坑道或隧道內工作之勞工，以入坑口時起至出坑口時止為工作時間。",
     "metadata": {
@@ -2717,7 +2717,7 @@
     }
   },
   {
-    "chunk_id": "LSA-33",
+    "chunk_id": "LSA-33_W",
     "parent_id": "LSA-33",
     "text": "第三條所列事業，除製造業及礦業外，因公眾之生活便利或其他特殊原因，有調整第三十條、第三十二條所定之正常工作時間及延長工作時間之必要者，得由當地主管機關會商目的事業主管機關及工會，就必要之限度內以命令調整之。",
     "metadata": {
@@ -2793,7 +2793,7 @@
     }
   },
   {
-    "chunk_id": "LSA-35",
+    "chunk_id": "LSA-35_W",
     "parent_id": "LSA-35",
     "text": "勞工繼續工作四小時，至少應有三十分鐘之休息。但實行輪班制或其工作有連續性或緊急性者，雇主得在工作時間內，另行調配其休息時間。",
     "metadata": {
@@ -3192,7 +3192,7 @@
     }
   },
   {
-    "chunk_id": "LSA-39",
+    "chunk_id": "LSA-39_W",
     "parent_id": "LSA-39",
     "text": "第三十六條所定之例假、休息日、第三十七條所定之休假及第三十八條所定之特別休假，工資應由雇主照給。雇主經徵得勞工同意於休假日工作者，工資應加倍發給。因季節性關係有趕工必要，經勞工或工會同意照常工作者，亦同。",
     "metadata": {
@@ -3249,7 +3249,7 @@
     }
   },
   {
-    "chunk_id": "LSA-41",
+    "chunk_id": "LSA-41_W",
     "parent_id": "LSA-41",
     "text": "公用事業之勞工，當地主管機關認有必要時，得停止第三十八條所定之特別休假。假期內之工資應由雇主加倍發給。",
     "metadata": {
@@ -3268,7 +3268,7 @@
     }
   },
   {
-    "chunk_id": "LSA-42",
+    "chunk_id": "LSA-42_W",
     "parent_id": "LSA-42",
     "text": "勞工因健康或其他正當理由，不能接受正常工作時間以外之工作者，雇主不得強制其工作。",
     "metadata": {
@@ -3287,7 +3287,7 @@
     }
   },
   {
-    "chunk_id": "LSA-43",
+    "chunk_id": "LSA-43_W",
     "parent_id": "LSA-43",
     "text": "勞工因婚、喪、疾病或其他正當事由得請假；請假應給之假期及事假以外期間內工資給付之最低標準，由中央主管機關定之。",
     "metadata": {
@@ -3420,7 +3420,7 @@
     }
   },
   {
-    "chunk_id": "LSA-46",
+    "chunk_id": "LSA-46_W",
     "parent_id": "LSA-46",
     "text": "未滿十八歲之人受僱從事工作者，雇主應置備其法定代理人同意書及其年齡證明文件。",
     "metadata": {
@@ -3439,7 +3439,7 @@
     }
   },
   {
-    "chunk_id": "LSA-47",
+    "chunk_id": "LSA-47_W",
     "parent_id": "LSA-47",
     "text": "童工每日之工作時間不得超過八小時，每週之工作時間不得超過四十小時，例假日不得工作。",
     "metadata": {
@@ -3458,7 +3458,7 @@
     }
   },
   {
-    "chunk_id": "LSA-48",
+    "chunk_id": "LSA-48_W",
     "parent_id": "LSA-48",
     "text": "童工不得於午後八時至翌晨六時之時間內工作。",
     "metadata": {
@@ -3629,7 +3629,7 @@
     }
   },
   {
-    "chunk_id": "LSA-51",
+    "chunk_id": "LSA-51_W",
     "parent_id": "LSA-51",
     "text": "女工在妊娠期間，如有較為輕易之工作，得申請改調，雇主不得拒絕，並不得減少其工資。",
     "metadata": {
@@ -4047,7 +4047,7 @@
     }
   },
   {
-    "chunk_id": "LSA-57",
+    "chunk_id": "LSA-57_W",
     "parent_id": "LSA-57",
     "text": "勞工工作年資以服務同一事業者為限。但受同一雇主調動之工作年資，及依第二十條規定應由新雇主繼續予以承認之年資，應予併計。",
     "metadata": {
@@ -4218,7 +4218,7 @@
     }
   },
   {
-    "chunk_id": "LSA-60",
+    "chunk_id": "LSA-60_W",
     "parent_id": "LSA-60",
     "text": "雇主依前條規定給付之補償金額，得抵充就同一事故所生損害之賠償金額。",
     "metadata": {
@@ -4560,7 +4560,7 @@
     }
   },
   {
-    "chunk_id": "LSA-66",
+    "chunk_id": "LSA-66_W",
     "parent_id": "LSA-66",
     "text": "雇主不得向技術生收取有關訓練費用。",
     "metadata": {
@@ -4579,7 +4579,7 @@
     }
   },
   {
-    "chunk_id": "LSA-67",
+    "chunk_id": "LSA-67_W",
     "parent_id": "LSA-67",
     "text": "技術生訓練期滿，雇主得留用之，並應與同等工作之勞工享受同等之待遇。雇主如於技術生訓練契約內訂明留用期間，應不得超過其訓練期間。",
     "metadata": {
@@ -4598,7 +4598,7 @@
     }
   },
   {
-    "chunk_id": "LSA-68",
+    "chunk_id": "LSA-68_W",
     "parent_id": "LSA-68",
     "text": "技術生人數，不得超過勞工人數四分之一。勞工人數不滿四人者，以四人計。",
     "metadata": {
@@ -4883,7 +4883,7 @@
     }
   },
   {
-    "chunk_id": "LSA-71",
+    "chunk_id": "LSA-71_W",
     "parent_id": "LSA-71",
     "text": "工作規則，違反法令之強制或禁止規定或其他有關該事業適用之團體協約規定者，無效。",
     "metadata": {
@@ -5111,7 +5111,7 @@
     }
   },
   {
-    "chunk_id": "LSA-75",
+    "chunk_id": "LSA-75_W",
     "parent_id": "LSA-75",
     "text": "違反第五條規定者，處五年以下有期徒刑、拘役或科或併科新臺幣七十五萬元以下罰金。",
     "metadata": {
@@ -5130,7 +5130,7 @@
     }
   },
   {
-    "chunk_id": "LSA-76",
+    "chunk_id": "LSA-76_W",
     "parent_id": "LSA-76",
     "text": "違反第六條規定者，處三年以下有期徒刑、拘役或科或併科新臺幣四十五萬元以下罰金。",
     "metadata": {
@@ -5149,7 +5149,7 @@
     }
   },
   {
-    "chunk_id": "LSA-77",
+    "chunk_id": "LSA-77_W",
     "parent_id": "LSA-77",
     "text": "違反第四十二條、第四十四條第二項、第四十五條第一項、第四十七條、第四十八條、第四十九條第三項或第六十四條第一項規定者，處六個月以下有期徒刑、拘役或科或併科新臺幣三十萬元以下罰金。",
     "metadata": {
@@ -5320,7 +5320,7 @@
     }
   },
   {
-    "chunk_id": "LSA-79-1",
+    "chunk_id": "LSA-79-1_W",
     "parent_id": "LSA-79-1",
     "text": "違反第四十五條第二項、第四項、第六十四條第三項及第六十九條第一項準用規定之處罰，適用本法罰則章規定。",
     "metadata": {
@@ -5339,7 +5339,7 @@
     }
   },
   {
-    "chunk_id": "LSA-80",
+    "chunk_id": "LSA-80_W",
     "parent_id": "LSA-80",
     "text": "拒絕、規避或阻撓勞工檢查員依法執行職務者，處新臺幣三萬元以上十五萬元以下罰鍰。",
     "metadata": {
@@ -5434,7 +5434,7 @@
     }
   },
   {
-    "chunk_id": "LSA-82",
+    "chunk_id": "LSA-82_W",
     "parent_id": "LSA-82",
     "text": "本法所定之罰鍰，經主管機關催繳，仍不繳納時，得移送法院強制執行。",
     "metadata": {
@@ -5453,7 +5453,7 @@
     }
   },
   {
-    "chunk_id": "LSA-83",
+    "chunk_id": "LSA-83_W",
     "parent_id": "LSA-83",
     "text": "為協調勞資關係，促進勞資合作，提高工作效率，事業單位應舉辦勞資會議。其辦法由中央主管機關會同經濟部訂定，並報行政院核定。",
     "metadata": {
@@ -5472,7 +5472,7 @@
     }
   },
   {
-    "chunk_id": "LSA-84",
+    "chunk_id": "LSA-84_W",
     "parent_id": "LSA-84",
     "text": "公務員兼具勞工身分者，其有關任（派）免、薪資、獎懲、退休、撫卹及保險（含職業災害）等事項，應適用公務員法令之規定。但其他所定勞動條件優於本法規定者，從其規定。",
     "metadata": {
@@ -5567,7 +5567,7 @@
     }
   },
   {
-    "chunk_id": "LSA-84-2",
+    "chunk_id": "LSA-84-2_W",
     "parent_id": "LSA-84-2",
     "text": "勞工工作年資自受僱之日起算，適用本法前之工作年資，其資遣費及退休金給與標準，依其當時應適用之法令規定計算；當時無法令可資適用者，依各該事業單位自訂之規定或勞雇雙方之協商計算之。適用本法後之工作年資，其資遣費及退休金給與標準，依第十七條及第五十五條規定計算。",
     "metadata": {
@@ -5586,7 +5586,7 @@
     }
   },
   {
-    "chunk_id": "LSA-85",
+    "chunk_id": "LSA-85_W",
     "parent_id": "LSA-85",
     "text": "本法施行細則，由中央主管機關擬定，報請行政院核定。",
     "metadata": {
@@ -5662,7 +5662,7 @@
     }
   },
   {
-    "chunk_id": "ENF_RULE-1",
+    "chunk_id": "ENF_RULE-1_W",
     "parent_id": "ENF_RULE-1",
     "text": "本細則依勞動基準法（以下簡稱本法）第八十五條規定訂定之。",
     "metadata": {
@@ -5814,7 +5814,7 @@
     }
   },
   {
-    "chunk_id": "ENF_RULE-3",
+    "chunk_id": "ENF_RULE-3_W",
     "parent_id": "ENF_RULE-3",
     "text": "本法第三條第一項第一款至第七款所列各業，適用中華民國行業標準分類之規定。",
     "metadata": {
@@ -5833,7 +5833,7 @@
     }
   },
   {
-    "chunk_id": "ENF_RULE-4",
+    "chunk_id": "ENF_RULE-4_W",
     "parent_id": "ENF_RULE-4",
     "text": "本法第三條第一項第八款所稱中央主管機關指定之事業及第三項所稱適用本法確有窒礙難行者，係指中央主管機關依中華民國行業標準分類之規定指定者，並得僅指定各行業中之一部分。",
     "metadata": {
@@ -5852,7 +5852,7 @@
     }
   },
   {
-    "chunk_id": "ENF_RULE-4-1",
+    "chunk_id": "ENF_RULE-4-1_W",
     "parent_id": "ENF_RULE-4-1",
     "text": "（刪除）",
     "metadata": {
@@ -6232,7 +6232,7 @@
     }
   },
   {
-    "chunk_id": "ENF_RULE-7-1",
+    "chunk_id": "ENF_RULE-7-1_W",
     "parent_id": "ENF_RULE-7-1",
     "text": "離職後競業禁止之約定，應以書面為之，且應詳細記載本法第九條之一第一項第三款及第四款規定之內容，並由雇主與勞工簽章，各執一份。",
     "metadata": {
@@ -6422,7 +6422,7 @@
     }
   },
   {
-    "chunk_id": "ENF_RULE-8",
+    "chunk_id": "ENF_RULE-8_W",
     "parent_id": "ENF_RULE-8",
     "text": "（刪除）",
     "metadata": {
@@ -6441,7 +6441,7 @@
     }
   },
   {
-    "chunk_id": "ENF_RULE-9",
+    "chunk_id": "ENF_RULE-9_W",
     "parent_id": "ENF_RULE-9",
     "text": "依本法終止勞動契約時，雇主應即結清工資給付勞工。",
     "metadata": {
@@ -6669,7 +6669,7 @@
     }
   },
   {
-    "chunk_id": "ENF_RULE-11",
+    "chunk_id": "ENF_RULE-11_W",
     "parent_id": "ENF_RULE-11",
     "text": "本法第二十一條所稱基本工資，指勞工在正常工作時間內所得之報酬。不包括延長工作時間之工資與休息日、休假日及例假工作加給之工資。",
     "metadata": {
@@ -6688,7 +6688,7 @@
     }
   },
   {
-    "chunk_id": "ENF_RULE-12",
+    "chunk_id": "ENF_RULE-12_W",
     "parent_id": "ENF_RULE-12",
     "text": "採計件工資之勞工所得基本工資，以每日工作八小時之生產額或工作量換算之。",
     "metadata": {
@@ -6707,7 +6707,7 @@
     }
   },
   {
-    "chunk_id": "ENF_RULE-13",
+    "chunk_id": "ENF_RULE-13_W",
     "parent_id": "ENF_RULE-13",
     "text": "勞工工作時間每日少於八小時者，除工作規則、勞動契約另有約定或另有法令規定者外，其基本工資得按工作時間比例計算之。",
     "metadata": {
@@ -6726,7 +6726,7 @@
     }
   },
   {
-    "chunk_id": "ENF_RULE-14",
+    "chunk_id": "ENF_RULE-14_W",
     "parent_id": "ENF_RULE-14",
     "text": "（刪除）",
     "metadata": {
@@ -6840,7 +6840,7 @@
     }
   },
   {
-    "chunk_id": "ENF_RULE-15",
+    "chunk_id": "ENF_RULE-15_W",
     "parent_id": "ENF_RULE-15",
     "text": "本法第二十八條第一項第一款所定積欠之工資，以雇主於歇業、清算或宣告破產前六個月內所積欠者為限。",
     "metadata": {
@@ -6897,7 +6897,7 @@
     }
   },
   {
-    "chunk_id": "ENF_RULE-17",
+    "chunk_id": "ENF_RULE-17_W",
     "parent_id": "ENF_RULE-17",
     "text": "本法第三十條所稱正常工作時間跨越二曆日者，其工作時間應合併計算。",
     "metadata": {
@@ -6916,7 +6916,7 @@
     }
   },
   {
-    "chunk_id": "ENF_RULE-18",
+    "chunk_id": "ENF_RULE-18_W",
     "parent_id": "ENF_RULE-18",
     "text": "勞工因出差或其他原因於事業場所外從事工作致不易計算工作時間者，以平時之工作時間為其工作時間。但其實際工作時間經證明者，不在此限。",
     "metadata": {
@@ -6935,7 +6935,7 @@
     }
   },
   {
-    "chunk_id": "ENF_RULE-19",
+    "chunk_id": "ENF_RULE-19_W",
     "parent_id": "ENF_RULE-19",
     "text": "勞工於同一事業單位或同一雇主所屬不同事業場所工作時，應將在各該場所之工作時間合併計算，並加計往來於事業場所間所必要之交通時間。",
     "metadata": {
@@ -7334,7 +7334,7 @@
     }
   },
   {
-    "chunk_id": "ENF_RULE-22-3",
+    "chunk_id": "ENF_RULE-22-3_W",
     "parent_id": "ENF_RULE-22-3",
     "text": "本法第三十六條第一項、第二項第一款及第二款所定之例假，以每七日為一週期，依曆計算。雇主除依同條第四項及第五項規定調整者外，不得使勞工連續工作逾六日。",
     "metadata": {
@@ -7353,7 +7353,7 @@
     }
   },
   {
-    "chunk_id": "ENF_RULE-23",
+    "chunk_id": "ENF_RULE-23_W",
     "parent_id": "ENF_RULE-23",
     "text": "（刪除）",
     "metadata": {
@@ -7619,7 +7619,7 @@
     }
   },
   {
-    "chunk_id": "ENF_RULE-24-3",
+    "chunk_id": "ENF_RULE-24-3_W",
     "parent_id": "ENF_RULE-24-3",
     "text": "本法第三十九條所定休假日，為本法第三十七條所定休假及第三十八條所定特別休假。",
     "metadata": {
@@ -7638,7 +7638,7 @@
     }
   },
   {
-    "chunk_id": "ENF_RULE-25",
+    "chunk_id": "ENF_RULE-25_W",
     "parent_id": "ENF_RULE-25",
     "text": "本法第四十四條第二項所定危險性或有害性之工作，依職業安全衛生有關法令之規定。",
     "metadata": {
@@ -7657,7 +7657,7 @@
     }
   },
   {
-    "chunk_id": "ENF_RULE-26",
+    "chunk_id": "ENF_RULE-26_W",
     "parent_id": "ENF_RULE-26",
     "text": "雇主對依本法第五十條第一項請產假之女工，得要求其提出證明文件。",
     "metadata": {
@@ -7676,7 +7676,7 @@
     }
   },
   {
-    "chunk_id": "ENF_RULE-27",
+    "chunk_id": "ENF_RULE-27_W",
     "parent_id": "ENF_RULE-27",
     "text": "本法第五十三條第一款、第五十四條第一項第一款及同條第二項但書規定之年齡，應以戶籍記載為準。",
     "metadata": {
@@ -7695,7 +7695,7 @@
     }
   },
   {
-    "chunk_id": "ENF_RULE-28",
+    "chunk_id": "ENF_RULE-28_W",
     "parent_id": "ENF_RULE-28",
     "text": "（刪除）",
     "metadata": {
@@ -7828,7 +7828,7 @@
     }
   },
   {
-    "chunk_id": "ENF_RULE-30",
+    "chunk_id": "ENF_RULE-30_W",
     "parent_id": "ENF_RULE-30",
     "text": "雇主依本法第五十九條第二款補償勞工之工資，應於發給工資之日給與。",
     "metadata": {
@@ -7885,7 +7885,7 @@
     }
   },
   {
-    "chunk_id": "ENF_RULE-32",
+    "chunk_id": "ENF_RULE-32_W",
     "parent_id": "ENF_RULE-32",
     "text": "依本法第五十九條第二款但書規定給付之補償，雇主應於決定後十五日內給與。在未給與前雇主仍應繼續為同款前段規定之補償。",
     "metadata": {
@@ -7904,7 +7904,7 @@
     }
   },
   {
-    "chunk_id": "ENF_RULE-33",
+    "chunk_id": "ENF_RULE-33_W",
     "parent_id": "ENF_RULE-33",
     "text": "雇主依本法第五十九條第四款給與勞工之喪葬費應於死亡後三日內，死亡補償應於死亡後十五日內給付。",
     "metadata": {
@@ -7923,7 +7923,7 @@
     }
   },
   {
-    "chunk_id": "ENF_RULE-34",
+    "chunk_id": "ENF_RULE-34_W",
     "parent_id": "ENF_RULE-34",
     "text": "本法第五十九條所定同一事故，依勞工保險條例或其他法令規定，已由雇主支付費用補償者，雇主得予以抵充之。但支付之費用如由勞工與雇主共同負擔者，其補償之抵充按雇主負擔之比例計算。",
     "metadata": {
@@ -7942,7 +7942,7 @@
     }
   },
   {
-    "chunk_id": "ENF_RULE-34-1",
+    "chunk_id": "ENF_RULE-34-1_W",
     "parent_id": "ENF_RULE-34-1",
     "text": "勞工因遭遇職業災害而致死亡或失能時，雇主已依勞工保險條例規定為其投保，並經保險人核定為職業災害保險事故者，雇主依本法第五十九條規定給予之補償，以勞工之平均工資與平均投保薪資之差額，依本法第五十九條第三款及第四款規定標準計算之。",
     "metadata": {
@@ -7961,7 +7961,7 @@
     }
   },
   {
-    "chunk_id": "ENF_RULE-35",
+    "chunk_id": "ENF_RULE-35_W",
     "parent_id": "ENF_RULE-35",
     "text": "雇主不得使技術生從事家事、雜役及其他非學習技能為目的之工作。但從事事業場所內之清潔整頓，器具工具及機械之清理者不在此限。",
     "metadata": {
@@ -7980,7 +7980,7 @@
     }
   },
   {
-    "chunk_id": "ENF_RULE-36",
+    "chunk_id": "ENF_RULE-36_W",
     "parent_id": "ENF_RULE-36",
     "text": "技術生之工作時間應包括學科時間。",
     "metadata": {
@@ -8075,7 +8075,7 @@
     }
   },
   {
-    "chunk_id": "ENF_RULE-38",
+    "chunk_id": "ENF_RULE-38_W",
     "parent_id": "ENF_RULE-38",
     "text": "工作規則經主管機關核備後，雇主應即於事業場所內公告並印發各勞工。",
     "metadata": {
@@ -8094,7 +8094,7 @@
     }
   },
   {
-    "chunk_id": "ENF_RULE-39",
+    "chunk_id": "ENF_RULE-39_W",
     "parent_id": "ENF_RULE-39",
     "text": "雇主認有必要時，得分別就本法第七十條各款另訂單項工作規則。",
     "metadata": {
@@ -8113,7 +8113,7 @@
     }
   },
   {
-    "chunk_id": "ENF_RULE-40",
+    "chunk_id": "ENF_RULE-40_W",
     "parent_id": "ENF_RULE-40",
     "text": "事業單位之事業場所分散各地者，雇主得訂立適用於其事業單位全部勞工之工作規則或適用於該事業場所之工作規則。",
     "metadata": {
@@ -8170,7 +8170,7 @@
     }
   },
   {
-    "chunk_id": "ENF_RULE-42",
+    "chunk_id": "ENF_RULE-42_W",
     "parent_id": "ENF_RULE-42",
     "text": "勞工檢查機構檢查員之任用、訓練、服務，除適用公務員法令之規定外，由中央主管機關定之。",
     "metadata": {
@@ -8189,7 +8189,7 @@
     }
   },
   {
-    "chunk_id": "ENF_RULE-43",
+    "chunk_id": "ENF_RULE-43_W",
     "parent_id": "ENF_RULE-43",
     "text": "檢查員對事業單位實施檢查時，得通知事業單位之雇主、雇主代理人、勞工或有關人員提供必要文件或作必要之說明。",
     "metadata": {
@@ -8246,7 +8246,7 @@
     }
   },
   {
-    "chunk_id": "ENF_RULE-45",
+    "chunk_id": "ENF_RULE-45_W",
     "parent_id": "ENF_RULE-45",
     "text": "事業單位對檢查結果有異議時，應於通知送達後十日內向檢查機構以書面提出。",
     "metadata": {
@@ -8265,7 +8265,7 @@
     }
   },
   {
-    "chunk_id": "ENF_RULE-46",
+    "chunk_id": "ENF_RULE-46_W",
     "parent_id": "ENF_RULE-46",
     "text": "本法第七十四條第一項規定之申訴得以口頭或書面為之。",
     "metadata": {
@@ -8284,7 +8284,7 @@
     }
   },
   {
-    "chunk_id": "ENF_RULE-47",
+    "chunk_id": "ENF_RULE-47_W",
     "parent_id": "ENF_RULE-47",
     "text": "雇主對前條之申訴事項，應即查明，如有違反法令規定情事應即改正，並將結果通知申訴人。",
     "metadata": {
@@ -8303,7 +8303,7 @@
     }
   },
   {
-    "chunk_id": "ENF_RULE-48",
+    "chunk_id": "ENF_RULE-48_W",
     "parent_id": "ENF_RULE-48",
     "text": "（刪除）",
     "metadata": {
@@ -8322,7 +8322,7 @@
     }
   },
   {
-    "chunk_id": "ENF_RULE-49",
+    "chunk_id": "ENF_RULE-49_W",
     "parent_id": "ENF_RULE-49",
     "text": "（刪除）",
     "metadata": {
@@ -8341,7 +8341,7 @@
     }
   },
   {
-    "chunk_id": "ENF_RULE-50",
+    "chunk_id": "ENF_RULE-50_W",
     "parent_id": "ENF_RULE-50",
     "text": "本法第八十四條所稱公務員兼具勞工身分者，係指依各項公務員人事法令任用、派用、聘用、遴用而於本法第三條所定各業從事工作獲致薪資之人員。所稱其他所定勞動條件，係指工作時間、休息、休假、安全衛生、福利、加班費等而言。",
     "metadata": {
@@ -8436,7 +8436,7 @@
     }
   },
   {
-    "chunk_id": "ENF_RULE-50-2",
+    "chunk_id": "ENF_RULE-50-2_W",
     "parent_id": "ENF_RULE-50-2",
     "text": "雇主依本法第八十四條之一規定將其與勞工之書面約定報請當地主管機關核備時，其內容應包括職稱、工作項目、工作權責或工作性質、工作時間、例假、休假、女性夜間工作等有關事項。",
     "metadata": {
@@ -8493,7 +8493,7 @@
     }
   },
   {
-    "chunk_id": "ENF_RULE-50-4",
+    "chunk_id": "ENF_RULE-50-4_W",
     "parent_id": "ENF_RULE-50-4",
     "text": "本法第二十八條第二項中華民國一百零四年二月六日修正生效前，雇主有清算或宣告破產之情事，於修正生效後，尚未清算完結或破產終結者，勞工對於該雇主所積欠之退休金及資遣費，得於同條第二項第二款規定之數額內，依同條第五項規定申請墊償。",
     "metadata": {
@@ -8512,7 +8512,7 @@
     }
   },
   {
-    "chunk_id": "ENF_RULE-51",
+    "chunk_id": "ENF_RULE-51_W",
     "parent_id": "ENF_RULE-51",
     "text": "本細則自發布日施行。",
     "metadata": {
@@ -8531,7 +8531,7 @@
     }
   },
   {
-    "chunk_id": "LEAVE_RULE-1",
+    "chunk_id": "LEAVE_RULE-1_W",
     "parent_id": "LEAVE_RULE-1",
     "text": "本規則依勞動基準法（以下簡稱本法）第四十三條規定訂定之。",
     "metadata": {
@@ -8550,7 +8550,7 @@
     }
   },
   {
-    "chunk_id": "LEAVE_RULE-2",
+    "chunk_id": "LEAVE_RULE-2_W",
     "parent_id": "LEAVE_RULE-2",
     "text": "勞工結婚者給予婚假八日，工資照給。",
     "metadata": {
@@ -8721,7 +8721,7 @@
     }
   },
   {
-    "chunk_id": "LEAVE_RULE-5",
+    "chunk_id": "LEAVE_RULE-5_W",
     "parent_id": "LEAVE_RULE-5",
     "text": "勞工普通傷病假超過前條第一項規定之期限，經以事假或特別休假抵充後仍未痊癒者，得予留職停薪。但留職停薪期間以一年為限。",
     "metadata": {
@@ -8740,7 +8740,7 @@
     }
   },
   {
-    "chunk_id": "LEAVE_RULE-6",
+    "chunk_id": "LEAVE_RULE-6_W",
     "parent_id": "LEAVE_RULE-6",
     "text": "勞工因職業災害而致失能、傷害或疾病者，其治療、休養期間，給予公傷病假。",
     "metadata": {
@@ -8797,7 +8797,7 @@
     }
   },
   {
-    "chunk_id": "LEAVE_RULE-8",
+    "chunk_id": "LEAVE_RULE-8_W",
     "parent_id": "LEAVE_RULE-8",
     "text": "勞工依法令規定應給予公假者，工資照給，其假期視實際需要定之。",
     "metadata": {
@@ -8949,7 +8949,7 @@
     }
   },
   {
-    "chunk_id": "LEAVE_RULE-10",
+    "chunk_id": "LEAVE_RULE-10_W",
     "parent_id": "LEAVE_RULE-10",
     "text": "勞工請假時，應於事前親自以口頭或書面敘明請假理由及日數。但遇有急病或緊急事故，得委託他人代辦請假手續。辦理請假手續時，雇主得要求勞工提出有關證明文件。",
     "metadata": {
@@ -8968,7 +8968,7 @@
     }
   },
   {
-    "chunk_id": "LEAVE_RULE-11",
+    "chunk_id": "LEAVE_RULE-11_W",
     "parent_id": "LEAVE_RULE-11",
     "text": "雇主或勞工違反本規則之規定時，主管機關得依本法有關規定辦理。",
     "metadata": {

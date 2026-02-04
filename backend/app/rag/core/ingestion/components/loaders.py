@@ -3,7 +3,9 @@ import logging
 from pathlib import Path
 from typing import List
 from llama_index.core.schema import TextNode
-from backend.app.rag.config import LAW_DATA_DIR, RAG_VERSIONS
+from backend.app.rag.config import LAW_DATA_DIR
+from backend.app.rag.types import RagVersion
+from backend.app.rag.version_utils import get_intermediate_filename
 
 logger = logging.getLogger(__name__)
 
@@ -16,22 +18,28 @@ def load_persisted_nodes(version: str) -> List[TextNode]:
     use the exact same data source, adhering to the Single Source of Truth principle.
 
     Args:
-        version (str): The RAG version (e.g., "0.0.2", "0.0.3").
+        version (str): The RAG version (e.g., "0.0.2", "0.1.2").
 
     Returns:
         List[TextNode]: A list of LlamaIndex TextNodes reconstructed from the persisted JSON.
-    """
-    strategy_name = RAG_VERSIONS.get(version, "UNKNOWN")
 
-    # Filenames are now based on strategy descriptions rather than "Tier 1"
-    if strategy_name == "PARENT_CHILD_COARSE":
-        filename = "intermediate_nodes_coarse.json"
-    elif strategy_name == "PARENT_CHILD_FINE":
-        filename = "intermediate_nodes_fine.json"
-    else:
+    Raises:
+        ValueError: If version is unknown or doesn't support persisted loading
+        FileNotFoundError: If persisted data file is not found
+    """
+    # Validate and convert to RagVersion enum
+    try:
+        rag_version = RagVersion(version)
+    except ValueError:
         raise ValueError(
-            f"Version {version} does not support persisted loading or is unknown."
+            f"Unknown RAG version: {version}. Valid versions: {[v.value for v in RagVersion]}"
         )
+
+    # Get filename based on version
+    try:
+        filename = get_intermediate_filename(rag_version)
+    except ValueError as e:
+        raise ValueError(str(e))
 
     file_path = Path(LAW_DATA_DIR) / "parent_child_index" / filename
 

@@ -23,7 +23,7 @@ class TestLawArticleChunker(unittest.TestCase):
 
         self.assertEqual(len(chunks), 1)
         chunk = chunks[0]
-        self.assertEqual(chunk.chunk_id, "LSA-5")
+        self.assertEqual(chunk.chunk_id, "LSA-5_W")
         self.assertEqual(chunk.parent_id, "LSA-5")
         self.assertEqual(
             chunk.text, "雇主不得以強暴、脅迫、拘禁或其他非法之方法，強制勞工從事勞動。"
@@ -130,7 +130,7 @@ class TestLawArticleChunker(unittest.TestCase):
 
         self.assertEqual(len(chunks), 1)
         chunk = chunks[0]
-        self.assertEqual(chunk.chunk_id, "LSA-84-2")
+        self.assertEqual(chunk.chunk_id, "LSA-84-2_W")
         self.assertEqual(chunk.text, "勞工工作年資自受僱之日起算...")
         self.assertEqual(chunk.metadata.citation_title, "勞動基準法第八十四條之二")
 

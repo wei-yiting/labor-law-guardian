@@ -18,23 +18,14 @@ LAW_FILES = [
 # RAG Settings
 OPENAI_MODEL_NAME = "gpt-4o"
 # Embedding model configuration is handled by EmbeddingStrategy (see core/embedding/)
+# and version_utils.py (see rag/version_utils.py)
 # - v0.0.x: OpenAI text-embedding-3-small
 # - v0.1.x+: BAAI/bge-m3 (HuggingFace local)
 OPENAI_TEMPERATURE = 0
 CHUNK_SIZE = 1024
 RETRIEVER_TOP_K = 3
 
-# RAG Versions
-# v0.0.x: OpenAI text-embedding-3-small
-# v0.1.x: BAAI/bge-m3 (same ingestion/retrieval strategies as v0.0.x counterparts)
-RAG_VERSIONS = {
-    "0.0.1": "NAIVE_OPENAI",
-    "0.0.2": "PARENT_CHILD_FINE_OPENAI",
-    "0.0.3": "PARENT_CHILD_COARSE_OPENAI",
-    "0.1.1": "NAIVE_BGE_M3",
-    "0.1.2": "PARENT_CHILD_FINE_BGE_M3",
-    "0.1.3": "PARENT_CHILD_COARSE_BGE_M3",
-}
+# Latest RAG version (used as CLI default)
 LATEST_RAG_VERSION = "0.1.3"
 
 # Vector Store Settings
