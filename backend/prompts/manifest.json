@@ -1,0 +1,19 @@
+{
+  "prompts": {
+    "retrieval_eval_dataset_l3_candidate_gen": {
+      "description": "Level 3 Multi-Hop question generation",
+      "category": "eval_generation",
+      "dev": "retrieval_eval_gen/l3_candidate_generation_v01.prompty"
+    },
+    "retrieval_eval_dataset_l3_judge_rerank": {
+      "description": "Level 3 question judging and enhancement",
+      "category": "eval_judging",
+      "dev": "retrieval_eval_gen/l3_judge_reranking_v01.prompty"
+    },
+    "retrieval_eval_dataset_l1_candidate_gen": {
+      "description": "Level 1 question generation (placeholder)",
+      "category": "eval_generation",
+      "dev": "retrieval_eval_gen/l1_candidate_generation_v01.prompty"
+    }
+  }
+}

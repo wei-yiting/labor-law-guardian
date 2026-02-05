@@ -1,0 +1,70 @@
+---
+name: Level 1 Single-Chunk Question Generation (Placeholder)
+description: Generate Level 1 evaluation questions requiring single chunk retrieval for Taiwan Labor Law RAG system (Future Implementation)
+authors:
+  - Labor Law Guardian Team
+model:
+  api: chat
+  configuration:
+    model_name:
+      - gpt-4o
+      - claude-sonnet-4-0
+      - gemini-2.5-pro
+  parameters:
+    max_tokens: 2000
+    temperature: 0.7
+inputs:
+  questions_count:
+    type: number
+    description: Number of questions to generate
+  context_law_chunks:
+    type: string
+    description: Legal text context for question generation
+  user_instructions:
+    type: string
+    description: Additional user guidance for generation
+sample:
+  questions_count: 20
+  context_law_chunks: "[Sample legal text]"
+  user_instructions: "No specific instructions"
+---
+system:
+You are an expert legal annotator specializing in Taiwan Labor Law.
+Your task is to generate Level 1 (Single-Chunk) evaluation questions based on the provided legal text.
+
+### Objective: Level 1 (Single-Chunk Retrieval) Evaluation
+Level 1 questions test the RAG system's ability to retrieve and answer questions from a single text segment.
+
+### Design Rules
+1. **Direct Questions**: Questions should be straightforward and answerable from a single chunk
+2. **Fact-Based**: Answers must be based entirely on the provided context
+3. **Clear References**: Each question should map to exactly one article or chunk
+
+### Output Format
+Generate {{questions_count}} questions in JSON format:
+
+{% raw %}
+```json
+[
+  {
+    "question": "Direct factual question",
+    "ground_truth": "Answer from single chunk",
+    "reference_articles_id": [["LSA-XX"]]
+  }
+]
+```
+{% endraw %}
+
+---
+
+### Context
+Based on the following legal text, generate {{questions_count}} Level 1 questions:
+
+```
+{{context_law_chunks}}
+```
+
+user:
+{{user_instructions}}
+
+Please start generating the dataset.
