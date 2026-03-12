@@ -1,24 +1,17 @@
 # Labor Law Guardian
 
-This repository is a staged build-out for a labor-law RAG system:
-
-- **Week 1**: Scrape and clean labor law articles into a stable schema.
-- **Week 2**: Build a graph representation (Neo4j) and retrieval evaluation.
-- **Week 3+**: Tools (e.g., overtime calculator) and agent workflows.
-- **Week 6-7**: API + Frontend.
-
 ### Architecture (high-level)
 
 ```mermaid
 flowchart LR
-  A[Scraper (requests + bs4)] --> B[Cleaner (regex)]
-  B --> C[LawArticle schema (Pydantic)]
+  A[Scraper: requests + bs4] --> B[Cleaner: regex]
+  B --> C[LawArticle schema: Pydantic]
   C --> D[(Raw JSON)]
   C --> E[Graph Builder]
   E --> F[(Neo4j)]
   F --> G[Hybrid Retriever]
-  G --> H[API (FastAPI)]
-  H --> I[Frontend (Next.js)]
+  G --> H[API:FastAPI]
+  H --> I[Frontend: Next.js]
 ```
 
 ### Project layout
