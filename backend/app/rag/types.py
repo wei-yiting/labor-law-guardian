@@ -1,0 +1,197 @@
+from enum import StrEnum, Enum
+from typing import Optional, List, Dict
+from datetime import date
+from pydantic import BaseModel, Field, HttpUrl
+
+
+class RagVersion(StrEnum):
+    V0_0_1 = "0.0.1"
+    V0_0_2 = "0.0.2"
+    V0_0_3 = "0.0.3"
+    V0_1_1 = "0.1.1"
+    V0_1_2 = "0.1.2"
+    V0_1_3 = "0.1.3"
+
+
+class LawCategory(Enum):
+    """Law category enum"""
+
+    MOTHER_LAW = "母法"
+    SUBSIDIARY_LAW = "子法"
+    INTERPRETATION = "函釋"
+    CASE = "判例"
+
+
+class RawLawArticle(BaseModel):
+    """
+    Data structure of a law article (Data Transfer Object)
+    Schema of Scraper outputs.
+    Graph Builder reads this schema.
+    """
+
+    id: str = Field(
+        description="Unique ID (Graph Node Key), e.g. 'LSA-24' for Labor Standard Act Article 24",
+        examples=["LSA-24", "ENF_RULE-10"],
+    )
+    chapter_no: int | None = Field(
+        default=None,
+        description="Law chapter number, e.g. 2 for '第二章 勞動契約'. Null if law has no chapters.",
+        examples=[2, 11],
+    )
+    chapter_name: str | None = Field(
+        default=None,
+        description="Law chapter name, e.g. '勞動契約'. Null if law has no chapters.",
+        examples=["勞動契約", "職業災害補償"],
+    )
+    article_no: str = Field(
+        description="Law article number, e.g. '24' for '第 24 條', '9-1' for '第 9-1 條'",
+        examples=["24", "9-1"],
+    )
+    summary: str | None = Field(
+        default=None,
+        description="Generated summary for query purposes",
+        examples=["延長工作時間之工資加給"],
+    )
+    content: str = Field(
+        description="Law article content, cleaned of HTML tags and extra whitespace"
+    )
+    url: HttpUrl = Field(
+        description="National Law Database URL of Single Law Article, for Citation"
+    )
+
+    # Reserved fields (future use: LLM can mark simple concepts at this layer)
+    related_concepts: Optional[List[str]] = Field(
+        default=[], description="Related concept keywords (reserved)"
+    )
+
+
+class RawLawData(BaseModel):
+    category: LawCategory = Field(
+        description="The category of the law (Mother Law or Subsidiary Law)"
+    )
+    title: str = Field(description="The title of the law")
+    last_modified_date: date = Field(
+        description="Last modified date of the law", examples=["2024-03-27"]
+    )
+    articles: List[RawLawArticle] = Field(description="List of articles in the law")
+
+
+class SplitStrategyEnum(str, Enum):
+    atomic = "atomic"
+    numeric = "numeric"
+    contextual = "contextual"
+    numeric_contextual = "numeric_contextual"
+    parent_child_coarse = "parent_child_coarse"
+
+
+class EvalQuestionCandidate(BaseModel):
+    question: str = Field(description="Concrete, specific question text")
+    ground_truth: str = Field(description="The complete answer derived from documents")
+    reference_articles_id: List[List[str]] = Field(
+        description="List of list of Article IDs used (e.g., [['LSA-12', 'ENF-3'], ['LSA-12', 'ENF-4']]). Inner lists are AND (all required), outer list is OR (alternatives)."
+    )
+    source_model: str = Field(description="Source LLM model generate this question")
+
+
+class EvalDatasetItem(BaseModel):
+    question: str = Field(description="Concrete, specific question text")
+    ground_truth: str = Field(description="The complete answer derived from documents")
+    reference_articles_id: List[List[str]] = Field(
+        description="List of list of Article IDs used (e.g., [['LSA-12', 'ENF-3'], ['LSA-12', 'ENF-4']]). Inner lists are AND (all required), outer list is OR (alternatives)."
+    )
+    supporting_context: List[str] = Field(
+        description="The exact quotes from documents used for the answer"
+    )
+    tags: Dict[str, str] = Field(
+        description="e.g., {'chapter': '工資', 'type': 'Cross-Document'}"
+    )
+    reasoning: str = Field(
+        description="Explanation of why this question is qualified to be in the dataset"
+    )
+
+
+EvalDataset = List[EvalDatasetItem]
+
+
+# --- Fine-Grained Models (v0.0.2) ---
+
+
+class HierarchyFine(BaseModel):
+    article: str
+    paragraph: int | None = None
+    subparagraph: int | None = None
+
+
+class ChunkMetadataFine(BaseModel):
+    url: HttpUrl
+    split_strategy: SplitStrategyEnum
+    is_expanded: bool
+    citation_title: str
+    hierarchy: HierarchyFine
+    chapter_no: int | None = None
+    chapter_title: str | None = None
+    article_no: str
+
+
+class LawChunkFine(BaseModel):
+    chunk_id: str
+    parent_id: str
+    text: str
+    metadata: ChunkMetadataFine
+
+
+# --- Coarse-Grained Models (v0.0.3) ---
+
+
+class HierarchyCoarse(BaseModel):
+    article: str
+    paragraph: int | None = None
+    # No subparagraph field for coarse chunks
+
+
+class ChunkMetadataCoarse(BaseModel):
+    url: HttpUrl
+    split_strategy: SplitStrategyEnum
+    is_expanded: bool
+    citation_title: str
+    hierarchy: HierarchyCoarse
+    chapter_no: int | None = None
+    chapter_title: str | None = None
+    article_no: str
+
+
+class LawChunkCoarse(BaseModel):
+    chunk_id: str
+    parent_id: str
+    text: str
+    metadata: ChunkMetadataCoarse
+
+
+class ChunkRelationshipType(str, Enum):
+    MENTIONS = "mentions"
+    IS_MENTIONED_BY = "is_mentioned_by"
+    PENALIZES = "penalizes"
+    IS_PENALIZED_BY = "is_penalized_by"
+    ELABORATES = "elaborates"
+    IS_ELABORATED_BY = "is_elaborated_by"
+    OVERRIDES = "overrides"
+    IS_OVERRIDDEN_BY = "is_overridden_by"
+    DEFINES = "defines"
+    USES_DEFINITION_FROM = "uses_definition_from"
+
+
+class ChunkRelationship(BaseModel):
+    target_chunk_id: str
+    relationship_type: ChunkRelationshipType
+
+
+class LawChunkWithRelationship(LawChunkCoarse):
+    related_chunks: List[ChunkRelationship] = Field(
+        default=[], description="List of related chunk relationships"
+    )
+
+
+# --- Union Type ---
+# This allows the chunker to return a mixed list or specific list depending on strategy,
+# and the loader to handle both.
+LawChunk = LawChunkFine | LawChunkCoarse

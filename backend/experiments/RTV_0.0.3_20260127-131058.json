@@ -1,0 +1,28 @@
+{
+  "meta": {
+    "run_id": "RTV_0.0.3_20260127-131058",
+    "timestamp": "2026-01-27T13:10:58.563098",
+    "description": "add MAP@k, MRR@k metrics",
+    "agent_version": "0.0.3",
+    "configuration": {
+      "rag_version": "0.0.3",
+      "strategy": "PARENT_CHILD_COARSE",
+      "tokenizer": "gpt-4o",
+      "embedding": "text-embedding-3-small",
+      "chunk_size": 1024,
+      "top_k": 3
+    },
+    "data": {
+      "eval_datasets": [],
+      "source_documents": [],
+      "total_queries": 34
+    },
+    "overall_score": {
+      "avg_recall@3": 1.0,
+      "avg_precision@3": 0.3333,
+      "MAP@3": 0.9706,
+      "MRR@3": 0.9706
+    }
+  },
+  "fail_cases": []
+}
